@@ -8,7 +8,7 @@ La sección Map Info de nuestro viejo y recordado mapa de DotA tenía una lista 
 
 *Publicado originalmente en Dota is Kill el 3 de agosto del 2014*
 
-![DamnNoHTML](/images/damn-no-html.jpg){:class="img-responsive"}
+![DamnNoHTML](/images/posts/damn-no-html.jpg){:class="img-responsive"}
 
 Con ello en mente, me propuse investigar acerca de esos héroes cuyo único recuerdo yace en una sección olvidada del mapa de Warcraft de DotA. Así fue que terminé entrando en contacto con DamnNoHTML, uno de los beta-tester del juego en las épocas en las que Icefrog recién empezaba a hacerse cargo de él.
 
