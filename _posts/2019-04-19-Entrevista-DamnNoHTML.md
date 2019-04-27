@@ -4,9 +4,7 @@ title: Entrevista a DamnNoHTML — Beta-tester en el DotA original
 author: Pawpaw
 ---
 
-La sección Map Info de nuestro viejo y recordado mapa de DotA tenía una lista de nombres de gente que, según Icefrog, habían colaborado para lograr que el mapa sea lo que llegó a ser. Muchos de nosotros (prácticamente todos, en realidad) hemos pasado por alto esta sección y los nombres que ahí se encontraban. Sin embargo, todos y cada uno de ellos se merecen un homenaje, sea lo que sea que hayan aportado al juego. Icefrog no es Dios (Tampoco Cyborgmatt o Bruno), por más que nos guste fantasear con ello: la presencia de toda esta gente ha sido tan importante como la de la rana para el nivel de desarrollo que ha alcanzado el juego.
-
-*Publicado originalmente en Dota is Kill el 3 de agosto del 2014*
+La sección Map Info de nuestro viejo y recordado mapa de DotA tenía una lista de nombres de gente que, según Icefrog, habían colaborado para lograr que el mapa sea lo que llegó a ser. Muchos de nosotros (prácticamente todos, en realidad) hemos pasado por alto esta sección y los nombres que ahí se encontraban. Sin embargo, todos y cada uno de ellos se merecen un homenaje, sea lo que sea que hayan aportado al juego. *Publicado originalmente en Dota is Kill el 3 de agosto del 2014*
 
 ![DamnNoHTML](/images/posts/damn-no-html.jpg){:class="img-responsive"}
 

@@ -4,9 +4,7 @@ title: El Problema de la Evasión
 author: Pawpaw
 ---
 
-Los skills de evasión vienen directamente de Warcraft III y fueron heredados de ahí por el mapa de DotA. La evasión es un concepto clásico cuyo origen puede trazarse a los primeros RPG's, esos de dados, mapas y tablas. En pocas palabras, la evasión te otorga la chance de evitar un ataque. Bastante simple. Y, en cierta forma, bastante interesante.
-
-*Publicado originalmente en Dota is Kill el 13 de diciembre de 2014*
+Los skills de evasión vienen directamente de Warcraft III y fueron heredados de ahí por el mapa de DotA. La evasión es un concepto clásico cuyo origen puede trazarse a los primeros RPG's, esos de dados, mapas y tablas. En pocas palabras, la evasión te otorga la chance de evitar un ataque. Bastante simple. Y, en cierta forma, bastante interesante. *Publicado originalmente en Dota is Kill el 13 de diciembre de 2014*
 
 Lo interesante de este concepto es que la función del beneficio de la evasión no crece de forma lineal, a pesar de que muchos creen lo contrario. Este es un error de concepto en el cual muchos diseñadores de juegos han caído, Icefrog y Blizzard incluidos: El Demon Hunter obtenía 10/20/30% de evasión, la Phantom Assassin obtiene 20/30/40/50%. Ambos skills son balanceados linealmente, con un aumento de 10 por nivel.
 
