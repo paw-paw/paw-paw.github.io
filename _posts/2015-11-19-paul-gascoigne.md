@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Entrevista a Gudii — Nuevo jugador de NoT.Today
+title: Paul Gascoigne me debe una nevera
 author: Pawpaw
 ---
 
