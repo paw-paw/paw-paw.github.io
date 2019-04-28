@@ -7,7 +7,9 @@ Hace un par de años (más o menos por el 2013) me interesó mucho el tema de tr
 
 También me dediqué a leer (por morbo, más que nada) acerca de la parte más oscura de los deportes: la de los tramposos. El mundo está lleno de antihéroes, vale, pero hay que ir a buscarlos, saber qué hacen. Y, nadando entre toda la información al respecto, encontré lo que buscaba (literalmente hablando porque tengo déficit de atención en la universidad): Adderall. Hoy, tres años después, me pongo a escribir este pequeño artículo al respecto. Las anfetaminas, como grupo amplio, son una serie de medicamentos que estimulan el sistema nervioso central. Básicamente te soplas unas y estás como un demonio, pero no cualquier clase de demonio. Las anfetas mejoran tu concentración, tu memoria y tu capacidad de ejercer funciones ejecutivas (esas en las que te pones una meta y trabajas para obtenerla en lugar de para alcanzar resultados inmediatos). Te da unos reflejos del demonio y una concentración sin par. ¿Te distraes con una mosca cuando estás estudiando temas de hidrostática? Toma Adderall. ¿Necesitas terminar un trabajo de 40 páginas en media noche? Toma Adderall. Y lo interesante: ¿Estás compitiendo en una disciplina que, en lugar de esforzar tus músculos, requieres de gran concentración durante lapsos prolongados de tiempo? Toma Adderall.
 
-![Un frasquito raro al lado de Arteezy](/images/posts/adderall.jpg){:class="img-responsive"}
+<p align="center">
+  <img src="http://pawpaw.me/images/posts/adderall.jpg">
+</p>
 
 O no. Sé que hasta ahora he estado hablando del speed como si me hubiesen dejado una caja llena de pastillas de contrabando y tuviese que venderlas para el próximo martes, así que toca hablar de la parte mala. Primero, aumenta el riesgo de problemas cardiovasculares si se usa prolongadamente. Luego están los side-effects. Nerviosismo, intranquilidad, ansiedad, agitación, miedo: una paranoia de las bravas. Y, en el caso de que consideren estas cosas insuficientes, también genera hábito. Imagínate que hay una clase de cocaína que se vende en las farmacias y que te ayuda a ser un workaholic y/o un estudiante modelo. Eso son las anfetas.
 
@@ -15,7 +17,9 @@ Ahora bien, de entre todas las anfetaminas que existen en el mercado, se supone 
 
 El problema, de momento, no está en el terreno de nuestro videojuego. Sin embargo, su sombra empieza a cernirse sobre él. La frase que he usado como título del artículo viene de una entrevista realizada a un jugador profesional de Counter-Strike.
 
-![30mg de skill](/images/posts/adderallpills.jpg){:class="img-responsive"}
+<p align="center">
+  <img src="http://pawpaw.me/images/posts/adderallpills.jpg">
+</p>
 
 Es un secreto a voces que todo el mundo utiliza Adderall en el mundo de Counter-Strike, pero este tipo (Semphim) fue el primero en admitirlo públicamente. “Estábamos todos puestos de Adderall. Ni siquiera me importa. Era bastante obvio si oías las comms. La gente puede odiarnos o lo que sea” fue lo que dijo a Launders en una entrevista para el show de éste último, que cubre el tema de CS:GO como e-Sport. Al final ambos terminarían concordando en que es muy probable que el consumo de Adderall sea masivo en el juego, a pesar de que muy pocos jugadores están dispuestos a hablar del tema. Y es que, en realidad, eso no es sorprendente: como hemos dicho antes, Adderall permite a los jugadores concentrarse y estar más atentos a lo que ven. Y, como los e-Sports tienen dinero corriendo, es normal que cada uno busque obtener cualquier tipo de ventaja.
 
