@@ -6,11 +6,11 @@ author: Pawpaw
 
 Toda zona residencial de la aparatosa Lima es igual: calles extrañas, laberintos de ángulos rectos y obtusos, desembocaduras y bifurcaciones. Los parques se repiten, bancas de cemento, árboles, la ocasional loza deportiva. Al salir de las instituciones educativas, los chicos tienen una tendencia natural hacia diseñar rutas. Las rutas no siempre son las más óptimas (rara vez lo son), pero se incrustan en sus jóvenes mentes y llegan a durar años. La de Javier tenía como destino final no su casa, sino un estrafalario local conocido como La Ratonera. _Publicado originalmente en Dota is Kill el 30 de diciembre del 2016_
 
-<div style="text-align:center">
+#<p align="center">
 
 ![Una ruta cuidadosamente estudiada](/images/posts/ruta.jpg){:class="img-responsive"}
 
-</div>
+</p>
 
 Ordenadores poblaban la totalidad de un reconvertido garaje. Los chillidos de niños, púberes y adolescentes opacaban por completo la música de fondo. Javier, al igual que ellos, llegaba para jugar DotA. Solos o acompañados, entre ellos o ante rivales al otro lado de la ciudad, daba igual. Javier alquilaba siempre una hora, apuntaba a jugar una partida y acabar el tiempo libre jugando algún minijuego. En casa no le esperaba nadie: madre llegaba a las siete y padre recién a las nueve.
 
