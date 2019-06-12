@@ -12,9 +12,9 @@ Diego Armando Maradona, futbolista, leyenda, padre de familia, cocainómano. Que
 
 De Villa Fiorito, barrio de inmigrantes europeos y latinoamericanos, a Oxford. Maradona puede generar opiniones no tan positivas, lo admito, pero creo que resulta imposible negar su experiencia como ídolo que empezó de abajo. [Started from the bottom now we here](https://www.youtube.com/watch?v=RubBzkZzpUA), excepto que a Maradona no lo enchufaron en una serie para adolescentes. Siendo esta su realidad, creo que es válido tomar su experiencia y proyectarla sobre lo que vemos en nuestro país. Vayamos a partes de su discurso:
 
-<p align="center">
-_Decían los mayores de esos años que los jugadores eran personas incultas, muy rudimentarias o primitivas, de poca facilidad de palabra y muy poco hábiles para desarrollarse en su vida comercial o familiar. Siempre ligaron a los jugadores de fútbol a la vida fácil y vacía._
-</p>
+<p align="center"><i>
+Decían los mayores de esos años que los jugadores eran personas incultas, muy rudimentarias o primitivas, de poca facilidad de palabra y muy poco hábiles para desarrollarse en su vida comercial o familiar. Siempre ligaron a los jugadores de fútbol a la vida fácil y vacía.
+</i></p>
 
 Pasa en el fútbol, pasa en Dota, pasa en la vida. Los invito a entrar a la fanpage de MÁSGAMERS y leer los comentarios de cualquier publicación relacionada a Dota. Los invito a seguir cualquier medio de comunicación deportivo. Los invito a _salir a la calle_. Como fanático de Dota y del fútbol he disfrutado muchas veces de esta violencia hacia, por y entre aficionados. _"Dota es un juego tóxico"_, _"solo lo juegan ratas"_, _"qué asco jugar Dota con peruanos"_, _"el fútbol es un juego para brutos"_, _"qué estúpido es correr tras una pelota"_ son lugares comunes con los que me he topado durante años y a los cuales, mal que bien, me he terminado acostumbrando.
 
@@ -26,11 +26,11 @@ Hace dos meses tuve la oportunidad de leer la opinión de Regina Limo ([@reinad
 
 ¿Qué tan marginado tiene que ser un grupo para que incluso quienes luchan por la igualdad lo marginen? Volvemos a Maradona en Oxford.
 
-<p align="center">
+<p align="center"><i>
 Al poco tiempo entendí el porqué de esta mentalidad, que hasta entonces era inexplicable para mí. En Sudamérica los jugadores de fútbol éramos, hasta la década de los 70, de fracción muy humilde. La razón de esta característica se basaba en que la aparición de esos grandes valores se producía por lo general en los potreros, que eran en aquel entonces pequeños campos de juego improvisados en zonas despobladas de los barrios o tugurios.
 
 Pero ya a fines de los setenta fue modificándose de a pocos la cultura del fútbol debido a que los medios de comunicación ya empezaban a llevar a cualquier parte del mundo partidos importantes. Es más, las caras de los protagonistas empezaron a ser conocidas por todos, gracias al avance de la tecnología y de la comunicación.
-</p>
+</i></p>
 
 A su manera, el Diego nos ilumina en estos dos párrafos. Nos preguntamos por qué una activista pro-igualdad soltaría un comentario tan prejuicioso y lleno de odio y, en la misma línea, podríamos preguntarnos por qué un gamer (acostumbrado ya al prejuicio de otras personas hacia los videojuegos) denostaría tan frecuentemente a un grupo en particular (el de Dota 2 en este caso). La respuesta es la visibilidad. Los medios nos bombardean con fútbol: todos nos terminamos enterando (incluso si no nos gusta) de cuándo juega Perú, o de quién es Lionel Messi, o de cuántos años lleva Alianza sin campeonar (?). De la misma manera, de un tiempo a esta parte, Dota ha empezado a aparecer en todos lados ([como veíamos en mi anterior entrada)](esports-medios-tradicionales) aun cuando puede parecer un concepto alien a mucha gente.
 
@@ -40,15 +40,15 @@ A su manera, el Diego nos ilumina en estos dos párrafos. Nos preguntamos por qu
 
 El futbolista peruano (y a su vez el dotero peruano) llega a su paradójica situación debido, precisamente, a la popularidad del fútbol. El muchacho marginado, a pesar de convertirse de pronto en el ídolo de masas, no elimina nunca su condición inicial de marginado. Antes bien, hace malabares con ella, la compagina, trata de vivir ignorándola. Nace ahí la gran contradicción: la del futbolista que, pese a ser famoso y tener la solvencia económica de la que antes carecía, no está realmente insertado en la sociedad.
 
-<p align="center">
+<p align="center"><i>
 _Entraba en Larcomar con unos chicos del Alianza Lima, negros, cholos, mestizos, cuando veo que el vigilante los detiene y los expulsa del dichoso lugar. Tuve que intervenir y los dejaron entrar porque estaban conmigo. Más tarde, en una tienda de discos, me separo de ellos para buscar unos CDs y veo a lo lejos cómo se les acerca el vendedor para indicarles que se retiren. La pobreza no es el único dolor que deben enfrentar, quizá ni siquiera sea el fundamental. Es ese desprecio diario del que no tenemos noticia, que no aparece en ningún documento, que se quiere obviar aún en los medios más progresistas. Después, sobre el verde césped, les pedimos triunfos, goles, coraje. Acaso su venganza sea la derrota, la frustración del espectador, y obtengan en ese fracaso una ganancia, una revancha contra la marginación que padecen._
-</p>
+</i></p>
 
 Estas palabras pertenecen al gran [Constantino Carvallo](http://blog.derrama.org.pe/y-quien-fue-constantino-carvallo/), quien las inmortalizó en su [Diario educar](https://books.google.com.pe/books?id=Wqpdm4fSVB0C). Un libro que recomendaría sin dudar a cualquier persona interesada en las experiencias de uno de los peruanos más ilustres de los últimos tiempos. ¿Qué podemos exigirle a deportistas así tratados por la sociedad? Como resume genialmente PDD:
 
-<p align="center">
+<p align="center"><i>
 _¿Ganar para hacer feliz a quién? ¿Sudar la camiseta por quiénes?_
-</p>
+</i></p>
 
 Cualquier seguidor de la escena nacional de Dota 2 debe ya ser familiar con los famosos estados de Facebook de [Kingteka](https://www.facebook.com/kingtekadoto/). Si bien termina borrándolos y muy pocos (si es que algunos) pueden encontrarse ahora mismo, más de una persona se habrá ganado con ellos en su momento. Todos le critican su arrogancia, su hostilidad al público, la necesidad de ventilar su indignación en su fanpage. ¿No es esto sintomático de lo antes mencionado? ¿Por quién juega Kingteka, si no es por sí mismo? ¿Por los fans? ¿Por los mismos fans que aparecen cada cierto tiempo para recordarle cada error que ha cometido y cada vez que se ha ido de boca? Da para pensar, ¿eh?
 
