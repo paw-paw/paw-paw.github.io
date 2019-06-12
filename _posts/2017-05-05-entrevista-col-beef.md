@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interviewing coL.Beef — I'm not convinced the Dota 2 scene is in a healthy position
+title: Entrevista a coL.Beef — No estoy convencido de que la escena de Dota 2 esté en una posición muy saludable ahora mismo
 author: Pawpaw
 ---
 
