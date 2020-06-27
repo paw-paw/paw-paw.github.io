@@ -1,7 +1,6 @@
 ---
-layout: post
 title: Entrevista a coL.Beef — No estoy convencido de que la escena de Dota 2 esté en una posición muy saludable ahora mismo
-author: Pawpaw
+category: Entrevistas
 ---
 
 Kyle ‘Beef’ Bautista es una personalidad conocida en la escena nortamericana de eSports. Con ya casi cinco años trabajando en compLexity Gaming, presencia constante en dicha escena, su voz es definitivamente autorizada para hablar de la región y de la evolución de Dota 2 como juego competitivo. _Publicado originalmente en Dota is Kill el 5 de mayo del 2017_. Esta es la versión en español de la entrevista. If you want to read the English version, [click here](interviewing-col-beef).

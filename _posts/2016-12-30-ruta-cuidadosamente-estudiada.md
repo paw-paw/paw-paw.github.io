@@ -1,7 +1,6 @@
 ---
-layout: post
 title: Una ruta cuidadosamente estudiada
-author: Pawpaw
+category: Ficcion
 ---
 
 Toda zona residencial de la aparatosa Lima es igual: calles extrañas, laberintos de ángulos rectos y obtusos, desembocaduras y bifurcaciones. Los parques se repiten, bancas de cemento, árboles, la ocasional loza deportiva. Al salir de las instituciones educativas, los chicos tienen una tendencia natural hacia diseñar rutas. Las rutas no siempre son las más óptimas (rara vez lo son), pero se incrustan en sus jóvenes mentes y llegan a durar años. La de Javier tenía como destino final no su casa, sino un estrafalario local conocido como La Ratonera. _Publicado originalmente en Dota is Kill el 30 de diciembre del 2016_

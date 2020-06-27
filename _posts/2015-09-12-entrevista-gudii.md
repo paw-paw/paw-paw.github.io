@@ -1,7 +1,6 @@
 ---
-layout: post
 title: Entrevista a Gudii — Nuevo jugador de NoT.Today
-author: Pawpaw
+category: Entrevistas
 ---
 
 NoT.Today, probablemente la organización de gaming más grande del Perú, anunció a inicios de este mes el que sería su nuevo roster de cara a la próxima temporada. Sorprendía a muchos fans del equipo al anunciar que mstco y SmAsH (figuras representativas del equipo y del Dota peruano) dejaban el equipo. Pero sorprendió a incluso más fans al anunciar que el nuevo roster incluía a dos jugadores extranjeros: las figuras latinoamericanas -ddx y Gudii formaban parte del proyecto NoT.Today. Siendo -ddx más bien conocido por ser un jugador mediático y bastante famoso en la región, pensé que sería buena idea entrevistar al otro extranjero del equipo, Gudii, para presentarlo a quienes todavía no lo conocen. *Publicado originalmente en Dota is Kill el 12 de setiembre del 2015*

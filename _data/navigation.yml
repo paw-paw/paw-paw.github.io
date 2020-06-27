@@ -1,0 +1,7 @@
+main:
+  - title: "Posts"
+    url: /posts/
+  - title: "Categorías"
+    url: /categories/
+  - title: "Acerca de"
+    url: /about/

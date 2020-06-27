@@ -1,7 +1,6 @@
 ---
-layout: post
 title: ¿A dónde vamos?
-author: Pawpaw
+category: Miscelaneos
 ---
 
 Cuando tocaba la campana y salía del colegio, Dota no era más que un lugar común con unos amigos y un tópico de conversación en foros. Inventar talleres y recuperaciones de clase para quedarse a jugar, esconder la camisa del colegio (salir de casa con un polo debajo) para evitar ser detectado. Luego llegar a casa, pasar horas discutiendo estrategias, historias, métodos. Eran épocas distintas. Hoy, cuando acababa la lectura y salía de la Universidad, comprendí que Dota se había convertido en algo más. _Publicado originalmente en Dota is kill el 20 de octubre de 2016_

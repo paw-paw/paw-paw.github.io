@@ -1,7 +1,6 @@
 ---
-layout: post
 title: Paul Gascoigne me debe una nevera
-author: Pawpaw
+author: Opinion
 ---
 
 Unknown.xiu se despidió de la Major de Frankfurt con apenas un triunfo de siete partidas jugadas. Sin embargo, eso fue más que suficiente para asegurar un nada despreciable premio de 45 000 dólares. Dejaron el torneo tras haber hecho lo imposible una vez y no haber sido capaces de hacerlo de nuevo. Nadie les culpa. Creo que puedo sentarme a disfrutar de la vida tras haber visto a Minoz matar hasta tres veces a Mu. Este pequeño post es lo menos que puedo hacer por mi nuevo equipo favorito. *Publicado originalmente en Dota is Kill el 19 de noviembre del 2015*

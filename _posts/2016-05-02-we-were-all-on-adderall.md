@@ -1,7 +1,6 @@
 ---
-layout: post
 title: We were all on Aderall I don’t even give a fuck
-author: Pawpaw
+category: Opinion
 ---
 Hace un par de años (más o menos por el 2013) me interesó mucho el tema de trazar posibles paralelos entre los eSports y los deportes “tradicionales” o “convencionales”. Fuera de la eterna discusión de si hacer clics es un deporte, me interesé bastante por cosas como la organización detrás de distintos deportes y cómo su experiencia podría ser aplicada a los eSports, por citar un ejemplo. _Publicado originalmente en Dota is Kill el 2 de mayo de 2016_
 

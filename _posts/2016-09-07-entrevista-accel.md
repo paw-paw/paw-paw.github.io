@@ -1,7 +1,6 @@
 ---
-layout: post
 title: Entrevista a Infamous.Accel - Este año será nuestra era
-author: Pawpaw
+category: Entrevistas
 ---
 
 Aquellos que siguieron mi blog desde al menos el 2015 de seguro saben que soy un gran fan de lo que en su momento fue unknown, los chicos que aparecieron de la nada y dejaron en alto el nombre del Perú (y de Latinoamérica, de hecho). En ya un año de jugar Dota competitivo juntos, los chicos han pasado por altos y bajos y ni el roster ni la organización para la cual juega son los mismos. Sin embargo, todavía queda una buena parte de lo que fue unknown y es con uno de ellos (con Accel) que converso en esta pequeña entrevista.

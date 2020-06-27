@@ -1,7 +1,6 @@
 ---
-layout: post
 title: Esa es la gran pregunta
-author: Pawpaw
+category: Opinion
 ---
 
 Hoy por hoy es innegable que la situación para Sudamérica pinta mucho mejor que hace, digamos, 4 años. Tenemos nuestras propias clasificatorias, nuestros representantes han logrado no quedar en último lugar en algunos torneos y nos han regalado ciertas alegrías. Sin embargo, la única manera de tener cosas buenas es la crítica (constructiva) constante. Hace unos días, la organización peruana Luccini Gaming puso bajo la lupa un tema interesante: el de la ventaja que obtienen ciertos equipos de la región debido al servidor en que se juegan las clasificatorias. _Publicado originalmente en Dota is Kill el 31 de marzo del 2018_

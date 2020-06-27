@@ -1,7 +1,6 @@
 ---
-layout: post
 title: Entrevista a TheAzathoth — Postal desde Seattle
-author: Pawpaw
+category: Entrevistas
 ---
 
 Hace unos días (más de una semana, en realidad), tenía el plan de entrevistar a Azathoth. Por cuestiones de agenda de nuestro estimado, recién pudimos sentarnos a conversar (metafóricamente puesto que está en Seattle) hace un par de días. Le pregunté un poco de todo y sin que haya un tema en particular en nuestra conversación, la cual podrán leer a continuación. _Publicado originalmente en Dota is Kill el 5 de agosto del 2016_

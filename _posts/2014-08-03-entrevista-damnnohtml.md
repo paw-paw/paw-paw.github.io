@@ -1,7 +1,6 @@
 ---
-layout: post
 title: Entrevista a DamnNoHTML — Beta-tester en el DotA original
-author: Pawpaw
+category: Entrevistas
 ---
 
 La sección Map Info de nuestro viejo y recordado mapa de DotA tenía una lista de nombres de gente que, según Icefrog, habían colaborado para lograr que el mapa sea lo que llegó a ser. Muchos de nosotros (prácticamente todos, en realidad) hemos pasado por alto esta sección y los nombres que ahí se encontraban. Sin embargo, todos y cada uno de ellos se merecen un homenaje, sea lo que sea que hayan aportado al juego. *Publicado originalmente en Dota is Kill el 3 de agosto del 2014*
