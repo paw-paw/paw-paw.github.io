@@ -28,7 +28,7 @@ twitter_username: pawpawdota
 github_username: paw-paw
 facebook_username: pawpawdota
 minimal_mistakes_skin: dirt
-search: false
+search: true
 
 twitter:
     username: pawpawdota
