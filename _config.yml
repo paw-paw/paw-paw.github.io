@@ -46,6 +46,14 @@ timezone: America/Lima # https://en.wikipedia.org/wiki/List_of_tz_database_time_
 teaser: /assets/images/default-teaser.jpg
 og_image: /assets/images/default-teaser.jpg
 
+bing_site_verification: "0EE545DB4CEF45ED026AE9397A738CB8"
+
+analytics:
+  provider: "google"
+  google:
+    tracking_id: "UA-171117123-1"
+    anonymize_ip: false #default
+
 include:
   - _pages
 
