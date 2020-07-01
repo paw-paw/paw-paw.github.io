@@ -6,14 +6,16 @@ toc_label: "Contenidos"
 toc_icon: 
 ---
 
-## Palabras previas
+# Palabras previas
 Los últimos días han sido muy confusos para la comunidad de Dota. Una serie de acusaciones, denuncias y revelaciones han sacudido por completo la escena y, en algunos casos, han destruido reputaciones construidas a lo largo de los años.
 
 Considero que el movimiento #MeToo y escándalos como este son necesarios para tener una conversación franca y directa respecto a un problema gravísimo de nuestra sociedad. Independientemente de la justicia que se imparta o no a los acusados, lo realmente importante es qué podemos aprender como sociedad de lo ocurrido.
 
-Este texto apunta a ser una recopilación y traducción de toda la información hecha pública respecto a todas las acusaciones y denuncias hechas en los últimos días. Trataré de mantener mi opinión al mínimo excepto por una última sección de reflexiones respecto a este tema.
+Este texto apunta a ser una recopilación y traducción (parcial) de toda la información hecha pública respecto a todas las acusaciones y denuncias hechas en los últimos días. Trataré de mantener mi opinión al mínimo excepto por una última sección de reflexiones respecto a este tema.
 
-## Caso GrandGranT
+# Los casos más importantes
+
+## El caso GrandGranT
 Primer incidente: [@cofactorstrudel](https://twitter.com/cofactorstrudel) cuenta en un tweet que un caster totalmente ebrio estuvo balbuceándole y que la tenía sujeta por la muñeca impidiéndole alejarse. En un tweet posterior, señalaría que era Grant Harris, GrandGrant.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">We telling esports sexual harassment stories?<br>TI7 afterparty. One drunk caster slurring at me and literally wouldn&#39;t let go of my hand, I had to wrench it off him with all my strength.<br>Another person aggressively propositioned me for sex, even started undressing.</p>&mdash; 707 in a sun dress hacking police radios coz BLM (@cofactorstrudel) <a href="https://twitter.com/cofactorstrudel/status/1274709346941693958?ref_src=twsrc%5Etfw">June 21, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -32,23 +34,55 @@ Tercer incidente: La cosplayer [@WickedsCosplay](https://twitter.com/Wickedscosp
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Bruh not to mention the two women I know grant has legitimately assaulted who have yet to come forward 🙃🙃</p>&mdash; Wicked (@Wickedscosplay) <a href="https://twitter.com/Wickedscosplay/status/1275175097725149184?ref_src=twsrc%5Etfw">June 22, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+> Bro, eso sin mencionar las dos mujeres que sé que Grant ha literalmente atacado y que aún no hacen pública su historia 🙃🙃
+
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">About Grant. (CW: sexual assault, being drugged)<br><br>Read: <a href="https://t.co/LgNXkIo7pu">https://t.co/LgNXkIo7pu</a></p>&mdash; Wicked (@Wickedscosplay) <a href="https://twitter.com/Wickedscosplay/status/1275295101682622464?ref_src=twsrc%5Etfw">June 23, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Como consecuencia, Grant perdió su trabajo con Evil Geniuses y BeyondTheSummit:
 
-https://twitter.com/EvilGeniuses/status/1275211882199085057
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Effective immediately, Grant &quot;GranDgranT&quot; Harris has been released and is no longer a member of Evil Geniuses.<br><br>We have a zero-tolerance workplace policy, and take any accusation of harassment, or a violation of our policies handbook, seriously.</p>&mdash; Evil Geniuses (@EvilGeniuses) <a href="https://twitter.com/EvilGeniuses/status/1275211882199085057?ref_src=twsrc%5Etfw">June 22, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Diversas personalidades se pronunciaron al respecto:
 
-https://www.twitch.tv/purgegamers/clip/AnimatedScaryHabaneroTinyFace
+<iframe src="https://clips.twitch.tv/embed?clip=AnimatedScaryHabaneroTinyFace" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
 
-https://twitter.com/LDeeep/status/1275303208504590337
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">i feel fucking sick to my stomach reading this<br><br>this is not okay<br><br>none of this is fucking okay <a href="https://t.co/rhmZ8hhbiL">https://t.co/rhmZ8hhbiL</a></p>&mdash; LD (@LDeeep) <a href="https://twitter.com/LDeeep/status/1275303208504590337?ref_src=twsrc%5Etfw">June 23, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-https://twitter.com/TobiWanDOTA/status/1275340832296570886
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">This is sickening to the core...anyone involved in such actions should be held accountable.<br><br>To the many men in the gaming community, read this story &amp; learn from it, so that you can both not be a participant and also protect those under attack. <a href="https://t.co/bKfRA605aJ">https://t.co/bKfRA605aJ</a></p>&mdash; Toby Dawson 托比道森 (@TobiWanDOTA) <a href="https://twitter.com/TobiWanDOTA/status/1275340832296570886?ref_src=twsrc%5Etfw">June 23, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-https://twitter.com/DotaDeMoN/status/1275465819326001152
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Speechless. This is NOT okay. <a href="https://t.co/fOVkrokzCL">https://t.co/fOVkrokzCL</a></p>&mdash; Jimmy (@DotaDeMoN) <a href="https://twitter.com/DotaDeMoN/status/1275465819326001152?ref_src=twsrc%5Etfw">June 23, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-## Caso TobiWan
+## El caso Zyori
+
+La streamer y youtuber @ashnicrist señaló en un tweet que "nunca perdonaría a Zyori por lo que hizo". Posteriormente narraría su historia con Zyori. Señala que el caster la invitó a participar del Dota Summit 2 y que fueron juntos a un afterparty en una de las habitaciones de hotel con un grupo de jugadores y staff de BTS.
+
+https://twitter.com/ashnichrist/status/1274729384386191364
+
+Acceso al TwitLonger de ashnicrist: https://www.twitlonger.com/show/n_1sr9i4t
+
+Señala que Zyori le propuso quedarse para no tener que ir a su hotel estando ebria, a lo cual aceptó. Señala que no tuvieron relaciones, pero que Zyori le pidió permiso para contarle a todos que sí y ella aceptó.
+
+Explica que sentía "que le debía algo" y que el mismo Zyori la volvió a invitar a pasar Navidad en la casa de BTS. Señala que sabía para qué era invitada, pero que aun así aceptó la invitación. Señala que tuvo su periodo en el primer día en esa casa y que le explicó a Zyori la situación y que éste le presionó para tener relaciones, cosa que terminó ocurriendo a diario pese a que ella no sentía ganas.
+
+En un punto en específico, dice "en retrospectiva" desear "saber que una violación puede ser tan sutil." Sin embargo, posteriormente negó haber calificado su historia con Zyori como una violación.
+
+https://twitter.com/ashnichrist/status/1276510407511982080
+
+Por su lado, Kips (ex-coach y analista de distintos equipos profesionales) señaló que el comportamiento de Zyori parecía recurrente, pues con ella intentó lo mismo: hablarle a una personalidad "nueva", hacerle un favor y presionarla para tener sexo.
+
+https://twitter.com/Kipspul/status/1275779337489461248
+
+Posteriormente, Kips daría un descargo en el cual explicaría su posición respecto a Zyori en este escándalo: si bien no considera que Zyori merezca perder su carrera por estas experiencias (como sí ocurrió con TobiWan o Grant), señala que es positivo que estas salgan a la luz pues permiten a las personas conversar y discutir situaciones que normalmente no son tópicos de conversación.
+
+También señaló que Zyori parece genuinamente arrepentido y que, de haber tenido la oportunidad de discutir temas como el consentimiento y las dinámicas de poder hace 10 años, no hubiese cometido esos errores.
+
+https://twitter.com/Kipspul/status/1276964823595724806
+
+Zyori dio sus declaraciones finales en un video de YouTube en el cual diserta sobre las dinámicas de poder en una relación, qué ha aprendido y pide a la gente que se centren en el problema de fondo y no en las personas denunciadas.
+
+https://www.youtube.com/watch?v=Qo1vF1xrXYs
+
+## El caso TobiWan
 
 La artista @botjira señaló que se acercó a TobiWan con la intención de darles uno de sus trabajos y conversar sobre Dota, pero TobiWan (en estado de ebriedad) la llevó a su cama y le impidió escapar.
 
@@ -112,6 +146,35 @@ https://twitter.com/ODPixel/status/1276553866570534913
 
 https://twitter.com/Hot_Bid/status/1276591311282298880
 
+## El caso de Redeye
+
+James Banks, host, comentarista y entrevistador de esports hace públicos una serie de documentos en los cuales hace distintas afirmaciones respecto a Redeye. Entre ellas:
+1. Redeye lo amenazó con "asegurarse de que nunca volviera a trabajar en la industria" si Banks no "escuchaba atentamente" lo que Redeye le decía.
+2. Un trabajador de la empresa Gfinity relata haber sido agredido físicamente por parte de Redeye tras una acalorada discusión. Otro trabajador anónimo respalda esta historia.
+3. Redeye fue eventualmente separado de Gfinity por el anterior suceso, siendo la versión "oficial" que Redeye salía por decisión propia.
+4. Múltiples talentos que trabajaron en eventos de Gfinity reportaron sus conversaciones inapropiadas y insinuaciones sexuales con el staff femenino del evento.
+5. Otras acusaciones (mediante screenshots) incluyen abuso verbal, retrasar a otros talentos, mentir y abusar de su poder.
+
+https://twitter.com/BanKsEsports/status/1276910521573408772
+
+Redeye respondería lo siguiente:
+
+https://twitter.com/PaulChaloner/status/1276918503346495491
+
+Un siguiente documento de James Banks incluiría supuesta información respecto a un proceso legal en contra de Redeye que, supuestamente, sería respecto a abuso infantil y violencia doméstica. Esto no ha sido confirmado de alguna manera concluyente.
+
+Sin embargo, James Banks también recopiló más historias (algunas anónimas, otras adjuntando al denunciante) respecto al abuso verbal y de poder de Redeye.
+
+https://twitter.com/BanKsEsports/status/1277262075983802369
+
+Sam Van Tilburgh publicaría ser la persona agredida por Redeye.
+
+https://twitter.com/SamVanTilburgh/status/1277640894192087050
+
+Redeye anunció en Twitter que dejaría los esports, citando como detonante el hecho de que sus hijos hayan sido involucrados en este escándalo.
+
+https://twitter.com/PaulChaloner/status/1277625893989560328
+
 ## Caso Demon
 
 La artista y caster Eleine señala que, durante año, decenas de personas han oído múltiples historias del mal comportamiento de Demon. Además, narró una historia según la cual en una MLG Columbus Demon la llevó a un espacio oscuro y cerrado, se apoyó en la puerta para evitar que se abra y le pidió que lo bese. Tras su negativa, Demon impidió que pueda abrir la puerta y la instó nuevamente a besarlo.
@@ -125,36 +188,6 @@ https://twitter.com/Hot_Bid/status/1275978392689610753
 Demon también publicó su versión de la situación. Los puntos clares de su declaración fueron que niega las acusaciones de abuso sexual en su contra, pide disculpas a las "víctimas aparentes" por "lo que creyeron que pasó" y señala que será difícil para él "recuperarse de ser acusado de depredador sexual."
 
 https://twitter.com/DotaDeMoN/status/1277687183206346752
-
-## El caso Zyori
-
-La streamer y youtuber @ashnicrist señaló en un tweet que "nunca perdonaría a Zyori por lo que hizo". Posteriormente narraría su historia con Zyori. Señala que el caster la invitó a participar del Dota Summit 2 y que fueron juntos a un afterparty en una de las habitaciones de hotel con un grupo de jugadores y staff de BTS.
-
-https://twitter.com/ashnichrist/status/1274729384386191364
-
-Acceso al TwitLonger de ashnicrist: https://www.twitlonger.com/show/n_1sr9i4t
-
-Señala que Zyori le propuso quedarse para no tener que ir a su hotel estando ebria, a lo cual aceptó. Señala que no tuvieron relaciones, pero que Zyori le pidió permiso para contarle a todos que sí y ella aceptó.
-
-Explica que sentía "que le debía algo" y que el mismo Zyori la volvió a invitar a pasar Navidad en la casa de BTS. Señala que sabía para qué era invitada, pero que aun así aceptó la invitación. Señala que tuvo su periodo en el primer día en esa casa y que le explicó a Zyori la situación y que éste le presionó para tener relaciones, cosa que terminó ocurriendo a diario pese a que ella no sentía ganas.
-
-En un punto en específico, dice "en retrospectiva" desear "saber que una violación puede ser tan sutil." Sin embargo, posteriormente negó haber calificado su historia con Zyori como una violación.
-
-https://twitter.com/ashnichrist/status/1276510407511982080
-
-Por su lado, Kips (ex-coach y analista de distintos equipos profesionales) señaló que el comportamiento de Zyori parecía recurrente, pues con ella intentó lo mismo: hablarle a una personalidad "nueva", hacerle un favor y presionarla para tener sexo.
-
-https://twitter.com/Kipspul/status/1275779337489461248
-
-Posteriormente, Kips daría un descargo en el cual explicaría su posición respecto a Zyori en este escándalo: si bien no considera que Zyori merezca perder su carrera por estas experiencias (como sí ocurrió con TobiWan o Grant), señala que es positivo que estas salgan a la luz pues permiten a las personas conversar y discutir situaciones que normalmente no son tópicos de conversación.
-
-También señaló que Zyori parece genuinamente arrepentido y que, de haber tenido la oportunidad de discutir temas como el consentimiento y las dinámicas de poder hace 10 años, no hubiese cometido esos errores.
-
-https://twitter.com/Kipspul/status/1276964823595724806
-
-Zyori dio sus declaraciones finales en un video de YouTube en el cual diserta sobre las dinámicas de poder en una relación, qué ha aprendido y pide a la gente que se centren en el problema de fondo y no en las personas denunciadas.
-
-https://www.youtube.com/watch?v=Qo1vF1xrXYs
 
 ## Caso SingSing
 Botjira (que también denunció a TobiWan) mencionó a SingSing como alguien que "no es inocente", señalando que SingSing le dijo que estaba dispuesto a iniciar una relación pero que, una vez juntos, solo la utilizó para tener sexo. Posteriormente dejó de responderle los mensajes. También señaló que otras chicas habían tenido experiencias similares con SingSing. Sin embargo, enfatiza en que no acusa a SingSing de violación, sino de engañar a mujeres inocentes.
@@ -195,35 +228,6 @@ https://twitter.com/nweatherservice/status/1275629955607678976
 Moxxi, caster femenina de Dota 2, respondió directamente un tweet de KillerPigeon señalando que él se encargó de esparcir el rumor de que Moxxi conseguía trabajo solo por ser mujer. Ante esto, KillerPigeon se disculpó inmediatamente por esto.
 
 https://twitter.com/MoxxiCasts/status/1275397117520105473
-
-## El caso de Redeye
-
-James Banks, host, comentarista y entrevistador de esports hace públicos una serie de documentos en los cuales hace distintas afirmaciones respecto a Redeye. Entre ellas:
-1. Redeye lo amenazó con "asegurarse de que nunca volviera a trabajar en la industria" si Banks no "escuchaba atentamente" lo que Redeye le decía.
-2. Un trabajador de la empresa Gfinity relata haber sido agredido físicamente por parte de Redeye tras una acalorada discusión. Otro trabajador anónimo respalda esta historia.
-3. Redeye fue eventualmente separado de Gfinity por el anterior suceso, siendo la versión "oficial" que Redeye salía por decisión propia.
-4. Múltiples talentos que trabajaron en eventos de Gfinity reportaron sus conversaciones inapropiadas y insinuaciones sexuales con el staff femenino del evento.
-5. Otras acusaciones (mediante screenshots) incluyen abuso verbal, retrasar a otros talentos, mentir y abusar de su poder.
-
-https://twitter.com/BanKsEsports/status/1276910521573408772
-
-Redeye respondería lo siguiente:
-
-https://twitter.com/PaulChaloner/status/1276918503346495491
-
-Un siguiente documento de James Banks incluiría supuesta información respecto a un proceso legal en contra de Redeye que, supuestamente, sería respecto a abuso infantil y violencia doméstica. Esto no ha sido confirmado de alguna manera concluyente.
-
-Sin embargo, James Banks también recopiló más historias (algunas anónimas, otras adjuntando al denunciante) respecto al abuso verbal y de poder de Redeye.
-
-https://twitter.com/BanKsEsports/status/1277262075983802369
-
-Sam Van Tilburgh publicaría ser la persona agredida por Redeye.
-
-https://twitter.com/SamVanTilburgh/status/1277640894192087050
-
-Redeye anunció en Twitter que dejaría los esports, citando como detonante el hecho de que sus hijos hayan sido involucrados en este escándalo.
-
-https://twitter.com/PaulChaloner/status/1277625893989560328
 
 ## Otros testimonios
 
