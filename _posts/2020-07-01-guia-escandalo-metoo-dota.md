@@ -8,12 +8,14 @@ header:
   teaser: /assets/images/teasers/tobiwan.jpg
 ---
 
-# Palabras previas
+# Sobre este documento
 Los últimos días han sido muy confusos para la comunidad de Dota. Una serie de acusaciones, denuncias y revelaciones han sacudido por completo la escena y, en algunos casos, han destruido reputaciones construidas a lo largo de los años.
 
 Considero que el movimiento #MeToo y escándalos como este son necesarios para tener una conversación franca y directa respecto a un problema gravísimo de nuestra sociedad. Independientemente de la justicia que se imparta o no a los acusados, lo realmente importante es qué podemos aprender como sociedad de lo ocurrido.
 
-Este texto apunta a ser una recopilación y traducción (parcial) de toda la información hecha pública respecto a todas las acusaciones y denuncias hechas en los últimos días. Trataré de mantener mi opinión al mínimo excepto por una última sección de reflexiones respecto a este tema.
+Este texto apunta a ser una recopilación y traducción (incompleta) de toda la información hecha pública respecto a todas las acusaciones y denuncias hechas en los últimos días. Trataré de mantener mi opinión al mínimo excepto por una última sección de reflexiones respecto a este tema.
+
+Créditos a [@ReinessaGaming](https://twitter.com/reinessagaming) por la idea original.
 
 # Los casos más importantes
 
@@ -316,5 +318,13 @@ La cosplayer rehab dijo lo siguiente respecto a la situación.
 
 *"Dejen de joder con que son solo 'unos cuantos malos' o que 'la gente comete errores.' Múltiples mujeres que conozco han dejado la escena de Dota 2 debido al acoso sistemático que recibieron, varias de ellas después de la ESL One Frankfurt 2015. Los 'pequeños errores' de los hombres fuerzan a las mujeres a tomar decisiones trascendentales."*
 
-# Palabras Finales
-Hay muchísimo que aprender de este momento, y genuinamente creo que cada uno de los casos contiene una reflexión distinta.
+# Algunas reflexiones finales
+Hay muchísimo que aprender de este momento, y genuinamente creo que cada uno de los casos contiene una reflexión distinta. La gran variedad de casos (desde aquellos en los cuales era posible creer en una falta de malicia por el acusado hasta aquellos en los que se veía un comportamiento sistemático y recurrente) no ha de sorprendernos. Esta es una situación que ocurre a gran escala no solo en los esports, sino en cualquier otra industria.
+
+Por otro lado, es importante estudiar la respuesta de organizaciones y personalidades respecto a las distintas situaciones. En el caso de TobiWan, prácticamente toda la escena le dio la espalda al unísono pese a su larga trayectoria. Personalidades como ODPixel, Capitalist y LD se mostraron implacables en ese sentido después de haber tenido acceso a evidencia que, por proteger a las víctimas, no ha sido publicada.
+
+Muy común en este tipo de situaciones es el miedo a lo que en inglés se conoce como *"cancel culture"* y en Sudamérica se ha llamado *"escrache"* o *"funa"*. Es verdad que es peligroso confiar la honra de las personas en algo tan voluble como el estado de ánimo de las redes sociales, pero creo que esta situación ha sido manejada con una madurez inusitada. Particularmente importante es el tweet de LD señalando que *"hay un proceso, incluso si no lo ven."* La diferencia entre la reacción ante Tobi y la reacción ante, por ejemplo, Zyori o SingSing es marcada. Uno de ellos está prácticamente exiliado de los esports, mientras que los otros siguen trabajando y la reacción del público y de la escena ha sido mucho más dividida y en ningún caso se han tomado decisiones sobre su futuro profesional.
+
+Todavía nos falta muchísimo por aprender de este tema, mucho camino por recorrer para que las víctimas de abuso sexual puedan compartir sus historias abiertamente. La cantidad de mensajes online descartando, dudando o directamente atacando a las personas que contaron su historia todavía es algo que necesita mejorar. La frase *"believe the victim"* no significa aceptar todas las afirmaciones ciegamente. Significa no despreciar el testimonio de la víctima, confiar en que su historia es plausible y hacer una investigación completa con eso en mente. Que es lo que, mal que bien, se ha hecho en los casos en los que ha sido necesario.
+
+Al final, más que la salida de gente como TobiWan o Redeye de la industria de los esports, es importante asegurarnos que esta situación tenga efectos duraderos en la comunidad. Transformar las historias de estas mujeres en una oportunidad de aprendizaje con la esperanza de evitar casos similares en el futuro. Es por ello que me tomé el tiempo de hacer esta recopilación.

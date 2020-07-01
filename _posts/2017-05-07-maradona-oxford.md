@@ -1,7 +1,7 @@
 ---
 title: Maradona en Oxford
 category: Opinion
-excerpt: "En 1995, Maradona se dirigió a un auditorio lleno en la Universidad de Oxford. Lo que dijo ese día nos permite navegar una realidad social que trasciende países y disciplinas."
+excerpt: "En 1995, Maradona dio un discurso en la Universidad de Oxford. Lo que dijo ese día muestra una realidad social que trasciende disciplinas."
 header:
   teaser: /assets/images/teasers/maradona.jpg
 ---

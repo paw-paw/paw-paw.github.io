@@ -1,7 +1,7 @@
 ---
 title: Esa es la gran pregunta
 category: Opinion
-excerpt: "Durante años ya, equipos peruanos y brasileños se han enfrentado con ocasión del servidor en el que se juegan sus partidas. ¿Por qué es este problema tan recurrente?"
+excerpt: "Durante años ya, equipos peruanos y brasileños se han enfrentado por el servidor en el que se juegan sus partidas. ¿Por qué es este problema tan recurrente?"
 header:
   teaser: /assets/images/teasers/routing.jpg
 ---
