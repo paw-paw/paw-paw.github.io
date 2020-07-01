@@ -1,13 +1,16 @@
 ---
 title: Paul Gascoigne me debe una nevera
-author: Opinion
+category: Opinion
+excerpt: "Pieza homenaje al mítico unknown.xiu que viajó a la Frankfurt Major en el 2015."
+header:
+  teaser: /assets/images/teasers/gazza.jpg
 ---
 
 Unknown.xiu se despidió de la Major de Frankfurt con apenas un triunfo de siete partidas jugadas. Sin embargo, eso fue más que suficiente para asegurar un nada despreciable premio de 45 000 dólares. Dejaron el torneo tras haber hecho lo imposible una vez y no haber sido capaces de hacerlo de nuevo. Nadie les culpa. Creo que puedo sentarme a disfrutar de la vida tras haber visto a Minoz matar hasta tres veces a Mu. Este pequeño post es lo menos que puedo hacer por mi nuevo equipo favorito. *Publicado originalmente en Dota is Kill el 19 de noviembre del 2015*
 
 Unknown.xiu apareció por primera vez en el radar internacional tras ganar las clasificatorias abiertas para The International 5. Vencieron a un equipo chileno desconocido y dejaron atrás a nombres como TongFu.NA, Luccini, Boreal y paiN. El roster era completamente nuevo y apenas sabíamos cosas de ellos que no sean el paso de algunos de sus jugadores (en épocas distanciadas) por Union Gaming. No lograron clasificar a The International (el jaleo que se hubiese armado) y, para los equipos internacionales, desaparecieron de vista. Se encontraban jugando torneos regionales, practicando, afinando sus habilidades.
 
-![Logo unknown](/images/posts/unklogo.jpg){:class="img-responsive"}
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/unklogo.jpg" alt="Logo de unknown.xiu">
 
 Volvieron a probar suerte en las clasificatorias públicas para este Major. Obtuvieron la victoria en la segunda de estas clasificatorias y se encontraron en uno de los dos grupos de las clasificatorias finales para el Frankfurt Major. El camino fue más o menos accidentado y clasificaron como segundos de su grupo tras empatar con Leviathan y vencerlos en una definición bo1. Literalmente cualquier cosa pudo haber pasado.
 
@@ -29,7 +32,7 @@ Y hace poco, frente a LGD. Quienes, dicho sea de paso, les enseñaron lo que se 
 
 Es curioso cómo algo tan sencillo como unos bailecitos pueden generar tanto revuelo y decir tanto de la personalidad de un grupo de personas. Lo más relevante de unknown es la forma en la cual aportan frescura al juego. En un momento en la historia de Dota como eSport en el que incluso los equipos tier-2 son auspiciados por organizaciones y tienen salarios estables (a ustedes los estoy viendo, Digital Ctrash), es siempre saludable que aparezca gente dispuesta a tomarse Dota como lo que inicialmente fue: un juego. Los eSports son (o buscan ser) cosa seria, nadie lo duda ni lo discute, pero la personalidad de los jugadores no tiene por qué verse afectada por el hecho de que de su rendimiento dependan tantas cifras en el banco. Su comportamiento fuera del juego no tiene por qué ser juzgado o criticado mientras no influya en el resultado de sus partidas.
 
-![Unknown en Frankfurt](/images/posts/unkfrank.jpg){:class="img-responsive"}
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/unkfrank.jpg" alt="Unknown en Frankfurt">
 
 Creo que es ridículo, a estas alturas, dudar del talento de Atun, Minoz, Greedy, Ztok y Accel. No han logrado llegar a la Major haciendo memes. Lo han hecho en base a trabajo duro y apoyados en su talento. Pero eso no es lo que los hace relevantes: hay cientos de jugadores talentosos alrededor del mundo. Cada vez más de estos están dispuestos a invertir buena parte de su tiempo con la consigna de ser profesionales. Es más bien la saludable imagen que proyectan y que hacía mucha falta a la escena nacional (por no decir internacional).
 
@@ -43,7 +46,7 @@ Es raro traducir algo que ha sido traducido del inglés al español. Reconoces l
 
 La última cuestión relativa a Team Unknown fue la entrevista de SirActionSlacks, que dejó joyas como esta
 
-![Unknown y Slacks](/images/posts/unkslacks.jpg){:class="img-responsive"}
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/unkslacks.jpg" alt="Unknown y SirActionSlacks">
 
 Y la imagen general de un grupo de muchachos unidos por la amistad. Una imagen reconfortante y buena para el alma. Aunque la mayoría de respuestas son bastante comunes y no muy desarrolladas (cosa que atribuyo al totalmente entendible pánico escénico), el espíritu del equipo está presente. Y eso es, creo yo, lo importante.
 
@@ -51,7 +54,7 @@ Y la imagen general de un grupo de muchachos unidos por la amistad. Una imagen r
 
 Me interesa mucho saber qué es lo que ocurrirá en el futuro con Unknown.xiu. Son todavía chicos inmaduros, nadie lo duda, pero ya han probado lo que es competir con los mejores equipos del mundo y lo han logrado partiéndose el lomo para lograr su objetivo. Han demostrado que son capaces de darle lucha a los mejores equipos del mundo y han conseguido no irse del torneo sin antes asegurar al menos una victoria. Los análisis más realistas los ponían junto a Mineski en los últimos cuatro lugares. Aunque haber ganado solo una partida en losers’ bracket no hace gran diferencia, es un comienzo. Espero de todo corazón que no se detengan aquí y que luchen por sus sueños.
 
-![Ztok y Accel](/images/posts/ztok.jpg){:class="img-responsive"}
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ztok.jpg" alt="Ztok y Accel">
 
 _"¿Cuál es el equipo, en tu opinión, más cagado, el peor de todos?"_
 _"¿De todos? El nuestro p."_

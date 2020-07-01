@@ -1,6 +1,9 @@
 ---
 title: El Problema de la Evasión
 category: Miscelaneos
+excerpt: "Análisis matemático de las mecánicas usadas en el cálculo de la evasión. ¿Cómo afecta esto al balance de las distintas fuentes de evasión del juego?"
+header:
+  teaser: /assets/images/teasers/pa-evasion.jpg  
 ---
 
 Los skills de evasión vienen directamente de Warcraft III y fueron heredados de ahí por el mapa de DotA. La evasión es un concepto clásico cuyo origen puede trazarse a los primeros RPG's, esos de dados, mapas y tablas. En pocas palabras, la evasión te otorga la chance de evitar un ataque. Bastante simple. Y, en cierta forma, bastante interesante. *Publicado originalmente en Dota is Kill el 13 de diciembre de 2014*
@@ -19,7 +22,7 @@ El factor Incremento de Resistencia Física se multiplica por la EHP física (co
 
 Ahora bien, mi punto es el siguiente: de 0% de evasión a 50% de evasión tenemos un incremento de 1. Si el beneficio de la evasión realmente fuese lineal, el incremento de 50% a 100% sería también de 1. Sin embargo, podemos ver que salta hacia el infinito. No puede ser una función lineal. Una función lineal tiene el siguiente aspecto:
 
-![Funcion Lineal](/images/posts/evasion1.png){:class="img-responsive"}
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/evasion1.png" alt="Gráfica de función lineal">
 
 Las funciones lineales solo pueden tender al infinito para x=infinito. Sin embargo, nuestra función tiende al infinito cuando la evasión es de 100%. De manera intuitiva se cree que la función b(e): beneficio por evasión donde e es la cantidad de evasión tiene la siguiente forma:
 
@@ -39,7 +42,7 @@ Entonces, es nuestro deber (?) encontrar un tipo de función que no sea lineal y
 
 Cuya gráfica es la siguiente:
 
-![Funcion Inversa](/images/posts/evasion2.png){:class="img-responsive"}
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/evasion.png" alt="Gráfica de función inversa">
 
 Es verdad que esta fórmula cumple con tener una gráfica como la que buscamos, pero hasta ahora no tenemos forma de saber si es la correcta, o qué sentido tiene. En realidad, el factor de (1-e) es el porcentaje de ataques que no son evadidos. Como solo hay dos resultados posibles (evadir o no evadir el ataque) entonces ambas probabilidades funcionan como inverso aditivo. Lo siguiente es una regla de tres simple inversa comparando el EHP físico recibiendo el 100% de los golpes (1) con el EHP físico evadiendo ataques (1-e).
 
@@ -87,7 +90,7 @@ Hemos aproximado un tanto los decimales. El cambio en este ejemplo en particular
 
 Esta es otra de las cuestiones ridículas que provienen de la forma en la cual crece el beneficio de la evasión. ¿Recuerdan la gráfica de nuestra función b(e)? Acá está de nuevo:
 
-![Funcion Inversa](/images/posts/evasion2.png){:class="img-responsive"}
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/evasion.png" alt="Gráfica de función inversa">
 
 Si se dedican a observar su comportamiento, llegarán a la misma conclusión a la que llegamos antes: aumentar una evasión de 70% a 80% incrementa mucho más el beneficio que aumentarla de 10% a 20%. ¿Que qué tiene que ver eso con la Butterfly? Pues aquí lo explico.
 

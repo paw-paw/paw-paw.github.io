@@ -1,7 +1,7 @@
 ---
 title: Guía exhaustiva del escándalo MeToo en la escena de Dota 2
 category: Miscelaneos
-excerpt: "Guía que apunta a recopilar toda la información pública como parte del escándalo MeToo que afectó a la escena de Dota 2 en junio del 2020"
+excerpt: "Documento que apunta a recopilar toda la información pública como parte del escándalo MeToo que afectó a la escena de Dota 2 en junio del 2020."
 toc: true
 toc_label: "Contenidos"
 header:

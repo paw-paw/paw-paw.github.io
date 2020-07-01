@@ -1,6 +1,9 @@
 ---
 title: Esa es la gran pregunta
 category: Opinion
+excerpt: "Durante años ya, equipos peruanos y brasileños se han enfrentado con ocasión del servidor en el que se juegan sus partidas. ¿Por qué es este problema tan recurrente?"
+header:
+  teaser: /assets/images/teasers/routing.jpg
 ---
 
 Hoy por hoy es innegable que la situación para Sudamérica pinta mucho mejor que hace, digamos, 4 años. Tenemos nuestras propias clasificatorias, nuestros representantes han logrado no quedar en último lugar en algunos torneos y nos han regalado ciertas alegrías. Sin embargo, la única manera de tener cosas buenas es la crítica (constructiva) constante. Hace unos días, la organización peruana Luccini Gaming puso bajo la lupa un tema interesante: el de la ventaja que obtienen ciertos equipos de la región debido al servidor en que se juegan las clasificatorias. _Publicado originalmente en Dota is Kill el 31 de marzo del 2018_
@@ -11,9 +14,7 @@ Desde que, para la Kiev Major, Valve disponga la presencia de clasificatorias su
 
 En Sudamérica hay, actualmente, tres servidores: Chile, Perú y Brasil (que, por ser el primero en la región, lleva su nombre). La región es problemática en temas de conectividad por un tema de geografía: no es fácil tener cables que atraviesen el continente cuando hay no solo una cadena de montañas separando la costa oeste del resto de la región, sino también una enorme selva que, en varios puntos, es virgen. La solución, entonces, pasa por cables submarinos. Así, una conexión entre, digamos, Lima y Sao Paulo no sería directa: en lugar de pasar de Perú a Brasil directamente, bordearía Ecuador, Colombia, Venezuela y las tres Guyanas (Surinam es la neerlandesa, por si en el colegio solo decían _"los países chiquitos que no juegan en la eliminatoria"_ (?)) antes de llegar al litoral brasileño. Esto explica por qué, dependiendo del operador que se use, es muy probable que un peruano tenga menor ping en el servidor US East que en el sudamericano.
 
-<p align="center">
-  <img src="http://pawpaw.me/images/posts/sea-routing.png">
-</p>
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/SEA-routing.png" alt="Routing">
 
 _Pero, pawpaw, las clasificatorias son SUDAMERICANAS y el server en el que se juega es el server SUDAMERICANO. Entonces no hay ningún problema, ¿cierto?_ Sí y no. Si bien es cierto que existe un servidor llamado Sudamérica, esto no implica que ese vaya a ser el servidor más justo para una competencia que representa a la región. Además, los nombres que Valve da a sus servidores son más bien arbitrarios: el servidor ruso, por ejemplo, se encuentra en Suecia. El servidor de Europa Oriental se encuentra en Viena, más bien al centro de Europa, mientras que el de Europa Occidental no se encuentra ni en Francia ni en España: está localizado en Luxemburgo.
 

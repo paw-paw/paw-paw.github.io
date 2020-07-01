@@ -1,6 +1,9 @@
 ---
 title: Interviewing coL.Beef — I'm not convinced the Dota 2 scene is in a healthy position
 category: Entrevistas
+excerpt: "Interview with Kyle 'Beef' Bautista that took part in May 2017. Topics like the future of Dota 2 and his plans for compLexity were discussed."
+header:
+  teaser: /assets/images/teasers/beef.jpg
 ---
 
 Kyle 'Beef' Bautista is a well-known personality amongst North-American eSports enthusiasts. With almost five years working in compLexity Gaming, a constant pressence in the North American scene, his voice is definitely an authorized one when talking about the region and the evolution of Dota 2 as a competitive game. _Originally published in Dota is Kill in May 5th 2017. This is the English version. Para leer la entrevista en español, [haz clic aquí](entrevista-col-beef).
@@ -13,9 +16,7 @@ _Hi, I'm Kyle 'Beef' Bautista, General Manager of compLexity._
 
 _I've been playing games since I was about 8 years old, starting with the Gameboy, Super Nintendo, and Nintendo 64. I discovered competitive gaming when I was playing World of Warcraft Arena at a high level, and went to my first Blizzcon event. It was a real eye opener to a world I didn't know existed!_
 
-<p align="center">
-  <img src="http://pawpaw.me/images/posts/beef1.jpg">
-</p>
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/beef1.jpg" alt="Beef 1">
 
 **What games do you play the most? Any hidden gem you'd like to recommend?**
 
@@ -33,9 +34,7 @@ _I joined compLexity in 2012 as a caster, broadcasting scrims from the compLexit
 
 _I still live just about 10 minutes away from the Dota 2 house and I see them at least once a week. We have a very close working relationship. As the General Manager I am responsible for day to day operations across the entire company, and providing guidance for larger strategic decisions._
 
-<p align="center">
-  <img src="http://pawpaw.me/images/posts/beef2.jpg">
-</p>
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/beef2.jpg" alt="Beef 2">
 
 **As an organisation, compLexity has managed to stablish himself as a powerhouse in the North American region. Are there any plans for expanding into new markets, like Europe or South America?**
 
@@ -49,9 +48,7 @@ _It was a bit of both for us. We like working with players that we had establish
 
 _We love working with Kyle and Zak, and the whole Freedman family. Ultimately there is a level of mutual trust between us that makes working together very easy. We knew going into this we weren't going to have immediate success, but that these two players were not going to burn out, and would not quit until they had met their goals. There is something reassuring in that. Ontop of that, Zfreek's huge playmaking skill, and Melonzz leadership and teambuilding skills have always helped us to pick up the pieces and keep moving in a positive direction._
 
-<p align="center">
-  <img src="http://pawpaw.me/images/posts/beef3.jpg">
-</p>
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/beef3.jpg" alt="Beef 3">
 
 **Considering your experience with other eSports, how would you compare the Dota 2 competitive circuit with other scenes? Do you feel it's at a healthy position right now?**
 
@@ -61,9 +58,7 @@ _Unfortunately I'm not convinced the Dota 2 scene is in a healthy position curre
 
 _I would love to see some kind of a regional league in each of the major regions. These leagues would not only attract new viewers through easier viewing, story building, and consistency, but it would promote growth in the smaller regions, and provide an outlet for tier 2-3 teams to provide ROI. Unfortunately the prize money required to gather the interest of top teams would likely be prohibitively high for anyone other than Valve themselves._
 
-<p align="center">
-  <img src="http://pawpaw.me/images/posts/beef4.jpg">
-</p>
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/beef4.jpg" alt="Beef 4">
 
 **Talking on a more general note, what do you expect from eSports in the upcoming years? Do you think they will compete with traditional sports or will they settle with a niche viewership?**
 
@@ -81,9 +76,7 @@ _The atmosphere of the team is positive. We unfortunately just had to make some 
 
 _I think the qualification to TI5 with Fly, Moon, and Zyzzy was one of my personal highlights. We had gone through over 30 players looking for those additions, and to rally and qualify for the biggest event of all time, in that fashion, it was incredible. swindlezz and the entire team were so emotional, and they didn't hide it from the camera we had in the playing room. He let the tears flow, [recorded forever there on YouTube](https://www.youtube.com/watch?v=K2mJgIVqwDg), and you could see just how much that win, his passion and leadership meant to the whole team._
 
-<p align="center">
-  <img src="http://pawpaw.me/images/posts/beef5.jpg">
-</p>
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/beef5.jpg" alt="Beef 5">
 
 **Thank you very much for your time, Kyle, any last words you'd like to share with us? Any social media links we can follow you on?**
 

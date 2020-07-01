@@ -1,6 +1,9 @@
 ---
 title: Entrevista a coL.Beef — No estoy convencido de que la escena de Dota 2 esté en una posición muy saludable ahora mismo
 category: Entrevistas
+excerpt: "Entrevista a Kyle 'Beef' Bautista, Gerente General de compLexity, realizada en mayo de 2017."
+header:
+  teaser: /assets/images/teasers/beef.jpg
 ---
 
 Kyle ‘Beef’ Bautista es una personalidad conocida en la escena nortamericana de eSports. Con ya casi cinco años trabajando en compLexity Gaming, presencia constante en dicha escena, su voz es definitivamente autorizada para hablar de la región y de la evolución de Dota 2 como juego competitivo. _Publicado originalmente en Dota is Kill el 5 de mayo del 2017_. Esta es la versión en español de la entrevista. If you want to read the English version, [click here](interviewing-col-beef).
@@ -13,9 +16,7 @@ _Hola, soy Kyle ‘Beef’ Bautista, Gerente General de compLexity Gaming._
 
 _He estado jugando videojuegos desde que tenía algo de 8 años, empezando con la Gameboy, Super Nintendo y Nintendo 64. Descubrí el juego competitivo cuando estaba jugando World of Warcraft Arena a un nivel alto, y fui a mi primer Blizzcon. Fue una experiencia reveladora y me mostró un mundo que no sabía que existía._
 
-<p align="center">
-  <img src="http://pawpaw.me/images/posts/beef1.jpg">
-</p>
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/beef1.jpg" alt="Beef 1">
 
 **¿Qué juegos juegas más? ¿Alguno que te gustaría recomendar?**
 
@@ -33,9 +34,8 @@ _Entré a compLexity el 2012 como caster, transmitiendo scrims del equipo de Her
 
 _Sigo viviendo a algo de 10 minutos de la casa del equipo de Dota 2 y los veo al menos una vez por semana. Tenemos una relación laboral muy cercana. Como Gerente General soy responsable de las operaciones diarias de toda la empresa, y de dar orientación para la toma de decisiones estratégicas mayores._
 
-<p align="center">
-  <img src="http://pawpaw.me/images/posts/beef2.jpg">
-</p>
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/beef2.jpg" alt="Beef 2">
+
 
 **Como organización, compLexity ha logrado establecerse como una potencia en la región Norteamericana. ¿Hay algún plan para expandirse en mercados nuevos, tales como Europa o Sudamérica?**
 
@@ -49,9 +49,7 @@ _Para nosotros fue un poco de los dos. Nos gusta trabajar con jugadores con los 
 
 _Nos encanta trabajar con Kyle y Zak, y con toda la familia Freedman. En última instancia, hay cierto nivel de confianza mutua que hace que sea muy fácil trabajar juntos. Al empezar en esto sabíamos que no tendríamos éxito inmediato, pero que esos dos jugadores no iban a gastarse, y que no se rendirían hasta cumplir sus objetivos. Hay algo tranquilizador en ello. Además de eso, la gran habilidad individual de Zfreek y las habilidades de liderazgo y construcción de equipos de Melonzz nos han ayudado a mantener la dirección y seguir moviéndonos hacia adelante._
 
-<p align="center">
-  <img src="http://pawpaw.me/images/posts/beef3.jpg">
-</p>
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/beef3.jpg" alt="Beef 3">
 
 **Considerando tu experiencia con otros eSports, ¿cómo compararías al circuito competitivo de Dota 2 con otras scenas? ¿Sientes que está en una posición saludable ahora mismo?**
 
@@ -61,9 +59,7 @@ _Por desgracia, no estoy convencido de que la escena de Dota 2 esté en una situ
 
 _Me encantaría ver alguna forma de liga regional en cada una de las grandes regiones. Estas ligas no solo atraerían nuevos espectadores debido a la facilidad de seguirlas, la consistencia y la creación de historias: también promovería el crecimiento en las regiones más pequeñas, y sería una forma de que los equipos de tier 2-3 retornen la inversión a sus organizaciones. Desgraciadamente, el pozo requerido para atraer el interés de los equipos top probablemennte sea prohibitivamente alto para cualquier organización salvo el mismo Valve._
 
-<p align="center">
-  <img src="http://pawpaw.me/images/posts/beef4.jpg">
-</p>
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/beef4.jpg" alt="Beef 4">
 
 **Desde un punto de vista más general, ¿qué esperas de los eSports en los próximos años? ¿Crees que llegarán a competir con los deportes tradicionales o se asentarán en un públicoespecífico?**
 
@@ -81,9 +77,7 @@ _La atmósfera en el equipo es positiva. Desgraciadamente tuvimos que hacer algu
 
 _Creo que la clasificación a TI5 con Fly, Moon y Zyzzy fue uno de mis mejores momentos en lo personal. Pasamos por más de 30 jugadores buscando a los indicados, y reunirnos y clasificar al más grande evento de todos los tiempos, de esa manera, fue increíble. swindlezz y todo el equipo dejaron fluir las emociones, y no lo ocultaron de la cámara que teníamos en la sala donde jugaban. Dejó que las lágrimas caigan, [algo grabado para siempre en YouTube](https://www.youtube.com/watch?v=K2mJgIVqwDg), y podías ver cuánto esa victoria, su pasión y liderazgo significaban para todo el equipo._
 
-<p align="center">
-  <img src="http://pawpaw.me/images/posts/beef5.jpg">
-</p>
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/beef5.jpg" alt="Beef 5">
 
 **Gracias por tu tiempo, Kyle, ¿algunas últimas palabras que quisieras compartir con nosotros? ¿Alguna red social en la que podamos seguirte?**
 

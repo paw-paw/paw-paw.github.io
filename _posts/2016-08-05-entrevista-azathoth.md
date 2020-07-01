@@ -1,13 +1,14 @@
 ---
 title: Entrevista a TheAzathoth — Postal desde Seattle
 category: Entrevistas
+excerpt: "Entrevista al caster mexicano TheAzathoth con ocasión de su participación del broadcast oficial de The International 6."
+header:
+  teaser: /assets/images/teasers/azahoth.jpg
 ---
 
 Hace unos días (más de una semana, en realidad), tenía el plan de entrevistar a Azathoth. Por cuestiones de agenda de nuestro estimado, recién pudimos sentarnos a conversar (metafóricamente puesto que está en Seattle) hace un par de días. Le pregunté un poco de todo y sin que haya un tema en particular en nuestra conversación, la cual podrán leer a continuación. _Publicado originalmente en Dota is Kill el 5 de agosto del 2016_
 
-<p align="center">
-  <img src="http://pawpaw.me/images/posts/azathoth-patrick.jpg">
-</p>
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/azathoth-patrick.jpg" alt="Azathoth y Patrick en la MasGamers">
 
 **Hola, Azathoth, gracias por aceptar la entrevista. Hace ya casi dos semanas que se anunció que viajarás (otra vez) a Seattle. ¿Cómo te sientes? ¿Qué expectativas tienes de este nuevo viaje?**
 
@@ -61,7 +62,7 @@ _El vicio. Empecé casteando un torneo mexicano que ganó For Sweet Revenge, de 
 
 _NO CASTEEN TORNEOS TOP SIN PERMISO, ES LO QUE MÁS LE MOLESTA A LOS ORGANIZADORES, ELLOS SOLO PUEDEN TOMAR STATS Y MÉTRICAS DE LOS CANALES CON LOS QUE TRABAJAN DIRECTAMENTE, TODOS LOS CANALES QUE CASTEAN TORNEOS PREMIER SIN PERMISO DIFICULTAN EL ANÁLISIS Y ESTIMACIÓN DEL FLUJO DE ESPECTADORES._
 
-_Es bastante común que quieran empezar casteando Na`Vi vs Liquid o cosas así, pero empiecen desde la joinDOTA que es completamente LIBRE para castear y generen una pequeña base de seguidores a la que le guste lo que hacen, de ahí pueden empezar a escalar. Si de frente castean cosas top, además de ser mal vistos por los organizadores porque no son streams “oficiales”, posiblemente otros canales ya establecidos se lleven el 99% de la gente y se queden con una cantidad bastante pequeña de viewers. Casteen lo que otros no cubren, así aprovechan al máximo los espectadores potenciales._
+_Es bastante común que quieran empezar casteando NaVi vs Liquid o cosas así, pero empiecen desde la joinDOTA que es completamente LIBRE para castear y generen una pequeña base de seguidores a la que le guste lo que hacen, de ahí pueden empezar a escalar. Si de frente castean cosas top, además de ser mal vistos por los organizadores porque no son streams “oficiales”, posiblemente otros canales ya establecidos se lleven el 99% de la gente y se queden con una cantidad bastante pequeña de viewers. Casteen lo que otros no cubren, así aprovechan al máximo los espectadores potenciales._
 
 **¿Cuáles te parecen que son las mayores diferencias entre México y Perú?**
 
