@@ -19,7 +19,6 @@ Este texto apunta a ser una recopilación y traducción (incompleta) de toda la 
 Créditos a [@ReinessaGaming](https://twitter.com/reinessagaming) por la idea original.
 
 # Los casos más importantes
-
 ## El caso GrandGranT
 Primer incidente: [@cofactorstrudel](https://twitter.com/cofactorstrudel) cuenta en un tweet que un caster totalmente ebrio estuvo balbuceándole y que la tenía sujeta por la muñeca impidiéndole alejarse. En un tweet posterior, señalaría que era Grant Harris, GrandGrant.
 
@@ -64,7 +63,6 @@ Diversas personalidades se pronunciaron al respecto:
 *"No tengo palabras. Esto NO es aceptable."*
 
 ## El caso Zyori
-
 La streamer y youtuber [@ashnicrist](https://twitter.com/ashnichrist) señaló en un tweet que *"nunca perdonaría a Zyori por lo que hizo"*. Posteriormente narraría su historia con Zyori en un twitlonger. Señala que el caster la invitó a participar del Dota Summit 2 y que fueron juntos a un afterparty en una de las habitaciones de hotel con un grupo de jugadores y staff de BTS.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I will never forgive Zyori for what he did to me.</p>&mdash; ashnichrist (@ashnichrist) <a href="https://twitter.com/ashnichrist/status/1274729384386191364?ref_src=twsrc%5Etfw">June 21, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -96,7 +94,6 @@ Zyori dio sus declaraciones finales en un video de YouTube en el cual diserta so
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Qo1vF1xrXYs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## El caso TobiWan
-
 La artista @botjira señaló que se acercó a TobiWan con la intención de darles uno de sus trabajos y conversar sobre Dota, pero TobiWan (en estado de ebriedad) la llevó a su cama y le impidió escapar.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Sorry this is a long story; I&#39;ll try to condense it as much as possible!! I&#39;ve always been depressive since (cont) <a href="https://t.co/In3lSADpWB">https://t.co/In3lSADpWB</a></p>&mdash; 寧 (@botjira) <a href="https://twitter.com/botjira/status/1275594165599047680?ref_src=twsrc%5Etfw">June 24, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -180,7 +177,6 @@ Declaraciones de distintas personas de la escena que vieron la evidencia en cont
 *"Por cada historia que se hace pública hay varias que no. Igualmente las escuchamos. La gente está defendiendo agresivamente a alguien que no solo ha admitido algunas de las acusaciones en su contra, sino que ha cambiado su historia múltiples veces y ni siquiera pudo comentar todas las acusaciones porque había demasiadas."*
 
 ## El caso de Redeye
-
 James Banks, host, comentarista y entrevistador de esports hace públicos una serie de documentos en los cuales hace distintas afirmaciones respecto a Redeye. Entre ellas:
 1. Redeye lo amenazó con "asegurarse de que nunca volviera a trabajar en la industria" si Banks no "escuchaba atentamente" lo que Redeye le decía.
 2. Un trabajador de la empresa Gfinity relata haber sido agredido físicamente por parte de Redeye tras una acalorada discusión. Otro trabajador anónimo respalda esta historia.
@@ -213,9 +209,7 @@ Redeye anunció en Twitter que dejaría los esports, citando como detonante el h
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Following the attacks made on my character over the last few days, I have decided to walk away from esports. <a href="https://t.co/mWHFVG9VJb">pic.twitter.com/mWHFVG9VJb</a></p>&mdash; Redeye (@PaulChaloner) <a href="https://twitter.com/PaulChaloner/status/1277625893989560328?ref_src=twsrc%5Etfw">June 29, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 # Otras personalidades involucradas
-
 ## El caso Demon
-
 La artista y caster Eleine señala que, durante año, decenas de personas han oído múltiples historias del mal comportamiento de Demon. Además, narró una historia según la cual en una MLG Columbus Demon la llevó a un espacio oscuro y cerrado, se apoyó en la puerta para evitar que se abra y le pidió que lo bese. Tras su negativa, Demon impidió que pueda abrir la puerta y la instó nuevamente a besarlo.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Let&#39;s Talk About DotaDemon<br><br>Read: <a href="https://t.co/zIp1SqFb6n">https://t.co/zIp1SqFb6n</a></p>&mdash; Eleine 🤧 (@Eleine_Sun) <a href="https://twitter.com/Eleine_Sun/status/1275606868384190465?ref_src=twsrc%5Etfw">June 24, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -254,7 +248,6 @@ También señala que no le pedirá disculpas a Ash y que todo es parte de una ve
 El twitlonger [puede encontrarse aquí](https://www.twitlonger.com/show/n_1sr9r9b). Así mismo, screenshots de su conversación con Ash [pueden encontrarse aquí](https://imgur.com/a/J6bBgPJ). 
 
 ## El caso de Tom (antiguo auspiciador de Digital Chaos)
-
 Alyssa Thompson, ex-pareja de PPD y ex-manager de Digital Chaos, narró múltiples episodios de comentarios sexuales e incluso una nalgada sin consentimiento por parte de uno de los auspiciadores del equipo Digital Chaos. También señala que este comportamiento por parte de Tom fue una de las razones por las que los jugadores dejaron Digital Chaos y jugaron como Thunderbird (antes de ser auspiciados por Planet Odd).
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">About my time with Digital Chaos, and an important note on power dynamics.<br><br>Read: <a href="https://t.co/LDqT3TKPw4">https://t.co/LDqT3TKPw4</a></p>&mdash; Alyssa Thompson (@AlyssuhDawn) <a href="https://twitter.com/AlyssuhDawn/status/1275587919839989761?ref_src=twsrc%5Etfw">June 24, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -266,13 +259,11 @@ Posteriormente, Tom le ofreció una entrevista en una de sus empresas, trabajo q
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Regarding Tom. And my story.<br><br>Read: <a href="https://t.co/Bjws7GH2ey">https://t.co/Bjws7GH2ey</a></p>&mdash; nws (@nweatherservice) <a href="https://twitter.com/nweatherservice/status/1275629955607678976?ref_src=twsrc%5Etfw">June 24, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## El caso de KillerPigeon
-
 Moxxi, caster femenina de Dota 2, respondió directamente un tweet de KillerPigeon señalando que él se encargó de esparcir el rumor de que Moxxi conseguía trabajo solo por ser mujer. Ante esto, KillerPigeon se disculpó inmediatamente por esto.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">You spent all last year telling people the only reason I get hired is because I&#39;m a woman. We even sat down to discuss it in Vegas because I was tired of it. Don&#39;t pretend you never knew this place wasn&#39;t friendly to women.</p>&mdash; Moxxi (@MoxxiCasts) <a href="https://twitter.com/MoxxiCasts/status/1275397117520105473?ref_src=twsrc%5Etfw">June 23, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 # Otros testimonios
-
 PorcelainLily, ex-caster, relata que fue violada por un jugador profesional de SEA cuando visitó Asia. Narra que entró en shock y no hizo absolutamente nada excepto mirar fijamente la pared hasta que acabe. Enfatiza que nunca dio su consentimiento, ni sugirió estar interesada en tener sexo con dicho jugador.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Another harrowing story from a woman who used to cast Dota, and does not anymore. <a href="https://t.co/r9wubNdj7P">pic.twitter.com/r9wubNdj7P</a></p>&mdash; Anthony Hodgson (@scantzor) <a href="https://twitter.com/scantzor/status/1276891712527491073?ref_src=twsrc%5Etfw">June 27, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

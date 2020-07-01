@@ -19,8 +19,7 @@ locale: "es"
 name: Pawpaw
 email: contacto@pawpaw.me
 description: >- # this means to ignore newlines until "baseurl:"
-  Comentarista y fanático de Dota 2. Ingeniero Informático apasionado
-  por los esports y la ciencia de datos.
+  Comentarista y fanático de Dota 2. Ingeniero Informático apasionado por los esports y la Ciencia de Datos.
 url: http://pawpaw.me
 repository: paw-paw/paw-paw.github.io
 
@@ -84,7 +83,7 @@ plugins:
 author:
   name     : "Paulo Tuya"
   avatar   : "/assets/images/bio-photo.jpg"
-  bio      : "Ingeniero Informático apasionado por la ciencia de datos. Parte del ecosistema de los esports desde hace 10 años."
+  bio      : "Ingeniero Informático apasionado por la Ciencia de Datos. Parte del ecosistema de los esports desde hace 10 años."
   location : "Lima, PE"
   links:
     - label: "Website"
