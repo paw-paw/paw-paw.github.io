@@ -21,7 +21,7 @@ email: contacto@pawpaw.me
 description: >- # this means to ignore newlines until "baseurl:"
   Comentarista y fanático de Dota 2. Ingeniero Informático apasionado
   por los esports y la ciencia de datos.
-url: https://pawpaw.me
+url: http://pawpaw.me
 repository: paw-paw/paw-paw.github.io
 
 twitter_username: pawpawdota
@@ -89,7 +89,7 @@ author:
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://pawpaw.me"
+      url: "http://pawpaw.me"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/pawpawdota"
