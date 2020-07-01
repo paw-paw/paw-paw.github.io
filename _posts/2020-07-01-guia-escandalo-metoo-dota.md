@@ -1,8 +1,9 @@
 ---
-title: Guía exhaustiva del escándalo #MeToo en la escena de Dota 2
+title: Guía exhaustiva del escándalo MeToo en la escena de Dota 2
 category: Miscelaneos
 ---
 
+## Palabras previas
 Los últimos días han sido muy confusos para la comunidad de Dota. Una serie de acusaciones, denuncias y revelaciones han sacudido por completo la escena y, en algunos casos, han destruido reputaciones construidas a lo largo de los años.
 
 Considero que el movimiento #MeToo y escándalos como este son necesarios para tener una conversación franca y directa respecto a un problema gravísimo de nuestra sociedad. Independientemente de la justicia que se imparta o no a los acusados, lo realmente importante es qué podemos aprender como sociedad de lo ocurrido.
@@ -12,9 +13,9 @@ Este texto apunta a ser una recopilación y traducción de toda la información 
 ## Caso GrandGranT
 Primer incidente: @cofactorstrudel cuenta en un tweet que un caster totalmente ebrio estuvo balbuceándole y que la tenía sujeta por la muñeca impidiéndole alejarse. En un tweet posterior, señalaría que era Grant Harris, GrandGrant.
 
-https://twitter.com/cofactorstrudel/status/1274709346941693958
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">We telling esports sexual harassment stories?<br>TI7 afterparty. One drunk caster slurring at me and literally wouldn&#39;t let go of my hand, I had to wrench it off him with all my strength.<br>Another person aggressively propositioned me for sex, even started undressing.</p>&mdash; 707 in a sun dress hacking police radios coz BLM (@cofactorstrudel) <a href="https://twitter.com/cofactorstrudel/status/1274709346941693958?ref_src=twsrc%5Etfw">June 21, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-https://twitter.com/cofactorstrudel/status/1274911393708306432
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Fuck it. The hand-grabby person was Grant Harris.<br>He didn&#39;t hurt or threaten me (well, he hurt my wrist a little bit not letting go when I pulled). Just made me feel gross and slimy. <a href="https://t.co/P7W2LfobMl">https://t.co/P7W2LfobMl</a></p>&mdash; 707 in a sun dress hacking police radios coz BLM (@cofactorstrudel) <a href="https://twitter.com/cofactorstrudel/status/1274911393708306432?ref_src=twsrc%5Etfw">June 22, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Segundo incidente: @Scantz0r (analista proveniente de Sudáfrica), cuenta la historia de @LlamaDownUnder, caster semiprofesional de Dota 2 (y pareja de Scantzor) que, de un momento a otro, desaparece de la escena. Esto debido a que GrandGranT la acusó falsamente de enviarle amenazas de muerte y la excluyó (a través de sus contactos) de castear torneos junto a BTS.
 
@@ -44,7 +45,7 @@ https://twitter.com/TobiWanDOTA/status/1275340832296570886
 
 https://twitter.com/DotaDeMoN/status/1275465819326001152
 
-##Caso TobiWan
+## Caso TobiWan
 
 La artista @botjira señaló que se acercó a TobiWan con la intención de darles uno de sus trabajos y conversar sobre Dota, pero TobiWan (en estado de ebriedad) la llevó a su cama y le impidió escapar.
 
@@ -108,7 +109,7 @@ https://twitter.com/ODPixel/status/1276553866570534913
 
 https://twitter.com/Hot_Bid/status/1276591311282298880
 
-##Caso Demon
+## Caso Demon
 
 La artista y caster Eleine señala que, durante año, decenas de personas han oído múltiples historias del mal comportamiento de Demon. Además, narró una historia según la cual en una MLG Columbus Demon la llevó a un espacio oscuro y cerrado, se apoyó en la puerta para evitar que se abra y le pidió que lo bese. Tras su negativa, Demon impidió que pueda abrir la puerta y la instó nuevamente a besarlo.
 
@@ -161,7 +162,7 @@ SingSing señaló en su stream que hubo una relación sexual entre ambos, pero q
 
 https://www.twitch.tv/singsing/clip/RelentlessSolidStinkbugWholeWheat
 
-##Caso Saffie
+## Caso Saffie
 Saffie es un streamer de Dota 2 cercano al círculo de SingSing, quien fue acusado por la streamer asiática Ash de enviarle fotos y comentarios de índole sexual sin reciprocidad. Se lamenta de no haberse mostrado firme ante estos avances y de únicamente ignorarlos y desviar la atención.
 
 También señala que, cuando lo confrontó al respecto via WhatsApp, Saffie empezó aceptando cambiar su comportamiento. Sin embargo, en cierto punto cambió por completo su tono, se negó a escuchar a Ash y ambos empezaron a intercambiar insultos.
@@ -186,13 +187,13 @@ Posteriormente, Tom le ofreció una entrevista en una de sus empresas, trabajo q
 
 https://twitter.com/nweatherservice/status/1275629955607678976
 
-##El caso de KillerPigeon
+## El caso de KillerPigeon
 
 Moxxi, caster femenina de Dota 2, respondió directamente un tweet de KillerPigeon señalando que él se encargó de esparcir el rumor de que Moxxi conseguía trabajo solo por ser mujer. Ante esto, KillerPigeon se disculpó inmediatamente por esto.
 
 https://twitter.com/MoxxiCasts/status/1275397117520105473
 
-##El caso de Redeye
+## El caso de Redeye
 
 James Banks, host, comentarista y entrevistador de esports hace públicos una serie de documentos en los cuales hace distintas afirmaciones respecto a Redeye. Entre ellas:
 1. Redeye lo amenazó con "asegurarse de que nunca volviera a trabajar en la industria" si Banks no "escuchaba atentamente" lo que Redeye le decía.
@@ -221,7 +222,7 @@ Redeye anunció en Twitter que dejaría los esports, citando como detonante el h
 
 https://twitter.com/PaulChaloner/status/1277625893989560328
 
-## Otras denuncias
+## Otros testimonios
 
 PorcelainLily, ex-caster, relata que fue violada por un jugador profesional de SEA cuando visitó Asia. Narra que entró en shock y no hizo absolutamente nada excepto mirar fijamente la pared hasta que acabe. Enfatiza que nunca dio su consentimiento, ni sugirió estar interesada en tener sexo con dicho jugador.
 
