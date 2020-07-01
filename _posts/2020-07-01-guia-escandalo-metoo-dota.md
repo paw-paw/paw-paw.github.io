@@ -3,7 +3,9 @@ title: Guía exhaustiva del escándalo MeToo en la escena de Dota 2
 category: Miscelaneos
 toc: true
 toc_label: "Contenidos"
-toc_icon: 
+header:
+  image: /assets/images/headers/tobiwan.jpg
+  teaser: /assets/images/teasers/tobiwan.jpg
 ---
 
 # Palabras previas
@@ -60,7 +62,7 @@ Diversas personalidades se pronunciaron al respecto:
 
 ## El caso Zyori
 
-La streamer y youtuber @ashnicrist señaló en un tweet que *"nunca perdonaría a Zyori por lo que hizo"*. Posteriormente narraría su historia con Zyori en un twitlonger. Señala que el caster la invitó a participar del Dota Summit 2 y que fueron juntos a un afterparty en una de las habitaciones de hotel con un grupo de jugadores y staff de BTS.
+La streamer y youtuber [@ashnicrist](https://twitter.com/ashnichrist) señaló en un tweet que *"nunca perdonaría a Zyori por lo que hizo"*. Posteriormente narraría su historia con Zyori en un twitlonger. Señala que el caster la invitó a participar del Dota Summit 2 y que fueron juntos a un afterparty en una de las habitaciones de hotel con un grupo de jugadores y staff de BTS.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I will never forgive Zyori for what he did to me.</p>&mdash; ashnichrist (@ashnichrist) <a href="https://twitter.com/ashnichrist/status/1274729384386191364?ref_src=twsrc%5Etfw">June 21, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -142,21 +144,37 @@ En su momento, TobiWan también publicó su propia versión de los eventos con B
 
 Declaraciones de distintas personas de la escena que vieron la evidencia en contra de TobiWan.
 
-https://twitter.com/syndereNDota/status/1276197649734041600
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I will no longer associate myself with Tobi. <a href="https://t.co/wXupciEMqx">https://t.co/wXupciEMqx</a></p>&mdash; Troels Nielsen (@syndereNDota) <a href="https://twitter.com/syndereNDota/status/1276197649734041600?ref_src=twsrc%5Etfw">June 25, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-https://twitter.com/LDeeep/status/1276533270373531653
+*"No volveré a asociarme con Tobi"*
 
-https://twitter.com/LDeeep/status/1276534169116409857
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Nobody is getting canceled just because someone wrote a bad tweet about them.<br><br>There is a process even if you don&#39;t see it.<br><br>That process NEEDS to be confidential and safe for the protection of the survivors coming forward. <a href="https://t.co/K2rcUOkr9Z">https://t.co/K2rcUOkr9Z</a></p>&mdash; LD (@LDeeep) <a href="https://twitter.com/LDeeep/status/1276533270373531653?ref_src=twsrc%5Etfw">June 26, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-https://twitter.com/DotACapitalist/status/1276149248988336128
+*"Nadie está siendo cancelado solo porque alguien escribió un mal tweet sobre ellos. Hay un proceso, incluso si no lo ven. Ese proceso NECESITA ser confidencial y seguro para proteger a las personas que comparten sus historias."*
 
-https://twitter.com/DotACapitalist/status/1276552486988312576
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">There are other accounts which have been shared and verified privately, even if the survivors haven&#39;t come forward yet.<br><br>These are their stories to tell, not ours. <br><br>Look at the absolute torrential downpour of bullshit in the replies to those who have come out.</p>&mdash; LD (@LDeeep) <a href="https://twitter.com/LDeeep/status/1276534169116409857?ref_src=twsrc%5Etfw">June 26, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-https://twitter.com/ODPixel/status/1276535104748302337
+*"Hay otros testimonios que han sido compartidos y verificados en privado, incluso si esas personas no han hecho pública su historia aún. Esas son historias que ellos deben contar, no nosotros. Miren la cantidad de basura en las respuestas a las personas que han dado su testimonio."*
 
-https://twitter.com/ODPixel/status/1276553866570534913
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">It&#39;s clear Toby&#39;s actions are more than being a socially awkward person. That&#39;s what I believed once.<br><br>I don&#39;t know who you are<br>I don&#39;t know what &quot;horrible actions&quot; he&#39;s committed<br>I don&#39;t know if this will mean anything to you<br><br>If you come out publicly, I will support you <a href="https://t.co/7cG9U2yyKx">https://t.co/7cG9U2yyKx</a></p>&mdash; Cap (@DotACapitalist) <a href="https://twitter.com/DotACapitalist/status/1276149248988336128?ref_src=twsrc%5Etfw">June 25, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-https://twitter.com/Hot_Bid/status/1276591311282298880
+*"Está claro que las acciones de Tobi son más preocupantes que simplemente ser una persona socialmente torpe. Eso es lo que creí en un momento. No sé quién eres, no sé qué horribles acciones Tobi cometió y no sé si esto significará algo para ti, pero si decides hacer pública tu historia, te apoyaré."*
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Like my colleagues, I have seen evidence. If I was overzealous in my last two tweets, it was because I learned of many things &amp; was angry. It&#39;s clear Toby has tried to avoid &amp; downplay the consequences of his actions. I will not attend any event he is at nor associate with him</p>&mdash; Cap (@DotACapitalist) <a href="https://twitter.com/DotACapitalist/status/1276552486988312576?ref_src=twsrc%5Etfw">June 26, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+*"Como mis colegas, he visto evidencia. Si fui demasiado excesivo con mis últimos dos tweets, es porque me he enterado de varias cosas y estaba molesto. Está claro que Tobi ha intentado evitar y minimizar las consecuencias de sus actos. No participaré de ningún torneo del cual él sea parte y no me asociaré más con él."*
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">There is so much more beyond the things that are seen publicly. I have been shared the messages in question, and to those who trust my judgement, I can tell you there is absolutely no place for someone like Tobi in our scene, and that those who have also seen them will agree.</p>&mdash; Owen Davies (@ODPixel) <a href="https://twitter.com/ODPixel/status/1276535104748302337?ref_src=twsrc%5Etfw">June 26, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+*"Hay muchas cosas más allá de lo que se ve públicamente. He recibido los mensajes en cuestión y, para aquellos que confían en mi juicio: puedo decirles que no hay lugar para alguien como Tobi en nuestra escena, y las demás personas que han visto los mensajes estarán de acuerdo conmigo."*
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">We have the right to use our judgement to decide who we do not want to associate with, in order to make the scene as safe, welcoming and inclusive for all.<br>Nobody is being convicted from messages alone and for that to happen OF COURSE it would have to go through a court of law.</p>&mdash; Owen Davies (@ODPixel) <a href="https://twitter.com/ODPixel/status/1276553866570534913?ref_src=twsrc%5Etfw">June 26, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+*"Tenemos derecho a usar nuestro juicio para decidir con quién no queremos asociarnos, para poder hacer que la escena sea segura, acogedora e inclusiva para todos. Nadie está siendo sentenciado por mensajes de texto y para que ello ocurra POR SUPUESTO que debe pasar por una corte legal."*
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">For every account that gets published there are many that don&#39;t. We still hear them. <br><br>People are aggressively defending someone who not only admitted to some of the accusations, but also changed his story multiple times and couldn&#39;t even address all of them there were so many</p>&mdash; Ken Chen (@Hot_Bid) <a href="https://twitter.com/Hot_Bid/status/1276591311282298880?ref_src=twsrc%5Etfw">June 26, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+*"Por cada historia que se hace pública hay varias que no. Igualmente las escuchamos. La gente está defendiendo agresivamente a alguien que no solo ha admitido algunas de las acusaciones en su contra, sino que ha cambiado su historia múltiples veces y ni siquiera pudo comentar todas las acusaciones porque había demasiadas."*
 
 ## El caso de Redeye
 
@@ -167,25 +185,29 @@ James Banks, host, comentarista y entrevistador de esports hace públicos una se
 4. Múltiples talentos que trabajaron en eventos de Gfinity reportaron sus conversaciones inapropiadas y insinuaciones sexuales con el staff femenino del evento.
 5. Otras acusaciones (mediante screenshots) incluyen abuso verbal, retrasar a otros talentos, mentir y abusar de su poder.
 
-https://twitter.com/BanKsEsports/status/1276910521573408772
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The Truth about Paul ‘Redeye’ Chaloner’s abuse of power verbally &amp; physically in the esports/gaming industry while his company Code Red threaten &amp; blackmail me if I release the information: <a href="https://t.co/WAiVRMw9f8">https://t.co/WAiVRMw9f8</a></p>&mdash; James Banks 🇺🇦 (@BanKsEsports) <a href="https://twitter.com/BanKsEsports/status/1276910521573408772?ref_src=twsrc%5Etfw">June 27, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Redeye respondería lo siguiente:
 
-https://twitter.com/PaulChaloner/status/1276918503346495491
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I strenuously deny the majority of the accusations made by James Banks and whilst I can be difficult to work with I have never assaulted anyone. I will not be making any further comment until I have consulted with legal representation.</p>&mdash; Redeye (@PaulChaloner) <a href="https://twitter.com/PaulChaloner/status/1276918503346495491?ref_src=twsrc%5Etfw">June 27, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+*"Rechazo enérgicamente la mayoría de las acusaciones hechas por James Banks y, si bien puedo ser una persona difícil en el trabajo, nunca he agredido a nadie. No haré más comentarios hasta haber consultado con mis abogados."*
 
 Un siguiente documento de James Banks incluiría supuesta información respecto a un proceso legal en contra de Redeye que, supuestamente, sería respecto a abuso infantil y violencia doméstica. Esto no ha sido confirmado de alguna manera concluyente.
 
 Sin embargo, James Banks también recopiló más historias (algunas anónimas, otras adjuntando al denunciante) respecto al abuso verbal y de poder de Redeye.
 
-https://twitter.com/BanKsEsports/status/1277262075983802369
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Further information on Paul &#39;Redeye&#39; Chaloner &amp; Luke Cotton. Info on his court case including Redeye&#39;s trial for child abuse &amp; assault. I am leaving this all for the journalists to work with and will help them contact the people involved.<a href="https://t.co/QNNuv6k0ei">https://t.co/QNNuv6k0ei</a></p>&mdash; James Banks 🇺🇦 (@BanKsEsports) <a href="https://twitter.com/BanKsEsports/status/1277262075983802369?ref_src=twsrc%5Etfw">June 28, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Sam Van Tilburgh publicaría ser la persona agredida por Redeye.
+Sam Van Tilburgh admitiría ser la persona agredida por Redeye en Gfinity.
 
-https://twitter.com/SamVanTilburgh/status/1277640894192087050
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Saw the chain with <a href="https://twitter.com/BanKsEsports?ref_src=twsrc%5Etfw">@BanKsEsports</a> and whats happening in the e-Sports world. I want to set the record straight because it deserves more justice. I was the person punched at work by the named person back in 2015. 1/3</p>&mdash; Sam Van Tilburgh (@SamVanTilburgh) <a href="https://twitter.com/SamVanTilburgh/status/1277640894192087050?ref_src=twsrc%5Etfw">June 29, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+*"Vi la cadena con BanKsEsports y lo que está ocurriendo en el mundo de los e-Sports. Quiero aclarar las cosas porque de verdad merecen más justicia. Yo fui la persona golpeada por la persona mencionada, allá por el 2015."*
 
 Redeye anunció en Twitter que dejaría los esports, citando como detonante el hecho de que sus hijos hayan sido involucrados en este escándalo.
 
-https://twitter.com/PaulChaloner/status/1277625893989560328
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Following the attacks made on my character over the last few days, I have decided to walk away from esports. <a href="https://t.co/mWHFVG9VJb">pic.twitter.com/mWHFVG9VJb</a></p>&mdash; Redeye (@PaulChaloner) <a href="https://twitter.com/PaulChaloner/status/1277625893989560328?ref_src=twsrc%5Etfw">June 29, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 # Otras personalidades involucradas
 
@@ -193,65 +215,68 @@ https://twitter.com/PaulChaloner/status/1277625893989560328
 
 La artista y caster Eleine señala que, durante año, decenas de personas han oído múltiples historias del mal comportamiento de Demon. Además, narró una historia según la cual en una MLG Columbus Demon la llevó a un espacio oscuro y cerrado, se apoyó en la puerta para evitar que se abra y le pidió que lo bese. Tras su negativa, Demon impidió que pueda abrir la puerta y la instó nuevamente a besarlo.
 
-https://twitter.com/Eleine_Sun/status/1275606868384190465
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Let&#39;s Talk About DotaDemon<br><br>Read: <a href="https://t.co/zIp1SqFb6n">https://t.co/zIp1SqFb6n</a></p>&mdash; Eleine 🤧 (@Eleine_Sun) <a href="https://twitter.com/Eleine_Sun/status/1275606868384190465?ref_src=twsrc%5Etfw">June 24, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Hot_Bid contó la historia de una persona anónima que señala que Demon empezó a tocarla indebidamente al estar ambos en una habitación solos (de acuerdo a la denunciante, Demon le pidió ayuda). Cuando entró un miembro del staff, Demon se detuvo inmediatamente. Fue en ese momento que la denunciante pudo salir de la habitación.
 
-https://twitter.com/Hot_Bid/status/1275978392689610753
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">About Demon (CW: sexual assault)<br><br>Read: <a href="https://t.co/fQrvIIMOCU">https://t.co/fQrvIIMOCU</a></p>&mdash; Ken Chen (@Hot_Bid) <a href="https://twitter.com/Hot_Bid/status/1275978392689610753?ref_src=twsrc%5Etfw">June 25, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Demon también publicó su versión de la situación. Los puntos clares de su declaración fueron que niega las acusaciones de abuso sexual en su contra, pide disculpas a las "víctimas aparentes" por "lo que creyeron que pasó" y señala que será difícil para él "recuperarse de ser acusado de depredador sexual."
+Demon también publicó su versión de la situación. Los puntos claves de su declaración fueron que niega las acusaciones de abuso sexual en su contra, pide disculpas a las *"víctimas aparentes"* por *"lo que creyeron que pasó"* y señala que será difícil para él *"recuperarse de ser acusado de depredador sexual."*
 
-https://twitter.com/DotaDeMoN/status/1277687183206346752
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">If it wasn&#39;t transparent enough, I do deny these allegations against me. This will be a difficult one to recover but to be accused of a sexual predator, creep or even rapist is something beyond my character. I apologize for the apparent victims for what they believed was true.</p>&mdash; Jimmy (@DotaDeMoN) <a href="https://twitter.com/DotaDeMoN/status/1277687183206346752?ref_src=twsrc%5Etfw">June 29, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## El caso SingSing
 Botjira (que también denunció a TobiWan) mencionó a SingSing como alguien que "no es inocente", señalando que SingSing le dijo que estaba dispuesto a iniciar una relación pero que, una vez juntos, solo la utilizó para tener sexo. Posteriormente dejó de responderle los mensajes. También señaló que otras chicas habían tenido experiencias similares con SingSing. Sin embargo, enfatiza en que no acusa a SingSing de violación, sino de engañar a mujeres inocentes.
 
-https://twitter.com/botjira/status/1276526879793610752
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">About Sing story<br><br>Read: <a href="https://t.co/hn45niAkXP">https://t.co/hn45niAkXP</a></p>&mdash; 寧 (@botjira) <a href="https://twitter.com/botjira/status/1276526879793610752?ref_src=twsrc%5Etfw">June 26, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 SingSing señaló en su stream que hubo una relación sexual entre ambos, pero que fue casual y completamente consensual.
 
-https://www.twitch.tv/singsing/clip/RelentlessSolidStinkbugWholeWheat
+<iframe src="https://clips.twitch.tv/embed?clip=RelentlessSolidStinkbugWholeWheat" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+
 
 ## El caso Saffie
 Saffie es un streamer de Dota 2 cercano al círculo de SingSing, quien fue acusado por la streamer asiática Ash de enviarle fotos y comentarios de índole sexual sin reciprocidad. Se lamenta de no haberse mostrado firme ante estos avances y de únicamente ignorarlos y desviar la atención.
 
 También señala que, cuando lo confrontó al respecto via WhatsApp, Saffie empezó aceptando cambiar su comportamiento. Sin embargo, en cierto punto cambió por completo su tono, se negó a escuchar a Ash y ambos empezaron a intercambiar insultos.
 
-https://twitter.com/ashleyritawong/status/1276204633728434176
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Re: online harassment<br><br>Read: <a href="https://t.co/9XBiuq4kN3">https://t.co/9XBiuq4kN3</a></p>&mdash; Ash (@ashleyritawong) <a href="https://twitter.com/ashleyritawong/status/1276204633728434176?ref_src=twsrc%5Etfw">June 25, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-En el blog de Ashley hay una publicación de febrero del 2019 respecto a esta situación (en ese momento sin mencionar el nombre de Saffie). https://ashleyritawong.wordpress.com/2019/02/18/its-not-my-fault-if-i-blame-you-first
+En el blog de Ashley hay [una publicación de febrero del 2019 ](https://ashleyritawong.wordpress.com/2019/02/18/its-not-my-fault-if-i-blame-you-first)respecto a esta situación (en ese momento sin mencionar el nombre de Saffie). 
 
 Saffie respondió con un twitlonger en el cual adjunta screenshots que confirmarían una confianza entre ambos que, de acuerdo a él, desmentiría que sus avances fueran infundados.
 
-También señala que no le pedirá disculpas a Ash y que todo es parte de una vendetta personal por parte de ella que inició el año pasado y que incluyó hacer públicas sus conversaciones en Facebook e incluso contactar a la madre de Saffie. El twitlonger puede encontrarse aquí. https://www.twitlonger.com/show/n_1sr9r9b Así mismo, screenshots de su conversación con Ash pueden encontrarse aquí. https://imgur.com/a/J6bBgPJ
+También señala que no le pedirá disculpas a Ash y que todo es parte de una vendetta personal por parte de ella que inició el año pasado y que incluyó hacer públicas sus conversaciones en Facebook e incluso contactar a la madre de Saffie.
+
+El twitlonger [puede encontrarse aquí](https://www.twitlonger.com/show/n_1sr9r9b). Así mismo, screenshots de su conversación con Ash [pueden encontrarse aquí](https://imgur.com/a/J6bBgPJ). 
 
 ## El caso de Tom (antiguo auspiciador de Digital Chaos)
 
 Alyssa Thompson, ex-pareja de PPD y ex-manager de Digital Chaos, narró múltiples episodios de comentarios sexuales e incluso una nalgada sin consentimiento por parte de uno de los auspiciadores del equipo Digital Chaos. También señala que este comportamiento por parte de Tom fue una de las razones por las que los jugadores dejaron Digital Chaos y jugaron como Thunderbird (antes de ser auspiciados por Planet Odd).
 
-https://twitter.com/AlyssuhDawn/status/1275587919839989761
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">About my time with Digital Chaos, and an important note on power dynamics.<br><br>Read: <a href="https://t.co/LDqT3TKPw4">https://t.co/LDqT3TKPw4</a></p>&mdash; Alyssa Thompson (@AlyssuhDawn) <a href="https://twitter.com/AlyssuhDawn/status/1275587919839989761?ref_src=twsrc%5Etfw">June 24, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 La diseñadora web y streamer nws también compartió su experiencia con Tom, confirmando el comportamiento sistemático explicado por Alyssa. Señala que, en un viaje, Tom le sugirió tener relaciones pese a estar saliendo con una amiga suya (que también era parte del viaje).
 
 Posteriormente, Tom le ofreció una entrevista en una de sus empresas, trabajo que ella tomó por necesidad. En ese trabajo, pese a no recibir hostigamiento directo por parte de Tom, sí recibía mensajes y regalos de él recurrentemente.
 
-https://twitter.com/nweatherservice/status/1275629955607678976
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Regarding Tom. And my story.<br><br>Read: <a href="https://t.co/Bjws7GH2ey">https://t.co/Bjws7GH2ey</a></p>&mdash; nws (@nweatherservice) <a href="https://twitter.com/nweatherservice/status/1275629955607678976?ref_src=twsrc%5Etfw">June 24, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## El caso de KillerPigeon
 
 Moxxi, caster femenina de Dota 2, respondió directamente un tweet de KillerPigeon señalando que él se encargó de esparcir el rumor de que Moxxi conseguía trabajo solo por ser mujer. Ante esto, KillerPigeon se disculpó inmediatamente por esto.
 
-https://twitter.com/MoxxiCasts/status/1275397117520105473
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">You spent all last year telling people the only reason I get hired is because I&#39;m a woman. We even sat down to discuss it in Vegas because I was tired of it. Don&#39;t pretend you never knew this place wasn&#39;t friendly to women.</p>&mdash; Moxxi (@MoxxiCasts) <a href="https://twitter.com/MoxxiCasts/status/1275397117520105473?ref_src=twsrc%5Etfw">June 23, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 # Otros testimonios
 
 PorcelainLily, ex-caster, relata que fue violada por un jugador profesional de SEA cuando visitó Asia. Narra que entró en shock y no hizo absolutamente nada excepto mirar fijamente la pared hasta que acabe. Enfatiza que nunca dio su consentimiento, ni sugirió estar interesada en tener sexo con dicho jugador.
 
-https://twitter.com/scantzor/status/1276891712527491073
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Another harrowing story from a woman who used to cast Dota, and does not anymore. <a href="https://t.co/r9wubNdj7P">pic.twitter.com/r9wubNdj7P</a></p>&mdash; Anthony Hodgson (@scantzor) <a href="https://twitter.com/scantzor/status/1276891712527491073?ref_src=twsrc%5Etfw">June 27, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Eleine (la misma persona que denunció a Demon) señala que en la MLG Columbus 2011 un jugador le ofreció acompañarla a su hotel por su seguridad. Pese a reiterarle su negativa, el jugador la siguió. Al abrir la puerta a su cuarto, el jugador entró con ella. Pese a que ella le dijo que no había problema y que podía irse, el jugador no se fue. Durante los siguientes cuarenta minutos, Eleine relata que el jugador intentaba besarla, quitarle las sábanas que la cubrían e incluso montarse encima suyo. Tras relatarle el incidente al coach de dicho jugador, éste lo excusó y le pidió que lo perdone.
 
-https://twitter.com/Eleine_Sun/status/1275596725810458625
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I&#39;m sorry it took me so long to come back and stand in solidarity. Here is one of my stories; I hope it will shed light on whwhat happens when we do report, why we don&#39;t come forward publicly, and provide another data point of systemic coverup of abuse.<a href="https://t.co/Q2yLMBQVk7">https://t.co/Q2yLMBQVk7</a></p>&mdash; Eleine 🤧 (@Eleine_Sun) <a href="https://twitter.com/Eleine_Sun/status/1275596725810458625?ref_src=twsrc%5Etfw">June 24, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 NightsEnd, entrevistadora y miembro de la escena, narró tres experiencias distintas en tres LAN's de los cuales fue parte. Primero la MLG Columbus 2014, en la cual recibió comentarios y preguntas sobre su apariencia física de personas con quienes compartía el área VIP. Eventualmente, estos ataques se transformaron al ofrecerle presentarle a jugadores a cambio de favores sexuales.
 
@@ -259,28 +284,36 @@ En su segundo torneo LAN, The International 4, terminó siendo parte de una rond
 
 En el afterparty de The International 5 fue abrazada sin su consentimiento por un desconocido en estado de ebriedad que intentó llevársela para "conocer a alguien". Tras alejarlo de sí y entrar a un grupo para su protección, notó que esa persona la seguía mirando a lo largo de la fiesta.
 
-https://www.twitlonger.com/show/n_1sr9q4r
+El twitlonger donde contó todo esto [puede encontrarse aquí](https://www.twitlonger.com/show/n_1sr9q4r).
 
 Sajedene también publicó lo siguiente respecto a esta situación:
 
-https://twitter.com/Sajedene/status/1274459471046115330
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Know what happened when I tried to speak up about my abuse in the industry to people in my circle? <br>I watched my colleagues and people who I thought were friends stay and side with the abuser and talk shit behind my back. 🤡<br>That&#39;s why we stay silent. Outcome is rarely positive.</p>&mdash; Nikki Elise (@Sajedene) <a href="https://twitter.com/Sajedene/status/1274459471046115330?ref_src=twsrc%5Etfw">June 20, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+*"¿Saben qué pasó cuando intenté hablar sobre el abuso que recibí en la industria a la gente de mi círculo? Vi cómo mis colegas y gente que consideraba amigos se pusieron del lado del abusador y empezaron a hablar mal a mis espaldas. 🤡 Es por eso que nos quedamos en silencio. El resultado rara vez es positivo."*
 
 Moxxi compartió dos tweets sobre la situación de las mujeres en la industria de los videojuegos.
 
-https://twitter.com/MoxxiCasts/status/1274717383781945346
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Everyone is talking about sexual harassment in gaming as if it hasn&#39;t been occurring the whole damn time. How are y&#39;all surprised that sexual assault is happening when we regularly get harassed and when we complain, the response is <br><br>iTs JuSt PaRt oF tHe CuLtUrE<br><br>Fuck off.</p>&mdash; Moxxi (@MoxxiCasts) <a href="https://twitter.com/MoxxiCasts/status/1274717383781945346?ref_src=twsrc%5Etfw">June 21, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-https://twitter.com/MoxxiCasts/status/1274728198064963584
+*"Todos están hablando acerca del acoso sexual en los videojuegos como si no fuese algo que ha venido ocurriendo todo este tiempo. ¿Cómo es que están tan sorprendidos de que haya agresiones sexuales cuando somos permanentemente hostigadas y cuando nos quejamos la respuesta es 'eS soLo pArTe dE la CuLtuRa?' "*
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The fact that I hesitate when parents approach me at events saying their daughters love my casts and want to be a part of esports breaks my heart. Esports is amazing but the amount they&#39;ll have to fight and constantly be on guard (just as a gamer, not even as a pro) is insane.</p>&mdash; Moxxi (@MoxxiCasts) <a href="https://twitter.com/MoxxiCasts/status/1274728198064963584?ref_src=twsrc%5Etfw">June 21, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+*"El hecho de que sienta miedo cada vez que un padre se me acerca en un evento y me dice que su hija adora mi trabajo y quiere ser parte del mundo de los esports me rompe el corazón. Los esports son geniales, pero lo mucho que van a tener que luchar y mantenerse en guardia (tan solo como gamer, ni siquiera como profesional) es increíble."*
 
 La cosplayer Naroiclime (esposa de Capitalist) señaló que el problema era sistémico y que está tanto en los talentos como en la comunidad, jugadores y organizadores de torneos. También señaló que conoció a Capitalist precisamente porque él la ayudó con una persona ebria que no aceptaba su negativa.
 
-Su twitlonger puede ser leído aquí https://www.twitlonger.com/show/n_1sr9nv8
+Su twitlonger [puede ser leído aquí](https://www.twitlonger.com/show/n_1sr9nv8).
 
 Mike Stillwell, encargado de marketing digital en Monster Gaming y ex-Team Liquid, narró su historia de abuso sexual. Mike fue violado por una mujer que mantuvo relaciones con él mientras estaba en un estado de ebriedad que le impedía consentir el acto.
 
-https://twitter.com/bluemoonGG_/status/1275806974228103169
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I never consented.<br><br>My story:<a href="https://t.co/NmK8PQk5nm">https://t.co/NmK8PQk5nm</a></p>&mdash; Mike Stillwell // bluemoon (@bluemoonGG_) <a href="https://twitter.com/bluemoonGG_/status/1275806974228103169?ref_src=twsrc%5Etfw">June 24, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-La cosplayer @rehabGnaked dijo lo siguiente respecto a la situación.
+La cosplayer rehab dijo lo siguiente respecto a la situación.
 
-https://twitter.com/rehabGnaked/status/1275003364883996672
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Leave me tf alone with &quot;some bad apples&quot; and &quot;ppl make mistakes&quot; bs. Multiple women I know left the dota scene because of the repeated harassment they experienced, quite a few after ESL One Frankfurt 2015 alone. Men&#39;s &quot;small mistakes&quot; force women to make life changing decisions.</p>&mdash; Reebs Peters (@rehabGnaked) <a href="https://twitter.com/rehabGnaked/status/1275003364883996672?ref_src=twsrc%5Etfw">June 22, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+*"Dejen de joder con que son solo 'unos cuantos malos' o que 'la gente comete errores.' Múltiples mujeres que conozco han dejado la escena de Dota 2 debido al acoso sistemático que recibieron, varias de ellas después de la ESL One Frankfurt 2015. Los 'pequeños errores' de los hombres fuerzan a las mujeres a tomar decisiones trascendentales."*
 
 # Palabras Finales
