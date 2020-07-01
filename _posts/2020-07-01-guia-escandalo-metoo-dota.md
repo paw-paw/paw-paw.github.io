@@ -1,10 +1,10 @@
 ---
 title: Guía exhaustiva del escándalo MeToo en la escena de Dota 2
 category: Miscelaneos
+excerpt: "Guía que apunta a recopilar toda la información pública como parte del escándalo MeToo que afectó a la escena de Dota 2 en junio del 2020"
 toc: true
 toc_label: "Contenidos"
 header:
-  image: /assets/images/headers/tobiwan.jpg
   teaser: /assets/images/teasers/tobiwan.jpg
 ---
 
@@ -317,3 +317,4 @@ La cosplayer rehab dijo lo siguiente respecto a la situación.
 *"Dejen de joder con que son solo 'unos cuantos malos' o que 'la gente comete errores.' Múltiples mujeres que conozco han dejado la escena de Dota 2 debido al acoso sistemático que recibieron, varias de ellas después de la ESL One Frankfurt 2015. Los 'pequeños errores' de los hombres fuerzan a las mujeres a tomar decisiones trascendentales."*
 
 # Palabras Finales
+Hay muchísimo que aprender de este momento, y genuinamente creo que cada uno de los casos contiene una reflexión distinta.
