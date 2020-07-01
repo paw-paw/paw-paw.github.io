@@ -34,7 +34,7 @@ Tercer incidente: La cosplayer [@WickedsCosplay](https://twitter.com/Wickedscosp
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Bruh not to mention the two women I know grant has legitimately assaulted who have yet to come forward 🙃🙃</p>&mdash; Wicked (@Wickedscosplay) <a href="https://twitter.com/Wickedscosplay/status/1275175097725149184?ref_src=twsrc%5Etfw">June 22, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-> Bro, eso sin mencionar las dos mujeres que sé que Grant ha literalmente atacado y que aún no hacen pública su historia 🙃🙃
+*"Bro, eso sin mencionar las dos mujeres que sé que Grant ha literalmente atacado y que aún no hacen pública su historia 🙃🙃"*
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">About Grant. (CW: sexual assault, being drugged)<br><br>Read: <a href="https://t.co/LgNXkIo7pu">https://t.co/LgNXkIo7pu</a></p>&mdash; Wicked (@Wickedscosplay) <a href="https://twitter.com/Wickedscosplay/status/1275295101682622464?ref_src=twsrc%5Etfw">June 23, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -48,63 +48,75 @@ Diversas personalidades se pronunciaron al respecto:
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">i feel fucking sick to my stomach reading this<br><br>this is not okay<br><br>none of this is fucking okay <a href="https://t.co/rhmZ8hhbiL">https://t.co/rhmZ8hhbiL</a></p>&mdash; LD (@LDeeep) <a href="https://twitter.com/LDeeep/status/1275303208504590337?ref_src=twsrc%5Etfw">June 23, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+*"Me siento muy asqueado leyendo esto. Esto no está bien. Nada de esto está bien."*
+
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">This is sickening to the core...anyone involved in such actions should be held accountable.<br><br>To the many men in the gaming community, read this story &amp; learn from it, so that you can both not be a participant and also protect those under attack. <a href="https://t.co/bKfRA605aJ">https://t.co/bKfRA605aJ</a></p>&mdash; Toby Dawson 托比道森 (@TobiWanDOTA) <a href="https://twitter.com/TobiWanDOTA/status/1275340832296570886?ref_src=twsrc%5Etfw">June 23, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+*"Esto es realmente enfermizo... cualquier persona envuelta en estas acciones debe asumir su responsabilidad. A todos los hombres en la comunidad gamer: lean esta historia y aprendan de ella, de forma que no sean parte del problema."*
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Speechless. This is NOT okay. <a href="https://t.co/fOVkrokzCL">https://t.co/fOVkrokzCL</a></p>&mdash; Jimmy (@DotaDeMoN) <a href="https://twitter.com/DotaDeMoN/status/1275465819326001152?ref_src=twsrc%5Etfw">June 23, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+*"No tengo palabras. Esto NO es aceptable."*
+
 ## El caso Zyori
 
-La streamer y youtuber @ashnicrist señaló en un tweet que "nunca perdonaría a Zyori por lo que hizo". Posteriormente narraría su historia con Zyori. Señala que el caster la invitó a participar del Dota Summit 2 y que fueron juntos a un afterparty en una de las habitaciones de hotel con un grupo de jugadores y staff de BTS.
+La streamer y youtuber @ashnicrist señaló en un tweet que *"nunca perdonaría a Zyori por lo que hizo"*. Posteriormente narraría su historia con Zyori en un twitlonger. Señala que el caster la invitó a participar del Dota Summit 2 y que fueron juntos a un afterparty en una de las habitaciones de hotel con un grupo de jugadores y staff de BTS.
 
-https://twitter.com/ashnichrist/status/1274729384386191364
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I will never forgive Zyori for what he did to me.</p>&mdash; ashnichrist (@ashnichrist) <a href="https://twitter.com/ashnichrist/status/1274729384386191364?ref_src=twsrc%5Etfw">June 21, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Acceso al TwitLonger de ashnicrist: https://www.twitlonger.com/show/n_1sr9i4t
+Acceso al [TwitLonger de ashnicrist](https://www.twitlonger.com/show/n_1sr9i4t).
 
 Señala que Zyori le propuso quedarse para no tener que ir a su hotel estando ebria, a lo cual aceptó. Señala que no tuvieron relaciones, pero que Zyori le pidió permiso para contarle a todos que sí y ella aceptó.
 
-Explica que sentía "que le debía algo" y que el mismo Zyori la volvió a invitar a pasar Navidad en la casa de BTS. Señala que sabía para qué era invitada, pero que aun así aceptó la invitación. Señala que tuvo su periodo en el primer día en esa casa y que le explicó a Zyori la situación y que éste le presionó para tener relaciones, cosa que terminó ocurriendo a diario pese a que ella no sentía ganas.
+Explica que sentía *"que le debía algo"* y que el mismo Zyori la volvió a invitar a pasar Navidad en la casa de BTS. Señala que sabía para qué era invitada, pero que aun así aceptó la invitación. Señala que tuvo su periodo en el primer día en esa casa y que le explicó a Zyori la situación y que éste le presionó para tener relaciones, cosa que terminó ocurriendo a diario pese a que ella no sentía ganas.
 
-En un punto en específico, dice "en retrospectiva" desear "saber que una violación puede ser tan sutil." Sin embargo, posteriormente negó haber calificado su historia con Zyori como una violación.
+En un punto en específico, dice *"en retrospectiva"* desear *"saber que una violación puede ser tan sutil."* Sin embargo, posteriormente negó haber calificado su historia con Zyori como una violación.
 
-https://twitter.com/ashnichrist/status/1276510407511982080
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I never explicitly said he raped me. I said rape can be subtle and I didn&#39;t know it. Among other lessons about sex. However I do see how it could be taken as implied and for that I am sorry. I dont believe he deserves the title of rapist and do not feel like a rape victim.</p>&mdash; ashnichrist (@ashnichrist) <a href="https://twitter.com/ashnichrist/status/1276510407511982080?ref_src=twsrc%5Etfw">June 26, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+*"Nunca dije explícitamente que me haya violado. Dije que una violación puede ser sutil y no lo sabía. Así como otras cosas que aprendí sobre el sexo. Sin embargo, veo cómo eso podría implicarse y me disculpo por eso. No creo que merezca el título de violador y yo no me siento como una víctima de violación."*
 
 Por su lado, Kips (ex-coach y analista de distintos equipos profesionales) señaló que el comportamiento de Zyori parecía recurrente, pues con ella intentó lo mismo: hablarle a una personalidad "nueva", hacerle un favor y presionarla para tener sexo.
 
-https://twitter.com/Kipspul/status/1275779337489461248
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Fuck it, time to back up more stories. The <a href="https://twitter.com/ashnichrist?ref_src=twsrc%5Etfw">@ashnichrist</a> story about Zyori is true; he tried the exact same with me back at TI5. Very systematic: <br>- talk to a &quot;new&quot; girl<br>- do them a favor<br>- pressure<br>- try again at a 2nd occasion (he stopped by my place in NL on a eurotrip)</p>&mdash; Muriëlle &#39;Kips&#39; Huisman (@Kipspul) <a href="https://twitter.com/Kipspul/status/1275779337489461248?ref_src=twsrc%5Etfw">June 24, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Posteriormente, Kips daría un descargo en el cual explicaría su posición respecto a Zyori en este escándalo: si bien no considera que Zyori merezca perder su carrera por estas experiencias (como sí ocurrió con TobiWan o Grant), señala que es positivo que estas salgan a la luz pues permiten a las personas conversar y discutir situaciones que normalmente no son tópicos de conversación.
 
 También señaló que Zyori parece genuinamente arrepentido y que, de haber tenido la oportunidad de discutir temas como el consentimiento y las dinámicas de poder hace 10 años, no hubiese cometido esos errores.
 
-https://twitter.com/Kipspul/status/1276964823595724806
+<blockquote class="twitter-tweet"><p lang="und" dir="ltr"><a href="https://t.co/4UBqm7WYS4">https://t.co/4UBqm7WYS4</a></p>&mdash; Muriëlle &#39;Kips&#39; Huisman (@Kipspul) <a href="https://twitter.com/Kipspul/status/1276964823595724806?ref_src=twsrc%5Etfw">June 27, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Zyori dio sus declaraciones finales en un video de YouTube en el cual diserta sobre las dinámicas de poder en una relación, qué ha aprendido y pide a la gente que se centren en el problema de fondo y no en las personas denunciadas.
 
-https://www.youtube.com/watch?v=Qo1vF1xrXYs
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Qo1vF1xrXYs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## El caso TobiWan
 
 La artista @botjira señaló que se acercó a TobiWan con la intención de darles uno de sus trabajos y conversar sobre Dota, pero TobiWan (en estado de ebriedad) la llevó a su cama y le impidió escapar.
 
-https://twitter.com/botjira/status/1275594165599047680
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Sorry this is a long story; I&#39;ll try to condense it as much as possible!! I&#39;ve always been depressive since (cont) <a href="https://t.co/In3lSADpWB">https://t.co/In3lSADpWB</a></p>&mdash; 寧 (@botjira) <a href="https://twitter.com/botjira/status/1275594165599047680?ref_src=twsrc%5Etfw">June 24, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-https://twitter.com/botjira/status/1276160088420597760
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">He pinned me down in a hotel room. I almost didn&#39;t escape.</p>&mdash; 寧 (@botjira) <a href="https://twitter.com/botjira/status/1276160088420597760?ref_src=twsrc%5Etfw">June 25, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-https://www.reddit.com/r/DotA2/comments/hfn5gq/tobi_pinned_me_down_in_a_hotel_room_i_almost/fvyo7oh/
+Parte de su historia fue contada [en un comentario en Reddit](https://www.reddit.com/r/DotA2/comments/hfn5gq/tobi_pinned_me_down_in_a_hotel_room_i_almost/fvyo7oh/).
 
-La cosplayer @Meruna_ (pareja de syndereN) señaló a TobiWan como culpable de "iniciar actividad sexual contra su explícita y repetida negativa" en un post de twitlonger. Narró la conversación personal que tuvo con él antes de publicar eso, en la cual él le pedía disculpas por todas las malas acciones en su contra, incluida la violencia sexual.
+La cosplayer [@Meruna_](https://twitter.com/Meruna_) (pareja de syndereN) señaló a TobiWan como culpable de "iniciar actividad sexual contra su explícita y repetida negativa" en un post de twitlonger. Narró la conversación personal que tuvo con él antes de publicar eso, en la cual él le pedía disculpas por todas las malas acciones en su contra, incluida la violencia sexual.
 
-https://twitter.com/Meruna_/status/1275797677683486720
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The story I won&#39;t share (and why)<br><br>Read: <a href="https://t.co/ALOwfRhcQR">https://t.co/ALOwfRhcQR</a></p>&mdash; Meruna (@Meruna_) <a href="https://twitter.com/Meruna_/status/1275797677683486720?ref_src=twsrc%5Etfw">June 24, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-https://www.twitlonger.com/show/n_1sr9phu
+[Segundo twitlonger](https://www.twitlonger.com/show/n_1sr9phu) profundizando en su historia con TobiWan.
 
-https://twitter.com/Meruna_/status/1276193969106534400
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Since you are so good at keeping me anonymous: We were never in a relationship. I, naively, wanted to, but you just wanted sex. I cried in your kitchen at 2am after asking you to be my boyfriend and you offered me a glass of water. <a href="https://t.co/gzo6TZhT5H">https://t.co/gzo6TZhT5H</a></p>&mdash; Meruna (@Meruna_) <a href="https://twitter.com/Meruna_/status/1276193969106534400?ref_src=twsrc%5Etfw">June 25, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+*"Ya que eres tan hábil para mantenerme en el anonimato: Nunca estuvimos en una relación. Yo, inocentemente, quise tener una, pero tú solo querías sexo. Lloré en tu cocina a las 2am después de pedirte que seas mi enamorado y me ofreciste un vaso de agua."*
 
 Es importante señalar que Meruna no ha publicado las evidencias de esta situación, pero que las ha compartido de manera privada y todos los que la han visto han tomado su posición.
 
-https://twitter.com/Meruna_/status/1276532661499170817
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">People have been asking for &quot;proof&quot;. I am not comfortable sharing more publicly (nor do I believe people would like if I posted private conversations), but I shared them privately. This is what Nahaz has to say after seeing it. <a href="https://t.co/UEyrF9PUrz">https://t.co/UEyrF9PUrz</a></p>&mdash; Meruna (@Meruna_) <a href="https://twitter.com/Meruna_/status/1276532661499170817?ref_src=twsrc%5Etfw">June 26, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Así mismo, @Hot_Bid también se expresó respecto a las evidencias mostradas por Meruna, confirmando que:
+*"Ya que la gente ha estado preguntando por 'evidencia'. No me siento cómoda compartiendo esas cosas públicamente (ni creo que le guste a la gente que publique conversaciones privadas), pero las he compartido en privado. Esto es lo que Nahaz tiene que decir tras verlas."*
+
+Así mismo, [@Hot_Bid](https://twitter.com/Hot_Bid) también se expresó respecto a las evidencias mostradas por Meruna, confirmando que:
 
 1. TobiWan mintió al decir que estaba en una relación con Meruna.
 2. Ninguno de los chatlogs sugiere alguna relación sentimental o de "amigos con beneficios" como sugiere TobiWan.
@@ -112,21 +124,21 @@ Así mismo, @Hot_Bid también se expresó respecto a las evidencias mostradas po
 4. TobiWan, al describir sus acciones, señala que durmió en la misma cama que Meruna y que intentó iniciar un acto sexual con Meruna pese a saber que Meruna no quería eso.
 5. Meruna ha conversado con múltiples amigos y conocidos suyos respecto a esta situación a lo largo de los años, avisando por privado a distintas mujeres de la escena que tengan cuidado con TobiWan.
 
-https://twitter.com/Hot_Bid/status/1277163502692524033
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Additional information about incidents between <a href="https://twitter.com/Meruna_?ref_src=twsrc%5Etfw">@Meruna_</a> and <a href="https://twitter.com/TobiWanDOTA?ref_src=twsrc%5Etfw">@TobiWanDOTA</a> <a href="https://t.co/16YTovZsRm">https://t.co/16YTovZsRm</a></p>&mdash; Ken Chen (@Hot_Bid) <a href="https://twitter.com/Hot_Bid/status/1277163502692524033?ref_src=twsrc%5Etfw">June 28, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 La streamer GenghisKhatt también compartió la historia de una persona anónima que señaló haber recibido mensajes inapropiados por parte de TobiWan y que fue una de las personas que el caster australiano contactó para pedirle disculpas.
 
-https://twitter.com/GenghisKhatt/status/1277349375165861888
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">A story about Toby Dawson. Feel free to ask me questions but questions asked in bad faith will be ignored. For those of you who think abuse is a one time thing or it must be violent- this is the reality. It&#39;s the little things, too.<a href="https://t.co/BsqVM62y24">https://t.co/BsqVM62y24</a></p>&mdash; Kat (@GenghisKhatt) <a href="https://twitter.com/GenghisKhatt/status/1277349375165861888?ref_src=twsrc%5Etfw">June 28, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Como resultado, la agencia Code Red ya no representará a TobiWan. Así mismo, fue retirado del cast de todos los torneos en los que trabajaba actualmente y sus líneas de voz fueron removidas del Battle Pass por Valve.
 
-https://twitter.com/CodeRedEsport/status/1276190396830253056
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">In light of the information published today, we will no longer be representing Toby &quot;TobiWan&quot; Dawson.</p>&mdash; Code Red Esports (@CodeRedEsport) <a href="https://twitter.com/CodeRedEsport/status/1276190396830253056?ref_src=twsrc%5Etfw">June 25, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-https://twitter.com/LDeeep/status/1276190055556509697
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Recent allegations of sexual assault and misconduct have come out against Toby. We believe them. We won&#39;t be working with him in the future.</p>&mdash; LD (@LDeeep) <a href="https://twitter.com/LDeeep/status/1276190055556509697?ref_src=twsrc%5Etfw">June 25, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-En su momento, TobiWan se pronunció respecto a "errores que había cometido" y "gente a la que había fallado" en una serie de tweets, "consciente de que había cometido algunas acciones horribles." Sin embargo, estos tweets fueron borrados.
+En su momento, TobiWan se pronunció respecto a *"errores que había cometido"* y *"gente a la que había fallado"* en una serie de tweets, *"consciente de que había cometido algunas acciones horribles."* Sin embargo, estos tweets fueron borrados.
 
-En su momento, TobiWan también publicó su propia versión de los eventos con BoraNija y Meruna, la cual fue (parcialmente) desmentida por HotBid.
+En su momento, TobiWan también publicó su propia versión de los eventos con BoraNija y Meruna, la cual fue (parcialmente) desmentida por HotBid, como vimos arriba.
 
 Declaraciones de distintas personas de la escena que vieron la evidencia en contra de TobiWan.
 
@@ -175,7 +187,9 @@ Redeye anunció en Twitter que dejaría los esports, citando como detonante el h
 
 https://twitter.com/PaulChaloner/status/1277625893989560328
 
-## Caso Demon
+# Otras personalidades involucradas
+
+## El caso Demon
 
 La artista y caster Eleine señala que, durante año, decenas de personas han oído múltiples historias del mal comportamiento de Demon. Además, narró una historia según la cual en una MLG Columbus Demon la llevó a un espacio oscuro y cerrado, se apoyó en la puerta para evitar que se abra y le pidió que lo bese. Tras su negativa, Demon impidió que pueda abrir la puerta y la instó nuevamente a besarlo.
 
@@ -189,7 +203,7 @@ Demon también publicó su versión de la situación. Los puntos clares de su de
 
 https://twitter.com/DotaDeMoN/status/1277687183206346752
 
-## Caso SingSing
+## El caso SingSing
 Botjira (que también denunció a TobiWan) mencionó a SingSing como alguien que "no es inocente", señalando que SingSing le dijo que estaba dispuesto a iniciar una relación pero que, una vez juntos, solo la utilizó para tener sexo. Posteriormente dejó de responderle los mensajes. También señaló que otras chicas habían tenido experiencias similares con SingSing. Sin embargo, enfatiza en que no acusa a SingSing de violación, sino de engañar a mujeres inocentes.
 
 https://twitter.com/botjira/status/1276526879793610752
@@ -198,7 +212,7 @@ SingSing señaló en su stream que hubo una relación sexual entre ambos, pero q
 
 https://www.twitch.tv/singsing/clip/RelentlessSolidStinkbugWholeWheat
 
-## Caso Saffie
+## El caso Saffie
 Saffie es un streamer de Dota 2 cercano al círculo de SingSing, quien fue acusado por la streamer asiática Ash de enviarle fotos y comentarios de índole sexual sin reciprocidad. Se lamenta de no haberse mostrado firme ante estos avances y de únicamente ignorarlos y desviar la atención.
 
 También señala que, cuando lo confrontó al respecto via WhatsApp, Saffie empezó aceptando cambiar su comportamiento. Sin embargo, en cierto punto cambió por completo su tono, se negó a escuchar a Ash y ambos empezaron a intercambiar insultos.
@@ -229,7 +243,7 @@ Moxxi, caster femenina de Dota 2, respondió directamente un tweet de KillerPige
 
 https://twitter.com/MoxxiCasts/status/1275397117520105473
 
-## Otros testimonios
+# Otros testimonios
 
 PorcelainLily, ex-caster, relata que fue violada por un jugador profesional de SEA cuando visitó Asia. Narra que entró en shock y no hizo absolutamente nada excepto mirar fijamente la pared hasta que acabe. Enfatiza que nunca dio su consentimiento, ni sugirió estar interesada en tener sexo con dicho jugador.
 
@@ -268,3 +282,5 @@ https://twitter.com/bluemoonGG_/status/1275806974228103169
 La cosplayer @rehabGnaked dijo lo siguiente respecto a la situación.
 
 https://twitter.com/rehabGnaked/status/1275003364883996672
+
+# Palabras Finales
