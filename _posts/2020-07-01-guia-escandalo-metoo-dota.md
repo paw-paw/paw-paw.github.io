@@ -48,7 +48,8 @@ Como consecuencia, Grant perdió su trabajo con Evil Geniuses y BeyondTheSummit:
 
 Diversas personalidades se pronunciaron al respecto:
 
-<iframe src="https://clips.twitch.tv/embed?clip=AnimatedScaryHabaneroTinyFace" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+<iframe src="https://clips.twitch.tv/embed?clip=AnimatedScaryHabaneroTinyFace&parent=pawpaw.me" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">i feel fucking sick to my stomach reading this<br><br>this is not okay<br><br>none of this is fucking okay <a href="https://t.co/rhmZ8hhbiL">https://t.co/rhmZ8hhbiL</a></p>&mdash; LD (@LDeeep) <a href="https://twitter.com/LDeeep/status/1275303208504590337?ref_src=twsrc%5Etfw">June 23, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -229,7 +230,7 @@ Botjira (que también denunció a TobiWan) mencionó a SingSing como alguien que
 
 SingSing señaló en su stream que hubo una relación sexual entre ambos, pero que fue casual y completamente consensual.
 
-<iframe src="https://clips.twitch.tv/embed?clip=RelentlessSolidStinkbugWholeWheat" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+<iframe src="https://clips.twitch.tv/embed?clip=RelentlessSolidStinkbugWholeWheat&parent=pawpaw.me" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
 
 
 ## El caso Saffie
