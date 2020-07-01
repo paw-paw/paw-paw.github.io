@@ -1,6 +1,9 @@
 ---
 title: Guía exhaustiva del escándalo MeToo en la escena de Dota 2
 category: Miscelaneos
+toc: true
+toc_label: "Contenidos"
+toc_icon: 
 ---
 
 ## Palabras previas
@@ -11,25 +14,25 @@ Considero que el movimiento #MeToo y escándalos como este son necesarios para t
 Este texto apunta a ser una recopilación y traducción de toda la información hecha pública respecto a todas las acusaciones y denuncias hechas en los últimos días. Trataré de mantener mi opinión al mínimo excepto por una última sección de reflexiones respecto a este tema.
 
 ## Caso GrandGranT
-Primer incidente: @cofactorstrudel cuenta en un tweet que un caster totalmente ebrio estuvo balbuceándole y que la tenía sujeta por la muñeca impidiéndole alejarse. En un tweet posterior, señalaría que era Grant Harris, GrandGrant.
+Primer incidente: [@cofactorstrudel](https://twitter.com/cofactorstrudel) cuenta en un tweet que un caster totalmente ebrio estuvo balbuceándole y que la tenía sujeta por la muñeca impidiéndole alejarse. En un tweet posterior, señalaría que era Grant Harris, GrandGrant.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">We telling esports sexual harassment stories?<br>TI7 afterparty. One drunk caster slurring at me and literally wouldn&#39;t let go of my hand, I had to wrench it off him with all my strength.<br>Another person aggressively propositioned me for sex, even started undressing.</p>&mdash; 707 in a sun dress hacking police radios coz BLM (@cofactorstrudel) <a href="https://twitter.com/cofactorstrudel/status/1274709346941693958?ref_src=twsrc%5Etfw">June 21, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Fuck it. The hand-grabby person was Grant Harris.<br>He didn&#39;t hurt or threaten me (well, he hurt my wrist a little bit not letting go when I pulled). Just made me feel gross and slimy. <a href="https://t.co/P7W2LfobMl">https://t.co/P7W2LfobMl</a></p>&mdash; 707 in a sun dress hacking police radios coz BLM (@cofactorstrudel) <a href="https://twitter.com/cofactorstrudel/status/1274911393708306432?ref_src=twsrc%5Etfw">June 22, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Segundo incidente: @Scantz0r (analista proveniente de Sudáfrica), cuenta la historia de @LlamaDownUnder, caster semiprofesional de Dota 2 (y pareja de Scantzor) que, de un momento a otro, desaparece de la escena. Esto debido a que GrandGranT la acusó falsamente de enviarle amenazas de muerte y la excluyó (a través de sus contactos) de castear torneos junto a BTS.
+Segundo incidente: [@Scantzor](https://twitter.com/scantzor) (analista proveniente de Sudáfrica), cuenta la historia de [@LlamaDownUnder](https://twitter.com/LlamaDownUnder), caster semiprofesional de Dota 2 (y pareja de Scantzor) que, de un momento a otro, desaparece de la escena. Esto debido a que GrandGranT la acusó falsamente de enviarle amenazas de muerte y la excluyó (a través de sus contactos) de castear torneos junto a BTS.
 
 Incluye conversaciones de Skype y señala a cinco personas que deben responder por su accionar permisivo con las conductas de Grant: GoDz LD y Grace Lee Cho de Beyond the Summit y Conrad Janzen (ex-Twitch, ahora trabajando para EG).
 
-https://twitter.com/scantzor/status/1275164426111508482
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">We’ve all been far too quiet for far too long about Grandgrant. He has for years shown a consistent pattern of behaviour of harassing &amp; degrading women. Most notable case we know about is LlamaDownUnder. She was a fast-rising Dota 2 caster. And then she wasn’t. Grant did that.</p>&mdash; Anthony Hodgson (@scantzor) <a href="https://twitter.com/scantzor/status/1275164426111508482?ref_src=twsrc%5Etfw">June 22, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-https://twitter.com/scantzor/status/1275484721263280129
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Regarding Grant&#39;s Enablers<br><br>Read: <a href="https://t.co/D3tvjnvfCz">https://t.co/D3tvjnvfCz</a></p>&mdash; Anthony Hodgson (@scantzor) <a href="https://twitter.com/scantzor/status/1275484721263280129?ref_src=twsrc%5Etfw">June 23, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Tercer incidente: La cosplayer @WickedsCosplay narra la historia de una persona anónima que denuncia haber sido abusada sexualmente por GrandGranT.
+Tercer incidente: La cosplayer [@WickedsCosplay](https://twitter.com/Wickedscosplay) narra la historia de una persona anónima que denuncia haber sido abusada sexualmente por GrandGranT.
 
-https://twitter.com/Wickedscosplay/status/1275175097725149184
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Bruh not to mention the two women I know grant has legitimately assaulted who have yet to come forward 🙃🙃</p>&mdash; Wicked (@Wickedscosplay) <a href="https://twitter.com/Wickedscosplay/status/1275175097725149184?ref_src=twsrc%5Etfw">June 22, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-https://twitter.com/Wickedscosplay/status/1275295101682622464
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">About Grant. (CW: sexual assault, being drugged)<br><br>Read: <a href="https://t.co/LgNXkIo7pu">https://t.co/LgNXkIo7pu</a></p>&mdash; Wicked (@Wickedscosplay) <a href="https://twitter.com/Wickedscosplay/status/1275295101682622464?ref_src=twsrc%5Etfw">June 23, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Como consecuencia, Grant perdió su trabajo con Evil Geniuses y BeyondTheSummit:
 
