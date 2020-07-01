@@ -4,6 +4,7 @@ category: Opinion
 excerpt: "¿Deberían los esports agradecer el interés de los medios tradicionales? ¿Dependen los esports de ellos, o es al revés?"
 header:
   teaser: /assets/images/teasers/esportsymedios.jpg
+  og_image: /assets/images/teasers/esportsymedios.jpg
 ---
 
 Los videojuegos llevan ya un buen tiempo formando parte de la cultura popular y es válida a estas alturas la discusión respecto a su espinosa relación con los medios de comunicación tradicionales. ¿Por qué se ve a los videojuegos bajo una luz tan negativa? ¿Qué es eso que hace que los medios de comunicación no le den a esta industria tan rentable el protagonismo que se merece? Y, aún más interesante: ¿De qué manera puede cambiar la intrusión de los e-Sports en esta visión? _Publicado originalmente en Dota is Kill el 11 de marzo del 2017_

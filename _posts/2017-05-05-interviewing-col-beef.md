@@ -4,6 +4,7 @@ category: Entrevistas
 excerpt: "Interview with Kyle 'Beef' Bautista that took part in May 2017. Topics like the future of Dota 2 and his plans for compLexity were discussed."
 header:
   teaser: /assets/images/teasers/beef.jpg
+  og_image: /assets/images/teasers/beef.jpg
 ---
 
 Kyle 'Beef' Bautista is a well-known personality amongst North-American eSports enthusiasts. With almost five years working in compLexity Gaming, a constant pressence in the North American scene, his voice is definitely an authorized one when talking about the region and the evolution of Dota 2 as a competitive game. _Originally published in Dota is Kill in May 5th 2017. This is the English version. Para leer la entrevista en español, [haz clic aquí](entrevista-col-beef).

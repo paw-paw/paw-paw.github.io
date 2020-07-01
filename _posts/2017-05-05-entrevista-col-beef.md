@@ -4,6 +4,7 @@ category: Entrevistas
 excerpt: "Entrevista a Kyle 'Beef' Bautista, Gerente General de compLexity, realizada en mayo de 2017."
 header:
   teaser: /assets/images/teasers/beef.jpg
+  og_image: /assets/images/teasers/beef.jpg
 ---
 
 Kyle ‘Beef’ Bautista es una personalidad conocida en la escena nortamericana de eSports. Con ya casi cinco años trabajando en compLexity Gaming, presencia constante en dicha escena, su voz es definitivamente autorizada para hablar de la región y de la evolución de Dota 2 como juego competitivo. _Publicado originalmente en Dota is Kill el 5 de mayo del 2017_. Esta es la versión en español de la entrevista. If you want to read the English version, [click here](interviewing-col-beef).

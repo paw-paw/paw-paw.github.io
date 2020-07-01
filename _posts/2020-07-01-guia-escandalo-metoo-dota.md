@@ -6,6 +6,7 @@ toc: true
 toc_label: "Contenidos"
 header:
   teaser: /assets/images/teasers/tobiwan.jpg
+  og_image: /assets/images/teasers/tobiwan.jpg
 ---
 
 # Sobre este documento

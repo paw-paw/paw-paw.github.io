@@ -4,6 +4,7 @@ category: Opinion
 excerpt: "En 1995, Maradona dio un discurso en la Universidad de Oxford. Lo que dijo ese día muestra una realidad social que trasciende disciplinas."
 header:
   teaser: /assets/images/teasers/maradona.jpg
+  og_image: /assets/images/teasers/maradona.jpg
 ---
 
 Artículo inspirado (basado) en la genial (aunque innegablemente corta) entrada que hizo Pase del Desprecio hace dos años. Las otras consecuencias habla de las brechas sociales en el país y sus consecuencias en el fútbol peruano. Mal que bien, intento trazar un paralelo con lo que se vive actualmente en la escena competitiva de Dota dentro del país. _Publicado originalmente en Dota is Kill el 7 de mayo del 2017_

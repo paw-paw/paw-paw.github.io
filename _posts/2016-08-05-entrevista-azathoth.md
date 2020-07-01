@@ -4,6 +4,7 @@ category: Entrevistas
 excerpt: "Entrevista al caster mexicano TheAzathoth con ocasión de su participación del broadcast oficial de The International 6."
 header:
   teaser: /assets/images/teasers/azahoth.jpg
+  og_image: /assets/images/teasers/azahoth.jpg
 ---
 
 Hace unos días (más de una semana, en realidad), tenía el plan de entrevistar a Azathoth. Por cuestiones de agenda de nuestro estimado, recién pudimos sentarnos a conversar (metafóricamente puesto que está en Seattle) hace un par de días. Le pregunté un poco de todo y sin que haya un tema en particular en nuestra conversación, la cual podrán leer a continuación. _Publicado originalmente en Dota is Kill el 5 de agosto del 2016_

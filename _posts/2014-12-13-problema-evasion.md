@@ -3,7 +3,8 @@ title: El Problema de la Evasión
 category: Miscelaneos
 excerpt: "Análisis matemático de las mecánicas usadas en el cálculo de la evasión. ¿Cómo afecta esto al balance de las distintas fuentes de evasión del juego?"
 header:
-  teaser: /assets/images/teasers/pa-evasion.jpg  
+  teaser: /assets/images/teasers/pa-evasion.jpg
+  og_image: /assets/images/teasers/pa-evasion.jpg
 ---
 
 Los skills de evasión vienen directamente de Warcraft III y fueron heredados de ahí por el mapa de DotA. La evasión es un concepto clásico cuyo origen puede trazarse a los primeros RPG's, esos de dados, mapas y tablas. En pocas palabras, la evasión te otorga la chance de evitar un ataque. Bastante simple. Y, en cierta forma, bastante interesante. *Publicado originalmente en Dota is Kill el 13 de diciembre de 2014*

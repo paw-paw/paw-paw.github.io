@@ -4,6 +4,7 @@ categories: Traducciones
 excerpt: "Traducción y adaptación del genial análisis que dio PPD sobre su draft en la Gran Final de The International 5 frente a CDEC Gaming."
 header:
   teaser: /assets/images/teasers/ppd.jpg
+  og_image: /assets/images/teasers/ppd.jpg
 ---
 
 PPD acaba de publicar su análisis del draft de la Gran Final de The International contra CDEC (que, como sabemos, ganó EG por 3-1). Cabe resaltar que PPD había dicho por Twitter de Q (capitán de CDEC) que era una mente maestra, así que se puede esperar una batalla de razonamiento entre dos genios del draft. El video, de media hora de duración, está disponible en su canal en idioma inglés. En este post me propongo transcribir uno a uno los puntos más importantes que hace ppd en su análisis, juego por juego. *Publicado originalmente en Dota is Kill el 11 de agosto del 2015*
