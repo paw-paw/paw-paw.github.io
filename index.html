@@ -2,6 +2,38 @@
 # You don't need to edit this file, it's empty on purpose.
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
-author_profile: true
+layout: splash
+permalink: /
+hidden: true
+header:
+  overlay_color: "#8E8B82"
+  overlay_image: /assets/images/home/banner.jpg
+  actions:
+    - label: "<i class='fas fa-hands-helping'></i> Conoce más de mí"
+      url: "/about/"
+excerpt: "Comentarista y fanático de Dota 2. Ingeniero Informático apasionado por los esports y la Ciencia de Datos."
+feature_row:
+  - image_path: /assets/images/home/row1.jpg
+    alt: "proyectos"
+    title: "Mis proyectos"
+    excerpt: "Proyectos de informática o de esports de los cuales he sido parte."
+    url: "/proyectos/"
+    btn_class: "btn--primary"
+    btn_label: "Ver proyectos"
+  - image_path: /assets/images/home/row2.jpg
+    alt: "carrera"
+    title: "Mi carrera"
+    excerpt: "Reseña de mi carrera profesional hasta el momento."
+    url: "/biografia/"
+    btn_class: "btn--primary"
+    btn_label: "Ver biografía"
+  - image_path: /assets/images/home/row3.jpg
+    alt: "blog"
+    title: "Blog"
+    excerpt: "Lee mi opinión respecto a los últimos acontecimientos en la informática y los esports"
+    url: "/blog/"
+    btn_class: "btn--primary"
+    btn_label: "Ver blog"
 ---
+
+{% include feature_row %}
