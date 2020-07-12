@@ -1,5 +1,5 @@
 ---
-title: Dota Plus: El nuevo modelo de negocios de Valve
+title: "Dota Plus: El nuevo modelo de negocios de Valve"
 category: Opinion
 excerpt: "¿Qué nos dice Dota Plus de las prioridades económicas de Valve?"
 header:
@@ -26,8 +26,6 @@ Otra fuente de preocupación viene de gente que opina que el modelo es ocioso y 
 > Otra fuente de preocupación viene de gente que opina que el modelo es ocioso y una forma de Valve de hacer dinero rápido
 
 En general, me parece que Dota Plus ofrece algunas cosas interesantes y que, pese a que le falta pulir un par de detalles, es un buen producto. Si bien no pueda parecer un paso adelante a comparación de los Battle Passes, no creo que sea un sistema mejor. Es, sencillamente, diferente. Y obedece a una realidad económica distinta, como veremos a continuación:
-
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/dotaplus2.jpg" alt="Dota Plus">
 
 Algo de lo que no se habla mucho es de la eliminación de los niveles comprables. Antes era posible meterle cualquier cantidad de dinero al juego a cambio de niveles extra. Esto causaba una “inflación” de niveles y obligaba a que las recompensas realmente buenas se encuentren en niveles altísimos. A su vez, esto solo causaba que la gente compre más niveles para llegar a ellas. El que tal situación no exista puede ser indicador de que el modelo económico de Dota 2 esté cambiando a un nivel fundamental (o de que a los devs se les olvidó implementarla :’v).
 

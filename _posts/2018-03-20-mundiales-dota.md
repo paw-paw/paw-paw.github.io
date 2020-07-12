@@ -5,8 +5,6 @@ excerpt: "Al trazar paralelos entre esports y deporte tradicional es imposible e
 header:
   teaser: /assets/images/teasers/mundiales.jpg
   og_image: /assets/images/teasers/mundiales.jpg
-
-
 ---
 
 Es cierto que todo deporte se maneja de manera distinta y crece con dinámicas únicas, pero a veces es inevitable trazar paralelos. Un concepto muy popular a lo largo de la historia de DotA y Dota 2 ha sido sin duda la idea de un torneo de naciones o Copa del Mundo que vea a los mejores jugadores compitiendo agrupados por su nacionalidad. En esta entrada veremos los intentos a lo largo de la historia de lograr tal fin.
