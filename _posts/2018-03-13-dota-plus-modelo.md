@@ -1,5 +1,5 @@
 ---
-title: "Dota Plus: El nuevo modelo de negocios de Valve"
+title: Dota Plus - El nuevo modelo de negocios de Valve
 category: Opinion
 excerpt: "¿Qué nos dice Dota Plus de las prioridades económicas de Valve?"
 header:
