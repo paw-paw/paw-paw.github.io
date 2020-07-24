@@ -29,7 +29,7 @@ IeSF, por ejemplo, es un ambicioso proyecto de federación internacional de e-Sp
 
 Con este contexto en mente podemos entender el fiasco que significó la división de Dota del IeSF World Championship 2014. Sin clasificatorias estandarizadas y con una elección de países participantes que respondía directamente a la aquellos países en los que se habían establecido “federaciones”, era evidente que el torneo no resultaría de lo mejor. Países como Georgia, Austria o Túnez, con nula presencia en la escena competitiva, tuvieron un espacio. Además, ciertos países fueron representados por equipos que definitivamente no eran lo mejor de lo mejor de la región. Así, por ejemplo, Suecia fue representada por 4 Friends + Chrillee y Rusia por Click-Storm. Era evidente que un torneo así no iba a llamar la atención de los jugadores profesionales, centrados prácticamente todos en entrenar con sus equipos. Así, pese a tener un respetable pozo de US$ 50 000, la división de Dota del torneo terminó siendo un fiasco.
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/prodotanations.png" alt="ProDotA National Cup">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/prodotanations.jpg" alt="ProDotA National Cup">
 
 Otro intento de revivir este espíritu se dio por parte de ProDotA, con la ProDotA National Cup. Organizado este torneo por gente con años de experiencia en la escena competitiva y con muchos contactos en la misma, la acogida fue un poco mejor. Por lo menos, esta National Cup se convirtió en un interesante crisol de equipos tier 2 y, si bien países como Alemania, Rusia o Suecia no fueron representados por sus mejores jugadores, hubo un buen espectáculo con jugadores que normalmente participan del circuito tier 2-3 europeo.
 
@@ -37,7 +37,7 @@ Si bien estos dos fueron intentos claros de llegar a un torneo nacional de Dota 
 
 ### La última esperanza: la WESG
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/wesgdota.png" alt="WESG">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/wesgdota.jpg" alt="WESG">
 
 El poder del dinero es, realmente, maravilloso. Estas son palabras que debemos tener en mente al hablar de la WESG. Torneo organizado por AliSports, la filial deportiva de Aliexpress, los World Electronic Sports Games son el último torneo en implementar el modelo de equipos nacionales compitiendo. Sin embargo, tiene unas diferencias claras: primero, puede participar más de un equipo por país y, segundo, tiene clasificatorias abiertas para todo el mundo divididas en regiones que podrían parecer arbitrarias a algunos. Así, por ejemplo, si nos fijamos en Latinoamérica descubrimos que, en la última edición, Brasil tenía dos slots en sus clasificatorias, Argentina y Perú solo uno y el resto de Latinoamérica solo uno para todos los países.
 
