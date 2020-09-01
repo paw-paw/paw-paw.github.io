@@ -27,7 +27,7 @@ La respuesta de Rod Breslau, una de las figuras más influyentes en la industria
 
 Todo esto llega junto a la fuerte crítica que planteó Kyle a.k.a. swindlemelonzz en pleno panel de la Omega League.
 
-<iframe src="https://clips.twitch.tv/embed?clip=SmoothInexpensiveBunnyNerfRedBlaster&parent=www.pawpaw.me" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+<iframe src="https://clips.twitch.tv/embed?clip=SmoothInexpensiveBunnyNerfRedBlaster&parent=pawpaw.me" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
 
 
 *"¿Sabes qué? La NBA, la Overwatch League, la Call of Duty World League, la Rocket League Championship Series, ¿sabes qué tienen todas estas ligas en común? Todas están operando. Porque somos esports. Porque estamos online. Podemos jugar nuestro deporte en cualquier momento y desde cualquier lugar. (...) Pero ni siquiera tenemos un DPC, ¿cómo es que no tenemos un DPC? Han pasado seis meses, ¿y qué ha pasado? ¿Las fechas simplemente se han postergado? ¿No podemos jugar nuestro gran torneo? (...) ¡Hemos patrocinado nuestra propia escena competitiva, Sheevs! ¡Y somos el único juego que no tiene una!"*
