@@ -4,7 +4,7 @@ category: Opinion
 excerpt: "¿Es posible que los jugadores profesionales sean igual de responsables que Valve por el estado de la escena?"
 header:
   teaser: /assets/images/teasers/ppd2.jpg
-  og_image: /assets/images/teasers/pp2.jpg
+  og_image: /assets/images/teasers/ppd2.jpg
 ---
 
 Los últimos días han sido caracterizados por una serie de quejas y reclamos respecto a la presencia (o falta de) por parte de Valve en la escena competitiva de Dota 2. Es verdad que, a comparación de Riot, Valve ha tenido un acercamiento a este tema que oscila entre lo laxo y lo perezoso. Sin embargo, una de las opiniones más interesantes en el tema la puso el siempre controvertido PPD, moviendo por un instante el reflector de Valve hacia los propios jugadores.
