@@ -7,12 +7,11 @@ header:
   og_image: /assets/images/teasers/pp2.jpg
 ---
 
-Los últimos días han sido caracterizados por una serie de quejas y reclamos respecto a la presencia (o falta de) por parte de Valve en la escena competitiva de Dota 2. Es verdad que, a comparación de Riot, Valve ha tenido un acercamiento a este tema que oscila entre lo laxo y lo perezoso. Sin embargo, una de las opiniones más interesantes en el tema la puso el siempre controvertido PPD, moviendo por un instante el reflector de Valve hacia los propios jugadores. La siguiente es una[serie de tweets](https://twitter.com/Peterpandam/status/1301887563532304385) publicados por él hace una semana y que me han venido comiendo la cabeza desde entonces.
+Los últimos días han sido caracterizados por una serie de quejas y reclamos respecto a la presencia (o falta de) por parte de Valve en la escena competitiva de Dota 2. Es verdad que, a comparación de Riot, Valve ha tenido un acercamiento a este tema que oscila entre lo laxo y lo perezoso. Sin embargo, una de las opiniones más interesantes en el tema la puso el siempre controvertido PPD, moviendo por un instante el reflector de Valve hacia los propios jugadores.
+
+Y es que, para el capitán histórico de Evil Geniuses, Valve no es el único responsable del desarrollo de la escena competitiva de Dota. Según él también tienen una responsabilidad compartida todos los jugadores top de la escena. En la [siguiente cadena de tweets](https://twitter.com/Peterpandam/status/1301887563532304385), Peter explica su posición.
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/tweets-ppd.jpg" alt="Tweets PPD">
-
-
-*"Y es que para el capitán histórico de Evil Geniuses, Valve no es el único responsable del desarrollo de la escena competitiva de Dota. Según él también tienen una responsabilidad compartida todos los jugadores top de la escena. En la siguiente cadena de tweets, Peter explica su posición.*
 
 *El poder en Dota pertenece primero a Valve y luego a los jugadores. Valve tiene otros intereses además de Dota. La oportunidad para construir está ahí, pero los jugadores top prefieren centrarse en ellos mismos y en sus equipos.*
 
