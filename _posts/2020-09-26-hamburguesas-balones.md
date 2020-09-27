@@ -1,6 +1,6 @@
 ---
 title: De hamburguesas y balones
-category: Misceláneos
+category: Miscelaneos
 excerpt: "De cómo Burger King y un pequeño equipo inglés se aprovecharon de uno de los videojuegos más influyentes de la historia."
 header:
   teaser: /assets/images/teasers/bk.jpg
