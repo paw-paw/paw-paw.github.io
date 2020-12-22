@@ -2,3 +2,6 @@ _site
 .sass-cache
 .jekyll-metadata
 Gemfile.lock
+assets/favicons/Thumbs.db
+assets/images/posts/teamsxd/Thumbs.db
+assets/images/teasers/Thumbs.db
