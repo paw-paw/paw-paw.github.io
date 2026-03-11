@@ -5,17 +5,9 @@ import compress from 'astro-compress';
 import preact from '@astrojs/preact';
 
 export default defineConfig({
-  site: 'https://garrettheath4.com/',
+  site: 'https://paw-paw.github.io/',
   output: 'static',
   trailingSlash: 'always',
-
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'de'],
-    routing: {
-      prefixDefaultLocale: false, // English pages won't have /en/, German will have /de/
-    },
-  },
 
   // Integrations
   integrations: [tailwind(), sitemap(), compress({

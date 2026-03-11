@@ -1,7 +1,7 @@
-export const name = "Fabian Bitzer";
-export const homepage_url = "https://fabian-bitzer.de/";
-export const linkedin_username = "fabian-bitzer";
-export const github_username = "nicremo";
+export const name = "Portfolio Owner";
+export const homepage_url = "https://paw-paw.github.io/";
+export const linkedin_username = "";
+export const github_username = "paw-paw";
 
 /*=============================================================================\
  | The email, phone number, and address fields below are Base64 encoded to     |
@@ -11,23 +11,23 @@ export const github_username = "nicremo";
  |                                                                             |
  | Mac command to Base64 encode (and copy the encoded data to the clipboard):  |
  |                                                                             |
- |     echo -n 'kontakt@bitzer-fabian.de' | base64 | pbcopy                    |
+ |     echo -n 'hello@example.com' | base64 | pbcopy                           |
  |                                                                             |
  | Linux command to Base64 encode:                                             |
  |                                                                             |
- |     echo -n 'kontakt@bitzer-fabian.de' | base64                             |
+ |     echo -n 'hello@example.com' | base64                                    |
  |                                                                             |
  | JavaScript command to Base64 encode:                                        |
  |                                                                             |
- |     btoa('kontakt@bitzer-fabian.de')                                        |
+ |     btoa('hello@example.com')                                               |
  |                                                                             |
  \============================================================================*/
-const email_base64_encoded = "a29udGFrdEBiaXR6ZXItZmFiaWFuLmRl";
-const phone_base64_encoded = "KzQ5IDE3OCA3MjY5MTc4";
+const email_base64_encoded = "aGVsbG9AZXhhbXBsZS5jb20=";
+const phone_base64_encoded = "KzAwIDAwMCAwMDAgMDAwMA==";
 
 // The address fields below are for the privacy policy. They are also Base64 encoded.
-const address_line_1_base64_encoded = "MTIzIE1haW4gU3Q=";
-const address_line_2_base64_encoded = "V2FzaGluZ3RvbiwgREM=";
+const address_line_1_base64_encoded = "QWRkcmVzcyBwZW5kaW5n";
+const address_line_2_base64_encoded = "TG9jYXRpb24gcGVuZGluZw==";
 
 // The data is decoded and exported below. Do not edit below this line.
 export const email = atob(email_base64_encoded);
@@ -36,6 +36,6 @@ export const address_line_1 = atob(address_line_1_base64_encoded);
 export const address_line_2 = atob(address_line_2_base64_encoded);
 
 // Helper code for creating URLs from the above data.
-export const linkedin_short = `linkedin.com/in/${linkedin_username}`;
-export const linkedin_url   = `https://www.linkedin.com/in/${linkedin_username}`;
+export const linkedin_short = linkedin_username ? `linkedin.com/in/${linkedin_username}` : "Profile pending";
+export const linkedin_url   = linkedin_username ? `https://www.linkedin.com/in/${linkedin_username}` : "";
 export const github_url = `https://github.com/${github_username}`;

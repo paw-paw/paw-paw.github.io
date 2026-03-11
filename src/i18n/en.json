@@ -1,7 +1,7 @@
 {
   "site": {
-    "title": "Nicremo - Portfolio",
-    "description": "Developer and creator of modern web templates focusing on Astro, multilingual support, and performance optimization."
+    "title": "Portfolio Website",
+    "description": "Portfolio website in active customization. Strategy, content, and visual direction are still being defined."
   },
   "nav": {
     "start": "Start",
@@ -11,10 +11,10 @@
     "contactButton": "Contact"
   },
   "hero": {
-    "greeting": "Hello, I am",
-    "name": "Nicremo",
-    "pitch": "I create modern, multilingual web templates and share them on GitHub to help developers build fast, accessible websites.",
-    "role": "Template Creator & Developer",
+    "greeting": "Hello,",
+    "name": "Portfolio Owner",
+    "pitch": "This portfolio is currently being prepared. Core positioning, content, and visual direction will be defined in upcoming phases.",
+    "role": "Profile details pending",
     "ctaProjects": "View Projects",
     "ctaAbout": "More About Me"
   },
@@ -117,15 +117,17 @@
     "buttonText": "View GitHub Profile"
   },
   "footerCTA": {
-    "title": "Need a Template?",
-    "subtitle": "Check out my open-source templates on GitHub and start building your next project today.",
-    "buttonText": "Browse on GitHub"
+    "title": "Project in Progress",
+    "subtitle": "The final call to action for this site will be defined after strategy and content phases are complete.",
+    "buttonText": "View Repository"
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "Have questions about my templates or want to collaborate? Feel free to reach out!",
+    "subtitle": "Core public contact details are still being finalized. Temporary placeholders remain active during cleanup.",
     "emailTitle": "Email",
     "emailButtonText": "Send Email",
+    "phoneTitle": "Phone",
+    "phoneButtonText": "Call",
     "githubTitle": "GitHub",
     "githubButtonText": "View Profile",
     "linkedinTitle": "LinkedIn",

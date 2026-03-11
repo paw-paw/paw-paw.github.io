@@ -17,7 +17,7 @@ const currentYear = new Date().getFullYear();
   <div class="max-w-container mx-auto px-6">
     <div class="flex flex-col md:flex-row justify-between items-center">
       <div class="mb-4 md:mb-0">
-        <a href={lang === 'de' ? '/de/' : '/'} class="block" aria-label="Homepage">
+        <a href="/" class="block" aria-label="Homepage">
           <!-- Light mode logo (hidden in dark mode) -->
           <Image src={logoLight} alt={name + " Logo"} class="h-7 w-auto dark:hidden transition-opacity duration-300" />
 
@@ -32,20 +32,18 @@ const currentYear = new Date().getFullYear();
 
       <div class="mt-4 md:mt-0 flex items-center space-x-6">
         {/* LinkedIn Icon - aria-label already present */}
-        <a
-          href={linkedin_url}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-secondary/70 dark:text-white/70 hover:text-primary dark:hover:text-primary transition-colors duration-300"
-          aria-label="LinkedIn"
+        <span
+          class="text-secondary/40 dark:text-white/40 cursor-not-allowed"
+          aria-label="LinkedIn pending"
+          title="LinkedIn pending"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="linkedinFooterIconTitle">
-            <title id="linkedinFooterIconTitle">LinkedIn Profile</title>
+            <title id="linkedinFooterIconTitle">LinkedIn Pending</title>
             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
             <rect width="4" height="12" x="2" y="9"></rect>
             <circle cx="4" cy="4" r="2"></circle>
           </svg>
-        </a>
+        </span>
         {/* GitHub Icon - aria-label already present */}
         <a
           href={github_url}
@@ -63,20 +61,5 @@ const currentYear = new Date().getFullYear();
       </div>
     </div>
 
-    <div class="mt-6 pt-6 border-t border-gray-100 dark:border-gray-800 text-xs text-center text-secondary/60 dark:text-white/60">
-      <nav class="flex flex-wrap justify-center gap-x-6 gap-y-2">
-        {lang === 'de' ? (
-          <>
-            <a href="/de/imprint/" class="hover:text-primary transition-colors duration-300">{t('footer.imprint', lang)}</a>
-            <a href="/de/privacy-policy/" class="hover:text-primary transition-colors duration-300">{t('footer.privacyPolicy', lang)}</a>
-          </>
-        ) : (
-          <>
-            <a href="/impressum/" class="hover:text-primary transition-colors duration-300">{t('footer.imprint', lang)}</a>
-            <a href="/datenschutz/" class="hover:text-primary transition-colors duration-300">{t('footer.privacyPolicy', lang)}</a>
-          </>
-        )}
-      </nav>
-    </div>
   </div>
 </footer>
