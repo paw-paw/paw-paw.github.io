@@ -258,6 +258,100 @@
 
 ### Alcance pospuesto
 
+---
+
+## 2026-03-11 — Tesis estrategica de `Fase 1`
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `1`
+
+### Decision / registro
+
+- el portfolio sera hibrido, orientado a oportunidades profesionales de alto valor
+- el sesgo principal sera empleo remoto y roles de operations / program-project / partnerships
+- la audiencia primaria sera hiring managers, founders y leaders de operations o partnerships en gaming, esports y sectores adyacentes
+- la audiencia secundaria seguira incluyendo recruiters generalistas y managers no especializados
+- la narrativa principal sera operador de delivery / project-program management con puente controlado hacia partnerships y business development
+- el mensaje prioritario sera que el perfil convierte objetivos ambiguos en programas ejecutables y confiables
+
+### Razon
+
+- el material de `truth` sostiene con mas fuerza una narrativa de delivery, ownership y coordinacion cross-functional
+- la amplitud del perfil aporta valor cuando refuerza ejecucion y no cuando fragmenta el posicionamiento
+- el sitio necesita seguir siendo interpretable para audiencias no especializadas sin diluir la ventaja competitiva principal
+
+### Documentos afectados
+
+- `docs/strategy/portfolio-strategy.md`
+- `docs/content/source-data-map.md`
+- `docs/plans/phase-1.md`
+
+---
+
+## 2026-03-11 — CTA, idioma maestro y tono inicial del portfolio
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `1`
+
+### Decision / registro
+
+- el idioma maestro del portfolio sera ingles
+- el CTA principal sera `View selected work`
+- el CTA secundario sera `Start a conversation`
+- el tono profesional sera claro, operatorio, confiable y sobrio
+- los atributos iniciales de marca seran `reliable`, `structured`, `cross-functional`, `evidence-led` y `calm-under-pressure`
+
+### Razon
+
+- el ingles alinea mejor con la audiencia primaria y con la base actual de `truth`
+- el CTA principal debe empujar primero credibilidad y evidencia antes de contacto
+- el CTA secundario debe abrir conversacion sin encerrar el sitio en una sola modalidad de conversion
+- el tono debe reforzar execution y confianza, no hype o autopromocion
+
+### Documentos afectados
+
+- `docs/strategy/portfolio-strategy.md`
+- `docs/plans/phase-1.md`
+
+---
+
+## 2026-03-11 — Reglas estrategicas de uso de `temp/truth/`
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `1`
+
+### Decision / registro
+
+- `temp/truth/` se usara en `Fase 1` para validar estrategia, detectar evidencia util y definir exclusiones
+- `experience/` y `projects/` entran como pilares equivalentes de evidencia
+- `education/` entra como soporte de credibilidad y contexto, no como eje narrativo
+- `skills/` entra como soporte de capacidades, no como lista aislada sin evidencia
+- `personal.yaml` entra solo de forma parcial y bajo politica de publicabilidad restringida
+- la fidelidad a hechos sera alta, pero la seleccion y el framing seran curados
+
+### Razon
+
+- el portfolio necesita una narrativa profesional clara y no un volcado del archivo personal
+- `truth` contiene evidencia fuerte, pero tambien estructura y metadata pensadas para otros usos
+- la estrategia debe decidir que entra y que no antes de pasar a arquitectura y sistema de contenido
+
+### Implicacion para fases siguientes
+
+- `Fase 2` definira el mapping por seccion y entidades internas del sitio
+- `Fase 4` podra usar evidencia seleccionada sin copiar el schema original
+
+### Documentos afectados
+
+- `docs/content/source-data-map.md`
+- `docs/strategy/portfolio-strategy.md`
+- `docs/plans/phase-1.md`
+
 - redefinicion profunda de AOS, GSAP y `src/scripts/animations.js`
 - limpieza final de residuos no activos en `src/assets/`
 - redefinicion completa del contenido visible mas alla del copy critico neutralizado
