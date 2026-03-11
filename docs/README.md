@@ -29,6 +29,17 @@ Reglas adicionales:
 - Hasta el inicio de la Fase 5, el sitio se considera explícitamente monoidioma.
 - Si un conflicto no puede resolverse con esta precedencia, debe señalarse explícitamente. No asumir silenciosamente una nueva verdad.
 
+### Fuentes externas y staging
+
+- `temp/` puede contener fuentes externas crudas de trabajo.
+- `temp/truth/` se considera una fuente upstream auxiliar, no contractual.
+- `temp/truth/` no sustituye a `docs/` ni a los documentos contractuales del repo.
+- `temp/truth/` no debe ser consumido directamente por la app ni por `src/`.
+- Cualquier uso de una fuente externa debe pasar por una capa de interpretación y normalización definida por el repo.
+- Si `temp/truth/` contradice `docs/`, mandan los documentos contractuales y este `README.md`.
+- `content/content-master.md` sigue siendo la versión canónica aprobada del contenido, aunque use fuentes externas como apoyo.
+- Metadatos ajenos al contenido, como `*.Zone.Identifier`, no forman parte de la fuente útil.
+
 ---
 
 ## Organización por carpetas
@@ -55,6 +66,7 @@ La documentación se organiza por dominio de trabajo, no por fase.
 | `governance/template-audit.md` | Auxiliar | Fase 0 | Preservar | Documenta inventario del template, incoherencias, riesgos y decisiones de conservación o reescritura. No define el estado final del sitio. |
 | `delivery/deployment.md` | Contractual | Fase 0 | Preservar | Define dominio, hosting, build/deploy, base path y restricciones estructurales de routing, SEO y assets. No lista copy SEO por página. |
 | `strategy/portfolio-strategy.md` | Contractual | Fase 1 | Preservar | Define objetivo del portfolio, audiencia, posicionamiento, tono y CTA. No define arquitectura detallada ni copy final por sección. |
+| `content/source-data-map.md` | Auxiliar | Fase 1 | Crear y preservar | Define cómo se interpreta y transforma una fuente externa cruda como `temp/truth/`. No sustituye el sistema de contenido ni el contenido maestro. |
 | `architecture/site-architecture.md` | Contractual | Fase 2 | Preservar | Define secciones, orden, navegación, anchors y páginas. No define reglas de copy, sistema visual ni detalle técnico de datos. |
 | `content/content-system.md` | Contractual | Fase 2 | Preservar | Define propósito de secciones, reglas de copy, claims permitidos, estructura mínima de contenido y consistencia editorial. No contiene el texto final aprobado. |
 | `visual/visual-system.md` | Contractual | Fase 3 | Preservar | Define dirección visual, paleta, tipografía, dark mode y reglas de componentes. No funciona como plan operativo de assets ni como spec de motion detallada. |
@@ -106,6 +118,16 @@ Debe responder:
 - ¿Qué quiero que la persona entienda en los primeros 10 segundos?
 - ¿Qué CTA principal debe empujar el sitio?
 - ¿Qué tono debe comunicar?
+- ¿Qué partes de una fuente externa como `temp/truth/` sí aportan valor al portfolio y cuáles no?
+
+### `content/source-data-map.md`
+Debe responder:
+- ¿Qué fuentes externas existen y cuál es su rol dentro del repo?
+- ¿Qué categorías de `temp/truth/` entran al portfolio y cuáles quedan fuera?
+- ¿Qué campos se aceptan, se transforman o se descartan?
+- ¿Qué entidades internas del portfolio alimenta cada categoría?
+- ¿Qué reglas de precedencia aplican cuando la fuente externa contradice `docs/`?
+- ¿Cuál es la salida normalizada esperada antes de llegar a implementación o a `content-master.md`?
 
 ### `architecture/site-architecture.md`
 Debe responder:
@@ -122,6 +144,7 @@ Debe responder:
 - ¿Qué claims están permitidos?
 - ¿Qué estructura mínima deben seguir los case studies, si existen?
 - ¿Qué vive en datos/archivos editables y qué no?
+- ¿Cómo se usa una capa normalizada derivada de fuentes externas sin acoplar el sitio al schema original?
 - ¿Cómo se mantiene consistencia entre hero, CTA, navegación, footer y metadata?
 
 ### `visual/visual-system.md`

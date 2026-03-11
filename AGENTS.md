@@ -33,6 +33,13 @@ Si hay conflicto entre documentación y código, manda la documentación.
 ### Archivos derivados
 Si existen archivos generados o derivados, no los uses como fuente de verdad principal.
 
+### Fuentes externas temporales
+- `temp/` puede contener fuentes externas crudas de trabajo.
+- `temp/truth/` es una fuente upstream auxiliar, no contractual.
+- No usar `temp/truth/` como fuente directa de runtime ni como sustituto de `docs/`.
+- Si un schema externo entra en conflicto con la documentación contractual, manda `docs/`.
+- Metadatos del sistema operativo como `*.Zone.Identifier` no forman parte de la fuente útil y deben ignorarse.
+
 ---
 
 ## 3) Límites operativos
@@ -51,6 +58,7 @@ Si existen archivos generados o derivados, no los uses como fuente de verdad pri
 - Cambiar routing, i18n, SEO estructural, deployment o dominio.
 - Eliminar páginas, componentes, assets o secciones existentes.
 - Introducir una convención nueva no documentada.
+- Conectar una fuente externa o un schema externo directamente a `src/` o al runtime.
 
 ### Nunca
 - No sobrescribir decisiones documentadas por criterio propio.
@@ -137,6 +145,7 @@ Una tarea no está completa si:
 - Preferir nombres explícitos y composición simple.
 - Evitar hardcodear contenido que debería vivir en datos o archivos editables.
 - No crear abstracciones prematuras por cambios pequeños.
+- No adaptar el portfolio al schema de una fuente externa; adaptar la fuente externa al modelo definido por el portfolio.
 
 ---
 
@@ -152,6 +161,7 @@ Ajustar esta sección cuando la estructura real quede definida.
 - `src/utils/`: utilidades
 - `public/`: archivos públicos estáticos
 - `docs/`: especificaciones contractuales
+- `temp/`: fuentes externas crudas y staging no contractual
 
 ---
 
@@ -170,6 +180,7 @@ Actualizar `docs/` cuando cambie cualquiera de estas cosas:
 - estrategia del portfolio
 - arquitectura de secciones
 - modelo de contenido
+- rol o transformación de una fuente externa como `temp/truth/`
 - sistema visual
 - idiomas soportados
 - SEO estructural

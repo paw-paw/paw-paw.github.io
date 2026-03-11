@@ -223,11 +223,19 @@ Definir qué va a ser el portfolio antes de escribir o diseñar.
   - [ ] 3–5 atributos de marca
   - [ ] qué NO debe comunicar el sitio
   - [ ] qué diferencia tu portfolio de uno genérico de “developer portfolio”
+- [ ] **Documento `docs/content/source-data-map.md`**
+  - [ ] qué es `temp/truth/` dentro de este repo
+  - [ ] qué categorías externas existen y cuáles son relevantes para el portfolio
+  - [ ] qué categorías quedan explícitamente fuera
+  - [ ] qué reglas de precedencia aplican entre `truth` y `docs/`
+  - [ ] qué nivel de fidelidad al historial real necesita el portfolio
 
 ### Debes decidir
 - [ ] ¿Es un portfolio para empleo, clientes, networking o híbrido?
 - [ ] ¿Tu narrativa principal será PM/ops, esports-business, founder-builder o híbrida?
 - [ ] ¿Qué quieres que piense alguien en los primeros 10 segundos?
+- [ ] ¿Qué partes de `temp/truth/` sí deben influir en la narrativa del portfolio?
+- [ ] ¿Qué partes de `temp/truth/` no deben entrar al sitio aunque sean ciertas?
 
 ### Puedes definir
 - [ ] Mensajes por audiencia
@@ -235,7 +243,12 @@ Definir qué va a ser el portfolio antes de escribir o diseñar.
 - [ ] Hipótesis de conversión por tipo de visitante
 
 ### Archivos a tocar
-- [ ] Ninguno todavía, salvo si quieres crear `/docs`
+- [ ] `docs/strategy/portfolio-strategy.md`
+- [ ] `docs/content/source-data-map.md`
+- [ ] `temp/truth/_schema.md`
+- [ ] `temp/truth/personal.yaml`
+- [ ] `temp/truth/summary.md`
+- [ ] categorías relevantes dentro de `temp/truth/`
 
 ### Dependencias
 - [ ] Requiere Fase 0B cerrada.
@@ -244,6 +257,8 @@ Definir qué va a ser el portfolio antes de escribir o diseñar.
 - [ ] Existe una tesis clara del portfolio
 - [ ] Existe una audiencia prioritaria
 - [ ] Existe una versión canónica de tu positioning
+- [ ] Ya está definido el rol de `temp/truth/` como fuente auxiliar
+- [ ] Ya está claro qué categorías de `truth` sí entran y cuáles no
 
 ---
 
@@ -269,6 +284,11 @@ Diseñar el esqueleto del sitio.
   - [ ] qué debería migrarse a datos
   - [ ] cómo se mantiene consistencia entre hero, CTA, navegación, footer y metadata
   - [ ] si existirán case studies, cuál es su estructura contractual mínima
+- [ ] **Actualizar `docs/content/source-data-map.md`**
+  - [ ] mapping `truth -> entidades del portfolio`
+  - [ ] qué campos alimentan hero, about, skills, timeline/experience, case studies y proof points
+  - [ ] qué campos del schema externo se descartan
+  - [ ] qué datos pasan a una capa normalizada propia del repo y cuáles siguen solo como referencia
 
 ### Debes modificar
 - [ ] Definir si se mantienen, renombran o eliminan estas piezas:
@@ -293,6 +313,8 @@ Diseñar el esqueleto del sitio.
 - [ ] `src/pages/index.astro`
 - [ ] `src/components/layout/Navbar.astro`
 - [ ] componentes de `src/components/sections/*`
+- [ ] `docs/content/source-data-map.md`
+- [ ] categorías relevantes dentro de `temp/truth/`
 
 ### Dependencias
 - [ ] Requiere Fase 1 cerrada.
@@ -301,6 +323,8 @@ Diseñar el esqueleto del sitio.
 - [ ] Existe un mapa claro del sitio
 - [ ] Sabes qué secciones sobreviven
 - [ ] Sabes el orden final de la home
+- [ ] Existe un mapping claro entre `temp/truth/` y las entidades del portfolio
+- [ ] Ya está definido qué vive como dato estructurado, qué vive como copy compuesto y qué se descarta
 
 ---
 
@@ -384,9 +408,11 @@ Construir la versión canónica del portfolio.
   - [ ] `footer*`
 - [ ] Corregir contratos rotos de traducción
 - [ ] Revisar contenido hardcodeado dentro de componentes
+- [ ] Si se usará `temp/truth/` como fuente base, transformar solo la información aprobada a una capa normalizada propia del repo
 
 ### Puedes modificar
 - [ ] Migrar datos hardcodeados a JSON o TS data files
+- [ ] Crear una capa normalizada propia del repo para datos derivados de `truth`, si `docs/content/source-data-map.md` ya la define
 - [ ] Redefinir por completo taxonomía de “Skills”
 - [ ] Volver “Projects” una sección de casos serios
 - [ ] Reemplazar “Timeline” por narrativa de experiencia/logros
