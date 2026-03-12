@@ -15,7 +15,7 @@ module.exports = {
           dark: '#11161B',
           darkSoft: '#1A2129',
         },
-        fog: '#E8ECE7',
+        fog: '#F4F6F0',
         muted: '#55606B',
       },
       fontFamily: {
