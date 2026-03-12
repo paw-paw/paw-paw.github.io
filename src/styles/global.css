@@ -11,11 +11,15 @@ html, body {
 }
 
 :root {
-  --color-primary-rgb: 37, 99, 235; /* Blue-600 RGB values */
+  --color-primary-rgb: 47, 122, 119;
+  --color-secondary-rgb: 31, 37, 45;
+  --color-surface-rgb: 251, 248, 242;
 }
 
 .dark {
-  --color-primary-rgb: 59, 130, 246; /* Blue-500 RGB values for dark mode */
+  --color-primary-rgb: 108, 167, 161;
+  --color-secondary-rgb: 232, 236, 231;
+  --color-surface-rgb: 26, 33, 41;
 }
 
 @layer base {
@@ -25,18 +29,26 @@ html, body {
   }
 
   body {
-    font-family: 'Inter', sans-serif;
-    @apply text-body;
+    font-family: 'IBM Plex Sans', sans-serif;
+    @apply bg-neutral-bg text-body text-secondary dark:bg-neutral-dark dark:text-fog;
+    background-image:
+      radial-gradient(circle at top left, rgba(var(--color-primary-rgb), 0.08), transparent 34%),
+      linear-gradient(180deg, rgba(255,255,255,0.16), transparent 38%);
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Sora', sans-serif;
-    font-weight: 600;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+  }
+
+  p {
+    text-wrap: pretty;
   }
 
   /* Custom scrollbar */
   ::-webkit-scrollbar {
-    width: 12px;
+    width: 10px;
   }
 
   ::-webkit-scrollbar-track {
@@ -44,28 +56,83 @@ html, body {
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-gray-300 dark:bg-gray-700 rounded-full;
+    background: rgba(var(--color-primary-rgb), 0.28);
+    border-radius: 999px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    @apply bg-gray-400 dark:bg-gray-600;
+    background: rgba(var(--color-primary-rgb), 0.45);
   }
 
   /* Selection color */
   ::selection {
-    @apply bg-primary/20 text-primary;
+    @apply bg-primary/20 text-secondary dark:text-fog;
   }
 
   /* Focus styles */
   a:focus-visible, button:focus-visible {
-    @apply outline-none ring-2 ring-highlightBlue/50 ring-offset-2 dark:ring-offset-neutral-dark;
+    @apply outline-none ring-2 ring-primary/40 ring-offset-2 ring-offset-neutral-bg dark:ring-offset-neutral-dark;
   }
 }
 
 @layer components {
-  /* Add component classes here */
   .container-padding {
     @apply px-6;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .section-eyebrow {
+    @apply mb-4 inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.22em] text-primary;
+  }
+
+  .surface-card {
+    background: rgba(var(--color-surface-rgb), 0.88);
+    border: 1px solid rgba(var(--color-secondary-rgb), 0.08);
+    box-shadow: 0 24px 60px -32px rgba(31, 37, 45, 0.18);
+    @apply rounded-3xl transition-all duration-300;
+  }
+
+  .surface-card:hover {
+    border-color: rgba(var(--color-primary-rgb), 0.28);
+    box-shadow: 0 28px 64px -32px rgba(31, 37, 45, 0.24);
+    transform: translateY(-2px);
+  }
+
+  .surface-muted {
+    @apply rounded-3xl border border-secondary/10 bg-white/70 dark:border-fog/10 dark:bg-neutral-darkSoft/70;
+    backdrop-filter: blur(12px);
+  }
+
+  .brand-lockup {
+    @apply inline-flex items-center gap-3 text-secondary dark:text-fog;
+  }
+
+  .brand-badge {
+    @apply inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-secondary/10 bg-secondary text-sm font-heading font-bold text-neutral-bg dark:border-fog/10 dark:bg-fog dark:text-neutral-dark;
+    box-shadow: 0 16px 40px -24px rgba(31, 37, 45, 0.38);
+  }
+
+  .brand-wordmark {
+    @apply font-heading text-lg tracking-[-0.04em];
+  }
+
+  .soft-grid {
+    position: relative;
+  }
+
+  .soft-grid::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+      linear-gradient(rgba(var(--color-secondary-rgb), 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(var(--color-secondary-rgb), 0.05) 1px, transparent 1px);
+    background-size: 28px 28px;
+    mask-image: linear-gradient(180deg, rgba(0,0,0,0.45), transparent 88%);
   }
 
   /* Skill cluster components */
@@ -75,9 +142,8 @@ html, body {
 
   .skill-cluster:hover,
   .skill-cluster.hover-effect {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 15px -3px rgba(var(--color-primary-rgb), 0.1),
-                0 4px 6px -2px rgba(var(--color-primary-rgb), 0.05);
+    transform: translateY(-2px);
+    box-shadow: 0 28px 64px -32px rgba(31, 37, 45, 0.24);
     border-color: rgba(var(--color-primary-rgb), 0.3);
   }
 
@@ -105,12 +171,5 @@ html, body {
   .tool-icon {
     transition: transform 0.3s ease, rotate 0.3s ease;
     transform-origin: center;
-  }
-}
-
-@layer utilities {
-  /* Add utility classes here */
-  .section-padding {
-    @apply py-16 md:py-24;
   }
 }

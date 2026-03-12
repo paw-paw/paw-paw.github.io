@@ -1,8 +1,5 @@
 ---
 import { t } from '../../utils/i18n';
-import { Image } from 'astro:assets';
-import logoLight from '../../assets/logo.png';
-import logoDark from '../../assets/logo_white.png';
 import { name, linkedin_url, github_url, instagram_url } from '../../utils/me';
 
 interface Props {
@@ -13,20 +10,17 @@ const { lang } = Astro.props;
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class="py-8 bg-white dark:bg-neutral-dark border-t border-gray-100 dark:border-gray-800">
+<footer class="border-t border-secondary/10 py-8 dark:border-fog/10">
   <div class="max-w-container mx-auto px-6">
     <div class="flex flex-col md:flex-row justify-between items-center">
       <div class="mb-4 md:mb-0">
-        <a href="/" class="block" aria-label="Homepage">
-          <!-- Light mode logo (hidden in dark mode) -->
-          <Image src={logoLight} alt={name + " Logo"} class="h-7 w-auto dark:hidden transition-opacity duration-300" />
-
-          <!-- Dark mode logo (hidden in light mode) -->
-          <Image src={logoDark} alt={name + " Logo"} class="h-7 w-auto hidden dark:block transition-opacity duration-300" />
+        <a href="/" class="brand-lockup" aria-label="Homepage">
+          <span class="brand-badge">P</span>
+          <span class="brand-wordmark">Pawpaw</span>
         </a>
       </div>
 
-      <div class="text-sm text-secondary/60 dark:text-white/60">
+      <div class="text-sm text-secondary/60 dark:text-fog/60">
         &copy; {currentYear} {name}. {t('footer.copyright', lang)}
       </div>
 
@@ -35,7 +29,7 @@ const currentYear = new Date().getFullYear();
           href={linkedin_url}
           target="_blank"
           rel="noopener noreferrer"
-          class="text-secondary/70 dark:text-white/70 hover:text-primary dark:hover:text-primary transition-colors duration-300"
+          class="text-secondary/70 transition-colors duration-300 hover:text-primary dark:text-fog/70 dark:hover:text-highlightBlue"
           aria-label="LinkedIn"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="linkedinFooterIconTitle">
@@ -49,7 +43,7 @@ const currentYear = new Date().getFullYear();
           href={github_url}
           target="_blank"
           rel="noopener noreferrer"
-          class="text-secondary/70 dark:text-white/70 hover:text-primary dark:hover:text-primary transition-colors duration-300"
+          class="text-secondary/70 transition-colors duration-300 hover:text-primary dark:text-fog/70 dark:hover:text-highlightBlue"
           aria-label="GitHub"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="githubFooterIconTitle">
@@ -62,7 +56,7 @@ const currentYear = new Date().getFullYear();
           href={instagram_url}
           target="_blank"
           rel="noopener noreferrer"
-          class="text-secondary/70 dark:text-white/70 hover:text-primary dark:hover:text-primary transition-colors duration-300"
+          class="text-secondary/70 transition-colors duration-300 hover:text-primary dark:text-fog/70 dark:hover:text-highlightBlue"
           aria-label="Instagram"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="instagramFooterIconTitle">
@@ -74,6 +68,5 @@ const currentYear = new Date().getFullYear();
         </a>
       </div>
     </div>
-
   </div>
 </footer>

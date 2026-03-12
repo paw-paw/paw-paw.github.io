@@ -219,6 +219,36 @@
 
 ### Evidencia
 
+---
+
+## 2026-03-12 — Direccion visual base de Fase 3
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `3`
+
+### Decision / registro
+
+- la direccion visual del portfolio pasa a `tech-modern` limpia y propia
+- la paleta base aprobada es `graphite + mineral teal + bone`
+- dark mode se mantiene con paridad real, sin dominar la identidad
+- el branding visible base se resuelve con monograma `P` y wordmark `Pawpaw`
+- el hero usa `pawpaw-portrait.png` como asset aprobado de esta fase
+- el favicon visible deja de depender del icono heredado del template y pasa a una version tipografica provisional
+
+### Razon
+
+- Fase 3 debe romper la dependencia visual del template antes de entrar a contenido maestro
+- la estrategia pide una identidad sobria, confiable y orientada a delivery, no una estetica gaming-neon ni un SaaS template generico
+- el asset aprobado del hero aporta personalidad suficiente sin exigir aun una bateria completa de branding final
+
+### Documentos afectados
+
+- `docs/visual/visual-system.md`
+- `docs/visual/asset-plan.md`
+- `docs/plans/phase-3.md`
+
 - ya no existen rutas activas `/en/` ni `/de/`
 - ya no existe `LanguageSwitcher`
 - `astro.config.mjs` y `public/robots.txt` apuntan a `https://paw-paw.github.io/`

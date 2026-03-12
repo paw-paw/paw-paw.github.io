@@ -8,13 +8,14 @@ interface Props {
 const { lang } = Astro.props;
 ---
 
-<section class="py-16 md:py-24 bg-neutral-bg dark:bg-neutral-dark/60 text-center">
+<section class="section-padding text-center">
   <div class="max-w-container mx-auto px-6">
-    <div data-aos="fade-up">
-      <h2 class="font-heading text-h2 text-secondary dark:text-white mb-6">
+    <div class="surface-muted px-8 py-10 md:px-12 md:py-14" data-aos="fade-up">
+      <span class="section-eyebrow">Next step</span>
+      <h2 class="font-heading text-h2 text-secondary dark:text-fog mb-6">
         {t('footerCTA.title', lang)}
       </h2>
-      <p class="text-secondary/70 dark:text-white/70 max-w-2xl mx-auto mb-8">
+      <p class="max-w-2xl mx-auto mb-8 text-secondary/70 dark:text-fog/72">
         {t('footerCTA.subtitle', lang)}
       </p>
 

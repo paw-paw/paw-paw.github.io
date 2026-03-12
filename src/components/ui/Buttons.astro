@@ -16,22 +16,22 @@ const {
 } = Astro.props;
 
 const variants = {
-  primary: 'bg-primary text-white hover:bg-primary/90',
-  secondary: 'bg-secondary text-white hover:bg-secondary/90',
-  outline: 'bg-transparent border border-primary text-primary hover:bg-primary/10',
+  primary: 'border border-primary bg-primary text-neutral-bg hover:border-primary/90 hover:bg-primary/90',
+  secondary: 'border border-secondary bg-secondary text-neutral-bg hover:border-secondary/90 hover:bg-secondary/92 dark:border-fog/10 dark:bg-fog dark:text-neutral-dark',
+  outline: 'border border-secondary/14 bg-transparent text-secondary hover:border-primary/35 hover:text-primary dark:border-fog/14 dark:text-fog dark:hover:border-primary/35 dark:hover:text-highlightBlue',
 };
 
 const sizes = {
-  sm: 'text-sm py-2 px-4',
-  md: 'text-body py-3 px-6',
-  lg: 'text-lg py-4 px-8',
+  sm: 'px-4 py-2.5 text-sm',
+  md: 'px-6 py-3 text-body',
+  lg: 'px-8 py-4 text-lg',
 };
 ---
 
 <a
   href={href}
   class:list={[
-    'inline-flex items-center justify-center rounded-lg font-medium transition-all duration-300 transform hover:scale-104 hover:shadow-button focus:outline-none focus:ring-2 focus:ring-primary/50 focus-visible:ring-2 focus-visible:ring-primary/50',
+    'inline-flex items-center justify-center rounded-full font-medium tracking-[-0.02em] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-button focus:outline-none focus:ring-2 focus:ring-primary/50 focus-visible:ring-2 focus-visible:ring-primary/50',
     variants[variant],
     sizes[size],
     className
@@ -41,9 +41,3 @@ const sizes = {
   {text}
   <slot />
 </a>
-
-<style>
-  .hover\:scale-104:hover {
-    transform: scale(1.04);
-  }
-</style>

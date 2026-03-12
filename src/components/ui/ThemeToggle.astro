@@ -9,10 +9,9 @@ const { id = "theme-toggle" } = Astro.props;
 <button
   id={id}
   type="button"
-  class="theme-toggle-btn relative inline-flex items-center justify-center w-10 h-10 p-2 rounded-lg text-secondary dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary/50"
+  class="theme-toggle-btn relative inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-secondary/10 bg-white/75 p-2 text-secondary transition-colors duration-300 hover:border-primary/25 hover:text-primary dark:border-fog/10 dark:bg-neutral-darkSoft/80 dark:text-fog dark:hover:border-primary/25 dark:hover:text-highlightBlue"
   aria-label="Toggle Dark Mode"
 >
-  <!-- Sun icon (displayed in dark mode) -->
   <svg
     xmlns="http://www.w3.org/2000/svg"
     class="h-5 w-5 absolute dark:opacity-100 opacity-0 transition-opacity duration-300"
@@ -34,7 +33,6 @@ const { id = "theme-toggle" } = Astro.props;
     <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
   </svg>
 
-  <!-- Moon icon (displayed in light mode) -->
   <svg
     xmlns="http://www.w3.org/2000/svg"
     class="h-5 w-5 absolute opacity-100 dark:opacity-0 transition-opacity duration-300"
@@ -50,15 +48,5 @@ const { id = "theme-toggle" } = Astro.props;
 </button>
 
 <script>
-  // All logic is now in src/scripts/theme-toggle.js
-  // This script is processed by Astro due to client:* directives on ThemeToggle component usage.
   import { initializeTheme } from '../../scripts/theme-toggle.js';
-  // initializeTheme(); // The script itself calls initializeTheme on DOMContentLoaded or immediately.
-  // So, just importing it should be enough for it to be bundled and run.
-  // If initializeTheme needs to be called explicitly per component instance, that's different.
-  // But the script is designed to run once and affect all .theme-toggle-btn elements.
-  // For Astro, client-side scripts in .astro files are bundled. If this script tag is empty
-  // or only contains imports, Astro might optimize it away unless the import has side effects
-  // or is used. The `initializeTheme()` call within theme-toggle.js itself handles execution.
-  // To ensure the module is evaluated, we can just have the import.
 </script>

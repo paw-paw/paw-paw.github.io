@@ -65,11 +65,12 @@ const skillClusters = [
 ];
 ---
 
-<section id="skills" class="py-16 md:py-24">
+<section id="skills" class="section-padding">
   <div class="max-w-container mx-auto px-6">
     <div class="mb-8 md:mb-10 text-center" data-aos="fade-up" data-aos-duration="800">
-      <h2 class="font-heading text-h2 text-secondary dark:text-white mb-4">{t('skills.title', lang)}</h2>
-      <p class="text-secondary/70 dark:text-white/70 max-w-2xl mx-auto">
+      <span class="section-eyebrow">Capability</span>
+      <h2 class="font-heading text-h2 text-secondary dark:text-fog mb-4">{t('skills.title', lang)}</h2>
+      <p class="text-secondary/70 dark:text-fog/72 max-w-2xl mx-auto">
         {t('skills.subtitle', lang)}
       </p>
     </div>
@@ -78,32 +79,31 @@ const skillClusters = [
       {skillClusters.map((cluster, index) => (
         <div
           id={cluster.id}
-          class="skill-cluster bg-white dark:bg-neutral-dark border border-gray-100 dark:border-gray-800 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300"
+          class="surface-card skill-cluster p-6"
           data-aos="fade-up"
           data-aos-duration="600"
           data-aos-delay={index * 150}
         >
           <div class="cluster-header flex items-center mb-4">
-            <div class="icon-container mr-4 text-primary bg-primary/5 p-3 rounded-lg">
-              {/* SVG for Cluster Icon with specific paths */}
+            <div class="icon-container mr-4 rounded-2xl bg-primary/10 p-3 text-primary">
               <cluster.icon size=26 stroke-width=1.75 />
             </div>
-            <h3 class="font-heading text-xl text-secondary dark:text-white">
+            <h3 class="font-heading text-xl text-secondary dark:text-fog">
               {cluster.title}
             </h3>
           </div>
 
-          <p class="text-secondary/70 dark:text-white/70 mb-4 cluster-description">
+          <p class="mb-4 cluster-description text-secondary/70 dark:text-fog/72">
             {cluster.description}
           </p>
 
           <div class="cluster-tools grid grid-cols-2 sm:grid-cols-3 gap-4 mt-6">
             {cluster.tools.map((tool) => (
               <div class="tool-item flex flex-col items-center text-center">
-                <div class="tool-icon text-primary bg-primary/5 p-3 rounded-lg mb-2">
+                <div class="tool-icon mb-2 rounded-2xl bg-primary/10 p-3 text-primary">
                   <tool.icon size=20 stroke-width=1.75 />
                 </div>
-                <p class="text-sm font-medium text-secondary dark:text-white">{tool.name}</p>
+                <p class="text-sm font-medium text-secondary dark:text-fog">{tool.name}</p>
               </div>
             ))}
           </div>
@@ -112,7 +112,3 @@ const skillClusters = [
     </div>
   </div>
 </section>
-
-<script>
-  // Skills section will be animated via the animations.js file
-</script>

@@ -8,19 +8,19 @@ interface Props {
 const { lang } = Astro.props;
 ---
 
-<section id="how-i-work" class="py-16 md:py-24 bg-neutral-bg dark:bg-neutral-dark/60">
+<section id="how-i-work" class="section-padding bg-section-wash">
   <div class="max-w-container mx-auto px-6">
     <div class="mb-12 text-center" data-aos="fade-up">
-      <h2 class="font-heading text-h2 text-secondary dark:text-white mb-4">{t('values.title', lang)}</h2>
-      <p class="text-secondary/70 dark:text-white/70 max-w-2xl mx-auto">
+      <span class="section-eyebrow">Method</span>
+      <h2 class="font-heading text-h2 text-secondary dark:text-fog mb-4">{t('values.title', lang)}</h2>
+      <p class="text-secondary/70 dark:text-fog/72 max-w-2xl mx-auto">
         {t('values.subtitle', lang)}
       </p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- Performance Card -->
       <div
-        class="group bg-white dark:bg-neutral-dark border border-gray-100 dark:border-gray-800 rounded-xl p-8 shadow-sm hover:shadow-md transition-all duration-300 transform hover:scale-105 hover:bg-gradient-highlight dark:hover:bg-gradient-to-br dark:hover:from-primary/5 dark:hover:to-orange-500/5"
+        class="surface-card group p-8"
         data-aos="fade-up"
         data-aos-delay="100"
       >
@@ -31,15 +31,14 @@ const { lang } = Astro.props;
             <circle cx="12" cy="12" r="3"></circle>
           </svg>
         </div>
-        <h3 class="font-heading text-xl text-secondary dark:text-white mb-3 group-hover:text-primary transition-colors duration-300">{t('values.card1Title', lang)}</h3>
-        <p class="text-secondary/70 dark:text-white/70">
+        <h3 class="font-heading text-xl text-secondary dark:text-fog mb-3 group-hover:text-primary transition-colors duration-300">{t('values.card1Title', lang)}</h3>
+        <p class="text-secondary/70 dark:text-fog/72">
           {t('values.card1Text', lang)}
         </p>
       </div>
 
-      <!-- Accessibility Card -->
       <div
-        class="group bg-white dark:bg-neutral-dark border border-gray-100 dark:border-gray-800 rounded-xl p-8 shadow-sm hover:shadow-md transition-all duration-300 transform hover:scale-105 hover:bg-gradient-highlight dark:hover:bg-gradient-to-br dark:hover:from-primary/5 dark:hover:to-orange-500/5"
+        class="surface-card group p-8"
         data-aos="fade-up"
         data-aos-delay="200"
       >
@@ -50,15 +49,14 @@ const { lang } = Astro.props;
             <polyline points="9 22 9 12 15 12 15 22"></polyline>
           </svg>
         </div>
-        <h3 class="font-heading text-xl text-secondary dark:text-white mb-3 group-hover:text-primary transition-colors duration-300">{t('values.card2Title', lang)}</h3>
-        <p class="text-secondary/70 dark:text-white/70">
+        <h3 class="font-heading text-xl text-secondary dark:text-fog mb-3 group-hover:text-primary transition-colors duration-300">{t('values.card2Title', lang)}</h3>
+        <p class="text-secondary/70 dark:text-fog/72">
           {t('values.card2Text', lang)}
         </p>
       </div>
 
-      <!-- Developer Experience Card -->
       <div
-        class="group bg-white dark:bg-neutral-dark border border-gray-100 dark:border-gray-800 rounded-xl p-8 shadow-sm hover:shadow-md transition-all duration-300 transform hover:scale-105 hover:bg-gradient-highlight dark:hover:bg-gradient-to-br dark:hover:from-primary/5 dark:hover:to-orange-500/5"
+        class="surface-card group p-8"
         data-aos="fade-up"
         data-aos-delay="300"
       >
@@ -69,8 +67,8 @@ const { lang } = Astro.props;
             <path d="m4 4 2.5 2.5M19.1 8l-7.2 7.2M15 12V4h-8"></path>
           </svg>
         </div>
-        <h3 class="font-heading text-xl text-secondary dark:text-white mb-3 group-hover:text-primary transition-colors duration-300">{t('values.card3Title', lang)}</h3>
-        <p class="text-secondary/70 dark:text-white/70">
+        <h3 class="font-heading text-xl text-secondary dark:text-fog mb-3 group-hover:text-primary transition-colors duration-300">{t('values.card3Title', lang)}</h3>
+        <p class="text-secondary/70 dark:text-fog/72">
           {t('values.card3Text', lang)}
         </p>
       </div>

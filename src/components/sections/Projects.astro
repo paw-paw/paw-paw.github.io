@@ -30,11 +30,12 @@ const projects = [
 ];
 ---
 
-<section id="selected-work" class="py-16 md:py-24 bg-neutral-bg dark:bg-neutral-dark/60">
+<section id="selected-work" class="section-padding">
   <div class="max-w-container mx-auto px-6">
     <div class="mb-12" data-aos="fade-up">
-      <h2 class="font-heading text-h2 text-secondary dark:text-white mb-4">{t('projects.title', lang)}</h2>
-      <p class="text-secondary/70 dark:text-white/70 max-w-2xl">
+      <span class="section-eyebrow">Evidence</span>
+      <h2 class="font-heading text-h2 text-secondary dark:text-fog mb-4">{t('projects.title', lang)}</h2>
+      <p class="text-secondary/70 dark:text-fog/72 max-w-2xl">
         {t('projects.subtitle', lang)}
       </p>
     </div>
@@ -42,14 +43,14 @@ const projects = [
     <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
       {projects.map((project, index) => (
         <div
-          class="md:col-span-4 group bg-white dark:bg-neutral-dark border border-gray-100 dark:border-gray-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300"
+          class="surface-card md:col-span-4 group overflow-hidden"
           data-aos="fade-up"
           data-aos-delay={index * 100}
         >
-          <div class="p-6 border-b border-gray-100 dark:border-gray-800">
+          <div class="border-b border-secondary/8 p-6 dark:border-fog/10">
             <div class="flex flex-wrap gap-2">
               {project.tags.map(tag => (
-                <span class="px-3 py-1 text-xs font-mono bg-primary/10 text-primary rounded-full">
+                <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-mono text-primary">
                   {tag}
                 </span>
               ))}
@@ -57,10 +58,10 @@ const projects = [
           </div>
 
           <div class="p-6">
-            <h3 class="font-heading text-xl text-secondary dark:text-white mb-3 group-hover:text-primary transition-colors duration-300">
+            <h3 class="font-heading text-xl text-secondary dark:text-fog mb-3 group-hover:text-primary transition-colors duration-300">
               {project.title}
             </h3>
-            <p class="text-secondary/70 dark:text-white/70 mb-6">
+            <p class="mb-6 text-secondary/70 dark:text-fog/72">
               {project.shortDescription}
             </p>
 
