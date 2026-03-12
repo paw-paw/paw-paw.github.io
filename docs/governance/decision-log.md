@@ -352,6 +352,70 @@
 - `docs/strategy/portfolio-strategy.md`
 - `docs/plans/phase-1.md`
 
+---
+
+## 2026-03-12 — Arquitectura base de `Fase 2`
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `2`
+
+### Decision / registro
+
+- la arquitectura base del sitio sera multipagina
+- las superficies principales seran `/`, `/work` y `/experience`
+- la home funcionara como `overview estrategico + conversion`
+- `contact` se mantiene como ancla en `/`
+- `Values` se reemplaza por `How I Work`
+- `Timeline` se reemplaza por `Experience`
+- `Projects` se reemplaza conceptualmente por `Selected Work / Case Studies`
+- `Skills` permanece como soporte breve en home
+
+### Razon
+
+- la arquitectura one-page del template ya no representa la tesis del portfolio
+- la CTA principal exige una superficie real para work/case studies
+- `experience` y `projects` necesitan convivir como pilares equivalentes sin competir en la misma capa
+
+### Documentos afectados
+
+- `docs/architecture/site-architecture.md`
+- `docs/content/content-system.md`
+- `docs/content/source-data-map.md`
+- `docs/plans/phase-2.md`
+
+---
+
+## 2026-03-12 — Politica publica de contacto alineada al portfolio
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `2`
+
+### Decision / registro
+
+- el numero de telefono deja de ser visible en el sitio
+- los canales publicos visibles pasan a ser:
+  - email
+  - LinkedIn
+  - Instagram
+- `FooterCTA` refuerza la CTA secundaria y apunta a `#contact`
+
+### Razon
+
+- la politica de visibilidad debe alinearse con el sistema documental y con un contacto publico intencional
+- telefono agrega exposicion innecesaria para el uso actual del portfolio
+- Instagram se acepta como canal publico complementario al perfil profesional
+
+### Documentos afectados
+
+- `docs/content/source-data-map.md`
+- `docs/content/content-system.md`
+- `docs/architecture/site-architecture.md`
+- `docs/plans/phase-2.md`
+
 - redefinicion profunda de AOS, GSAP y `src/scripts/animations.js`
 - limpieza final de residuos no activos en `src/assets/`
 - redefinicion completa del contenido visible mas alla del copy critico neutralizado

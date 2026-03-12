@@ -5,7 +5,7 @@
 - Tipo: `auxiliar`
 - Fase inicial: `1`
 - Estado: `done`
-- Ultima actualizacion: `2026-03-11`
+- Ultima actualizacion: `2026-03-12`
 
 ---
 
@@ -64,10 +64,7 @@ Tambien existen archivos `*.Zone.Identifier`, que no forman parte de la fuente u
 
 ## Preguntas que deben resolverse en Fase 2
 
-- ¿Que entidades internas del portfolio existen realmente?
-- ¿Que categorias de `truth` alimentan hero, about, skills, timeline/experience, case studies, CTA o social proof?
-- ¿Que campos deben transformarse, resumirse o combinarse?
-- ¿Que datos pasan a una capa normalizada propia del repo y cuales quedan solo como referencia?
+- Resueltas en `Fase 2`. Ver mapping estructural mas abajo.
 
 ---
 
@@ -129,7 +126,7 @@ Por defecto son publicables:
 - nombre profesional
 - ciudad o pais a nivel general cuando aporte contexto
 - LinkedIn
-- GitHub
+- Instagram
 - email profesional o intencional
 - idiomas
 
@@ -140,6 +137,144 @@ Por defecto no son publicables sin decision posterior explicita:
 - documentos de identidad
 - datos fiscales
 - cualquier dato personal sensible
+
+---
+
+## Decisiones cerradas en Fase 2
+
+### Arquitectura objetivo
+
+- la home funciona como `overview estrategico + conversion`
+- existen superficies principales `/`, `/work` y `/experience`
+- `contact` permanece como ancla en `/`
+- la futura capa normalizada del repo vivira en `src/data/`
+
+### Entidades principales del portfolio
+
+- `hero`
+- `how_i_work`
+- `selected_work_preview`
+- `selected_work_case_study`
+- `experience_preview`
+- `experience_item`
+- `skills_cluster`
+- `contact_channel`
+- `footer_cta`
+
+### Politica de contacto publica actualizada
+
+Canales visibles en home:
+
+- email
+- LinkedIn
+- Instagram
+
+Canales explicitamente fuera:
+
+- telefono
+
+---
+
+## Mapping estructural `truth -> entidades del portfolio`
+
+### `summary.md`
+
+Alimenta:
+
+- `hero`
+- framing editorial de `how_i_work`
+- mensajes base de `experience_preview` y `selected_work_preview`
+
+Transformacion:
+
+- resumir
+- destilar tesis
+- evitar copiar literal el summary largo
+
+### `personal.yaml`
+
+Alimenta:
+
+- `contact_channel`
+- identidad base
+- idiomas
+
+Campos aceptados:
+
+- nombre profesional
+- ubicacion general
+- email
+- linkedin
+- instagram cuando exista como canal publico definido
+- idiomas
+
+Campos descartados o no visibles:
+
+- telefono
+- cualquier dato sensible adicional
+
+### `experience/`
+
+Alimenta:
+
+- `experience_item`
+- `experience_preview`
+- claims de `hero` y `how_i_work` cuando corresponda
+
+Transformacion:
+
+- seleccionar roles relevantes
+- condensar highlights
+- traducir lenguaje de CV a evidencia narrativa de portfolio
+
+### `projects/`
+
+Alimenta:
+
+- `selected_work_case_study`
+- `selected_work_preview`
+
+Transformacion:
+
+- seleccionar casos relevantes
+- sintetizar challenge, scope, execution y result
+- evitar copiar el schema de CV o archivo original
+
+### `skills/`
+
+Alimenta:
+
+- `skills_cluster`
+
+Transformacion:
+
+- agrupar por capability cluster
+- evitar listas largas de herramientas sin contexto
+
+### `education/`
+
+Alimenta:
+
+- soporte de credibilidad
+- posibles elementos secundarios de experiencia o about futuro
+
+Transformacion:
+
+- uso selectivo
+- no convertir education en eje de home
+
+### `_schema.md`
+
+Alimenta:
+
+- solo entendimiento del modelo original
+
+Se descarta de runtime:
+
+- `selection_policy`
+- CV packs
+- estructura ATS
+- cualquier metadata editorial que no aporte al sitio
 
 ---
 

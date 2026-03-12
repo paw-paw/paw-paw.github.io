@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { t } from '../utils/i18n';
+
+const lang = 'en';
+---
+
+<Layout
+  title={`Experience | ${t('site.title', lang)}`}
+  description="Experience highlights and role history will be structured here. Final role selection and copy are still being refined."
+  lang={lang}
+>
+  <section class="pt-28 pb-16 md:pt-36 md:pb-24">
+    <div class="max-w-container mx-auto px-6">
+      <div class="max-w-3xl">
+        <span class="font-mono text-primary text-sm mb-4 block">Experience</span>
+        <h1 class="font-heading text-h1 text-secondary dark:text-white mb-4">
+          Experience architecture is now in place.
+        </h1>
+        <p class="text-lg md:text-xl text-secondary/80 dark:text-white/80 mb-6">
+          This page will become the deeper surface for role history, ownership, and delivery evidence once the final content layer is ready.
+        </p>
+        <p class="text-secondary/70 dark:text-white/70 max-w-2xl">
+          Phase 2 defines how experience will be represented. Final role selection, highlights, and approved copy will be completed in later phases.
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>

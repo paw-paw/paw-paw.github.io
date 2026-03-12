@@ -23,10 +23,10 @@ const lang = Astro.currentLocale;
 
       <div class="flex mt-8">
         <a
-          href="#about"
+          href="/work"
           class="inline-flex items-center justify-center rounded-lg font-medium text-base py-2 px-6 border border-primary text-primary hover:bg-primary/10 bg-transparent"
         >
-          {t('hero.ctaAbout', lang)}
+          {t('hero.ctaProjects', lang)}
         </a>
       </div>
     </div>
@@ -51,7 +51,7 @@ const lang = Astro.currentLocale;
   </div>
 
   <!-- Scroll Down Indicator -->
-  <div id="scroll-indicator" class="absolute bottom-8 left-1/2 -translate-x-1/2 opacity-100 animate-bounce cursor-pointer" onclick="document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });">
+  <div id="scroll-indicator" class="absolute bottom-8 left-1/2 -translate-x-1/2 opacity-100 animate-bounce cursor-pointer" onclick="document.getElementById('how-i-work')?.scrollIntoView({ behavior: 'smooth' });">
     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary dark:text-highlightBlue">
       <path d="M12 5v14"></path>
       <path d="m19 12-7 7-7-7"></path>

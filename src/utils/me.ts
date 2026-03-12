@@ -1,7 +1,8 @@
 export const name = "Portfolio Owner";
 export const homepage_url = "https://paw-paw.github.io/";
-export const linkedin_username = "";
+export const linkedin_username = "pawpawesports";
 export const github_username = "paw-paw";
+export const instagram_username = "pawpawesports";
 
 /*=============================================================================\
  | The email, phone number, and address fields below are Base64 encoded to     |
@@ -39,3 +40,5 @@ export const address_line_2 = atob(address_line_2_base64_encoded);
 export const linkedin_short = linkedin_username ? `linkedin.com/in/${linkedin_username}` : "Profile pending";
 export const linkedin_url   = linkedin_username ? `https://www.linkedin.com/in/${linkedin_username}` : "";
 export const github_url = `https://github.com/${github_username}`;
+export const instagram_short = instagram_username ? `instagram.com/${instagram_username}` : "";
+export const instagram_url = instagram_username ? `https://www.instagram.com/${instagram_username}/` : "";

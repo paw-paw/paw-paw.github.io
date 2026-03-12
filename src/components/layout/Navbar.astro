@@ -1,6 +1,5 @@
 ---
 import ThemeToggle from '../ui/ThemeToggle.astro';
-import Button from '../ui/Buttons.astro'; // Ensuring .astro extension
 import { t } from '../../utils/i18n'; // Path relative to this component
 import { Image } from 'astro:assets';
 import logoLight from '../../assets/logo.png';
@@ -24,16 +23,16 @@ const lang = Astro.currentLocale || 'en';
     <nav class="hidden md:flex items-center space-x-8">
       <ul class="flex space-x-8">
         <li>
-          <a href="#start" class="nav-link text-secondary dark:text-white hover:text-primary dark:hover:text-primary">{t('nav.start', lang)}</a>
+          <a href="/" class="nav-link text-secondary dark:text-white hover:text-primary dark:hover:text-primary">{t('nav.home', lang)}</a>
         </li>
         <li>
-          <a href="#about" class="nav-link text-secondary dark:text-white hover:text-primary dark:hover:text-primary">{t('nav.about', lang)}</a>
+          <a href="/work" class="nav-link text-secondary dark:text-white hover:text-primary dark:hover:text-primary">{t('nav.work', lang)}</a>
         </li>
         <li>
-          <a href="#skills" class="nav-link text-secondary dark:text-white hover:text-primary dark:hover:text-primary">{t('nav.skills', lang)}</a>
+          <a href="/experience" class="nav-link text-secondary dark:text-white hover:text-primary dark:hover:text-primary">{t('nav.experience', lang)}</a>
         </li>
         <li>
-          <a href="#contact" class="nav-link text-secondary dark:text-white hover:text-primary dark:hover:text-primary">{t('nav.contact', lang)}</a>
+          <a href="/#contact" class="nav-link text-secondary dark:text-white hover:text-primary dark:hover:text-primary">{t('nav.contact', lang)}</a>
         </li>
       </ul>
 
@@ -60,16 +59,16 @@ const lang = Astro.currentLocale || 'en';
     <div class="max-w-container mx-auto px-6 py-4">
       <ul class="flex flex-col space-y-4">
         <li>
-          <a href="#start" class="block py-2 text-secondary dark:text-white hover:text-primary dark:hover:text-primary">{t('nav.start', lang)}</a>
+          <a href="/" class="block py-2 text-secondary dark:text-white hover:text-primary dark:hover:text-primary">{t('nav.home', lang)}</a>
         </li>
         <li>
-          <a href="#about" class="block py-2 text-secondary dark:text-white hover:text-primary dark:hover:text-primary">{t('nav.about', lang)}</a>
+          <a href="/work" class="block py-2 text-secondary dark:text-white hover:text-primary dark:hover:text-primary">{t('nav.work', lang)}</a>
         </li>
         <li>
-          <a href="#skills" class="block py-2 text-secondary dark:text-white hover:text-primary dark:hover:text-primary">{t('nav.skills', lang)}</a>
+          <a href="/experience" class="block py-2 text-secondary dark:text-white hover:text-primary dark:hover:text-primary">{t('nav.experience', lang)}</a>
         </li>
         <li>
-          <a href="#contact" class="block py-2 text-secondary dark:text-white hover:text-primary dark:hover:text-primary">{t('nav.contact', lang)}</a>
+          <a href="/#contact" class="block py-2 text-secondary dark:text-white hover:text-primary dark:hover:text-primary">{t('nav.contact', lang)}</a>
         </li>
       </ul>
     </div>
@@ -116,31 +115,6 @@ const lang = Astro.currentLocale || 'en';
     }
   });
 
-  // Scroll spy
-  const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('.nav-link');
-
-  window.addEventListener('scroll', () => {
-    let current = '';
-
-    sections.forEach(section => {
-      // Assert section as HTMLElement to access offsetTop and clientHeight
-      const htmlSection = section as HTMLElement;
-      const sectionTop = htmlSection.offsetTop;
-      const sectionHeight = htmlSection.clientHeight;
-
-      if (window.scrollY >= sectionTop - 100) {
-        current = section.getAttribute('id') || '';
-      }
-    });
-
-    navLinks.forEach(link => {
-      link.classList.remove('active');
-      if (link.getAttribute('href')?.slice(1) === current) {
-        link.classList.add('active');
-      }
-    });
-  });
 </script>
 
 <style>
@@ -161,12 +135,7 @@ const lang = Astro.currentLocale || 'en';
     transition: width 0.3s ease;
   }
 
-  .nav-link:hover::after,
-  .nav-link.active::after {
+  .nav-link:hover::after {
     width: 100%;
-  }
-
-  .nav-link.active {
-    color: theme('colors.primary');
   }
 </style>

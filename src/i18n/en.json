@@ -4,33 +4,33 @@
     "description": "Portfolio website in active customization. Strategy, content, and visual direction are still being defined."
   },
   "nav": {
-    "start": "Start",
-    "about": "About Me",
-    "skills": "Skills",
+    "home": "Home",
+    "work": "Work",
+    "experience": "Experience",
     "contact": "Contact",
     "contactButton": "Contact"
   },
   "hero": {
     "greeting": "Hello,",
     "name": "Portfolio Owner",
-    "pitch": "This portfolio is currently being prepared. Core positioning, content, and visual direction will be defined in upcoming phases.",
-    "role": "Profile details pending",
-    "ctaProjects": "View Projects",
-    "ctaAbout": "More About Me"
+    "pitch": "This portfolio is being structured around delivery, operations, and reliable cross-functional execution. Final content will be added in later phases.",
+    "role": "Delivery-first profile in active customization",
+    "ctaProjects": "View selected work",
+    "ctaAbout": "How I work"
   },
   "values": {
-    "title": "My Approach",
-    "subtitle": "These three values shape my work and help me create compelling web templates.",
-    "card1Title": "Performance",
-    "card1Text": "Fast loading times and optimal performance are the foundation for great user experiences – every template achieves 90+ Lighthouse scores.",
-    "card2Title": "Accessibility",
-    "card2Text": "Multilingual support and WCAG 2.1 AA compliance ensure that everyone can use the templates, regardless of language or abilities.",
-    "card3Title": "Developer Experience",
-    "card3Text": "Clean code, clear documentation, and easy customization through JSON files make it simple for developers to get started quickly."
+    "title": "How I Work",
+    "subtitle": "This section now explains the operating patterns behind the portfolio. Final wording will be completed in later phases.",
+    "card1Title": "Clarity in execution",
+    "card1Text": "Work is translated into scope, owners, timelines, and practical operating artifacts that reduce ambiguity.",
+    "card2Title": "Cross-functional coordination",
+    "card2Text": "Multiple stakeholders, workflows, and dependencies are kept aligned without losing delivery control.",
+    "card3Title": "Reliable follow-through",
+    "card3Text": "The emphasis stays on accountable execution, issue handling, and finishing work with structure."
   },
   "skills": {
     "title": "Skills & Tools",
-    "subtitle": "With these tools and technologies, I create modern, performant web templates.",
+    "subtitle": "A support layer of capability clusters that will later be aligned to the final content system.",
     "clusters": {
       "frontend": {
         "title": "Frontend & Frameworks",
@@ -82,8 +82,8 @@
       "result": "Result",
       "technologiesUsed": "Technologies Used"
     },
-    "title": "Selected Projects",
-    "subtitle": "Open-source templates and projects available on GitHub for developers worldwide.",
+    "title": "Selected Work",
+    "subtitle": "This home section now acts as a structural preview of the future case-study surface.",
     "astroPortfolio": {
       "shortDescription": "Modern, multilingual portfolio template built with Astro and Tailwind CSS featuring dark mode and i18n support.",
       "challenge": "Creating a performant, multilingual portfolio template that's easy to customize without touching code.",
@@ -102,36 +102,34 @@
       "approach": "Creating modular, well-documented templates with SEO optimization and modern best practices.",
       "result": "Multiple templates with growing community adoption and positive feedback from developers."
     },
-    "buttonText": "View on GitHub",
-    "allProjectsButtonText": "All Projects on GitHub"
+    "buttonText": "Open work page",
+    "allProjectsButtonText": "View selected work"
   },
   "timeline": {
-    "title": "My Journey",
-    "subtitle": "Development experience and important milestones in my career as a template creator.",
-    "item1Title": "Open Source Contributor",
-    "item1Description": "Creating and maintaining modern web templates on GitHub. Focus: Astro, multilingual support, performance optimization.",
-    "item2Title": "Web Development",
-    "item2Description": "Building production-ready websites and applications. Skills: Astro, React, TypeScript, Tailwind CSS, SSR.",
-    "item3Title": "Template Creator",
-    "item3Description": "Designing and developing reusable templates for portfolios, landing pages, and web applications with comprehensive documentation.",
-    "buttonText": "View GitHub Profile"
+    "title": "Experience",
+    "subtitle": "This preview introduces the future experience surface without turning the home into a full resume.",
+    "item1Title": "Experience architecture in progress",
+    "item1Description": "Final role selection and approved highlights will be completed after the content system and master content phases.",
+    "item2Title": "Delivery-first framing",
+    "item2Description": "Experience will be presented to reinforce ownership, execution, and cross-functional coordination.",
+    "item3Title": "Depth moves to /experience",
+    "item3Description": "The detailed trajectory will live on its own page instead of overloading the home.",
+    "buttonText": "View experience"
   },
   "footerCTA": {
-    "title": "Project in Progress",
-    "subtitle": "The final call to action for this site will be defined after strategy and content phases are complete.",
-    "buttonText": "View Repository"
+    "title": "Start a conversation",
+    "subtitle": "If the work and trajectory look relevant, the next step is simple: reach out through one of the public channels below.",
+    "buttonText": "Go to contact"
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "Core public contact details are still being finalized. Temporary placeholders remain active during cleanup.",
+    "subtitle": "Public contact now follows the current visibility policy: email and selected social channels only.",
     "emailTitle": "Email",
     "emailButtonText": "Send Email",
-    "phoneTitle": "Phone",
-    "phoneButtonText": "Call",
-    "githubTitle": "GitHub",
-    "githubButtonText": "View Profile",
     "linkedinTitle": "LinkedIn",
-    "linkedinButtonText": "Connect on LinkedIn"
+    "linkedinButtonText": "Open LinkedIn",
+    "instagramTitle": "Instagram",
+    "instagramButtonText": "Open Instagram"
   },
   "footer": {
     "copyright": "All rights reserved.",
