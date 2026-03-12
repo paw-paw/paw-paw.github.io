@@ -1,4 +1,4 @@
-export const name = "Portfolio Owner";
+export const name = "Paulo Tuya";
 export const homepage_url = "https://paw-paw.github.io/";
 export const linkedin_username = "pawpawesports";
 export const github_username = "paw-paw";
@@ -23,7 +23,7 @@ export const instagram_username = "pawpawesports";
  |     btoa('hello@example.com')                                               |
  |                                                                             |
  \============================================================================*/
-const email_base64_encoded = "aGVsbG9AZXhhbXBsZS5jb20=";
+const email_base64_encoded = "cGN0dXlhQGdtYWlsLmNvbQ==";
 const phone_base64_encoded = "KzAwIDAwMCAwMDAgMDAwMA==";
 
 // The address fields below are for the privacy policy. They are also Base64 encoded.

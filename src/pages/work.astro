@@ -1,28 +1,81 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { t } from '../utils/i18n';
+import { selectedWork } from '../data/selected-work';
 
 const lang = 'en';
 ---
 
 <Layout
   title={`Work | ${t('site.title', lang)}`}
-  description="Selected work and case studies will be structured here. Final case content is still being assembled."
+  description={t('projects.pageDescription', lang)}
   lang={lang}
 >
   <section class="section-padding pt-32 md:pt-40">
     <div class="max-w-container mx-auto px-6">
       <div class="surface-muted max-w-4xl px-8 py-10 md:px-10 md:py-12">
-        <span class="section-eyebrow">Selected Work</span>
+        <span class="section-eyebrow">{t('workPage.eyebrow', lang)}</span>
         <h1 class="font-heading text-h1 text-secondary dark:text-fog mb-4">
-          Work and case studies are being structured.
+          {t('workPage.title', lang)}
         </h1>
         <p class="text-lg md:text-xl text-secondary/78 dark:text-fog/88 mb-6">
-          This page will house the deeper view of selected work once the content model and final case curation are complete.
+          {t('workPage.subtitle', lang)}
         </p>
         <p class="max-w-2xl text-secondary/68 dark:text-fog/80">
-          Phase 2 establishes the architecture and the minimum case-study structure. Final case content will be completed in later phases.
+          {t('workPage.description', lang)}
         </p>
+      </div>
+
+      <div class="mt-12 grid grid-cols-1 gap-8 lg:grid-cols-2">
+        {selectedWork.map((item, index) => (
+          <article
+            class="surface-card overflow-hidden"
+            data-aos="fade-up"
+            data-aos-delay={index * 80}
+          >
+            <div class="border-b border-secondary/8 p-6 dark:border-fog/10">
+              <div class="flex flex-wrap gap-2">
+                {item.tags.map((tag) => (
+                  <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-mono text-primary">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div class="p-6">
+              <p class="mb-2 text-xs font-mono uppercase tracking-[0.16em] text-secondary/45 dark:text-fog/68">
+                {item.role} · {item.org}
+              </p>
+              <h2 class="mb-3 font-heading text-2xl text-secondary dark:text-fog">
+                {item.title}
+              </h2>
+              <p class="mb-1 text-sm text-secondary/55 dark:text-fog/72">
+                {item.period} · {item.location}
+              </p>
+              <p class="mb-5 text-secondary/78 dark:text-fog/86">
+                {item.summary}
+              </p>
+
+              <ul class="mb-6 space-y-3 text-sm text-secondary/74 dark:text-fog/80">
+                {item.highlights.map((highlight) => (
+                  <li class="flex gap-3">
+                    <span class="mt-1 h-2.5 w-2.5 shrink-0 rounded-full bg-primary/70"></span>
+                    <span>{highlight}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <div class="flex flex-wrap gap-2">
+                {item.metrics.map((metric) => (
+                  <span class="rounded-full border border-secondary/10 px-3 py-1 text-xs font-mono text-secondary/70 dark:border-fog/10 dark:text-fog/76">
+                    {metric}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </article>
+        ))}
       </div>
     </div>
   </section>

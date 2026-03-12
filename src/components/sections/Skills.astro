@@ -1,68 +1,23 @@
 ---
-import { PaletteIcon, Code2Icon, MegaphoneIcon, KanbanSquareIcon, LayersIcon, ImageIcon, PenToolIcon, VideoIcon, ClapperboardIcon, CameraIcon, Mic2Icon, FigmaIcon, FileCodeIcon, BracesIcon, TerminalIcon, RocketIcon, Globe2Icon, LayoutGridIcon, LinkedinIcon, Edit3Icon, SearchCheckIcon, CheckSquareIcon, BookTextIcon, LayoutDashboardIcon } from '@lucide/astro';
+import { KanbanSquareIcon, MegaphoneIcon, LayoutDashboardIcon } from '@lucide/astro';
 
 import { t } from '../../utils/i18n';
+import { skillClusters } from '../../data/skills';
 
 interface Props {
   lang: string | undefined;
 }
 
 const { lang } = Astro.props;
-
-const skillClusters = [
-  {
-    id: 'design-media',
-    title: t('skills.clusters.frontend.title', lang),
-    description: t('skills.clusters.frontend.description', lang),
-    icon: PaletteIcon,
-    tools: [
-      { name: 'Adobe Creative Cloud', icon: LayersIcon },
-      { name: 'Photoshop', icon: ImageIcon },
-      { name: 'Illustrator', icon: PenToolIcon },
-      { name: 'Premiere Pro', icon: VideoIcon },
-      { name: 'After Effects', icon: ClapperboardIcon },
-      { name: 'Lightroom', icon: CameraIcon },
-      { name: 'Adobe Audition', icon: Mic2Icon },
-      { name: 'Figma', icon: FigmaIcon },
-    ]
-  },
-  {
-    id: 'web-it',
-    title: t('skills.clusters.design.title', lang),
-    description: t('skills.clusters.design.description', lang),
-    icon: Code2Icon,
-    tools: [
-      { name: 'HTML/CSS', icon: FileCodeIcon },
-      { name: 'JavaScript', icon: BracesIcon },
-      { name: 'Python', icon: TerminalIcon },
-      { name: 'Astro', icon: RocketIcon },
-      { name: 'WordPress', icon: Globe2Icon },
-      { name: 'Elementor', icon: LayoutGridIcon },
-    ]
-  },
-  {
-    id: 'marketing-content',
-    title: t('skills.clusters.tools.title', lang),
-    description: t('skills.clusters.tools.description', lang),
-    icon: MegaphoneIcon,
-    tools: [
-      { name: 'LinkedIn Marketing', icon: LinkedinIcon },
-      { name: 'Content Creation', icon: Edit3Icon },
-      { name: 'SEO Basics', icon: SearchCheckIcon },
-    ]
-  },
-  {
-    id: 'management-organization',
-    title: 'Management & Organization',
-    description: 'Structured processes, efficient workflows, and collaborative project work.',
-    icon: KanbanSquareIcon,
-    tools: [
-      { name: 'Asana', icon: CheckSquareIcon },
-      { name: 'Notion', icon: BookTextIcon },
-      { name: 'Miro', icon: LayoutDashboardIcon },
-    ]
-  }
-];
+const clusterIcons = {
+  'program-delivery-operations': KanbanSquareIcon,
+  'partnerships-business-development': MegaphoneIcon,
+  'systems-workflows-reporting': LayoutDashboardIcon,
+};
+const clustersWithIcons = skillClusters.map((cluster) => ({
+  ...cluster,
+  icon: clusterIcons[cluster.id as keyof typeof clusterIcons],
+}));
 ---
 
 <section id="skills" class="section-padding">
@@ -75,8 +30,8 @@ const skillClusters = [
       </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-      {skillClusters.map((cluster, index) => (
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8">
+      {clustersWithIcons.map((cluster, index) => (
         <div
           id={cluster.id}
           class="surface-card skill-cluster p-6"
@@ -86,7 +41,7 @@ const skillClusters = [
         >
           <div class="cluster-header flex items-center mb-4">
             <div class="icon-container mr-4 rounded-2xl bg-primary/10 p-3 text-primary">
-              <cluster.icon size=26 stroke-width=1.75 />
+              <cluster.icon size={26} stroke-width={1.75} />
             </div>
             <h3 class="font-heading text-xl text-secondary dark:text-fog">
               {cluster.title}
@@ -97,14 +52,20 @@ const skillClusters = [
             {cluster.description}
           </p>
 
-          <div class="cluster-tools grid grid-cols-2 sm:grid-cols-3 gap-4 mt-6">
+          <ul class="mb-6 space-y-3 text-sm text-secondary/78 dark:text-fog/82">
+            {cluster.capabilities.map((capability) => (
+              <li class="flex gap-3">
+                <span class="mt-1 h-2.5 w-2.5 shrink-0 rounded-full bg-primary/70"></span>
+                <span>{capability}</span>
+              </li>
+            ))}
+          </ul>
+
+          <div class="flex flex-wrap gap-2">
             {cluster.tools.map((tool) => (
-              <div class="tool-item flex flex-col items-center text-center">
-                <div class="tool-icon mb-2 rounded-2xl bg-primary/10 p-3 text-primary">
-                  <tool.icon size=20 stroke-width=1.75 />
-                </div>
-                <p class="text-sm font-medium text-secondary dark:text-fog">{tool.name}</p>
-              </div>
+              <span class="rounded-full border border-secondary/10 px-3 py-1 text-xs font-mono text-secondary/70 dark:border-fog/10 dark:text-fog/76">
+                {tool}
+              </span>
             ))}
           </div>
         </div>

@@ -446,11 +446,50 @@
 - `docs/architecture/site-architecture.md`
 - `docs/plans/phase-2.md`
 
-- redefinicion profunda de AOS, GSAP y `src/scripts/animations.js`
-- limpieza final de residuos no activos en `src/assets/`
-- redefinicion completa del contenido visible mas alla del copy critico neutralizado
+---
+
+## 2026-03-12 — Contenido maestro y capa normalizada de Fase 4
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `4`
+
+### Decision / registro
+
+- el nombre profesional visible del sitio pasa a ser `Paulo Tuya`
+- la marca visual `Pawpaw` se mantiene como capa de branding, no como identidad textual principal
+- el hero aprobado equilibra `delivery + partnerships` con esta formula:
+  - `I turn partner and project goals into clear execution.`
+  - `I work across gaming, esports, and remote programs, connecting partner needs, scope, owners, timelines, and execution without losing operational control.`
+- `Selected Work` se implementa con 6 casos curados
+- `Experience` se implementa con 5 hitos curados
+- `Skills` se implementa con 3 clusters de soporte narrativo
+- la capa normalizada propia del repo nace en `src/data/`
+- GitHub deja de ser una superficie visible del sitio activo
+
+### Razon
+
+- Fase 4 debia cerrar la identidad publica y reemplazar placeholders estructurales por contenido aprobado
+- el contenido final debia alinearse con la estrategia contractual sin convertir el sitio en CV exhaustivo
+- la capa `src/data/` permite separar runtime aprobado del schema bruto de `temp/truth/`
+- la identidad publica visible debia concentrarse en canales y señales realmente alineados con el portfolio
 
 ### Documentos afectados
 
-- `docs/governance/template-audit.md`
-- `docs/plans/phase-0b.md`
+- `docs/content/content-master.md`
+- `docs/content/source-data-map.md`
+- `docs/plans/phase-4.md`
+
+### Implementacion afectada
+
+- `src/i18n/en.json`
+- `src/utils/me.ts`
+- `src/data/selected-work.ts`
+- `src/data/experience.ts`
+- `src/data/skills.ts`
+- `src/components/sections/Projects.astro`
+- `src/components/sections/Timeline.astro`
+- `src/components/sections/Skills.astro`
+- `src/pages/work.astro`
+- `src/pages/experience.astro`

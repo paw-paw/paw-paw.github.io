@@ -1,33 +1,14 @@
 ---
 import Button from '../ui/Buttons.astro';
 import { t } from '../../utils/i18n';
+import { selectedWork } from '../../data/selected-work';
 
 interface Props {
   lang: string | undefined;
 }
 
 const { lang } = Astro.props;
-
-const projects = [
-  {
-    title: 'Case study architecture in progress',
-    slug: 'work',
-    tags: ['Selected Work', 'Preview'],
-    shortDescription: 'This preview will evolve into a curated set of delivery-oriented case studies after the final content layer is approved.'
-  },
-  {
-    title: 'Project evidence will live on /work',
-    slug: 'work',
-    tags: ['Architecture', 'Content later'],
-    shortDescription: 'Phase 2 defines the structure and destination of selected work without turning this preview into final content.'
-  },
-  {
-    title: 'Deep-dive pages come next',
-    slug: 'work',
-    tags: ['Structure', 'Case studies'],
-    shortDescription: 'This section now acts as a home preview that points to the future case-study surface.'
-  }
-];
+const previewItems = selectedWork.slice(0, 3);
 ---
 
 <section id="selected-work" class="section-padding">
@@ -41,7 +22,7 @@ const projects = [
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
-      {projects.map((project, index) => (
+      {previewItems.map((project, index) => (
         <div
           class="surface-card md:col-span-4 group overflow-hidden"
           data-aos="fade-up"
@@ -61,13 +42,23 @@ const projects = [
             <h3 class="font-heading text-xl text-secondary dark:text-fog mb-3 group-hover:text-primary transition-colors duration-300">
               {project.title}
             </h3>
-            <p class="mb-6 text-secondary/70 dark:text-fog/82">
-              {project.shortDescription}
+            <p class="mb-2 text-sm font-mono uppercase tracking-[0.16em] text-secondary/45 dark:text-fog/68">
+              {project.role}
             </p>
+            <p class="mb-4 text-secondary/70 dark:text-fog/82">
+              {project.summary}
+            </p>
+            <div class="mb-6 flex flex-wrap gap-2">
+              {project.metrics.slice(0, 2).map((metric) => (
+                <span class="rounded-full border border-secondary/10 px-3 py-1 text-xs font-mono text-secondary/70 dark:border-fog/10 dark:text-fog/76">
+                  {metric}
+                </span>
+              ))}
+            </div>
 
             <Button
               text={t('projects.buttonText', lang)}
-              href={`/${project.slug}`}
+              href="/work/"
               variant="outline"
               size="sm"
             />
@@ -79,7 +70,7 @@ const projects = [
     <div class="mt-12 text-center" data-aos="fade-up">
       <Button
         text={t('projects.allProjectsButtonText', lang)}
-        href="/work"
+        href="/work/"
         variant="primary"
       />
     </div>

@@ -1,7 +1,7 @@
 {
   "site": {
-    "title": "Portfolio Website",
-    "description": "Portfolio website in active customization. Strategy, content, and visual direction are still being defined."
+    "title": "Paulo Tuya | Delivery, Partnerships & Operations",
+    "description": "Portfolio of Paulo Tuya, a delivery and partnerships operator across gaming, esports, and remote programs."
   },
   "nav": {
     "home": "Home",
@@ -11,128 +11,72 @@
     "contactButton": "Contact"
   },
   "hero": {
-    "greeting": "Hello,",
-    "name": "Portfolio Owner",
-    "pitch": "This portfolio is being structured around delivery, operations, and reliable cross-functional execution. Final content will be added in later phases.",
-    "role": "Delivery-first profile in active customization",
+    "greeting": "Paulo Tuya",
+    "name": "I turn partner and project goals into clear execution.",
+    "pitch": "I work across gaming, esports, and remote programs, connecting partner needs, scope, owners, timelines, and execution without losing operational control.",
+    "role": "Delivery, partnerships, and operations across gaming, esports, and remote programs.",
     "ctaProjects": "View selected work",
     "ctaAbout": "How I work"
   },
   "values": {
     "title": "How I Work",
-    "subtitle": "This section now explains the operating patterns behind the portfolio. Final wording will be completed in later phases.",
-    "card1Title": "Clarity in execution",
-    "card1Text": "Work is translated into scope, owners, timelines, and practical operating artifacts that reduce ambiguity.",
-    "card2Title": "Cross-functional coordination",
-    "card2Text": "Multiple stakeholders, workflows, and dependencies are kept aligned without losing delivery control.",
+    "subtitle": "I build delivery around clarity, stakeholder alignment, and calm operational control.",
+    "card1Title": "Structure before noise",
+    "card1Text": "I turn loose goals into scopes, owners, timelines, and operating artifacts that make execution easier to trust.",
+    "card2Title": "Coordination without drift",
+    "card2Text": "I keep partners, teams, vendors, and internal stakeholders aligned without letting handoffs or approvals derail delivery.",
     "card3Title": "Reliable follow-through",
-    "card3Text": "The emphasis stays on accountable execution, issue handling, and finishing work with structure."
+    "card3Text": "I care about readiness, issue handling, and closeout quality as much as kickoff energy, because delivery is judged at the finish line."
   },
   "skills": {
-    "title": "Skills & Tools",
-    "subtitle": "A support layer of capability clusters that will later be aligned to the final content system.",
-    "clusters": {
-      "frontend": {
-        "title": "Frontend & Frameworks",
-        "description": "Modern web development with Astro, React, and static site generation."
-      },
-      "design": {
-        "title": "Design & Styling",
-        "description": "Beautiful interfaces with Tailwind CSS, responsive design, and dark mode support."
-      },
-      "tools": {
-        "title": "Development Tools",
-        "description": "Version control, deployment, and optimization for production-ready templates."
-      }
-    },
-    "category": {
-      "design": "Design",
-      "coding": "Coding",
-      "framework": "Framework",
-      "deployment": "Deployment"
-    },
-    "astro": {
-      "description": "Static Site Generation & Performance"
-    },
-    "react": {
-      "description": "Interactive Components & UI"
-    },
-    "tailwind": {
-      "description": "Utility-First Styling & Design"
-    },
-    "typescript": {
-      "description": "Type-Safe Development"
-    },
-    "git": {
-      "description": "Version Control & Collaboration"
-    },
-    "vercel": {
-      "description": "Deployment & Hosting"
-    }
+    "title": "Capability Clusters",
+    "subtitle": "The skills section supports the portfolio by showing how I operate, not by listing every tool I have touched."
   },
   "projects": {
-    "pageTitle": "Projects",
-    "pageDescription": "A collection of open-source templates and projects shared on GitHub.",
-    "heroTitle": "My Projects",
-    "heroSubtitle": "Explore my collection of web templates and open-source projects.",
-    "viewProject": "View Project",
-    "detailLabels": {
-      "challenge": "Challenge",
-      "approach": "Approach",
-      "result": "Result",
-      "technologiesUsed": "Technologies Used"
-    },
+    "pageTitle": "Selected Work",
+    "pageDescription": "Selected work across activations, partnerships, and delivery-heavy programs.",
+    "heroTitle": "Selected work across activations, partnerships, and delivery-heavy programs.",
+    "heroSubtitle": "These case summaries show how I move between partner-facing scope, operational planning, and execution on the ground.",
+    "buttonText": "View case summary",
     "title": "Selected Work",
-    "subtitle": "This home section now acts as a structural preview of the future case-study surface.",
-    "astroPortfolio": {
-      "shortDescription": "Modern, multilingual portfolio template built with Astro and Tailwind CSS featuring dark mode and i18n support.",
-      "challenge": "Creating a performant, multilingual portfolio template that's easy to customize without touching code.",
-      "approach": "Using Astro for optimal performance, JSON-based content management, and comprehensive documentation for easy setup.",
-      "result": "100/100 Lighthouse score, fully responsive, available in multiple languages, and used by developers worldwide."
-    },
-    "coreprotectWebUI": {
-      "shortDescription": "Web interface for CoreProtect Minecraft plugin with real-time player activity tracking and analytics.",
-      "challenge": "Visualizing complex Minecraft server data in an intuitive, player-centric dashboard.",
-      "approach": "Astro SSR with React components, MySQL integration, and responsive dark-themed UI with real-time updates.",
-      "result": "663,000+ block changes tracked, 4,000+ container transactions, comprehensive player activity monitoring."
-    },
-    "templateCollection": {
-      "shortDescription": "Growing collection of Astro templates shared on GitHub focusing on different use cases and industries.",
-      "challenge": "Providing developers with production-ready templates that are easy to customize and deploy.",
-      "approach": "Creating modular, well-documented templates with SEO optimization and modern best practices.",
-      "result": "Multiple templates with growing community adoption and positive feedback from developers."
-    },
-    "buttonText": "Open work page",
-    "allProjectsButtonText": "View selected work"
+    "subtitle": "A few programs that show how I bridge partner needs, live execution, and delivery control.",
+    "allProjectsButtonText": "See all selected work"
   },
   "timeline": {
     "title": "Experience",
-    "subtitle": "This preview introduces the future experience surface without turning the home into a full resume.",
-    "item1Title": "Experience architecture in progress",
-    "item1Description": "Final role selection and approved highlights will be completed after the content system and master content phases.",
-    "item2Title": "Delivery-first framing",
-    "item2Description": "Experience will be presented to reinforce ownership, execution, and cross-functional coordination.",
-    "item3Title": "Depth moves to /experience",
-    "item3Description": "The detailed trajectory will live on its own page instead of overloading the home.",
-    "buttonText": "View experience"
+    "subtitle": "A curated path from production and league operations into partnerships, account-facing delivery, and founder-led execution.",
+    "buttonText": "View full experience"
+  },
+  "workPage": {
+    "eyebrow": "Selected Work",
+    "title": "Selected work across activations, partnerships, and delivery-heavy programs.",
+    "subtitle": "These case summaries show how I move between partner-facing scope, operational planning, and execution on the ground.",
+    "description": "The page stays intentionally curated. It highlights the programs that best connect partnerships, delivery systems, and accountable execution without turning the portfolio into a project archive."
+  },
+  "experiencePage": {
+    "eyebrow": "Experience",
+    "title": "A delivery path shaped by operations, partner-facing work, and execution ownership.",
+    "subtitle": "Based in Lima, Peru. Native Spanish, professional English, and working Portuguese.",
+    "description": "The page focuses on the roles that best explain how I moved from tournament and production operations into partnerships fulfillment, account-facing delivery, and founder-led execution.",
+    "locationAndLanguages": "Based in Lima, Peru. Native Spanish, professional English, and working Portuguese."
   },
   "footerCTA": {
     "title": "Start a conversation",
-    "subtitle": "If the work and trajectory look relevant, the next step is simple: reach out through one of the public channels below.",
+    "subtitle": "If you are hiring for delivery, operations, or partner-facing execution, I am open to remote opportunities and thoughtful conversations.",
     "buttonText": "Go to contact"
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "Public contact now follows the current visibility policy: email and selected social channels only.",
+    "subtitle": "Email is the fastest way to reach me. LinkedIn and Instagram stay public for follow-up and professional context.",
     "emailTitle": "Email",
-    "emailButtonText": "Send Email",
+    "emailButtonText": "Send email",
     "linkedinTitle": "LinkedIn",
     "linkedinButtonText": "Open LinkedIn",
     "instagramTitle": "Instagram",
     "instagramButtonText": "Open Instagram"
   },
   "footer": {
-    "copyright": "All rights reserved.",
+    "copyright": "Portfolio website.",
     "imprint": "Imprint",
     "privacyPolicy": "Privacy Policy"
   }

@@ -5,7 +5,7 @@ import '../styles/global.css';
 import { t } from '../utils/i18n';
 import faviconAsset from '../assets/favicon.svg';
 import profileImg from '../assets/pawpaw-portrait.png';
-import { name, linkedin_url, github_url, instagram_url } from '../utils/me';
+import { name, linkedin_url, instagram_url } from '../utils/me';
 
 export interface Props {
   title?: string;
@@ -20,7 +20,7 @@ const {
   description = t('site.description', lang)
 } = Astro.props;
 
-const sameAs = [github_url, linkedin_url, instagram_url].filter(Boolean);
+const sameAs = [linkedin_url, instagram_url].filter(Boolean);
 ---
 
 <!DOCTYPE html>

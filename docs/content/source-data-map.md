@@ -382,10 +382,78 @@ Decision de `Fase 1`:
 
 Antes de llegar a implementacion, cualquier uso de `truth` debe convertirse en una salida normalizada propia del repo.
 
-Esa salida todavia no esta definida y dependera de:
+La salida normalizada aprobada en `Fase 4` vive en:
 
-- `strategy/portfolio-strategy.md`
-- `architecture/site-architecture.md`
-- `content/content-system.md`
+- `src/data/selected-work.ts`
+- `src/data/experience.ts`
+- `src/data/skills.ts`
 
-Hasta entonces, `temp/truth/` debe tratarse solo como material de analisis y apoyo.
+Reglas de esa salida:
+
+- solo contiene informacion aprobada para runtime
+- no replica `selection_policy`, CV packs ni metadata editorial del schema original
+- resume la evidencia en entidades propias del portfolio
+- convive con `content/content-master.md`, que sigue siendo la version canonica del copy aprobado
+
+### Campos aprobados por salida normalizada
+
+#### `src/data/selected-work.ts`
+
+Campos visibles:
+
+- `id`
+- `title`
+- `org`
+- `role`
+- `period`
+- `location`
+- `summary`
+- `highlights`
+- `metrics`
+- `tags`
+
+#### `src/data/experience.ts`
+
+Campos visibles:
+
+- `id`
+- `title`
+- `org`
+- `period`
+- `location`
+- `summary`
+- `highlights`
+- `metrics`
+- `tags`
+
+#### `src/data/skills.ts`
+
+Campos visibles:
+
+- `id`
+- `title`
+- `description`
+- `capabilities`
+- `tools`
+
+### Decision ejecutada en Fase 4
+
+- `Selected Work` queda implementado con 6 casos curados:
+  - `InterUniversitario ML:BB`
+  - `PC Factory Throne Clash`
+  - `AMD Gamer Week`
+  - `DreamLeague Division 2`
+  - `Esports World Cup`
+  - `The Lima Major 2023`
+- `Experience` queda implementado con 5 hitos curados:
+  - `XP Agencia`
+  - `Community Gaming`
+  - `4D Esports`
+  - `Infinity`
+  - `Live Media S.A.C.`
+- `Skills` queda implementado con 3 clusters narrativos:
+  - `Program & Delivery Operations`
+  - `Partnerships & Business Development`
+  - `Systems, Workflows & Reporting`
+
+`temp/truth/` sigue tratandose como fuente de analisis y respaldo, no como input directo del runtime.
