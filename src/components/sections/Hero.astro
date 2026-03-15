@@ -1,10 +1,12 @@
 ---
 import Button from '../ui/Buttons.astro';
+import { getRelativeLocaleUrl } from 'astro:i18n';
 import { t } from '../../utils/i18n';
+import { normalizeLocale } from '../../utils/i18n';
 import { Image } from 'astro:assets';
 import heroPortrait from '../../assets/paulo-hero.png';
 
-const lang = Astro.currentLocale;
+const lang = normalizeLocale(Astro.currentLocale);
 ---
 
 <section id="start" class="section-padding pt-28 md:pt-36">
@@ -28,13 +30,13 @@ const lang = Astro.currentLocale;
           <div class="mt-9 flex flex-wrap gap-4">
             <Button
               text={t('hero.ctaProjects', lang)}
-              href="/work/"
+              href={getRelativeLocaleUrl(lang, 'work')}
               variant="primary"
               size="md"
             />
             <Button
               text={t('hero.ctaAbout', lang)}
-              href="/experience/"
+              href={getRelativeLocaleUrl(lang, 'experience')}
               variant="outline"
               size="md"
             />
@@ -64,7 +66,7 @@ const lang = Astro.currentLocale;
 
   <div id="scroll-indicator" class="mt-10 flex justify-center">
     <button type="button" class="control-surface inline-flex items-center gap-3 rounded-full px-4 py-2 text-xs font-mono uppercase tracking-[0.18em] transition-colors duration-300 hover:border-primary/25 hover:text-primary dark:hover:text-highlightBlue" onclick="document.getElementById('selected-work')?.scrollIntoView({ behavior: 'smooth' });">
-      <span>Scroll</span>
+      <span>{t('hero.scrollLabel', lang)}</span>
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
         <path d="M12 5v14"></path>
         <path d="m19 12-7 7-7-7"></path>

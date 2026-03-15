@@ -2,19 +2,20 @@
 import { KanbanSquareIcon, MegaphoneIcon, LayoutDashboardIcon } from '@lucide/astro';
 
 import { t } from '../../utils/i18n';
-import { skillClusters } from '../../data/skills';
+import { normalizeLocale } from '../../utils/i18n';
+import { getSkillClusters } from '../../data/skills';
 
 interface Props {
   lang: string | undefined;
 }
 
-const { lang } = Astro.props;
+const locale = normalizeLocale(Astro.props.lang);
 const clusterIcons = {
   'program-delivery-operations': KanbanSquareIcon,
   'partnerships-business-development': MegaphoneIcon,
   'systems-workflows-reporting': LayoutDashboardIcon,
 };
-const clustersWithIcons = skillClusters.map((cluster) => ({
+const clustersWithIcons = getSkillClusters(locale).map((cluster) => ({
   ...cluster,
   icon: clusterIcons[cluster.id as keyof typeof clusterIcons],
 }));
@@ -23,10 +24,10 @@ const clustersWithIcons = skillClusters.map((cluster) => ({
 <section id="skills" class="section-padding bg-section-wash">
   <div class="max-w-container mx-auto px-6">
     <div class="mb-8 md:mb-10 text-center" data-aos="fade-up" data-aos-duration="800">
-      <span class="section-eyebrow">Capability</span>
-      <h2 class="font-heading text-h2 text-secondary dark:text-fog mb-4">{t('skills.title', lang)}</h2>
+      <span class="section-eyebrow">{t('skills.eyebrow', locale)}</span>
+      <h2 class="font-heading text-h2 text-secondary dark:text-fog mb-4">{t('skills.title', locale)}</h2>
       <p class="text-tone-soft max-w-2xl mx-auto">
-        {t('skills.subtitle', lang)}
+        {t('skills.subtitle', locale)}
       </p>
     </div>
 

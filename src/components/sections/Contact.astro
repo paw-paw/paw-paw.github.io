@@ -2,6 +2,7 @@
 import Obfuscate from 'react-obfuscate';
 
 import { t } from '../../utils/i18n';
+import { normalizeLocale } from '../../utils/i18n';
 import { email, linkedin_short, linkedin_url, instagram_short, instagram_url } from '../../utils/me';
 
 interface Props {
@@ -9,7 +10,8 @@ interface Props {
   compactHeader?: boolean;
 }
 
-const { lang, compactHeader = false } = Astro.props;
+const locale = normalizeLocale(Astro.props.lang);
+const { compactHeader = false } = Astro.props;
 ---
 
 <section id="contact" class:list={['section-padding', compactHeader && 'contact-section-compact']}>
@@ -17,12 +19,12 @@ const { lang, compactHeader = false } = Astro.props;
     <div class="surface-muted px-6 py-8 md:px-8 md:py-10">
       {!compactHeader && (
         <div class="mb-12 text-center" data-aos="fade-up">
-          <span class="section-eyebrow">Contact</span>
+          <span class="section-eyebrow">{t('contact.eyebrow', locale)}</span>
           <h2 class="font-heading text-h2 text-secondary dark:text-fog mb-4">
-            {t('contact.title', lang)}
+            {t('contact.title', locale)}
           </h2>
           <p class="max-w-2xl mx-auto text-secondary/74 dark:text-fog/86">
-            {t('contact.subtitle', lang)}
+            {t('contact.subtitle', locale)}
           </p>
         </div>
       )}
@@ -52,7 +54,7 @@ const { lang, compactHeader = false } = Astro.props;
             aria-labelledby="emailContactIconTitle"
           >
             <title id="emailContactIconTitle">
-              {t('contact.emailTitle', lang)} Icon
+              {`${t('contact.emailTitle', locale)} ${t('ui.iconSuffix', locale)}`}
             </title>
             <rect width="20" height="16" x="2" y="4" rx="2"></rect>
             <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
@@ -62,13 +64,13 @@ const { lang, compactHeader = false } = Astro.props;
         </div>
 
         <h3 class="mb-3 font-heading text-xl text-secondary dark:text-fog">
-          {t('contact.emailTitle', lang)}
+          {t('contact.emailTitle', locale)}
         </h3>
         <p class="mb-4 text-secondary/76 dark:text-fog/88">
           <Obfuscate element="span" email={email} client:only="preact" />
         </p>
         <span class="inline-flex items-center text-sm text-primary font-medium">
-          <span>{t('contact.emailButtonText', lang)}</span>
+          <span>{t('contact.emailButtonText', locale)}</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -84,7 +86,7 @@ const { lang, compactHeader = false } = Astro.props;
             aria-labelledby="emailArrowIconTitle"
           >
             <title id="emailArrowIconTitle">
-              {t('contact.emailButtonText', lang)} Arrow
+              {`${t('contact.emailButtonText', locale)} ${t('ui.arrowSuffix', locale)}`}
             </title>
             <path d="M5 12h14"></path>
             <path d="m12 5 7 7-7 7"></path>
@@ -116,7 +118,7 @@ const { lang, compactHeader = false } = Astro.props;
             aria-labelledby="linkedinContactIconTitle"
           >
             <title id="linkedinContactIconTitle">
-              {t('contact.linkedinTitle', lang)} Icon
+              {`${t('contact.linkedinTitle', locale)} ${t('ui.iconSuffix', locale)}`}
             </title>
             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
             <rect width="4" height="12" x="2" y="9"></rect>
@@ -125,13 +127,13 @@ const { lang, compactHeader = false } = Astro.props;
         </div>
 
         <h3 class="mb-3 font-heading text-xl text-secondary dark:text-fog">
-          {t('contact.linkedinTitle', lang)}
+          {t('contact.linkedinTitle', locale)}
         </h3>
         <p class="mb-4 text-secondary/76 dark:text-fog/88">
           {linkedin_short}
         </p>
         <span class="inline-flex items-center text-sm text-primary font-medium">
-          {t('contact.linkedinButtonText', lang)}
+          {t('contact.linkedinButtonText', locale)}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -147,7 +149,7 @@ const { lang, compactHeader = false } = Astro.props;
             aria-labelledby="linkedinArrowIconTitle"
           >
             <title id="linkedinArrowIconTitle">
-              {t('contact.linkedinButtonText', lang)} Arrow
+              {`${t('contact.linkedinButtonText', locale)} ${t('ui.arrowSuffix', locale)}`}
             </title>
             <path d="M5 12h14"></path>
             <path d="m12 5 7 7-7 7"></path>
@@ -179,7 +181,7 @@ const { lang, compactHeader = false } = Astro.props;
             aria-labelledby="instagramContactIconTitle"
           >
             <title id="instagramContactIconTitle">
-              {t('contact.instagramTitle', lang)} Icon
+              {`${t('contact.instagramTitle', locale)} ${t('ui.iconSuffix', locale)}`}
             </title>
             <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
             <path d="M16 11.37a4 4 0 1 1-7.75 1.37 4 4 0 0 1 7.75-1.37z"></path>
@@ -188,13 +190,13 @@ const { lang, compactHeader = false } = Astro.props;
         </div>
 
         <h3 class="mb-3 font-heading text-xl text-secondary dark:text-fog">
-          {t('contact.instagramTitle', lang)}
+          {t('contact.instagramTitle', locale)}
         </h3>
         <p class="mb-4 text-secondary/76 dark:text-fog/88">
           {instagram_short}
         </p>
         <span class="inline-flex items-center text-sm text-primary font-medium">
-          {t('contact.instagramButtonText', lang)}
+          {t('contact.instagramButtonText', locale)}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -210,7 +212,7 @@ const { lang, compactHeader = false } = Astro.props;
             aria-labelledby="instagramArrowIconTitle"
           >
             <title id="instagramArrowIconTitle">
-              {t('contact.instagramButtonText', lang)} Arrow
+              {`${t('contact.instagramButtonText', locale)} ${t('ui.arrowSuffix', locale)}`}
             </title>
             <path d="M5 12h14"></path>
             <path d="m12 5 7 7-7 7"></path>

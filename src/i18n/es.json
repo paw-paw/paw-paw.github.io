@@ -1,0 +1,121 @@
+{
+  "site": {
+    "title": "Paulo Tuya | Ejecucion, alianzas y operaciones",
+    "description": "Portfolio de Paulo Tuya, un operador de ejecucion y alianzas en gaming, esports y programas remotos."
+  },
+  "nav": {
+    "home": "Inicio",
+    "work": "Trabajo",
+    "experience": "Experiencia",
+    "contact": "Contacto",
+    "contactButton": "Contacto"
+  },
+  "hero": {
+    "greeting": "Paulo Cesar Tuya",
+    "name": "Convierto objetivos de socios y proyectos en ejecucion clara",
+    "pitch": "Ejecucion, alianzas y operaciones en gaming, esports y programas remotos.",
+    "role": "",
+    "ctaProjects": "Ver trabajo seleccionado",
+    "ctaAbout": "Ver experiencia",
+    "scrollLabel": "Desplazar"
+  },
+  "values": {
+    "eyebrow": "Metodo",
+    "title": "Como trabajo",
+    "subtitle": "Alcance claro, stakeholders alineados y control operativo estable.",
+    "card1Title": "Estructura antes que ruido",
+    "card1Text": "Convierto metas difusas en alcance, owners, tiempos y artefactos que vuelven la ejecucion más confiable.",
+    "card2Title": "Coordinacion sin desvio",
+    "card2Text": "Mantengo alineados partners, equipos, vendors y stakeholders internos sin dejar que handoffs o aprobaciones frenen el delivery.",
+    "card3Title": "Seguimiento confiable",
+    "card3Text": "Me importa tanto la readiness, el manejo de issues y la calidad del cierre como la energia del kickoff, porque el delivery se juzga al final."
+  },
+  "skills": {
+    "eyebrow": "Capacidades",
+    "title": "Clusters de capacidad",
+    "subtitle": "Planificacion, trabajo con partners y sistemas de ejecucion para un delivery claro y confiable."
+  },
+  "projects": {
+    "eyebrow": "Evidencia",
+    "pageTitle": "Trabajo seleccionado",
+    "pageDescription": "Trabajo seleccionado en activaciones, alianzas y programas intensivos en delivery.",
+    "heroTitle": "Trabajo seleccionado entre activaciones, partnerships y programas de delivery.",
+    "heroSubtitle": "Estos resúmenes muestran cómo me muevo entre alcance con partners, planificacion operativa y ejecucion en terreno.",
+    "buttonText": "Ver trabajo seleccionado",
+    "title": "Trabajo seleccionado",
+    "subtitle": "Proyectos donde el trabajo con partners, las operaciones en vivo y la ejecucion tuvieron peso y resultados visibles.",
+    "allProjectsButtonText": "Ver todo el trabajo seleccionado"
+  },
+  "timeline": {
+    "eyebrow": "Trayectoria",
+    "title": "Experiencia",
+    "subtitle": "De produccion y league operations a alianzas, delivery de cara a cuentas y ejecucion founder-led.",
+    "buttonText": "Ver experiencia completa"
+  },
+  "workPage": {
+    "eyebrow": "Programas seleccionados",
+    "title": "Proyectos seleccionados de delivery y partnerships",
+    "subtitle": "Estos resúmenes muestran cómo me muevo entre alcance de cara a socios, planificación operativa y ejecución en terreno.",
+    "description": "Estos proyectos muestran dónde alianzas, planificación y ejecución tuvieron que sostenerse bajo restricciones reales.",
+    "panelTitle": "Resumen",
+    "panelDealsClosedLabel": "Deals cerrados",
+    "panelDealsClosedValue": "US$120K",
+    "panelProgramsDeliveredLabel": "Programas entregados",
+    "panelProgramsDeliveredValue": "100+ eventos y activaciones",
+    "panelBudgetsManagedLabel": "Presupuestos gestionados",
+    "panelBudgetsManagedValue": "US$200K+ entre proyectos",
+    "panelDeliveryContextsLabel": "Contextos de delivery",
+    "panelDeliveryContextsValue": "Eventos internacionales, circuitos pro, activaciones retail"
+  },
+  "experiencePage": {
+    "eyebrow": "Experiencia",
+    "title": "De operaciones a alianzas y liderazgo de proyectos",
+    "subtitle": "Estos roles muestran cómo crecí desde operaciones de torneos y producción hacia alianzas, delivery de cara a cuentas y ejecución founder-led.",
+    "description": "Estos roles muestran cómo crecí desde operaciones de torneos y producción hacia alianzas, delivery de cara a cuentas y ejecución founder-led.",
+    "locationAndLanguages": "Con base en Lima, Peru. Español nativo, inglés profesional y portugués de trabajo.",
+    "panelTitle": "Perfil",
+    "panelLocationLabel": "Ubicacion",
+    "panelLocation": "Lima, Peru",
+    "panelLanguagesLabel": "Idiomas",
+    "panelLanguages": "Español (nativo), inglés (C1), portugués (B1)",
+    "panelWorkModeLabel": "Modalidad",
+    "panelWorkMode": "Remote-first, abierto a reubicación",
+    "panelMarketsLabel": "Mercados",
+    "panelMarkets": "Peru, LATAM, Europa"
+  },
+  "footerCTA": {
+    "eyebrow": "Siguiente paso",
+    "title": "Iniciemos una conversación",
+    "subtitle": "Abierto a roles remotos en delivery, alianzas, operaciones y ejecución de cara a partners.",
+    "buttonText": "Iniciar la conversación"
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "Contacto",
+    "subtitle": "El email es la via más rapida para contactarme. LinkedIn e Instagram quedan públicos como seguimiento y contexto profesional.",
+    "emailTitle": "Email",
+    "emailButtonText": "Enviar email",
+    "linkedinTitle": "LinkedIn",
+    "linkedinButtonText": "Abrir LinkedIn",
+    "instagramTitle": "Instagram",
+    "instagramButtonText": "Abrir Instagram"
+  },
+  "contactPage": {
+    "eyebrow": "Contacto",
+    "title": "Conversemos",
+    "subtitle": "¿Contratas para delivery, alianzas, operaciones o ejecucion con partners? El email es la via más rapida. LinkedIn e Instagram agregan contexto."
+  },
+  "ui": {
+    "languageSwitcherAria": "Selector de idioma",
+    "themeToggleAria": "Cambiar modo oscuro",
+    "toggleMenuAria": "Abrir menú",
+    "externalProfileSuffix": "perfil",
+    "iconSuffix": "icono",
+    "arrowSuffix": "flecha"
+  },
+  "footer": {
+    "copyright": "Delivery, alianzas y ejecucion en gaming, esports y programas remotos.",
+    "imprint": "Aviso legal",
+    "privacyPolicy": "Privacidad"
+  }
+}

@@ -1,16 +1,19 @@
 ---
+import { normalizeLocale, t } from '../../utils/i18n';
+
 interface Props {
   id?: string;
 }
 
 const { id = "theme-toggle" } = Astro.props;
+const locale = normalizeLocale(Astro.currentLocale);
 ---
 
 <button
   id={id}
   type="button"
   class="theme-toggle-btn control-surface relative inline-flex h-11 w-11 items-center justify-center rounded-2xl p-2 transition-colors duration-300 hover:border-primary/25 hover:text-primary dark:hover:border-primary/25 dark:hover:text-highlightBlue"
-  aria-label="Toggle Dark Mode"
+  aria-label={t('ui.themeToggleAria', locale)}
 >
   <svg
     xmlns="http://www.w3.org/2000/svg"

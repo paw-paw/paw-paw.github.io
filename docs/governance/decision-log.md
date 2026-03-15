@@ -698,3 +698,93 @@
 ### Documentos afectados
 
 - `docs/plans/pre-phase-5-fixes/darkmode-fix.md`
+
+---
+
+## 2026-03-15 — Reintroduccion controlada de i18n para Fase 5
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `5`
+
+### Decision / registro
+
+- `Fase 5` reintroduce i18n real con dos locales activos:
+  - `en`
+  - `es`
+- `en` sigue siendo el idioma maestro
+- todos los locales activos llevan prefijo
+- `/` deja de ser la home canonica y pasa a ser una entrada inteligente de locale
+- la resolucion del locale en `/` sigue esta prioridad:
+  - preferencia persistida del usuario
+  - idioma del navegador
+  - fallback a `/en/`
+- el español aprobado para el sitio es `espanol neutro LATAM` con ligera preferencia peruana
+- la localizacion de `es` es adaptada por mercado, no traduccion literal estricta
+- `de` deja de formar parte del runtime activo
+- `LanguageSwitcher` vuelve como componente minimo y multipagina
+
+### Razon
+
+- el sitio ya cerro su version canonica en ingles y necesita abrir una segunda lengua sin reactivar la logica heredada del template
+- la politica de prefijos para todos los locales evita ambiguedad estructural entre idioma por defecto y rutas secundarias
+- el root inteligente permite una UX razonable sin volver `/` una home duplicada
+- el español debe sonar natural para hiring y networking en LATAM sin perder neutralidad profesional
+
+### Documentos afectados
+
+- `docs/architecture/i18n-spec.md`
+- `docs/delivery/deployment.md`
+- `docs/plans/phase-5.md`
+
+### Implementacion afectada
+
+- `astro.config.mjs`
+- `src/i18n/*`
+- `src/utils/i18n.ts`
+- `src/pages/**`
+- `src/components/ui/LanguageSwitcher.astro`
+- `src/components/layout/Navbar.astro`
+- `src/layouts/Layout.astro`
+
+---
+
+## 2026-03-15 — Cierre aprobado de Fase 5
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `5`
+
+### Decision / registro
+
+- `Fase 5` queda formalmente cerrada
+- la estructura multiidioma aprobada para el sitio activo queda establecida como:
+  - `/en/`
+  - `/en/work/`
+  - `/en/experience/`
+  - `/en/contact/`
+  - `/es/`
+  - `/es/work/`
+  - `/es/experience/`
+  - `/es/contact/`
+- `/`, `/work/`, `/experience/` y `/contact/` quedan aceptadas como rutas puente inteligentes
+- el `LanguageSwitcher` multipagina queda aprobado
+- los ajustes editoriales de `es` quedan suficientemente cerrados para avanzar, aunque puedan seguir afinandose en fases posteriores
+
+### Razon
+
+- la implementacion tecnica ya compilaba correctamente con la nueva estructura
+- la revision manual del usuario aprobo el comportamiento general de rutas, switcher y cobertura visible por locale
+- los gaps visibles mas relevantes de localizacion quedaron resueltos sin reabrir estrategia ni arquitectura
+
+### Documentos afectados
+
+- `docs/plans/phase-5.md`
+
+### Desbloquea
+
+- `docs/delivery/seo-spec.md`
+- `docs/delivery/release-checklist.md`
+- trabajo de `Fase 6`

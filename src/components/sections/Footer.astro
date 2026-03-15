@@ -1,5 +1,7 @@
 ---
+import { getRelativeLocaleUrl } from 'astro:i18n';
 import { t } from '../../utils/i18n';
+import { normalizeLocale } from '../../utils/i18n';
 import { name, linkedin_url, instagram_url } from '../../utils/me';
 
 interface Props {
@@ -7,6 +9,8 @@ interface Props {
 }
 
 const { lang } = Astro.props;
+const currentLocale = normalizeLocale(lang);
+const homeHref = getRelativeLocaleUrl(currentLocale);
 const currentYear = new Date().getFullYear();
 ---
 
@@ -14,7 +18,7 @@ const currentYear = new Date().getFullYear();
   <div class="max-w-container mx-auto px-6">
     <div class="flex flex-col md:flex-row justify-between items-center">
       <div class="mb-4 md:mb-0">
-        <a href="/" class="brand-lockup" aria-label="Homepage">
+        <a href={homeHref} class="brand-lockup" aria-label={t('nav.home', currentLocale)}>
           <span class="brand-badge" aria-hidden="true">P</span>
           <span class="brand-wordmark">Paulo Cesar Tuya</span>
         </a>
@@ -30,10 +34,10 @@ const currentYear = new Date().getFullYear();
           target="_blank"
           rel="noopener noreferrer"
           class="text-tone-soft transition-colors duration-300 hover:text-primary dark:hover:text-highlightBlue"
-          aria-label="LinkedIn"
+          aria-label={t('contact.linkedinButtonText', currentLocale)}
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="linkedinFooterIconTitle">
-            <title id="linkedinFooterIconTitle">LinkedIn Profile</title>
+            <title id="linkedinFooterIconTitle">{`${t('contact.linkedinTitle', currentLocale)} ${t('ui.externalProfileSuffix', currentLocale)}`}</title>
             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
             <rect width="4" height="12" x="2" y="9"></rect>
             <circle cx="4" cy="4" r="2"></circle>
@@ -44,10 +48,10 @@ const currentYear = new Date().getFullYear();
           target="_blank"
           rel="noopener noreferrer"
           class="text-tone-soft transition-colors duration-300 hover:text-primary dark:hover:text-highlightBlue"
-          aria-label="Instagram"
+          aria-label={t('contact.instagramButtonText', currentLocale)}
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="instagramFooterIconTitle">
-            <title id="instagramFooterIconTitle">Instagram Profile</title>
+            <title id="instagramFooterIconTitle">{`${t('contact.instagramTitle', currentLocale)} ${t('ui.externalProfileSuffix', currentLocale)}`}</title>
             <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
             <path d="M16 11.37a4 4 0 1 1-7.75 1.37 4 4 0 0 1 7.75-1.37z"></path>
             <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>

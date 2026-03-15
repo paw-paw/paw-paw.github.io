@@ -1,27 +1,29 @@
 ---
 import Button from '../ui/Buttons.astro';
+import { getRelativeLocaleUrl } from 'astro:i18n';
 import { t } from '../../utils/i18n';
+import { normalizeLocale } from '../../utils/i18n';
 interface Props {
   lang: string | undefined;
 }
 
-const { lang } = Astro.props;
+const locale = normalizeLocale(Astro.props.lang);
 ---
 
 <section class="section-padding bg-section-wash text-center">
   <div class="max-w-container mx-auto px-6">
     <div class="surface-muted px-8 py-10 md:px-12 md:py-14" data-aos="fade-up">
-      <span class="section-eyebrow">Next step</span>
+      <span class="section-eyebrow">{t('footerCTA.eyebrow', locale)}</span>
       <h2 class="font-heading text-h2 text-secondary dark:text-fog mb-6">
-        {t('footerCTA.title', lang)}
+        {t('footerCTA.title', locale)}
       </h2>
       <p class="text-tone-soft max-w-2xl mx-auto mb-8">
-        {t('footerCTA.subtitle', lang)}
+        {t('footerCTA.subtitle', locale)}
       </p>
 
       <Button
-        text={t('footerCTA.buttonText', lang)}
-        href="/contact/"
+        text={t('footerCTA.buttonText', locale)}
+        href={getRelativeLocaleUrl(locale, 'contact')}
         variant="primary"
         size="lg"
       />

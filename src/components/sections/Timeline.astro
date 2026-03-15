@@ -1,23 +1,25 @@
 ---
 import Button from '../ui/Buttons.astro';
+import { getRelativeLocaleUrl } from 'astro:i18n';
 import { t } from '../../utils/i18n';
-import { experienceItems } from '../../data/experience';
+import { normalizeLocale } from '../../utils/i18n';
+import { getExperienceItems } from '../../data/experience';
 
 interface Props {
   lang: string | undefined;
 }
 
-const { lang } = Astro.props;
-const previewItems = experienceItems.slice(0, 3);
+const locale = normalizeLocale(Astro.props.lang);
+const previewItems = getExperienceItems(locale).slice(0, 3);
 ---
 
 <section id="experience-preview" class="section-padding bg-section-wash">
   <div class="max-w-container mx-auto px-6">
     <div class="mb-12" data-aos="fade-up">
-      <span class="section-eyebrow">Trajectory</span>
-      <h2 class="font-heading text-h2 text-secondary dark:text-fog mb-4">{t('timeline.title', lang)}</h2>
+      <span class="section-eyebrow">{t('timeline.eyebrow', locale)}</span>
+      <h2 class="font-heading text-h2 text-secondary dark:text-fog mb-4">{t('timeline.title', locale)}</h2>
       <p class="text-tone-soft max-w-2xl">
-        {t('timeline.subtitle', lang)}
+        {t('timeline.subtitle', locale)}
       </p>
     </div>
 
@@ -85,8 +87,8 @@ const previewItems = experienceItems.slice(0, 3);
 
       <div class="mt-12 text-left md:text-center" data-aos="fade-up">
         <Button
-          text={t('timeline.buttonText', lang)}
-          href="/experience/"
+          text={t('timeline.buttonText', locale)}
+          href={getRelativeLocaleUrl(locale, 'experience')}
           variant="outline"
         />
       </div>

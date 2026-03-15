@@ -8,6 +8,14 @@ export default defineConfig({
   site: 'https://paw-paw.github.io/',
   output: 'static',
   trailingSlash: 'always',
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'es'],
+    routing: {
+      prefixDefaultLocale: true,
+      redirectToDefaultLocale: false,
+    },
+  },
 
   // Integrations
   integrations: [tailwind(), sitemap(), compress({

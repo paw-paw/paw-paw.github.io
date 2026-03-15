@@ -1,23 +1,25 @@
 ---
 import Button from '../ui/Buttons.astro';
+import { getRelativeLocaleUrl } from 'astro:i18n';
 import { t } from '../../utils/i18n';
-import { selectedWork } from '../../data/selected-work';
+import { normalizeLocale } from '../../utils/i18n';
+import { getSelectedWork } from '../../data/selected-work';
 
 interface Props {
   lang: string | undefined;
 }
 
-const { lang } = Astro.props;
-const previewItems = selectedWork.slice(0, 3);
+const locale = normalizeLocale(Astro.props.lang);
+const previewItems = getSelectedWork(locale).slice(0, 3);
 ---
 
 <section id="selected-work" class="section-padding bg-section-wash">
   <div class="max-w-container mx-auto px-6">
     <div class="mb-12" data-aos="fade-up">
-      <span class="section-eyebrow">Evidence</span>
-      <h2 class="font-heading text-h2 text-secondary dark:text-fog mb-4">{t('projects.title', lang)}</h2>
+      <span class="section-eyebrow">{t('projects.eyebrow', locale)}</span>
+      <h2 class="font-heading text-h2 text-secondary dark:text-fog mb-4">{t('projects.title', locale)}</h2>
       <p class="text-tone-soft max-w-2xl">
-        {t('projects.subtitle', lang)}
+        {t('projects.subtitle', locale)}
       </p>
     </div>
 
@@ -67,8 +69,8 @@ const previewItems = selectedWork.slice(0, 3);
             </div>
 
             <Button
-              text={t('projects.buttonText', lang)}
-              href="/work/"
+              text={t('projects.buttonText', locale)}
+              href={getRelativeLocaleUrl(locale, 'work')}
               variant="outline"
               size="sm"
             />
@@ -79,8 +81,8 @@ const previewItems = selectedWork.slice(0, 3);
 
     <div class="mt-12 text-center" data-aos="fade-up">
       <Button
-        text={t('projects.allProjectsButtonText', lang)}
-        href="/work/"
+        text={t('projects.allProjectsButtonText', locale)}
+        href={getRelativeLocaleUrl(locale, 'work')}
         variant="primary"
       />
     </div>

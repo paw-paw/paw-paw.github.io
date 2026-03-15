@@ -3,8 +3,8 @@
 ## Metadatos
 
 - Fase: `4`
-- Estado: `active`
-- Ultima actualizacion: `2026-03-12`
+- Estado: `done`
+- Ultima actualizacion: `2026-03-15`
 - Owner: `Codex + user`
 - Depende de:
   - `docs/README.md`
@@ -268,7 +268,7 @@ Lista preventiva, no exhaustiva.
 
 ### Manuales
 
-- [ ] revision visual/manual de `/`, `/work` y `/experience`
+- [x] revision visual/manual de `/`, `/work` y `/experience`
 - [x] revision de labels, CTA, contacto y consistencia narrativa
 - [x] revision de que no queden placeholders estructurales visibles de Fase 2
 
@@ -286,6 +286,7 @@ La fase solo se considera cerrada si:
 - [x] el nombre profesional visible es `Paulo Tuya` y la marca visual `Pawpaw` no compite con esa identidad
 - [x] no aparecen keys crudas ni mensajes de “phase in progress” en la UI
 - [x] todo el contenido importante esta alineado con la estrategia y la politica de visibilidad publica
+- [x] la revision visual/manual minima ya fue aprobada y no bloquea el inicio de `Fase 5`
 
 ---
 
@@ -312,3 +313,6 @@ La fase solo se considera cerrada si:
 - Fecha: `2026-03-12`
   - cambio: creacion inicial del plan de Fase 4
   - razon: preparar la ejecucion interactiva de contenido maestro y su implementacion en el idioma principal
+- Fecha: `2026-03-15`
+  - cambio: cierre formal de `Fase 4`
+  - razon: la implementacion del contenido maestro y su revision visual minima ya quedaron suficientemente cerradas para desbloquear `Fase 5`

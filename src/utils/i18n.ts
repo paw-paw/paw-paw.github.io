@@ -1,49 +1,54 @@
 import enTranslations from '../i18n/en.json';
-import deTranslations from '../i18n/de.json';
+import esTranslations from '../i18n/es.json';
+
+export const supportedLocales = ['en', 'es'] as const;
+export type SupportedLocale = (typeof supportedLocales)[number];
 
 const translations = {
   en: enTranslations,
-  de: deTranslations,
-};
+  es: esTranslations,
+} as const;
 
-type TranslationKeys = keyof typeof deTranslations; // Or enTranslations, assuming they have the same keys
+function isSupportedLocale(locale: string | undefined): locale is SupportedLocale {
+  return locale === 'en' || locale === 'es';
+}
 
-// Helper function to safely access nested keys like "nav.start"
-function getNestedValue(obj: any, path: string): string | undefined {
+export function normalizeLocale(locale: string | undefined): SupportedLocale {
+  return isSupportedLocale(locale) ? locale : 'en';
+}
+
+function getNestedValue(obj: unknown, path: string): string | undefined {
   const keys = path.split('.');
-  let current = obj;
+  let current: unknown = obj;
+
   for (const key of keys) {
     if (current && typeof current === 'object' && key in current) {
-      current = current[key];
+      current = (current as Record<string, unknown>)[key];
     } else {
       return undefined;
     }
   }
+
   return typeof current === 'string' ? current : undefined;
 }
 
 export function t(key: string, lang: string | undefined): string {
-  const currentLang = lang || 'en'; // Default to 'en' if lang is undefined
-  const langTranslations = translations[currentLang as keyof typeof translations] || translations.en;
+  const currentLang = normalizeLocale(lang);
+  const value = getNestedValue(translations[currentLang], key);
 
-  const value = getNestedValue(langTranslations, key);
-
-  if (value === undefined) {
-    console.warn(`Translation key "${key}" not found for language "${currentLang}". Falling back to key.`);
-    // Fallback to trying the default language if not already trying it
-    if (currentLang !== 'en') {
-      const fallbackValue = getNestedValue(translations.en, key);
-      if (fallbackValue !== undefined) {
-        return fallbackValue;
-      }
-    }
-    return key; // Return the key itself as a last resort
+  if (value !== undefined) {
+    return value;
   }
-  return value;
+
+  const fallbackValue = getNestedValue(translations.en, key);
+  if (fallbackValue !== undefined) {
+    return fallbackValue;
+  }
+
+  console.warn(`Translation key "${key}" not found for language "${currentLang}". Falling back to key.`);
+  return key;
 }
 
-// Utility to get all translations for a specific language, useful for passing to components
 export function getTranslations(lang: string | undefined) {
-  const currentLang = lang || 'en';
-  return translations[currentLang as keyof typeof translations] || translations.en;
+  return translations[normalizeLocale(lang)];
 }

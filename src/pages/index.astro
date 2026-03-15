@@ -1,21 +1,32 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Hero from '../components/sections/Hero.astro';
-import Values from '../components/sections/Values.astro';
-import Projects from '../components/sections/Projects.astro';
-import Timeline from '../components/sections/Timeline.astro';
-import Skills from '../components/sections/Skills.astro';
-import FooterCTA from '../components/sections/FooterCTA.astro';
-import { t } from '../utils/i18n';
-
-const lang = 'en';
+const segment = '';
+const suffix = '/';
 ---
 
-<Layout title={t('site.title', lang)} description={t('site.description', lang)}>
-  <Hero lang={lang} />
-  <Projects lang={lang} />
-  <Timeline lang={lang} />
-  <Values lang={lang} />
-  <Skills lang={lang} />
-  <FooterCTA lang={lang} />
-</Layout>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Redirecting…</title>
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <noscript>
+      <p><a href="/en/">Continue in English</a></p>
+      <p><a href="/es/">Continuar en español</a></p>
+    </noscript>
+
+    <script is:inline>
+      const supportedLocales = ['en', 'es'];
+      const preferredLocale = window.localStorage.getItem('preferred-locale');
+      const browserLocales = (navigator.languages || [navigator.language])
+        .map((locale) => locale.toLowerCase())
+        .map((locale) => locale.split('-')[0]);
+
+      const browserLocale = browserLocales.find((locale) => supportedLocales.includes(locale));
+      const locale = supportedLocales.includes(preferredLocale) ? preferredLocale : browserLocale || 'en';
+      window.location.replace(`/${locale}${'/'}`);
+    </script>
+  </body>
+</html>

@@ -1,13 +1,20 @@
 ---
 import ThemeToggle from '../ui/ThemeToggle.astro';
+import LanguageSwitcher from '../ui/LanguageSwitcher.astro';
+import { getRelativeLocaleUrl } from 'astro:i18n';
 import { t } from '../../utils/i18n';
+import { normalizeLocale } from '../../utils/i18n';
 
-const lang = Astro.currentLocale || 'en';
+const lang = normalizeLocale(Astro.currentLocale);
 const pathname = Astro.url.pathname;
+const homeHref = getRelativeLocaleUrl(lang);
+const workHref = getRelativeLocaleUrl(lang, 'work');
+const experienceHref = getRelativeLocaleUrl(lang, 'experience');
+const contactHref = getRelativeLocaleUrl(lang, 'contact');
 
 const isActive = (href: string) => {
-  if (href === '/') {
-    return pathname === '/';
+  if (href === homeHref) {
+    return pathname === href;
   }
   return pathname.startsWith(href);
 };
@@ -16,32 +23,37 @@ const isActive = (href: string) => {
 <header id="navbar" class="fixed top-0 z-50 w-full transition-all duration-300">
   <div class="max-w-container mx-auto px-6 pt-4">
     <div class="surface-muted flex items-center justify-between px-5 py-4 shadow-button">
-      <a href="/" class="brand-lockup" aria-label="Homepage">
+      <a href={homeHref} class="brand-lockup" aria-label={t('nav.home', lang)}>
         <span class="brand-badge" aria-hidden="true">P</span>
         <span class="brand-wordmark">Paulo Cesar Tuya</span>
       </a>
 
-      <nav class="hidden md:flex items-center gap-8">
+      <nav class="hidden md:flex items-center gap-5">
         <ul class="flex items-center gap-7 text-[0.95rem]">
           <li>
-            <a href="/" class:list={['nav-link', isActive('/') && 'nav-link-active']}>{t('nav.home', lang)}</a>
+            <a href={homeHref} class:list={['nav-link', isActive(homeHref) && 'nav-link-active']}>{t('nav.home', lang)}</a>
           </li>
           <li>
-            <a href="/work/" class:list={['nav-link', isActive('/work/') && 'nav-link-active']}>{t('nav.work', lang)}</a>
+            <a href={workHref} class:list={['nav-link', isActive(workHref) && 'nav-link-active']}>{t('nav.work', lang)}</a>
           </li>
           <li>
-            <a href="/experience/" class:list={['nav-link', isActive('/experience/') && 'nav-link-active']}>{t('nav.experience', lang)}</a>
+            <a href={experienceHref} class:list={['nav-link', isActive(experienceHref) && 'nav-link-active']}>{t('nav.experience', lang)}</a>
           </li>
           <li>
-            <a href="/contact/" class:list={['contact-nav-button', isActive('/contact/') && 'contact-nav-button-active']}>{t('nav.contactButton', lang)}</a>
+            <a href={contactHref} class:list={['contact-nav-button', isActive(contactHref) && 'contact-nav-button-active']}>{t('nav.contactButton', lang)}</a>
           </li>
         </ul>
+        <LanguageSwitcher />
         <ThemeToggle />
       </nav>
 
       <div class="flex items-center gap-4 md:hidden">
         <ThemeToggle />
-        <button id="mobile-menu-button" class="control-surface inline-flex h-11 w-11 items-center justify-center rounded-2xl" aria-label="Toggle Menu">
+        <button
+          id="mobile-menu-button"
+          class="control-surface inline-flex h-11 w-11 items-center justify-center rounded-2xl"
+          aria-label={t('ui.toggleMenuAria', lang)}
+        >
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu">
             <line x1="4" x2="20" y1="12" y2="12"></line>
             <line x1="4" x2="20" y1="6" y2="6"></line>
@@ -55,18 +67,21 @@ const isActive = (href: string) => {
       <div class="surface-muted px-6 py-5">
         <ul class="flex flex-col space-y-4 text-sm">
           <li>
-            <a href="/" class:list={['mobile-nav-link', isActive('/') && 'mobile-nav-link-active']}>{t('nav.home', lang)}</a>
+            <a href={homeHref} class:list={['mobile-nav-link', isActive(homeHref) && 'mobile-nav-link-active']}>{t('nav.home', lang)}</a>
           </li>
           <li>
-            <a href="/work/" class:list={['mobile-nav-link', isActive('/work/') && 'mobile-nav-link-active']}>{t('nav.work', lang)}</a>
+            <a href={workHref} class:list={['mobile-nav-link', isActive(workHref) && 'mobile-nav-link-active']}>{t('nav.work', lang)}</a>
           </li>
           <li>
-            <a href="/experience/" class:list={['mobile-nav-link', isActive('/experience/') && 'mobile-nav-link-active']}>{t('nav.experience', lang)}</a>
+            <a href={experienceHref} class:list={['mobile-nav-link', isActive(experienceHref) && 'mobile-nav-link-active']}>{t('nav.experience', lang)}</a>
           </li>
           <li>
-            <a href="/contact/" class:list={['mobile-nav-link', 'mobile-nav-button', isActive('/contact/') && 'mobile-nav-link-active']}>{t('nav.contactButton', lang)}</a>
+            <a href={contactHref} class:list={['mobile-nav-link', 'mobile-nav-button', isActive(contactHref) && 'mobile-nav-link-active']}>{t('nav.contactButton', lang)}</a>
           </li>
         </ul>
+        <div class="mt-5 flex justify-center">
+          <LanguageSwitcher mobile={true} />
+        </div>
       </div>
     </div>
   </div>

@@ -1,0 +1,122 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { t } from '../../utils/i18n';
+import { getExperienceItems } from '../../data/experience';
+
+const lang = 'es';
+const experienceItems = getExperienceItems(lang);
+---
+
+<Layout
+  title={`${t('nav.experience', lang)} | ${t('site.title', lang)}`}
+  description={t('experiencePage.description', lang)}
+  lang={lang}
+>
+  <section class="section-padding pt-28 md:pt-36">
+    <div class="max-w-container mx-auto px-6">
+      <div class="grid gap-8 lg:grid-cols-[minmax(0,2fr)_minmax(20rem,0.95fr)]">
+        <div class="surface-muted px-8 py-10 md:px-10 md:py-12">
+          <span class="section-eyebrow">{t('experiencePage.eyebrow', lang)}</span>
+          <h1 class="font-heading text-h1 text-secondary dark:text-fog mb-4">
+            {t('experiencePage.title', lang)}
+          </h1>
+          <p class="text-tone-soft text-lg md:text-xl">
+            {t('experiencePage.subtitle', lang)}
+          </p>
+        </div>
+
+        <aside class="surface-card experience-panel p-6 md:p-7">
+          <span class="section-eyebrow mb-5">{t('experiencePage.panelTitle', lang)}</span>
+          <div class="space-y-4">
+            <div class="nested-panel-card">
+              <p class="nested-panel-label">{t('experiencePage.panelLocationLabel', lang)}</p>
+              <p class="nested-panel-value">{t('experiencePage.panelLocation', lang)}</p>
+            </div>
+            <div class="nested-panel-card">
+              <p class="nested-panel-label">{t('experiencePage.panelLanguagesLabel', lang)}</p>
+              <p class="nested-panel-value">{t('experiencePage.panelLanguages', lang)}</p>
+            </div>
+            <div class="nested-panel-card">
+              <p class="nested-panel-label">{t('experiencePage.panelWorkModeLabel', lang)}</p>
+              <p class="nested-panel-value">{t('experiencePage.panelWorkMode', lang)}</p>
+            </div>
+            <div class="nested-panel-card">
+              <p class="nested-panel-label">{t('experiencePage.panelMarketsLabel', lang)}</p>
+              <p class="nested-panel-value">{t('experiencePage.panelMarkets', lang)}</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="mt-12 space-y-6">
+        {experienceItems.map((item, index) => (
+          <article
+            class="surface-card experience-card p-6 md:p-8"
+            data-aos="fade-up"
+            data-aos-delay={index * 80}
+          >
+            <div class="experience-card-grid">
+              <div class="experience-card-top">
+                <div class="experience-logo-badge">
+                  {item.logo.allmode ? (
+                    <img src={item.logo.allmode.src} alt={item.logo.alt} class="experience-logo-image" />
+                  ) : (
+                    <>
+                      {item.logo.light && (
+                        <img src={item.logo.light.src} alt={item.logo.alt} class="experience-logo-image dark:hidden" />
+                      )}
+                      {item.logo.dark && (
+                        <img src={item.logo.dark.src} alt={item.logo.alt} class="experience-logo-image hidden dark:block" />
+                      )}
+                    </>
+                  )}
+                </div>
+
+                <div class="experience-meta-stack">
+                  <span class="experience-period-pill">
+                    {item.period}
+                  </span>
+                  <p class="experience-meta-line">
+                    {item.location}
+                  </p>
+                  <p class="experience-meta-line">
+                    {item.workMode}
+                  </p>
+                </div>
+              </div>
+
+              <div class="experience-card-body">
+                <h2 class="mb-1 font-heading text-2xl text-secondary dark:text-fog">
+                  {item.title}
+                </h2>
+                <p class="meta-kicker mb-4 text-sm font-mono uppercase tracking-[0.16em]">
+                  {item.org}
+                </p>
+                <p class="text-tone-soft mb-5">
+                  {item.summary}
+                </p>
+
+                <ul class="text-tone-soft mb-6 space-y-3 text-sm">
+                  {item.highlights.map((highlight) => (
+                    <li class="flex gap-3">
+                      <span class="mt-1 h-2.5 w-2.5 shrink-0 rounded-full bg-primary/70"></span>
+                      <span>{highlight}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div class="flex flex-wrap gap-2">
+                  {item.metrics.map((metric) => (
+                    <span class="metric-chip">
+                      {metric}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>

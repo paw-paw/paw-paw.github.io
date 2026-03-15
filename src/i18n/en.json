@@ -16,9 +16,11 @@
     "pitch": "Delivery, partnerships, and operations across gaming, esports, and remote programs.",
     "role": "",
     "ctaProjects": "View selected work",
-    "ctaAbout": "See experience"
+    "ctaAbout": "See experience",
+    "scrollLabel": "Scroll"
   },
   "values": {
+    "eyebrow": "Method",
     "title": "How I Work",
     "subtitle": "Clear scope, aligned stakeholders, and steady operational control.",
     "card1Title": "Structure before noise",
@@ -29,10 +31,12 @@
     "card3Text": "I care about readiness, issue handling, and closeout quality as much as kickoff energy, because delivery is judged at the finish line."
   },
   "skills": {
+    "eyebrow": "Capability",
     "title": "Capability Clusters",
     "subtitle": "Planning, partner-facing work, and execution systems that keep delivery clear and reliable."
   },
   "projects": {
+    "eyebrow": "Evidence",
     "pageTitle": "Selected Work",
     "pageDescription": "Selected work across activations, partnerships, and delivery-heavy programs.",
     "heroTitle": "Selected work across activations, partnerships, and delivery-heavy programs.",
@@ -43,6 +47,7 @@
     "allProjectsButtonText": "See all selected work"
   },
   "timeline": {
+    "eyebrow": "Trajectory",
     "title": "Experience",
     "subtitle": "From production and league operations to partnerships, account-facing delivery, and founder-led execution.",
     "buttonText": "View full experience"
@@ -69,17 +74,23 @@
     "description": "These roles show how I grew from tournament and production operations into partnerships, account-facing delivery, and founder-led execution.",
     "locationAndLanguages": "Based in Lima, Peru. Native Spanish, professional English, and working Portuguese.",
     "panelTitle": "Profile snapshot",
+    "panelLocationLabel": "Location",
     "panelLocation": "Lima, Peru",
+    "panelLanguagesLabel": "Languages",
     "panelLanguages": "Spanish (Native), English (C1), Portuguese (B1)",
+    "panelWorkModeLabel": "Work mode",
     "panelWorkMode": "Remote-first, open to relocation",
+    "panelMarketsLabel": "Markets served",
     "panelMarkets": "Peru, LATAM, Europe"
   },
   "footerCTA": {
+    "eyebrow": "Next step",
     "title": "Start a conversation",
     "subtitle": "Open to remote roles across delivery, partnerships, operations, and partner-facing execution.",
     "buttonText": "Start the conversation"
   },
   "contact": {
+    "eyebrow": "Contact",
     "title": "Contact",
     "subtitle": "Email is the fastest way to reach me. LinkedIn and Instagram stay public for follow-up and professional context.",
     "emailTitle": "Email",
@@ -93,6 +104,14 @@
     "eyebrow": "Contact",
     "title": "Let’s talk",
     "subtitle": "Hiring for delivery, partnerships, operations, or partner-facing execution? Email is the fastest way to reach me. LinkedIn and Instagram add context."
+  },
+  "ui": {
+    "languageSwitcherAria": "Language switcher",
+    "themeToggleAria": "Toggle dark mode",
+    "toggleMenuAria": "Toggle menu",
+    "externalProfileSuffix": "profile",
+    "iconSuffix": "icon",
+    "arrowSuffix": "arrow"
   },
   "footer": {
     "copyright": "Delivery, partnerships, and execution across gaming, esports, and remote programs.",
