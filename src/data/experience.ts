@@ -1,13 +1,33 @@
+import type { ImageMetadata } from 'astro';
+import xpLight from '../assets/experience-logos/xp_light.png';
+import xpDark from '../assets/experience-logos/xp_dark.png';
+import cgAll from '../assets/experience-logos/cg_all.png';
+import fourDLight from '../assets/experience-logos/4d_light.png';
+import fourDDark from '../assets/experience-logos/4d_dark.png';
+import infLight from '../assets/experience-logos/inf_light.png';
+import infDark from '../assets/experience-logos/inf_dark.png';
+import lmLight from '../assets/experience-logos/lm_light.png';
+import lmDark from '../assets/experience-logos/lm_dark.png';
+
+interface ExperienceLogo {
+  alt: string;
+  light?: ImageMetadata;
+  dark?: ImageMetadata;
+  allmode?: ImageMetadata;
+}
+
 export interface ExperienceItem {
   id: string;
   title: string;
   org: string;
   period: string;
   location: string;
+  workMode: string;
   summary: string;
   highlights: string[];
   metrics: string[];
   tags: string[];
+  logo: ExperienceLogo;
 }
 
 export const experienceItems: ExperienceItem[] = [
@@ -16,7 +36,8 @@ export const experienceItems: ExperienceItem[] = [
     title: 'Founder (Operations & Partnerships)',
     org: 'XP Agencia',
     period: 'Aug 2024–present',
-    location: 'Lima, Peru (remote-first)',
+    location: 'Lima, Peru',
+    workMode: 'Remote-first',
     summary:
       'I founded and run a boutique gaming and esports agency where I own commercial development, delivery design, staffing, partner coordination, and post-delivery control.',
     highlights: [
@@ -25,13 +46,19 @@ export const experienceItems: ExperienceItem[] = [
     ],
     metrics: ['7 deals closed', '100+ events or activations', '~12K peak CCV portfolio-wide'],
     tags: ['Founder-led delivery', 'Partnerships', 'Agency operations'],
+    logo: {
+      alt: 'XP Agencia logo',
+      light: xpLight,
+      dark: xpDark,
+    },
   },
   {
     id: 'community-gaming',
     title: 'Partnership Fulfillment Associate',
     org: 'Community Gaming',
     period: 'Apr 2022–Mar 2025',
-    location: 'Remote',
+    location: 'New York, USA',
+    workMode: 'Remote',
     summary:
       'I worked in a hybrid partnerships and delivery role for LATAM, owning sponsor activation fulfillment while also driving new business and partner-facing execution.',
     highlights: [
@@ -40,13 +67,18 @@ export const experienceItems: ExperienceItem[] = [
     ],
     metrics: ['US$40K+ sponsorship revenue closed', '7+ sponsor activations', '30+ sponsored tournaments supported'],
     tags: ['Fulfillment', 'Business development', 'LATAM delivery'],
+    logo: {
+      alt: 'Community Gaming logo',
+      allmode: cgAll,
+    },
   },
   {
     id: '4d-esports',
     title: 'Head of League Operations',
     org: '4D Esports',
     period: 'Oct 2021–Apr 2022',
-    location: 'Remote',
+    location: 'Lima, Peru',
+    workMode: 'Remote-first',
     summary:
       'I led league operations for the Dota Pro Circuit Regional League South America, handling execution, disputes, schedule control, and operating assets under official rulebook constraints.',
     highlights: [
@@ -55,6 +87,11 @@ export const experienceItems: ExperienceItem[] = [
     ],
     metrics: ['~140 operated games', '~15 matches per week', 'Near-zero reschedules'],
     tags: ['League ops', 'Operational control', 'Competitive integrity'],
+    logo: {
+      alt: '4D Esports logo',
+      light: fourDLight,
+      dark: fourDDark,
+    },
   },
   {
     id: 'infinity',
@@ -62,6 +99,7 @@ export const experienceItems: ExperienceItem[] = [
     org: 'Infinity',
     period: 'Jan 2021–Sep 2021',
     location: 'Lima, Peru',
+    workMode: 'In-person',
     summary:
       'I managed day-to-day team operations for Infinity’s main and academy rosters, balancing readiness, logistics, staffing, and early sponsor-support workflows.',
     highlights: [
@@ -70,6 +108,11 @@ export const experienceItems: ExperienceItem[] = [
     ],
     metrics: ['18 tournament runs', '11 top-3 placements', '~US$2K monthly operating budget'],
     tags: ['Team ops', 'Readiness', 'Early partnership support'],
+    logo: {
+      alt: 'Infinity logo',
+      light: infLight,
+      dark: infDark,
+    },
   },
   {
     id: 'live-media',
@@ -77,6 +120,7 @@ export const experienceItems: ExperienceItem[] = [
     org: 'Live Media S.A.C.',
     period: 'May 2018–Aug 2020',
     location: 'Lima, Peru',
+    workMode: 'In-person',
     summary:
       'I produced tournaments end-to-end for brand clients, translating event briefs into competitive formats, broadcast plans, sponsor integrations, and live execution.',
     highlights: [
@@ -85,5 +129,10 @@ export const experienceItems: ExperienceItem[] = [
     ],
     metrics: ['~10 tournaments delivered', '8 online + 2 LAN', '20–30 broadcast hours per event'],
     tags: ['Production', 'Sponsor-facing delivery', 'Broadcast ops'],
+    logo: {
+      alt: 'Live Media logo',
+      light: lmLight,
+      dark: lmDark,
+    },
   },
 ];

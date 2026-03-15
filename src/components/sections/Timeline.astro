@@ -16,7 +16,7 @@ const previewItems = experienceItems.slice(0, 3);
     <div class="mb-12" data-aos="fade-up">
       <span class="section-eyebrow">Trajectory</span>
       <h2 class="font-heading text-h2 text-secondary dark:text-fog mb-4">{t('timeline.title', lang)}</h2>
-      <p class="text-secondary/70 dark:text-fog/82 max-w-2xl">
+      <p class="text-tone-soft max-w-2xl">
         {t('timeline.subtitle', lang)}
       </p>
     </div>
@@ -25,30 +25,59 @@ const previewItems = experienceItems.slice(0, 3);
       <div class="space-y-6">
         {previewItems.map((item, index) => (
           <article
-            class="surface-card p-6"
+            class="surface-card experience-card experience-card-preview p-6"
             data-aos="fade-up"
             data-aos-delay={index * 100}
           >
-            <div class="mb-3 flex flex-wrap items-center gap-3">
-              <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-mono text-primary">
-                {item.period}
-              </span>
-              <span class="text-xs font-mono uppercase tracking-[0.16em] text-secondary/45 dark:text-fog/68">
-                {item.org}
-              </span>
-            </div>
-            <h3 class="font-heading text-xl text-secondary dark:text-fog mb-3">
-              {item.title}
-            </h3>
-            <p class="mb-4 text-secondary/70 dark:text-fog/82">
-              {item.summary}
-            </p>
-            <div class="flex flex-wrap gap-2">
-              {item.metrics.slice(0, 2).map((metric) => (
-                <span class="rounded-full border border-secondary/10 px-3 py-1 text-xs font-mono text-secondary/70 dark:border-fog/10 dark:text-fog/76">
-                  {metric}
-                </span>
-              ))}
+            <div class="experience-card-grid">
+              <div class="experience-card-top">
+                <div class="experience-logo-badge experience-logo-badge-preview">
+                  {item.logo.allmode ? (
+                    <img src={item.logo.allmode.src} alt={item.logo.alt} class="experience-logo-image experience-logo-image-preview" />
+                  ) : (
+                    <>
+                      {item.logo.light && (
+                        <img src={item.logo.light.src} alt={item.logo.alt} class="experience-logo-image experience-logo-image-preview dark:hidden" />
+                      )}
+                      {item.logo.dark && (
+                        <img src={item.logo.dark.src} alt={item.logo.alt} class="experience-logo-image experience-logo-image-preview hidden dark:block" />
+                      )}
+                    </>
+                  )}
+                </div>
+
+                <div class="experience-meta-stack experience-meta-stack-preview">
+                  <span class="experience-period-pill">
+                    {item.period}
+                  </span>
+                  <p class="experience-meta-line">
+                    {item.location}
+                  </p>
+                  <p class="experience-meta-line">
+                    {item.workMode}
+                  </p>
+                </div>
+
+              </div>
+
+              <div class="experience-card-body">
+                <h3 class="font-heading text-xl text-secondary dark:text-fog mb-3">
+                  {item.title}
+                </h3>
+                <p class="meta-kicker mb-3 text-sm font-mono uppercase tracking-[0.16em]">
+                  {item.org}
+                </p>
+                <p class="text-tone-soft mb-4">
+                  {item.summary}
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  {item.metrics.slice(0, 2).map((metric) => (
+                    <span class="metric-chip">
+                      {metric}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </div>
           </article>
         ))}
