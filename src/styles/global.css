@@ -127,6 +127,14 @@ html, body {
     @apply py-16 md:py-24;
   }
 
+  .contact-section-compact {
+    @apply pt-0 pb-14 md:pt-1 md:pb-16;
+  }
+
+  .contact-page-intro-compact {
+    @apply pb-6 md:pb-8;
+  }
+
   .section-eyebrow {
     @apply mb-4 inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.22em];
     color: rgba(var(--color-primary-rgb), 0.9);

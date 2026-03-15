@@ -12,7 +12,7 @@ interface Props {
 const { lang, compactHeader = false } = Astro.props;
 ---
 
-<section id="contact" class="section-padding">
+<section id="contact" class:list={['section-padding', compactHeader && 'contact-section-compact']}>
   <div class="max-w-container mx-auto px-6">
     <div class="surface-muted px-6 py-8 md:px-8 md:py-10">
       {!compactHeader && (
