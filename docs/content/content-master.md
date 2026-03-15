@@ -5,7 +5,7 @@
 - Tipo: `auxiliar`
 - Fase inicial: `4`
 - Estado: `done`
-- Ultima actualizacion: `2026-03-12`
+- Ultima actualizacion: `2026-03-14`
 
 ---
 
@@ -26,7 +26,7 @@ No redefine estrategia, arquitectura, sistema de contenido ni sistema visual.
 
 ## Identidad pública aprobada
 
-- nombre profesional visible: `Paulo Tuya`
+- nombre profesional visible: `Paulo Cesar Tuya`
 - marca visual visible: `Pawpaw`
 - voz narrativa: primera persona
 - idioma maestro: `ingles`
@@ -67,19 +67,19 @@ Canales no visibles en home:
 
 Eyebrow:
 
-`Paulo Tuya`
+`Paulo Cesar Tuya`
 
 Headline:
 
-`I turn partner and project goals into clear execution.`
+`I turn partner and project goals into clear execution`
 
 Supporting line:
 
-`I work across gaming, esports, and remote programs, connecting partner needs, scope, owners, timelines, and execution without losing operational control.`
+`Delivery, partnerships, and operations across gaming, esports, and remote programs.`
 
 Role line:
 
-`Delivery, partnerships, and operations across gaming, esports, and remote programs.`
+``
 
 CTA principal:
 
@@ -87,7 +87,7 @@ CTA principal:
 
 CTA secundaria:
 
-`How I work`
+`See experience`
 
 ### `how_i_work`
 
@@ -97,7 +97,7 @@ Titulo:
 
 Subtitulo:
 
-`I build delivery around clarity, stakeholder alignment, and calm operational control.`
+`Clear scope, aligned stakeholders, and steady operational control.`
 
 Card 1:
 
@@ -122,11 +122,11 @@ Titulo:
 
 Subtitulo:
 
-`A few programs that show how I bridge partner needs, live execution, and delivery control.`
+`Projects where partner-facing work, live operations, and execution had clear stakes and visible outcomes.`
 
 CTA de card:
 
-`View case summary`
+`See selected work`
 
 CTA de sección:
 
@@ -140,7 +140,7 @@ Titulo:
 
 Subtitulo:
 
-`A curated path from production and league operations into partnerships, account-facing delivery, and founder-led execution.`
+`From production and league operations to partnerships, account-facing delivery, and founder-led execution.`
 
 CTA:
 
@@ -154,7 +154,7 @@ Titulo:
 
 Subtitulo:
 
-`The skills section supports the portfolio by showing how I operate, not by listing every tool I have touched.`
+`Planning, partner-facing work, and execution systems that keep delivery clear and reliable.`
 
 Clusters aprobados:
 
@@ -162,15 +162,33 @@ Clusters aprobados:
 - `Partnerships & Business Development`
 - `Systems, Workflows & Reporting`
 
-### `contact`
+### `footer_cta`
 
 Titulo:
 
-`Contact`
+`Start a conversation`
 
 Subtitulo:
 
-`Email is the fastest way to reach me. LinkedIn and Instagram stay public for follow-up and professional context.`
+`Open to remote roles across delivery, partnerships, operations, and partner-facing execution.`
+
+CTA:
+
+`Start the conversation`
+
+### `contact_page`
+
+Eyebrow:
+
+`Contact`
+
+Titulo:
+
+`Let’s talk`
+
+Subtitulo:
+
+`Hiring for delivery, partnerships, operations, or partner-facing execution? Email is the fastest way to reach me. LinkedIn and Instagram add context.`
 
 Labels:
 
@@ -184,25 +202,11 @@ Buttons:
 - `Open LinkedIn`
 - `Open Instagram`
 
-### `footer_cta`
-
-Titulo:
-
-`Start a conversation`
-
-Subtitulo:
-
-`If you are hiring for delivery, operations, or partner-facing execution, I am open to remote opportunities and thoughtful conversations.`
-
-CTA:
-
-`Go to contact`
-
 ### `footer`
 
 Copy:
 
-`Portfolio website.`
+`Delivery, partnerships, and execution across gaming, esports, and remote programs.`
 
 ---
 
@@ -214,15 +218,18 @@ Eyebrow:
 
 Titulo:
 
-`Selected work across activations, partnerships, and delivery-heavy programs.`
+`Selected projects across delivery and partnerships`
 
 Subtitulo:
 
 `These case summaries show how I move between partner-facing scope, operational planning, and execution on the ground.`
 
-Descripcion:
+Panel derecho:
 
-`The page stays intentionally curated. It highlights the programs that best connect partnerships, delivery systems, and accountable execution without turning the portfolio into a project archive.`
+- `Deals closed` -> `US$120K`
+- `Programs delivered` -> `100+ events & activations`
+- `Budgets managed` -> `US$200K+ across projects`
+- `Delivery contexts` -> `International events, pro circuits, retail activations`
 
 ---
 
@@ -234,15 +241,18 @@ Eyebrow:
 
 Titulo:
 
-`A delivery path shaped by operations, partner-facing work, and execution ownership.`
+`From operations to partnerships and project ownership`
 
 Subtitulo:
 
-`I am based in Lima, Peru and work across Spanish, English, and working Portuguese contexts when the role requires it.`
+`These roles show how I grew from tournament and production operations into partnerships, account-facing delivery, and founder-led execution.`
 
-Descripcion:
+Panel derecho:
 
-`The page focuses on the roles that best explain how I moved from tournament and production operations into partnerships fulfillment, account-facing delivery, and founder-led execution.`
+- `Location` -> `Lima, Peru`
+- `Languages` -> `Spanish (Native), English (C1), Portuguese (B1)`
+- `Work mode` -> `Remote-first, open to relocation`
+- `Markets served` -> `Peru, LATAM, Europe`
 
 ---
 

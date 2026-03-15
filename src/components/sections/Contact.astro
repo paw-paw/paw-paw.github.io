@@ -6,23 +6,26 @@ import { email, linkedin_short, linkedin_url, instagram_short, instagram_url } f
 
 interface Props {
   lang: string | undefined;
+  compactHeader?: boolean;
 }
 
-const { lang } = Astro.props;
+const { lang, compactHeader = false } = Astro.props;
 ---
 
 <section id="contact" class="section-padding">
   <div class="max-w-container mx-auto px-6">
     <div class="surface-muted px-6 py-8 md:px-8 md:py-10">
-      <div class="mb-12 text-center" data-aos="fade-up">
-        <span class="section-eyebrow">Contact</span>
-        <h2 class="font-heading text-h2 text-secondary dark:text-fog mb-4">
-          {t('contact.title', lang)}
-        </h2>
-        <p class="max-w-2xl mx-auto text-secondary/70 dark:text-fog/82">
-          {t('contact.subtitle', lang)}
-        </p>
-      </div>
+      {!compactHeader && (
+        <div class="mb-12 text-center" data-aos="fade-up">
+          <span class="section-eyebrow">Contact</span>
+          <h2 class="font-heading text-h2 text-secondary dark:text-fog mb-4">
+            {t('contact.title', lang)}
+          </h2>
+          <p class="max-w-2xl mx-auto text-secondary/74 dark:text-fog/86">
+            {t('contact.subtitle', lang)}
+          </p>
+        </div>
+      )}
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <Obfuscate
@@ -61,7 +64,7 @@ const { lang } = Astro.props;
         <h3 class="mb-3 font-heading text-xl text-secondary dark:text-fog">
           {t('contact.emailTitle', lang)}
         </h3>
-        <p class="mb-4 text-secondary/70 dark:text-fog/82">
+        <p class="mb-4 text-secondary/76 dark:text-fog/88">
           <Obfuscate element="span" email={email} client:only="preact" />
         </p>
         <span class="inline-flex items-center text-sm text-primary font-medium">
@@ -124,7 +127,7 @@ const { lang } = Astro.props;
         <h3 class="mb-3 font-heading text-xl text-secondary dark:text-fog">
           {t('contact.linkedinTitle', lang)}
         </h3>
-        <p class="mb-4 text-secondary/70 dark:text-fog/82">
+        <p class="mb-4 text-secondary/76 dark:text-fog/88">
           {linkedin_short}
         </p>
         <span class="inline-flex items-center text-sm text-primary font-medium">
@@ -187,7 +190,7 @@ const { lang } = Astro.props;
         <h3 class="mb-3 font-heading text-xl text-secondary dark:text-fog">
           {t('contact.instagramTitle', lang)}
         </h3>
-        <p class="mb-4 text-secondary/70 dark:text-fog/82">
+        <p class="mb-4 text-secondary/76 dark:text-fog/88">
           {instagram_short}
         </p>
         <span class="inline-flex items-center text-sm text-primary font-medium">

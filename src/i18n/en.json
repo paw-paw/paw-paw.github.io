@@ -11,16 +11,16 @@
     "contactButton": "Contact"
   },
   "hero": {
-    "greeting": "Paulo Tuya",
-    "name": "I turn partner and project goals into clear execution.",
-    "pitch": "I work across gaming, esports, and remote programs, connecting partner needs, scope, owners, timelines, and execution without losing operational control.",
-    "role": "Delivery, partnerships, and operations across gaming, esports, and remote programs.",
+    "greeting": "Paulo Cesar Tuya",
+    "name": "I turn partner and project goals into clear execution",
+    "pitch": "Delivery, partnerships, and operations across gaming, esports, and remote programs.",
+    "role": "",
     "ctaProjects": "View selected work",
-    "ctaAbout": "How I work"
+    "ctaAbout": "See experience"
   },
   "values": {
     "title": "How I Work",
-    "subtitle": "I build delivery around clarity, stakeholder alignment, and calm operational control.",
+    "subtitle": "Clear scope, aligned stakeholders, and steady operational control.",
     "card1Title": "Structure before noise",
     "card1Text": "I turn loose goals into scopes, owners, timelines, and operating artifacts that make execution easier to trust.",
     "card2Title": "Coordination without drift",
@@ -30,40 +30,54 @@
   },
   "skills": {
     "title": "Capability Clusters",
-    "subtitle": "The skills section supports the portfolio by showing how I operate, not by listing every tool I have touched."
+    "subtitle": "Planning, partner-facing work, and execution systems that keep delivery clear and reliable."
   },
   "projects": {
     "pageTitle": "Selected Work",
     "pageDescription": "Selected work across activations, partnerships, and delivery-heavy programs.",
     "heroTitle": "Selected work across activations, partnerships, and delivery-heavy programs.",
     "heroSubtitle": "These case summaries show how I move between partner-facing scope, operational planning, and execution on the ground.",
-    "buttonText": "View case summary",
+    "buttonText": "See selected work",
     "title": "Selected Work",
-    "subtitle": "A few programs that show how I bridge partner needs, live execution, and delivery control.",
+    "subtitle": "Projects where partner-facing work, live operations, and execution had clear stakes and visible outcomes.",
     "allProjectsButtonText": "See all selected work"
   },
   "timeline": {
     "title": "Experience",
-    "subtitle": "A curated path from production and league operations into partnerships, account-facing delivery, and founder-led execution.",
+    "subtitle": "From production and league operations to partnerships, account-facing delivery, and founder-led execution.",
     "buttonText": "View full experience"
   },
   "workPage": {
     "eyebrow": "Selected Work",
-    "title": "Selected work across activations, partnerships, and delivery-heavy programs.",
+    "title": "Selected projects across delivery and partnerships",
     "subtitle": "These case summaries show how I move between partner-facing scope, operational planning, and execution on the ground.",
-    "description": "The page stays intentionally curated. It highlights the programs that best connect partnerships, delivery systems, and accountable execution without turning the portfolio into a project archive."
+    "description": "These projects show where partnerships, planning, and execution had to hold together under real constraints.",
+    "panelTitle": "Snapshot",
+    "panelDealsClosedLabel": "Deals closed",
+    "panelDealsClosedValue": "US$120K",
+    "panelProgramsDeliveredLabel": "Programs delivered",
+    "panelProgramsDeliveredValue": "100+ events & activations",
+    "panelBudgetsManagedLabel": "Budgets managed",
+    "panelBudgetsManagedValue": "US$200K+ across projects",
+    "panelDeliveryContextsLabel": "Delivery contexts",
+    "panelDeliveryContextsValue": "International events, pro circuits, retail activations"
   },
   "experiencePage": {
     "eyebrow": "Experience",
-    "title": "A delivery path shaped by operations, partner-facing work, and execution ownership.",
-    "subtitle": "Based in Lima, Peru. Native Spanish, professional English, and working Portuguese.",
-    "description": "The page focuses on the roles that best explain how I moved from tournament and production operations into partnerships fulfillment, account-facing delivery, and founder-led execution.",
-    "locationAndLanguages": "Based in Lima, Peru. Native Spanish, professional English, and working Portuguese."
+    "title": "From operations to partnerships and project ownership",
+    "subtitle": "These roles show how I grew from tournament and production operations into partnerships, account-facing delivery, and founder-led execution.",
+    "description": "These roles show how I grew from tournament and production operations into partnerships, account-facing delivery, and founder-led execution.",
+    "locationAndLanguages": "Based in Lima, Peru. Native Spanish, professional English, and working Portuguese.",
+    "panelTitle": "Profile snapshot",
+    "panelLocation": "Lima, Peru",
+    "panelLanguages": "Spanish (Native), English (C1), Portuguese (B1)",
+    "panelWorkMode": "Remote-first, open to relocation",
+    "panelMarkets": "Peru, LATAM, Europe"
   },
   "footerCTA": {
     "title": "Start a conversation",
-    "subtitle": "If you are hiring for delivery, operations, or partner-facing execution, I am open to remote opportunities and thoughtful conversations.",
-    "buttonText": "Go to contact"
+    "subtitle": "Open to remote roles across delivery, partnerships, operations, and partner-facing execution.",
+    "buttonText": "Start the conversation"
   },
   "contact": {
     "title": "Contact",
@@ -75,8 +89,13 @@
     "instagramTitle": "Instagram",
     "instagramButtonText": "Open Instagram"
   },
+  "contactPage": {
+    "eyebrow": "Contact",
+    "title": "Let’s talk",
+    "subtitle": "Hiring for delivery, partnerships, operations, or partner-facing execution? Email is the fastest way to reach me. LinkedIn and Instagram add context."
+  },
   "footer": {
-    "copyright": "Portfolio website.",
+    "copyright": "Delivery, partnerships, and execution across gaming, esports, and remote programs.",
     "imprint": "Imprint",
     "privacyPolicy": "Privacy Policy"
   }

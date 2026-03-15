@@ -5,7 +5,7 @@
 - Tipo: `contractual`
 - Fase inicial: `2`
 - Estado: `done`
-- Ultima actualizacion: `2026-03-12`
+- Ultima actualizacion: `2026-03-14`
 
 ---
 
@@ -28,11 +28,10 @@ Esta arquitectura debe reforzar la tesis:
 - `/`
 - `/work`
 - `/experience`
+- `/contact`
 
 ### Paginas utilitarias o derivadas
 
-- no se crea `/contact` como pagina propia en esta fase
-- `contact` vive como seccion anclada en `/`
 - paginas futuras posibles, pero no comprometidas en esta fase:
   - `/about`
   - `/resume`
@@ -52,10 +51,22 @@ Rol:
 Debe responder:
 
 - quien eres
-- como trabajas
 - por que confiar en tu evidencia
 - donde profundizar (`/work`, `/experience`)
-- como iniciar contacto
+- como iniciar contacto o conversacion
+
+### `/contact`
+
+Rol:
+
+- superficie dedicada de conversion
+- punto unico de contacto publico
+
+Debe responder:
+
+- como iniciar una conversacion profesional
+- que canales publicos estan habilitados
+- que expectativa de contacto o seguimiento tiene sentido
 
 ### `/work`
 
@@ -91,12 +102,11 @@ La home es una `overview page`, no una one-page exhaustiva.
 Orden final:
 
 1. `Hero`
-2. `How I Work`
-3. `Selected Work` preview
-4. `Experience` preview
+2. `Selected Work` preview
+3. `Experience` preview
+4. `How I Work`
 5. `Skills`
-6. `Contact`
-7. `FooterCTA`
+6. `FooterCTA`
 
 Principio:
 
@@ -163,16 +173,18 @@ Funcion:
 - apoyar la tesis del perfil
 - no competir con `Selected Work` ni `Experience`
 
-### `Contact`
+### `Contact page`
 
 Estado:
 
-- se mantiene en home como ancla
+- deja de vivir como bloque de home
+- sobrevive como pagina dedicada `/contact`
 
 Funcion:
 
+- concentrar la conversion final del sitio
 - ofrecer superficie practica de contacto
-- debe alinearse con la politica de visibilidad publica vigente
+- respetar la politica de visibilidad publica vigente
 
 ### `FooterCTA`
 
@@ -184,7 +196,7 @@ Funcion:
 
 - reforzar la CTA secundaria
 - cerrar la pagina empujando a conversacion
-- apuntar a `#contact`
+- apuntar a `/contact`
 
 ---
 
@@ -199,15 +211,13 @@ Items base:
 - `Home` -> `/`
 - `Work` -> `/work`
 - `Experience` -> `/experience`
-- `Contact` -> `/#contact`
+- `Contact` -> `/contact`
 
 ### Anchors
 
-Solo se consideran anchors base en `/`:
+No existe ya un anchor base obligatorio de `contact` en `/`.
 
-- `#contact`
-
-Pueden existir otros anchors de seccion como detalle interno, pero no son obligatorios para la navegacion principal.
+Pueden existir anchors internos como detalle de implementacion, pero no forman parte de la navegacion principal.
 
 ---
 
@@ -226,6 +236,5 @@ No se compromete en esta fase la existencia de:
 
 - `/about`
 - `/resume`
-- `/contact` como pagina dedicada
 
 Estas superficies podran evaluarse despues si la arquitectura real lo necesita.
