@@ -249,6 +249,166 @@
 - `docs/visual/asset-plan.md`
 - `docs/plans/phase-3.md`
 
+---
+
+## 2026-03-14 — Ajuste recruiter-facing pre-Fase 5
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `pre-phase-5`
+
+### Decision / registro
+
+- el header pasa a priorizar identidad personal visible como `Paulo Cesar Tuya`
+- `Contact` deja de vivir como bloque de home y pasa a `/contact`
+- `Contact` en navbar se vuelve boton hacia `/contact`
+- el hero mantiene su copy, pero la CTA secundaria pasa a `See experience`
+- la home cambia su flujo para mostrar evidencia y trayectoria antes de `How I Work`
+- la descripcion de `Selected Work` se vuelve mas recruiter-readable y outcome-oriented
+- el asset del hero debe pasar de `pawpaw-portrait.png` a `temp/newpicture.png` al ejecutar el trabajo
+
+### Razon
+
+- el feedback experto prioriza una lectura mas clara como portfolio profesional personal
+- la conversion se simplifica mejor con una pagina dedicada de contacto
+- evidencia y trayectoria deben aparecer antes que metodologia en la home
+
+### Documentos afectados
+
+- `docs/architecture/site-architecture.md`
+- `docs/content/content-system.md`
+- `docs/content/content-master.md`
+- `docs/plans/pre-phase-5-work.md`
+
+---
+
+## 2026-03-14 — Reversion del lockup de marca en Baumans y minusculas
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `pre-phase-5`
+
+### Decision / registro
+
+- se revierte el ajuste reciente del lockup de marca en navbar y footer
+- el lockup vuelve a monograma textual `P`
+- el wordmark deja de usar `Baumans` y deja de renderizarse en minusculas
+- el favicon deja de reemplazar al monograma dentro del lockup
+- el favicon del sitio se mantiene como asset propio, pero fuera del lockup visible
+
+### Razon
+
+- el tratamiento reciente no funciono bien visualmente en el wordmark
+- conviene volver al lockup tipografico simple previo sin cambiar el resto del sistema
+
+### Documentos afectados
+
+- `docs/visual/visual-system.md`
+- `docs/governance/decision-log.md`
+- `src/layouts/Layout.astro`
+- `src/components/layout/Navbar.astro`
+- `src/components/sections/Footer.astro`
+
+---
+
+## 2026-03-14 — Logos de empresa como parte estructural de `experience_item`
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `pre-phase-5`
+
+### Decision / registro
+
+- los logos de empresa pasan a formar parte estructural de `experience_item` cuando exista asset aprobado
+- la preview de experiencia en home tambien puede usar una version reducida del mismo patron
+- las variantes `light` / `dark` se usan segun tema activo y `allmode` funciona como fallback
+- los assets deben promoverse desde `temp/logos/` a `src/assets/experience-logos/`
+
+### Razon
+
+- mejora reconocimiento de trayectoria y escaneabilidad recruiter-facing
+- existe cobertura real de assets para las 5 experiencias activas del sitio
+- el patron deseado ya fue validado visualmente a partir de `temp/left_image.jpg`
+
+### Documentos afectados
+
+- `docs/content/content-system.md`
+- `docs/visual/asset-plan.md`
+- `docs/governance/decision-log.md`
+
+---
+
+## 2026-03-14 — Headers de proyecto como parte estructural de `Selected Work`
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `pre-phase-5`
+
+### Decision / registro
+
+- las imagenes/header de proyecto pasan a formar parte estructural de `selected_work_case_study` cuando exista asset aprobado
+- la preview de `Selected Work` en home tambien puede usar una version reducida del mismo patron
+- el tratamiento visual usa overlay/tinte sutil, uniforme y reversible desde CSS
+- los assets deben promoverse desde `temp/headers/` a `src/assets/work-headers/`
+- los headers adicionales no activos (`lpg`, `pcfsc`) quedan fuera del runtime por ahora
+
+### Razon
+
+- mejora reconocimiento de casos y lectura recruiter-facing en `Selected Work`
+- existe cobertura real de assets para los 6 proyectos activos
+- el patron deseado ya fue validado visualmente a partir de `temp/header_image.jpg`
+- el overlay debe seguir siendo reversible para no forzar una decision visual irreversible sobre los assets
+
+### Documentos afectados
+
+- `docs/content/content-system.md`
+- `docs/visual/asset-plan.md`
+- `docs/governance/decision-log.md`
+- `docs/plans/work-headers-patch.md`
+- `src/data/selected-work.ts`
+- `src/pages/work.astro`
+- `src/components/sections/Projects.astro`
+- `docs/plans/exp-logos-patch.md`
+- `src/data/experience.ts`
+- `src/pages/experience.astro`
+- `src/components/sections/Timeline.astro`
+
+---
+
+## 2026-03-14 — Estructura compacta de metadata en cards de experiencia
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `pre-phase-5`
+
+### Decision / registro
+
+- las cards de experiencia abandonan la columna izquierda alta guiada por el badge
+- desktop pasa a una estructura de 2 columnas:
+  - izquierda compacta con logo, periodo, location y work mode
+  - derecha con title, org, summary, highlights y metrics
+- mobile pasa a una fila superior con logo a la izquierda y metadata a la derecha, seguida del cuerpo full-width
+- `location` y `work mode` pasan a tratarse como metadata separada dentro de `experience_item`
+
+### Razon
+
+- el prototipo compacto elimina espacio vacio y da mejor balance visual que el badge alto
+- el logo vuelve a actuar como identificador, no como columna dominante
+- la metadata queda mejor agrupada y mas scanneable tanto en desktop como en mobile
+
+### Documentos afectados
+
+- `docs/content/content-system.md`
+- `docs/governance/decision-log.md`
+- `src/data/experience.ts`
+- `src/pages/experience.astro`
+- `src/components/sections/Timeline.astro`
+
 - ya no existen rutas activas `/en/` ni `/de/`
 - ya no existe `LanguageSwitcher`
 - `astro.config.mjs` y `public/robots.txt` apuntan a `https://paw-paw.github.io/`
@@ -493,3 +653,48 @@
 - `src/components/sections/Skills.astro`
 - `src/pages/work.astro`
 - `src/pages/experience.astro`
+
+---
+
+## 2026-03-15 — Recalibracion sistémica de dark mode
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `pre-phase-5`
+
+### Decision / registro
+
+- dark mode deja de depender principalmente de una mezcla ad hoc entre variables CSS y colores Tailwind estaticos
+- la direccion aprobada para este patch es una unificacion mas profunda basada en recetas semanticas de color
+- las superficies, nested panels y badges en dark mode deben sentirse embebidos y sobrios, no como chips claros pegados sobre un canvas oscuro
+- no se reabre la paleta contractual; se recalibra su aplicacion real
+
+### Razon
+
+- las screenshots de `temp/darkmode_issues/` confirmaron que el problema no era un solo componente, sino una inconsistencia sistemica
+- el uso simultaneo de variables CSS tematicas y utilidades Tailwind estaticas estaba produciendo:
+  - nested cards demasiado claras
+  - badges demasiado brillantes
+  - subtitulos y metadata con jerarquia debil
+  - overlays y washes que seguian cargando logica de light mode
+
+### Implementacion afectada
+
+- `src/styles/global.css`
+- `src/layouts/Layout.astro`
+- `src/components/layout/Navbar.astro`
+- `src/components/ui/Buttons.astro`
+- `src/components/ui/ThemeToggle.astro`
+- `src/components/sections/Hero.astro`
+- `src/components/sections/Projects.astro`
+- `src/components/sections/Timeline.astro`
+- `src/components/sections/Skills.astro`
+- `src/components/sections/FooterCTA.astro`
+- `src/components/sections/Footer.astro`
+- `src/pages/work.astro`
+- `src/pages/experience.astro`
+
+### Documentos afectados
+
+- `docs/plans/darkmode-fix.md`

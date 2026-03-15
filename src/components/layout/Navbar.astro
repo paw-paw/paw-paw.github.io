@@ -3,29 +3,37 @@ import ThemeToggle from '../ui/ThemeToggle.astro';
 import { t } from '../../utils/i18n';
 
 const lang = Astro.currentLocale || 'en';
+const pathname = Astro.url.pathname;
+
+const isActive = (href: string) => {
+  if (href === '/') {
+    return pathname === '/';
+  }
+  return pathname.startsWith(href);
+};
 ---
 
 <header id="navbar" class="fixed top-0 z-50 w-full transition-all duration-300">
   <div class="max-w-container mx-auto px-6 pt-4">
     <div class="surface-muted flex items-center justify-between px-5 py-4 shadow-button">
       <a href="/" class="brand-lockup" aria-label="Homepage">
-        <span class="brand-badge">P</span>
-        <span class="brand-wordmark">Pawpaw</span>
+        <span class="brand-badge" aria-hidden="true">P</span>
+        <span class="brand-wordmark">Paulo Cesar Tuya</span>
       </a>
 
       <nav class="hidden md:flex items-center gap-8">
         <ul class="flex items-center gap-7 text-[0.95rem]">
           <li>
-            <a href="/" class="nav-link">{t('nav.home', lang)}</a>
+            <a href="/" class:list={['nav-link', isActive('/') && 'nav-link-active']}>{t('nav.home', lang)}</a>
           </li>
           <li>
-            <a href="/work/" class="nav-link">{t('nav.work', lang)}</a>
+            <a href="/work/" class:list={['nav-link', isActive('/work/') && 'nav-link-active']}>{t('nav.work', lang)}</a>
           </li>
           <li>
-            <a href="/experience/" class="nav-link">{t('nav.experience', lang)}</a>
+            <a href="/experience/" class:list={['nav-link', isActive('/experience/') && 'nav-link-active']}>{t('nav.experience', lang)}</a>
           </li>
           <li>
-            <a href="/#contact" class="nav-link">{t('nav.contact', lang)}</a>
+            <a href="/contact/" class:list={['contact-nav-button', isActive('/contact/') && 'contact-nav-button-active']}>{t('nav.contactButton', lang)}</a>
           </li>
         </ul>
         <ThemeToggle />
@@ -33,7 +41,7 @@ const lang = Astro.currentLocale || 'en';
 
       <div class="flex items-center gap-4 md:hidden">
         <ThemeToggle />
-        <button id="mobile-menu-button" class="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-secondary/10 bg-white/75 text-secondary dark:border-fog/10 dark:bg-neutral-darkSoft/80 dark:text-fog" aria-label="Toggle Menu">
+        <button id="mobile-menu-button" class="control-surface inline-flex h-11 w-11 items-center justify-center rounded-2xl" aria-label="Toggle Menu">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu">
             <line x1="4" x2="20" y1="12" y2="12"></line>
             <line x1="4" x2="20" y1="6" y2="6"></line>
@@ -47,16 +55,16 @@ const lang = Astro.currentLocale || 'en';
       <div class="surface-muted px-6 py-5">
         <ul class="flex flex-col space-y-4 text-sm">
           <li>
-            <a href="/" class="mobile-nav-link">{t('nav.home', lang)}</a>
+            <a href="/" class:list={['mobile-nav-link', isActive('/') && 'mobile-nav-link-active']}>{t('nav.home', lang)}</a>
           </li>
           <li>
-            <a href="/work/" class="mobile-nav-link">{t('nav.work', lang)}</a>
+            <a href="/work/" class:list={['mobile-nav-link', isActive('/work/') && 'mobile-nav-link-active']}>{t('nav.work', lang)}</a>
           </li>
           <li>
-            <a href="/experience/" class="mobile-nav-link">{t('nav.experience', lang)}</a>
+            <a href="/experience/" class:list={['mobile-nav-link', isActive('/experience/') && 'mobile-nav-link-active']}>{t('nav.experience', lang)}</a>
           </li>
           <li>
-            <a href="/#contact" class="mobile-nav-link">{t('nav.contact', lang)}</a>
+            <a href="/contact/" class:list={['mobile-nav-link', 'mobile-nav-button', isActive('/contact/') && 'mobile-nav-link-active']}>{t('nav.contactButton', lang)}</a>
           </li>
         </ul>
       </div>
@@ -137,6 +145,45 @@ const lang = Astro.currentLocale || 'en';
     width: 100%;
   }
 
+  .nav-link-active {
+    color: rgba(var(--color-primary-rgb), 1);
+  }
+
+  .nav-link-active::after {
+    width: 100%;
+  }
+
+  .contact-nav-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    border: 1px solid rgba(var(--color-primary-rgb), 1);
+    background: rgba(var(--color-primary-rgb), 1);
+    color: rgb(243, 238, 228);
+    padding: 0.7rem 1.05rem;
+    font-size: 0.92rem;
+    font-weight: 600;
+    line-height: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0 18px 40px -24px rgba(31, 37, 45, 0.35);
+  }
+
+  .contact-nav-button:hover {
+    transform: translateY(-1px);
+    background: rgba(var(--color-primary-rgb), 0.92);
+    border-color: rgba(var(--color-primary-rgb), 0.92);
+  }
+
+  :global(.dark) .contact-nav-button {
+    color: rgb(17, 22, 27);
+    box-shadow: 0 18px 40px -24px rgba(0, 0, 0, 0.48);
+  }
+
+  .contact-nav-button-active {
+    box-shadow: 0 20px 44px -24px rgba(var(--color-primary-rgb), 0.52);
+  }
+
   .mobile-nav-link {
     display: block;
     color: rgba(var(--color-secondary-rgb), 0.82);
@@ -145,5 +192,24 @@ const lang = Astro.currentLocale || 'en';
 
   :global(.dark) .mobile-nav-link {
     color: rgba(var(--color-secondary-rgb), 0.92);
+  }
+
+  .mobile-nav-link-active {
+    color: rgba(var(--color-primary-rgb), 1);
+  }
+
+  .mobile-nav-button {
+    margin-top: 0.5rem;
+    border: 1px solid rgba(var(--color-primary-rgb), 1);
+    border-radius: 999px;
+    background: rgba(var(--color-primary-rgb), 1);
+    color: rgb(243, 238, 228);
+    padding: 0.8rem 1rem;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  :global(.dark) .mobile-nav-button {
+    color: rgb(17, 22, 27);
   }
 </style>

@@ -4,7 +4,7 @@ import Footer from '../components/sections/Footer.astro';
 import '../styles/global.css';
 import { t } from '../utils/i18n';
 import faviconAsset from '../assets/favicon.svg';
-import profileImg from '../assets/pawpaw-portrait.png';
+import profileImg from '../assets/paulo-hero.png';
 import { name, linkedin_url, instagram_url } from '../utils/me';
 
 export interface Props {
@@ -69,7 +69,7 @@ const sameAs = [linkedin_url, instagram_url].filter(Boolean);
       "sameAs": sameAs
     })} />
   </head>
-  <body class="text-secondary transition-colors duration-300 dark:text-fog">
+  <body class="transition-colors duration-300">
     <div class="flex flex-col min-h-screen">
       <Navbar />
       <main class="flex-grow">

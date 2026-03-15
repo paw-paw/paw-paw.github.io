@@ -10,17 +10,17 @@ const { lang } = Astro.props;
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class="border-t border-secondary/10 py-8 dark:border-fog/10">
+<footer class="border-t border-secondary/10 py-8 dark:border-[rgba(var(--color-border-rgb),0.18)]">
   <div class="max-w-container mx-auto px-6">
     <div class="flex flex-col md:flex-row justify-between items-center">
       <div class="mb-4 md:mb-0">
         <a href="/" class="brand-lockup" aria-label="Homepage">
-          <span class="brand-badge">P</span>
-          <span class="brand-wordmark">Pawpaw</span>
+          <span class="brand-badge" aria-hidden="true">P</span>
+          <span class="brand-wordmark">Paulo Cesar Tuya</span>
         </a>
       </div>
 
-      <div class="text-sm text-secondary/60 dark:text-fog/74">
+      <div class="text-tone-muted text-sm">
         &copy; {currentYear} {name}. {t('footer.copyright', lang)}
       </div>
 
@@ -29,7 +29,7 @@ const currentYear = new Date().getFullYear();
           href={linkedin_url}
           target="_blank"
           rel="noopener noreferrer"
-          class="text-secondary/70 transition-colors duration-300 hover:text-primary dark:text-fog/82 dark:hover:text-highlightBlue"
+          class="text-tone-soft transition-colors duration-300 hover:text-primary dark:hover:text-highlightBlue"
           aria-label="LinkedIn"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="linkedinFooterIconTitle">
@@ -43,7 +43,7 @@ const currentYear = new Date().getFullYear();
           href={instagram_url}
           target="_blank"
           rel="noopener noreferrer"
-          class="text-secondary/70 transition-colors duration-300 hover:text-primary dark:text-fog/82 dark:hover:text-highlightBlue"
+          class="text-tone-soft transition-colors duration-300 hover:text-primary dark:hover:text-highlightBlue"
           aria-label="Instagram"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="instagramFooterIconTitle">

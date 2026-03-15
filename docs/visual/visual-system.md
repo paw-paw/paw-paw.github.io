@@ -89,7 +89,6 @@ La referencia de tono visual debe sentirse:
 - `Manrope` se usa en headings, wordmark y jerarquia principal.
 - `IBM Plex Sans` se usa en body copy, navegacion, labels y texto corrido.
 - `IBM Plex Mono` se usa para eyebrows, tags, metadatos y acentos informativos.
-- evitar mezclar mas familias en esta fase
 
 ---
 
@@ -102,7 +101,7 @@ La identidad base aprobada para esta fase es:
 
 ### Reglas
 
-- el branding visible debe ser tipografico
+- el branding visible debe seguir siendo simple y tipografico en su tono general
 - no depende todavia de un logo ilustrado final
 - el navbar y footer deben expresar la marca con un lockup simple y consistente
 - el favicon puede ser provisional, pero ya no debe reutilizar el icono heredado del template
