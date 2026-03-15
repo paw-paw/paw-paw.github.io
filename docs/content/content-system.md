@@ -5,7 +5,7 @@
 - Tipo: `contractual`
 - Fase inicial: `2`
 - Estado: `done`
-- Ultima actualizacion: `2026-03-12`
+- Ultima actualizacion: `2026-03-14`
 
 ---
 
@@ -78,6 +78,7 @@ Proposito:
 Debe incluir:
 
 - seleccion breve de casos
+- imagen o header visual cuando exista asset aprobado
 - nombre
 - contexto corto
 - rol o angle operativo
@@ -96,6 +97,7 @@ Proposito:
 
 Estructura contractual minima:
 
+- imagen o header visual cuando exista asset aprobado
 - nombre del caso
 - contexto breve
 - rol
@@ -109,6 +111,14 @@ No debe incluir:
 
 - claims no sustentados
 - exceso de detalle que convierta el caso en archivo bruto
+- visuales decorativos sin relacion con el caso representado
+
+Regla visual-estructural:
+
+- cuando exista asset aprobado, `selected_work_case_study` debe poder renderizar una imagen/header del proyecto
+- `selected_work_preview` puede usar una version reducida del mismo patron
+- el tratamiento visual puede usar overlay o tinte reversible desde UI, no baked-in dentro del asset
+- el sistema no debe depender de `temp/` en runtime
 
 ### `experience_preview`
 
@@ -120,8 +130,11 @@ Proposito:
 Debe incluir:
 
 - seleccion breve de roles o hitos
+- identificador visual de empresa cuando exista asset aprobado
 - titulo del rol
 - organizacion
+- location
+- work mode
 - contexto corto
 - angle de ownership o delivery
 
@@ -133,9 +146,12 @@ Proposito:
 
 Debe incluir:
 
+- identificador visual de empresa cuando exista asset aprobado
 - rol
 - organizacion
 - periodo
+- location
+- work mode
 - contexto
 - highlights o pruebas de ownership / delivery
 
@@ -143,6 +159,15 @@ No debe incluir:
 
 - una lista de tareas sin framing
 - detalle historico innecesario
+- logos decorativos sin relacion con la empresa representada
+
+Regla visual-estructural:
+
+- cuando exista asset aprobado, `experience_item` debe poder renderizar un logo de empresa
+- el logo funciona como identificador contextual, no como elemento protagonista
+- el sistema debe soportar variantes `light` / `dark` y `allmode` sin depender de `temp/` en runtime
+- la preview de experiencia en home puede usar una version reducida del mismo patron
+- la metadata visible debe poder separar `period`, `location` y `work mode` en lineas distintas cuando el layout lo requiera
 
 ### `skills_cluster`
 
@@ -167,7 +192,7 @@ Proposito:
 
 - ofrecer contacto publico intencional
 
-Canales permitidos en la home, segun politica vigente:
+Canales permitidos en la pagina dedicada de contacto, segun politica vigente:
 
 - email
 - LinkedIn
@@ -189,7 +214,7 @@ Debe incluir:
 
 - headline breve
 - supporting line
-- CTA hacia `#contact`
+- CTA hacia `/contact`
 
 No debe competir con:
 
@@ -239,16 +264,17 @@ Se restringen claims que:
 ### `hero` <-> `footer_cta`
 
 - `hero` empuja primero a `/work`
-- `footer_cta` cierra empujando a `#contact`
+- `footer_cta` cierra empujando a `/contact`
 
 ### `navigation` <-> paginas internas
 
 - la navegacion debe reflejar superficies reales del sitio
 - no debe anunciar una arquitectura que no exista
 
-### `contact` <-> politica de visibilidad
+### `contact page` <-> politica de visibilidad
 
-- la seccion de contacto debe respetar la politica de publicabilidad vigente
+- la pagina de contacto debe concentrar los canales publicos habilitados
+- la home ya no debe duplicar ese bloque completo
 - no debe reintroducir telefono ni datos sensibles
 
 ---

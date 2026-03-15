@@ -51,6 +51,47 @@ Estado:
 - aprobado como favicon tipografico provisional
 - reemplaza la dependencia del favicon heredado del template
 
+### Logos de experiencia
+
+- `src/assets/experience-logos/xp_light.png`
+- `src/assets/experience-logos/xp_dark.png`
+- `src/assets/experience-logos/cg_all.png`
+- `src/assets/experience-logos/4d_light.png`
+- `src/assets/experience-logos/4d_dark.png`
+- `src/assets/experience-logos/inf_light.png`
+- `src/assets/experience-logos/inf_dark.png`
+- `src/assets/experience-logos/lm_light.png`
+- `src/assets/experience-logos/lm_dark.png`
+
+Origen:
+
+- promovidos desde `temp/logos/`
+
+Estado:
+
+- aprobados para `experience_item` en `/experience/`
+- aprobados para version reducida en `experience_preview`
+- deben usar variante por tema cuando exista y `allmode` como fallback
+
+### Headers de `Selected Work`
+
+- `src/assets/work-headers/interu.jpg`
+- `src/assets/work-headers/pcftc.jpg`
+- `src/assets/work-headers/amdgw.jpg`
+- `src/assets/work-headers/dld2.jpg`
+- `src/assets/work-headers/ewc.jpg`
+- `src/assets/work-headers/limamajor.jpg`
+
+Origen:
+
+- promovidos desde `temp/headers/`
+
+Estado:
+
+- aprobados para `selected_work_case_study` en `/work/`
+- aprobados para version reducida en `selected_work_preview`
+- el tratamiento visual puede usar overlay/tinte reversible desde CSS o UI
+
 ---
 
 ## Assets temporales que pueden sobrevivir tecnicamente
@@ -104,6 +145,8 @@ No son placeholders aceptables:
 - visuales o thumbnails para `Selected Work / Case Studies`
 - OG image propia
 - posibles variantes adicionales para favicon/app icon si el deploy final lo exige
+- logos adicionales si entran nuevas experiencias al sitio
+- headers adicionales si entran nuevos proyectos al sitio
 
 ### Blockers actuales
 

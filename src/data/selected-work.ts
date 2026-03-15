@@ -1,3 +1,11 @@
+import type { ImageMetadata } from 'astro';
+import interuHeader from '../assets/work-headers/interu.jpg';
+import pcftcHeader from '../assets/work-headers/pcftc.jpg';
+import amdgwHeader from '../assets/work-headers/amdgw.jpg';
+import dld2Header from '../assets/work-headers/dld2.jpg';
+import ewcHeader from '../assets/work-headers/ewc.jpg';
+import limamajorHeader from '../assets/work-headers/limamajor.jpg';
+
 export interface SelectedWorkItem {
   id: string;
   title: string;
@@ -9,6 +17,9 @@ export interface SelectedWorkItem {
   highlights: string[];
   metrics: string[];
   tags: string[];
+  headerImage: ImageMetadata;
+  headerAlt: string;
+  headerOverlay: 'soft-teal';
 }
 
 export const selectedWork: SelectedWorkItem[] = [
@@ -27,6 +38,9 @@ export const selectedWork: SelectedWorkItem[] = [
     ],
     metrics: ['US$60K budget', '16 universities / 80 players', '~50 broadcast hours'],
     tags: ['Partner delivery', 'Live event', 'Broadcast'],
+    headerImage: interuHeader,
+    headerAlt: 'Header visual for InterUniversitario ML:BB',
+    headerOverlay: 'soft-teal',
   },
   {
     id: 'pc-factory-throne-clash',
@@ -43,6 +57,9 @@ export const selectedWork: SelectedWorkItem[] = [
     ],
     metrics: ['411 registrations', '300+ in-store attendees', '8 vendors coordinated'],
     tags: ['Activation', 'Account-facing', 'End-to-end delivery'],
+    headerImage: pcftcHeader,
+    headerAlt: 'Header visual for PC Factory Throne Clash',
+    headerOverlay: 'soft-teal',
   },
   {
     id: 'amd-gamer-week',
@@ -59,6 +76,9 @@ export const selectedWork: SelectedWorkItem[] = [
     ],
     metrics: ['~200 registrations', '~PEN 10K prize pool', '6 talents + 6 creators'],
     tags: ['Retail activation', 'Partner execution', 'Multi-day program'],
+    headerImage: amdgwHeader,
+    headerAlt: 'Header visual for AMD Gamer Week',
+    headerOverlay: 'soft-teal',
   },
   {
     id: 'dreamleague-division-2',
@@ -75,6 +95,9 @@ export const selectedWork: SelectedWorkItem[] = [
     ],
     metrics: ['8–16 teams per season', '~36–74 Bo3s per season', 'Remote CET-aligned delivery'],
     tags: ['Remote delivery', 'League ops', 'Sustained operations'],
+    headerImage: dld2Header,
+    headerAlt: 'Header visual for DreamLeague Division 2',
+    headerOverlay: 'soft-teal',
   },
   {
     id: 'esports-world-cup',
@@ -91,6 +114,9 @@ export const selectedWork: SelectedWorkItem[] = [
     ],
     metrics: ['~450 players', '~7 weeks on-site', '~20 teams supported'],
     tags: ['Global event', 'Player ops', 'Logistics'],
+    headerImage: ewcHeader,
+    headerAlt: 'Header visual for Esports World Cup',
+    headerOverlay: 'soft-teal',
   },
   {
     id: 'lima-major-2023',
@@ -107,5 +133,8 @@ export const selectedWork: SelectedWorkItem[] = [
     ],
     metrics: ['30-person ops structure', '~225 games', 'Delay reduced from ~1 hour to ~7 minutes'],
     tags: ['High-pressure ops', 'Competitive integrity', 'Live event'],
+    headerImage: limamajorHeader,
+    headerAlt: 'Header visual for The Lima Major 2023',
+    headerOverlay: 'soft-teal',
   },
 ];

@@ -16,7 +16,7 @@ const previewItems = selectedWork.slice(0, 3);
     <div class="mb-12" data-aos="fade-up">
       <span class="section-eyebrow">Evidence</span>
       <h2 class="font-heading text-h2 text-secondary dark:text-fog mb-4">{t('projects.title', lang)}</h2>
-      <p class="text-secondary/70 dark:text-fog/82 max-w-2xl">
+      <p class="text-tone-soft max-w-2xl">
         {t('projects.subtitle', lang)}
       </p>
     </div>
@@ -28,10 +28,20 @@ const previewItems = selectedWork.slice(0, 3);
           data-aos="fade-up"
           data-aos-delay={index * 100}
         >
-          <div class="border-b border-secondary/8 p-6 dark:border-fog/10">
+          <div class="work-card-header work-card-header-preview">
+            <img
+              src={project.headerImage.src}
+              alt={project.headerAlt}
+              class="work-card-header-image"
+              loading="lazy"
+            />
+            <div class="work-card-header-overlay" aria-hidden="true"></div>
+          </div>
+
+          <div class="border-b border-secondary/8 p-6 dark:border-[rgba(var(--color-border-rgb),0.18)]">
             <div class="flex flex-wrap gap-2">
               {project.tags.map(tag => (
-                <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-mono text-primary">
+                <span class="tag-chip">
                   {tag}
                 </span>
               ))}
@@ -42,15 +52,15 @@ const previewItems = selectedWork.slice(0, 3);
             <h3 class="font-heading text-xl text-secondary dark:text-fog mb-3 group-hover:text-primary transition-colors duration-300">
               {project.title}
             </h3>
-            <p class="mb-2 text-sm font-mono uppercase tracking-[0.16em] text-secondary/45 dark:text-fog/68">
+            <p class="meta-kicker mb-2 text-sm font-mono uppercase tracking-[0.16em]">
               {project.role}
             </p>
-            <p class="mb-4 text-secondary/70 dark:text-fog/82">
+            <p class="text-tone-soft mb-4">
               {project.summary}
             </p>
             <div class="mb-6 flex flex-wrap gap-2">
               {project.metrics.slice(0, 2).map((metric) => (
-                <span class="rounded-full border border-secondary/10 px-3 py-1 text-xs font-mono text-secondary/70 dark:border-fog/10 dark:text-fog/76">
+                <span class="metric-chip">
                   {metric}
                 </span>
               ))}
