@@ -12,7 +12,7 @@
   - `docs/content/content-system.md`
   - `docs/visual/visual-system.md`
   - `docs/content/content-master.md`
-  - `docs/plans/pre-phase-5-work.md`
+  - `docs/plans/pre-phase-5-fixes/pre-phase-5-work.md`
 - Desbloquea:
   - implementacion de headers visuales por proyecto en `Selected Work`
   - decision estable sobre assets visuales por caso
@@ -38,7 +38,7 @@ Este patch existe para reforzar reconocimiento y lectura de casos con evidencia 
   - `docs/visual/visual-system.md`
 - documentos auxiliares aplicables:
   - `docs/content/content-master.md`
-  - `docs/plans/pre-phase-5-work.md`
+  - `docs/plans/pre-phase-5-fixes/pre-phase-5-work.md`
   - `docs/visual/asset-plan.md`
 
 Nota:
@@ -57,7 +57,7 @@ Nota:
 - [x] `docs/content/content-system.md`
 - [x] `docs/visual/visual-system.md`
 - [x] `docs/content/content-master.md`
-- [x] `docs/plans/pre-phase-5-work.md`
+- [x] `docs/plans/pre-phase-5-fixes/pre-phase-5-work.md`
 
 ### Decisiones previas
 
@@ -93,14 +93,14 @@ Nota:
 
 ### Crear
 
-- [x] `docs/plans/work-headers-patch.md`
+- [x] `docs/plans/pre-phase-5-fixes/work-headers-patch.md`
 
 ### Actualizar
 
 - [x] `docs/content/content-system.md` para fijar soporte estructural de imagen/header en `selected_work_case_study` y `selected_work_preview`
 - [x] `docs/visual/asset-plan.md` para registrar promotion de headers y su estado
 - [x] `docs/governance/decision-log.md` para registrar la decision ejecutada y el uso de overlay reversible
-- [ ] `docs/plans/pre-phase-5-work.md` si este patch se integra al trabajo puente ya activo
+- [ ] `docs/plans/pre-phase-5-fixes/pre-phase-5-work.md` si este patch se integra al trabajo puente ya activo
 
 ### No tocar
 
@@ -204,11 +204,11 @@ Nota:
 
 ### Docs
 
-- `docs/plans/work-headers-patch.md`
+- `docs/plans/pre-phase-5-fixes/work-headers-patch.md`
 - `docs/content/content-system.md`
 - `docs/visual/asset-plan.md`
 - `docs/governance/decision-log.md`
-- `docs/plans/pre-phase-5-work.md`
+- `docs/plans/pre-phase-5-fixes/pre-phase-5-work.md`
 
 ### Codigo
 

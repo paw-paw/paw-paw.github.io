@@ -10,9 +10,9 @@
 - Depende de:
   - `docs/README.md`
   - `docs/visual/visual-system.md`
-  - `docs/plans/pre-phase-5-work.md`
-  - `docs/plans/exp-logos-patch.md`
-  - `docs/plans/work-headers-patch.md`
+  - `docs/plans/pre-phase-5-fixes/pre-phase-5-work.md`
+  - `docs/plans/pre-phase-5-fixes/exp-logos-patch.md`
+  - `docs/plans/pre-phase-5-fixes/work-headers-patch.md`
 - Desbloquea:
   - una base visual dark mode mas coherente antes de Fase 5
   - cierre mas confiable del trabajo visual pre-Fase 5
@@ -42,9 +42,9 @@ Este trabajo existe para resolver inconsistencias internas reales:
   - `docs/content/content-system.md`
   - `docs/architecture/site-architecture.md`
 - documentos auxiliares aplicables:
-  - `docs/plans/pre-phase-5-work.md`
-  - `docs/plans/exp-logos-patch.md`
-  - `docs/plans/work-headers-patch.md`
+  - `docs/plans/pre-phase-5-fixes/pre-phase-5-work.md`
+  - `docs/plans/pre-phase-5-fixes/exp-logos-patch.md`
+  - `docs/plans/pre-phase-5-fixes/work-headers-patch.md`
   - `temp/darkmode_issues/*`
 
 Nota:
@@ -61,9 +61,9 @@ Nota:
 
 - [x] `docs/README.md`
 - [x] `docs/visual/visual-system.md`
-- [x] `docs/plans/pre-phase-5-work.md`
-- [x] `docs/plans/exp-logos-patch.md`
-- [x] `docs/plans/work-headers-patch.md`
+- [x] `docs/plans/pre-phase-5-fixes/pre-phase-5-work.md`
+- [x] `docs/plans/pre-phase-5-fixes/exp-logos-patch.md`
+- [x] `docs/plans/pre-phase-5-fixes/work-headers-patch.md`
 
 ### Decisiones previas
 
@@ -95,13 +95,13 @@ Nota:
 
 ### Crear
 
-- [x] `docs/plans/darkmode-fix.md`
+- [x] `docs/plans/pre-phase-5-fixes/darkmode-fix.md`
 
 ### Actualizar si aplica
 
 - [ ] `docs/visual/visual-system.md` solo si durante la ejecución se confirma que hay contradicción contractual real y no solo un problema de implementación
 - [x] `docs/governance/decision-log.md` si se aprueba una regla de aplicación dark mode que deba sobrevivir a Fase 5
-- [ ] `docs/plans/pre-phase-5-work.md` si este patch se integra explícitamente como parte del trabajo puente activo
+- [ ] `docs/plans/pre-phase-5-fixes/pre-phase-5-work.md` si este patch se integra explícitamente como parte del trabajo puente activo
 
 ### No tocar salvo contradicción real
 
@@ -242,9 +242,9 @@ Nota:
 
 ### Docs
 
-- `docs/plans/darkmode-fix.md`
+- `docs/plans/pre-phase-5-fixes/darkmode-fix.md`
 - `docs/governance/decision-log.md`
-- `docs/plans/pre-phase-5-work.md`
+- `docs/plans/pre-phase-5-fixes/pre-phase-5-work.md`
 - `docs/visual/visual-system.md` solo si aparece contradicción contractual real
 
 ### Código

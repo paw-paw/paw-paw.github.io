@@ -279,7 +279,7 @@
 - `docs/architecture/site-architecture.md`
 - `docs/content/content-system.md`
 - `docs/content/content-master.md`
-- `docs/plans/pre-phase-5-work.md`
+- `docs/plans/pre-phase-5-fixes/pre-phase-5-work.md`
 
 ---
 
@@ -368,11 +368,11 @@
 - `docs/content/content-system.md`
 - `docs/visual/asset-plan.md`
 - `docs/governance/decision-log.md`
-- `docs/plans/work-headers-patch.md`
+- `docs/plans/pre-phase-5-fixes/work-headers-patch.md`
 - `src/data/selected-work.ts`
 - `src/pages/work.astro`
 - `src/components/sections/Projects.astro`
-- `docs/plans/exp-logos-patch.md`
+- `docs/plans/pre-phase-5-fixes/exp-logos-patch.md`
 - `src/data/experience.ts`
 - `src/pages/experience.astro`
 - `src/components/sections/Timeline.astro`
@@ -697,4 +697,4 @@
 
 ### Documentos afectados
 
-- `docs/plans/darkmode-fix.md`
+- `docs/plans/pre-phase-5-fixes/darkmode-fix.md`

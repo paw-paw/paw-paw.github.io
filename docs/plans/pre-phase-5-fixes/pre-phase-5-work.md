@@ -95,7 +95,7 @@ Nota:
 
 ### Crear
 
-- [x] `docs/plans/pre-phase-5-work.md`
+- [x] `docs/plans/pre-phase-5-fixes/pre-phase-5-work.md`
 
 ### Actualizar si aplica
 
@@ -259,7 +259,7 @@ Nota:
 
 ### Docs
 
-- `docs/plans/pre-phase-5-work.md`
+- `docs/plans/pre-phase-5-fixes/pre-phase-5-work.md`
 - `docs/architecture/site-architecture.md`
 - `docs/content/content-system.md`
 - `docs/content/content-master.md`

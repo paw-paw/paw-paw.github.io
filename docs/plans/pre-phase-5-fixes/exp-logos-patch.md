@@ -12,7 +12,7 @@
   - `docs/content/content-system.md`
   - `docs/visual/visual-system.md`
   - `docs/content/content-master.md`
-  - `docs/plans/pre-phase-5-work.md`
+  - `docs/plans/pre-phase-5-fixes/pre-phase-5-work.md`
 - Desbloquea:
   - implementacion de logos de empresa en experiencia
   - decision estable sobre variantes `dark` / `light` / `allmode`
@@ -38,7 +38,7 @@ Este patch existe para mejorar reconocimiento de trayectoria y escaneabilidad re
   - `docs/visual/visual-system.md`
 - documentos auxiliares aplicables:
   - `docs/content/content-master.md`
-  - `docs/plans/pre-phase-5-work.md`
+  - `docs/plans/pre-phase-5-fixes/pre-phase-5-work.md`
   - `docs/visual/asset-plan.md`
 
 Nota:
@@ -57,7 +57,7 @@ Nota:
 - [x] `docs/content/content-system.md`
 - [x] `docs/visual/visual-system.md`
 - [x] `docs/content/content-master.md`
-- [x] `docs/plans/pre-phase-5-work.md`
+- [x] `docs/plans/pre-phase-5-fixes/pre-phase-5-work.md`
 
 ### Decisiones previas
 
@@ -90,14 +90,14 @@ Nota:
 
 ### Crear
 
-- [x] `docs/plans/exp-logos-patch.md`
+- [x] `docs/plans/pre-phase-5-fixes/exp-logos-patch.md`
 
 ### Actualizar
 
 - [x] `docs/content/content-system.md` si la presencia de logos pasa a ser regla estructural de la seccion `experience`
 - [x] `docs/visual/asset-plan.md` para registrar promotion de assets y variantes aprobadas
 - [x] `docs/governance/decision-log.md` para registrar la decision ejecutada y el mapping de variantes
-- [ ] `docs/plans/pre-phase-5-work.md` si este patch se integra como parte del trabajo puente ya activo
+- [ ] `docs/plans/pre-phase-5-fixes/pre-phase-5-work.md` si este patch se integra como parte del trabajo puente ya activo
 
 ### No tocar
 
@@ -211,11 +211,11 @@ Nota:
 
 ### Docs
 
-- `docs/plans/exp-logos-patch.md`
+- `docs/plans/pre-phase-5-fixes/exp-logos-patch.md`
 - `docs/content/content-system.md`
 - `docs/visual/asset-plan.md`
 - `docs/governance/decision-log.md`
-- `docs/plans/pre-phase-5-work.md`
+- `docs/plans/pre-phase-5-fixes/pre-phase-5-work.md`
 
 ### Codigo
 
