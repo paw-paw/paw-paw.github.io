@@ -3,7 +3,7 @@
 ## Metadatos
 
 - Fase: `6.5`
-- Estado: `active`
+- Estado: `done`
 - Ultima actualizacion: `2026-03-15`
 - Owner: `Codex + user`
 - Naturaleza: `roadmap auxiliar intermedio entre Fase 6 y Fase 7`
@@ -134,12 +134,12 @@ Nota:
 
 Este roadmap solo se considera completo si:
 
-- no quedan advisories `high`
-- no quedan advisories `moderate`
-- el sitio sigue buildando correctamente
-- no se rompe routing, i18n, metadata, assets ni deploy por `GitHub Pages`
-- la decision sobre `astro-compress` queda cerrada y documentada
-- `Fase 7` puede empezar sobre una base tecnica mas estable que la actual
+- [x] no quedan advisories `high`
+- [x] no quedan advisories `moderate`
+- [x] el sitio sigue buildando correctamente
+- [x] no se rompe routing, i18n, metadata, assets ni deploy por `GitHub Pages`
+- [x] la decision sobre `astro-compress` queda cerrada y documentada
+- [x] `Fase 7` puede empezar sobre una base tecnica mas estable que la actual
 
 ---
 
@@ -350,6 +350,24 @@ Atacar vulnerabilidades que sobrevivan al upgrade del core y que dependan de la 
 - el lockfile queda coherente
 - los `high` y `moderate` residuales, si existen, ya son entendibles y atribuibles
 
+#### Resultado de ejecucion
+
+- `SR-2` queda `done`
+- la mejora incidental de `astro-compress@2.4.0` entra en esta subfase y reduce parte del residual sin exigir decision final de producto
+- se aplican `overrides` dirigidos para:
+  - `rollup`
+  - `glob`
+  - `minimatch`
+  - `mdast-util-to-hast`
+  - `brace-expansion`
+- `npm audit` queda en:
+  - `0 high`
+  - `0 moderate`
+  - `0 low`
+  - `0` paquetes afectados
+- el sitio sigue buildando y pasando checks automatizados sobre `dist`
+- el frente originalmente reservado a `SR-3` deja de existir como bloqueo tecnico actual
+
 ---
 
 ### SR-3 — Decision tecnica sobre `astro-compress` y pipeline de compresion
@@ -399,6 +417,14 @@ Cerrar de forma explicita si `astro-compress` se mantiene actualizado, se sustit
 - la decision queda documentada en `decision-log`
 - el pipeline final de build sigue siendo coherente con `deployment.md`
 
+#### Estado posterior a `SR-2`
+
+- `SR-3` pasa a `not needed for now`
+- la subfase solo deberia reabrirse si:
+  - reaparecen advisories ligados a compresion
+  - el pipeline de `astro-compress` introduce regresiones
+  - se decide estrategicamente retirar o sustituir la compresion por otra razon
+
 ---
 
 ### SR-4 — Verificacion final, cierre documental y handoff a Fase 7
@@ -440,6 +466,21 @@ Cerrar la remediacion como una intervencion completa, no como una serie de upgra
 - deploy workflow coherente
 - documentacion sincronizada
 - `Fase 7` desbloqueada sin deuda de seguridad relevante pendiente
+
+#### Nota posterior a `SR-2`
+
+- si no reaparece un problema nuevo, `SR-4` ya puede tratarse como bloque de cierre documental y handoff, no como remediacion tecnica pesada
+
+#### Resultado de ejecucion
+
+- `SR-4` queda `done`
+- el roadmap auxiliar completo queda cerrado
+- `SR-3` se considera `not needed for now`
+- el stack queda documentado con:
+  - `npm audit = 0`
+  - build en verde
+  - deploy workflow vigente intacto
+- `Fase 7` queda desbloqueada sin deuda activa de advisories
 
 ---
 
@@ -552,6 +593,7 @@ El roadmap solo se considera cerrado si:
 - este roadmap no implica que haya que detener todo trabajo visual o de contenido indefinidamente
 - pero si conviene cerrarlo antes de meter mas complejidad en `Fase 7`
 - la subfase mas sensible tecnicamente sera la decision sobre `astro-compress`
+- esa sensibilidad quedo resuelta antes de llegar a `SR-3`, por lo que el cierre del roadmap es principalmente documental
 
 ---
 
@@ -572,3 +614,9 @@ El roadmap solo se considera cerrado si:
 - `2026-03-15`
   - `SR-1` se ejecuta y cierra sobre la ruta segura de `Astro 5`
   - el baseline de advisories queda reducido a `7` paquetes afectados
+- `2026-03-15`
+  - `SR-2` se ejecuta y cierra con `npm audit = 0`
+  - la necesidad operativa de `SR-3` desaparece salvo nueva evidencia
+- `2026-03-15`
+  - `SR-4` se ejecuta como cierre documental y handoff
+  - el roadmap auxiliar completo pasa a estado `done`

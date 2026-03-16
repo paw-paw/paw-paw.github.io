@@ -339,6 +339,83 @@
 
 ---
 
+## 2026-03-15 — Cierre de SR-2 con residual de seguridad en cero
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `6.5 / SR-2`
+
+### Decision / registro
+
+- `SR-2` queda cerrada con `npm audit = 0`
+- entra una mejora incidental permitida de `astro-compress`
+- se aplican `overrides` dirigidos para resolver las transitivas residuales
+- `SR-3` deja de ser necesaria por ahora como subfase operativa
+
+### Evidencia
+
+- `npm install` completa correctamente
+- `npm run build` completa correctamente
+- `npm audit` queda en:
+  - `0 high`
+  - `0 moderate`
+  - `0 low`
+  - `0` paquetes afectados
+- checks automatizados sobre `dist` siguen confirmando:
+  - paginas localizadas generadas
+  - sitemap presente
+  - metadata base presente
+  - rutas puente no indexables
+
+### Impacto
+
+- el roadmap de remediacion ya no arrastra deuda tecnica viva de advisories
+- `SR-4` puede enfocarse en cierre documental y handoff
+- `Fase 7` queda desbloqueada sin deuda de seguridad relevante en el stack actual
+
+### Documentos afectados
+
+- `docs/plans/SR/SR2.md`
+- `docs/plans/security-remediation-roadmap.md`
+
+---
+
+## 2026-03-15 — Cierre del roadmap auxiliar de remediacion de seguridad
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `6.5 / SR-4`
+
+### Decision / registro
+
+- el roadmap auxiliar de remediacion de seguridad queda cerrado
+- `SR-4` se resuelve como handoff y cierre documental, no como una nueva ola tecnica
+- `SR-3` queda desactivada salvo que reaparezcan advisories o regresiones ligadas a compresion
+
+### Evidencia
+
+- `SR-0` ejecutada
+- `SR-1` ejecutada
+- `SR-2` ejecutada
+- baseline final de seguridad:
+  - `npm audit = 0`
+- build final:
+  - `npm run build` en verde
+
+### Impacto
+
+- `Fase 7` queda desbloqueada sin deuda activa de advisories
+- el stack actual queda en mejor estado para futuros upgrades o cambios visuales
+- los `overrides` actuales pasan a formar parte del baseline tecnico aceptado mientras no introduzcan regresiones
+
+### Documentos afectados
+
+- `docs/plans/security-remediation-roadmap.md`
+
+---
+
 ## 2026-03-12 — Direccion visual base de Fase 3
 
 ### Estado
