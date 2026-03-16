@@ -56,7 +56,9 @@ Este checklist debe seguir siendo reusable despues de `Fase 6`.
 
 ## Deploy y verificacion publica
 
-- [ ] publicar `dist/` segun el flujo vigente de `GitHub Pages`
+- [ ] confirmar que `Settings > Pages` usa `GitHub Actions`
+- [ ] confirmar que `.github/workflows/deploy.yml` existe y apunta a `main`
+- [ ] dejar pasar el workflow de deploy de `GitHub Pages`
 - [ ] verificar URLs publicas principales
 - [ ] verificar que el sitemap publicado responda
 - [ ] verificar que `robots.txt` publicado responda

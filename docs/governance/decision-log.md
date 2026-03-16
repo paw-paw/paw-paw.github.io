@@ -221,6 +221,32 @@
 
 ---
 
+## 2026-03-15 — Mecanismo real de deploy en GitHub Pages
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `6`
+
+### Decision / registro
+
+- el deploy real del sitio en `GitHub Pages` queda resuelto mediante `GitHub Pages Actions`
+- el workflow vigente debe vivir en `.github/workflows/deploy.yml`
+- la rama `main` se considera la rama de publicacion para el workflow
+
+### Razon
+
+- el sitio Astro genera salida estatica en `dist/`
+- el repo no debe depender de publicar artefactos buildados por branch ni de commitear `dist/`
+- el mecanismo por `Actions` es coherente con la verdad tecnica aprobada en `docs/delivery/deployment.md`
+
+### Documentos afectados
+
+- `docs/delivery/deployment.md`
+- `docs/delivery/release-checklist.md`
+
+---
+
 ## 2026-03-12 — Direccion visual base de Fase 3
 
 ### Estado

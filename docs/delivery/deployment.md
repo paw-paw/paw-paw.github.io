@@ -46,6 +46,10 @@ Esta version sigue sin fijar dominio custom final, pero ya trata `paw-paw.github
 ### Deploy esperado
 
 - el deployment vigente debe cerrar sobre `GitHub Pages`
+- el mecanismo vigente de publicacion debe ser `GitHub Pages Actions`
+- el workflow vigente debe vivir en `.github/workflows/deploy.yml`
+- `Settings > Pages` debe usar `GitHub Actions` como source de build y deploy
+- el workflow debe ejecutarse sobre `push` a `main` y permitir disparo manual
 - `Netlify` no forma parte de la verdad tecnica activa del proyecto
 - cualquier artefacto heredado de Netlify sigue siendo residuo tecnico y no debe condicionar el release actual
 
