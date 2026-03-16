@@ -10,8 +10,8 @@
 - Depende de:
   - `docs/README.md`
   - `docs/visual/visual-system.md`
-  - `docs/plans/pre-phase-5-fixes/pre-phase-5-work.md`
-  - `docs/plans/pre-phase-5-fixes/darkmode-fix.md`
+  - `docs/plans/sprint-1/pre-phase-5-fixes/pre-phase-5-work.md`
+  - `docs/plans/sprint-1/pre-phase-5-fixes/darkmode-fix.md`
 - Desbloquea:
   - una home con mejor ritmo vertical y mejor separacion entre bloques
   - una pagina `/contact/` mas compacta y menos fragmentada
@@ -30,14 +30,14 @@ Este trabajo existe porque el sitio actual usa un espaciado relativamente unifor
 ## 2. Fuente de verdad aplicable
 
 - `docs/README.md`
-- `docs/plans/roadmap.md`
+- `docs/plans/sprint-1/roadmap.md`
 - documentos contractuales aplicables:
   - `docs/visual/visual-system.md`
   - `docs/architecture/site-architecture.md`
   - `docs/content/content-master.md`
 - documentos auxiliares aplicables:
-  - `docs/plans/pre-phase-5-fixes/pre-phase-5-work.md`
-  - `docs/plans/pre-phase-5-fixes/darkmode-fix.md`
+  - `docs/plans/sprint-1/pre-phase-5-fixes/pre-phase-5-work.md`
+  - `docs/plans/sprint-1/pre-phase-5-fixes/darkmode-fix.md`
   - `temp/spacing/home.png`
   - `temp/spacing/contact.png`
   - `temp/spacing/og_template.png`
@@ -56,8 +56,8 @@ Nota:
 
 - [x] `docs/README.md`
 - [x] `docs/visual/visual-system.md`
-- [x] `docs/plans/pre-phase-5-fixes/pre-phase-5-work.md`
-- [x] `docs/plans/pre-phase-5-fixes/darkmode-fix.md`
+- [x] `docs/plans/sprint-1/pre-phase-5-fixes/pre-phase-5-work.md`
+- [x] `docs/plans/sprint-1/pre-phase-5-fixes/darkmode-fix.md`
 
 ### Decisiones previas
 
@@ -81,12 +81,12 @@ Nota:
 
 ### Crear
 
-- [x] `docs/plans/pre-phase-5-fixes/spacing-fix.md`
+- [x] `docs/plans/sprint-1/pre-phase-5-fixes/spacing-fix.md`
 
 ### Actualizar si aplica
 
 - [ ] `docs/governance/decision-log.md` si durante la ejecucion aparece una regla reusable de ritmo vertical que sobreviva a Fase 5
-- [ ] `docs/plans/pre-phase-5-fixes/pre-phase-5-work.md` si este patch se integra explicitamente como parte del trabajo puente activo
+- [ ] `docs/plans/sprint-1/pre-phase-5-fixes/pre-phase-5-work.md` si este patch se integra explicitamente como parte del trabajo puente activo
 
 ### No tocar salvo contradiccion real
 
@@ -184,9 +184,9 @@ Nota:
 
 ### Docs
 
-- `docs/plans/pre-phase-5-fixes/spacing-fix.md`
+- `docs/plans/sprint-1/pre-phase-5-fixes/spacing-fix.md`
 - `docs/governance/decision-log.md`
-- `docs/plans/pre-phase-5-fixes/pre-phase-5-work.md`
+- `docs/plans/sprint-1/pre-phase-5-fixes/pre-phase-5-work.md`
 
 ### Codigo
 

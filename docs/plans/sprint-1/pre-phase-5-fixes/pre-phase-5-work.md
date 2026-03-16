@@ -9,14 +9,14 @@
 - Tipo: `auxiliar extraordinario`
 - Depende de:
   - `docs/README.md`
-  - `docs/plans/roadmap.md`
-  - `docs/plans/phase-4.md`
+  - `docs/plans/sprint-1/roadmap.md`
+  - `docs/plans/sprint-1/phase-4.md`
   - `docs/architecture/site-architecture.md`
   - `docs/content/content-master.md`
   - `docs/content/content-system.md`
   - `docs/visual/visual-system.md`
 - Desbloquea:
-  - `docs/plans/phase-5.md`
+  - `docs/plans/sprint-1/phase-5.md`
   - cierre visual real de Fase 4
   - base mas estable para i18n, SEO y deployment
 
@@ -33,7 +33,7 @@ Este trabajo existe para cerrar deuda visible detectada en la UI actual antes de
 ## 2. Fuente de verdad aplicable
 
 - `docs/README.md`
-- `docs/plans/roadmap.md`
+- `docs/plans/sprint-1/roadmap.md`
 - documentos contractuales aplicables:
   - `docs/architecture/site-architecture.md`
   - `docs/content/content-system.md`
@@ -41,7 +41,7 @@ Este trabajo existe para cerrar deuda visible detectada en la UI actual antes de
   - `docs/strategy/portfolio-strategy.md`
   - `docs/visual/visual-system.md`
 - documentos auxiliares aplicables:
-  - `docs/plans/phase-4.md`
+  - `docs/plans/sprint-1/phase-4.md`
   - `temp/screenshots/*`
 
 Nota:
@@ -62,7 +62,7 @@ Nota:
 - [x] `docs/content/content-system.md` en estado `done`
 - [x] `docs/visual/visual-system.md` en estado `done`
 - [x] `docs/architecture/site-architecture.md` en estado `done`
-- [x] `docs/plans/phase-4.md` con implementacion ya ejecutada
+- [x] `docs/plans/sprint-1/phase-4.md` con implementacion ya ejecutada
 
 ### Decisiones previas
 
@@ -95,7 +95,7 @@ Nota:
 
 ### Crear
 
-- [x] `docs/plans/pre-phase-5-fixes/pre-phase-5-work.md`
+- [x] `docs/plans/sprint-1/pre-phase-5-fixes/pre-phase-5-work.md`
 
 ### Actualizar si aplica
 
@@ -103,7 +103,7 @@ Nota:
 - [x] `docs/content/content-master.md`
 - [x] `docs/content/content-system.md` si el cambio de CTA o contacto afecta reglas de superficie
 - [x] `docs/content/content-master.md` si cambia wording visible de CTA o labels
-- [ ] `docs/plans/phase-4.md` si se decide registrar cierre visual real de Fase 4
+- [ ] `docs/plans/sprint-1/phase-4.md` si se decide registrar cierre visual real de Fase 4
 - [x] `docs/governance/decision-log.md` si aparece una decision nueva que sobreviva a Fase 5
 
 ### No tocar salvo contradiccion real
@@ -259,11 +259,11 @@ Nota:
 
 ### Docs
 
-- `docs/plans/pre-phase-5-fixes/pre-phase-5-work.md`
+- `docs/plans/sprint-1/pre-phase-5-fixes/pre-phase-5-work.md`
 - `docs/architecture/site-architecture.md`
 - `docs/content/content-system.md`
 - `docs/content/content-master.md`
-- `docs/plans/phase-4.md`
+- `docs/plans/sprint-1/phase-4.md`
 - `docs/governance/decision-log.md`
 
 ### Codigo
@@ -334,7 +334,7 @@ Nota:
 ### Documentales
 
 - [ ] verificar alineacion con `docs/README.md`
-- [ ] verificar alineacion con `docs/plans/roadmap.md`
+- [ ] verificar alineacion con `docs/plans/sprint-1/roadmap.md`
 - [ ] verificar que no se introdujeron decisiones fuera de contrato
 - [ ] verificar si el CTA final de preview sigue alineado con `content-master.md`
 - [ ] verificar que `site-architecture.md` y `content-master.md` ya contemplan `/contact/`

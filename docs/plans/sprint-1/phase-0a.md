@@ -7,7 +7,7 @@ Es un documento auxiliar. No redefine precedencia, no sustituye contratos y no i
 Referencias base:
 
 - `docs/README.md`
-- `docs/plans/roadmap.md`
+- `docs/plans/sprint-1/roadmap.md`
 - `docs/plans/phase-template.md`
 
 ---
@@ -45,7 +45,7 @@ Esta fase permite cambios minimos de soporte a auditoria, pero no debe absorber 
 ## 2. Fuente de verdad aplicable
 
 - `docs/README.md`
-- `docs/plans/roadmap.md`
+- `docs/plans/sprint-1/roadmap.md`
 - documentos contractuales aplicables:
   - ninguno todavia, salvo el propio sistema documental
 - documentos auxiliares aplicables:
@@ -65,7 +65,7 @@ Notas:
 ### Documentos
 
 - [x] `docs/README.md`
-- [x] `docs/plans/roadmap.md`
+- [x] `docs/plans/sprint-1/roadmap.md`
 - [x] `docs/plans/phase-template.md`
 - [x] `docs/temp-roadmap-analysis.md`
 
@@ -94,11 +94,11 @@ Notas:
 
 - [x] `docs/governance/template-audit.md`
 - [x] `docs/governance/decision-log.md`
-- [x] `docs/plans/phase-0a.md`
+- [x] `docs/plans/sprint-1/phase-0a.md`
 
 ### Actualizar
 
-- [ ] `docs/plans/roadmap.md` solo si la auditoria descubre que `0A` sigue mal definida
+- [ ] `docs/plans/sprint-1/roadmap.md` solo si la auditoria descubre que `0A` sigue mal definida
 
 ### No tocar
 
@@ -204,8 +204,8 @@ Recomendacion operativa:
 
 - `docs/governance/template-audit.md`
 - `docs/governance/decision-log.md`
-- `docs/plans/phase-0a.md`
-- `docs/plans/roadmap.md` solo si la auditoria obliga a refinar alcance
+- `docs/plans/sprint-1/phase-0a.md`
+- `docs/plans/sprint-1/roadmap.md` solo si la auditoria obliga a refinar alcance
 
 ### Codigo y config
 
@@ -254,7 +254,7 @@ Recomendacion operativa:
 ### Documentales
 
 - [x] verificar alineacion con `docs/README.md`
-- [x] verificar alineacion con `docs/plans/roadmap.md`
+- [x] verificar alineacion con `docs/plans/sprint-1/roadmap.md`
 - [x] verificar que no se introdujeron decisiones de producto fuera de contrato
 - [x] verificar que `template-audit.md` y `decision-log.md` distinguen entre hecho, riesgo y recomendacion
 

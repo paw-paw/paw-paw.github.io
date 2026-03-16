@@ -7,7 +7,7 @@ Es un documento auxiliar. No redefine precedencia, no sustituye contratos y no i
 Referencias base:
 
 - `docs/README.md`
-- `docs/plans/roadmap.md`
+- `docs/plans/sprint-1/roadmap.md`
 - `docs/plans/phase-template.md`
 - `docs/content/source-data-map.md`
 - `docs/governance/decision-log.md`
@@ -47,7 +47,7 @@ Esta fase existe para evitar que `Fase 2`, `Fase 3` y `Fase 4` construyan sobre 
 ## 2. Fuente de verdad aplicable
 
 - `docs/README.md`
-- `docs/plans/roadmap.md`
+- `docs/plans/sprint-1/roadmap.md`
 - documentos contractuales aplicables:
   - `docs/strategy/portfolio-strategy.md` cuando se cree en esta fase
 - documentos auxiliares aplicables:
@@ -69,7 +69,7 @@ Notas:
 ### Documentos
 
 - [x] `docs/README.md`
-- [x] `docs/plans/roadmap.md`
+- [x] `docs/plans/sprint-1/roadmap.md`
 - [x] `docs/plans/phase-template.md`
 - [x] `docs/content/source-data-map.md`
 - [x] `docs/governance/decision-log.md`
@@ -103,7 +103,7 @@ Notas:
 ### Crear
 
 - [x] `docs/strategy/portfolio-strategy.md`
-- [x] `docs/plans/phase-1.md`
+- [x] `docs/plans/sprint-1/phase-1.md`
 
 ### Actualizar
 
@@ -205,7 +205,7 @@ Recomendacion operativa:
 - `docs/strategy/portfolio-strategy.md`
 - `docs/content/source-data-map.md`
 - `docs/governance/decision-log.md`
-- `docs/plans/phase-1.md`
+- `docs/plans/sprint-1/phase-1.md`
 
 ### Fuentes a inspeccionar
 
@@ -251,7 +251,7 @@ Recomendacion operativa:
 ### Documentales
 
 - [x] verificar alineacion con `docs/README.md`
-- [x] verificar alineacion con `docs/plans/roadmap.md`
+- [x] verificar alineacion con `docs/plans/sprint-1/roadmap.md`
 - [x] verificar que `portfolio-strategy.md` cubre el contenido minimo contractual definido en `README.md`
 - [x] verificar que `source-data-map.md` no invade arquitectura detallada ni sistema de contenido
 - [x] verificar que no se introdujeron decisiones de implementacion fuera de contrato

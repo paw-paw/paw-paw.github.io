@@ -9,8 +9,8 @@
 - Naturaleza: `roadmap auxiliar intermedio entre Fase 6 y Fase 7`
 - Depende de:
   - `docs/README.md`
-  - `docs/plans/roadmap.md`
-  - `docs/plans/phase-6.md`
+  - `docs/plans/sprint-1/roadmap.md`
+  - `docs/plans/sprint-1/phase-6.md`
   - `docs/delivery/deployment.md`
   - `docs/delivery/seo-spec.md`
   - cierre efectivo de `Fase 6`
@@ -31,14 +31,14 @@ El resultado esperado no es solo “actualizar dependencias”, sino dejar el si
 ## 2. Fuente de verdad aplicable
 
 - `docs/README.md`
-- `docs/plans/roadmap.md`
+- `docs/plans/sprint-1/roadmap.md`
 - documentos contractuales aplicables:
   - `docs/delivery/deployment.md`
   - `docs/architecture/i18n-spec.md`
   - `docs/architecture/site-architecture.md`
   - `docs/visual/visual-system.md`
 - documentos auxiliares aplicables:
-  - `docs/plans/phase-6.md`
+  - `docs/plans/sprint-1/phase-6.md`
   - `docs/delivery/seo-spec.md`
   - `docs/delivery/release-checklist.md`
   - `docs/governance/decision-log.md`
@@ -488,11 +488,11 @@ Cerrar la remediacion como una intervencion completa, no como una serie de upgra
 
 ### Docs
 
-- `docs/plans/security-remediation-roadmap.md`
+- `docs/plans/sprint-1/security-remediation-roadmap.md`
 - `docs/governance/decision-log.md`
 - `docs/delivery/deployment.md`
 - `docs/delivery/release-checklist.md`
-- posiblemente `docs/plans/phase-7.md` si se deja una nota de dependencia tecnica
+- posiblemente `docs/plans/sprint-1/phase-7.md` si se deja una nota de dependencia tecnica
 
 ### Codigo y config
 
@@ -544,7 +544,7 @@ Nota:
 ### Documentales
 
 - [ ] verificar alineacion con `docs/README.md`
-- [ ] verificar alineacion con `docs/plans/roadmap.md`
+- [ ] verificar alineacion con `docs/plans/sprint-1/roadmap.md`
 - [ ] verificar que este roadmap se mantenga como intermedio entre `Fase 6` y `Fase 7`
 - [ ] verificar que no se introduzcan decisiones nuevas de producto por resolver advisories
 

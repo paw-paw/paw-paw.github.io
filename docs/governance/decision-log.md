@@ -27,7 +27,7 @@
 
 ### Documentos afectados
 
-- `docs/plans/phase-0a.md`
+- `docs/plans/sprint-1/phase-0a.md`
 - `docs/governance/template-audit.md`
 
 ---
@@ -60,7 +60,7 @@
 ### Documentos afectados
 
 - `docs/governance/template-audit.md`
-- `docs/plans/phase-0a.md`
+- `docs/plans/sprint-1/phase-0a.md`
 
 ### Pendiente relacionado
 
@@ -97,9 +97,9 @@
 
 ### Documentos afectados
 
-- `docs/plans/phase-0a.md`
+- `docs/plans/sprint-1/phase-0a.md`
 - `docs/governance/template-audit.md`
-- `docs/plans/roadmap.md`
+- `docs/plans/sprint-1/roadmap.md`
 
 ---
 
@@ -131,7 +131,7 @@
 
 ### Documentos afectados
 
-- `docs/plans/phase-0a.md`
+- `docs/plans/sprint-1/phase-0a.md`
 - `docs/governance/template-audit.md`
 
 ---
@@ -164,7 +164,7 @@
 
 ### Documentos afectados
 
-- `docs/plans/phase-0a.md`
+- `docs/plans/sprint-1/phase-0a.md`
 - `docs/governance/template-audit.md`
 
 ---
@@ -198,7 +198,7 @@
 ### Documentos afectados
 
 - `docs/delivery/deployment.md`
-- `docs/plans/phase-0b.md`
+- `docs/plans/sprint-1/phase-0b.md`
 
 ---
 
@@ -285,7 +285,7 @@
 
 ### Documentos afectados
 
-- `docs/plans/phase-7.md`
+- `docs/plans/sprint-1/phase-7.md`
 - `docs/visual/interaction-spec.md`
 - el baseline tecnico de seguridad queda confirmado antes de cualquier upgrade
 
@@ -321,7 +321,7 @@
 
 ### Documentos afectados
 
-- `docs/plans/security-remediation-roadmap.md`
+- `docs/plans/sprint-1/security-remediation-roadmap.md`
 
 ---
 
@@ -363,8 +363,8 @@
 
 ### Documentos afectados
 
-- `docs/plans/SR/SR1.md`
-- `docs/plans/security-remediation-roadmap.md`
+- `docs/plans/sprint-1/SR/SR1.md`
+- `docs/plans/sprint-1/security-remediation-roadmap.md`
 
 ---
 
@@ -405,8 +405,8 @@
 
 ### Documentos afectados
 
-- `docs/plans/SR/SR2.md`
-- `docs/plans/security-remediation-roadmap.md`
+- `docs/plans/sprint-1/SR/SR2.md`
+- `docs/plans/sprint-1/security-remediation-roadmap.md`
 
 ---
 
@@ -441,7 +441,7 @@
 
 ### Documentos afectados
 
-- `docs/plans/security-remediation-roadmap.md`
+- `docs/plans/sprint-1/security-remediation-roadmap.md`
 
 ---
 
@@ -471,7 +471,7 @@
 
 - `docs/visual/visual-system.md`
 - `docs/visual/asset-plan.md`
-- `docs/plans/phase-3.md`
+- `docs/plans/sprint-1/phase-3.md`
 
 ---
 
@@ -503,7 +503,7 @@
 - `docs/architecture/site-architecture.md`
 - `docs/content/content-system.md`
 - `docs/content/content-master.md`
-- `docs/plans/pre-phase-5-fixes/pre-phase-5-work.md`
+- `docs/plans/sprint-1/pre-phase-5-fixes/pre-phase-5-work.md`
 
 ---
 
@@ -592,11 +592,11 @@
 - `docs/content/content-system.md`
 - `docs/visual/asset-plan.md`
 - `docs/governance/decision-log.md`
-- `docs/plans/pre-phase-5-fixes/work-headers-patch.md`
+- `docs/plans/sprint-1/pre-phase-5-fixes/work-headers-patch.md`
 - `src/data/selected-work.ts`
 - `src/pages/work.astro`
 - `src/components/sections/Projects.astro`
-- `docs/plans/pre-phase-5-fixes/exp-logos-patch.md`
+- `docs/plans/sprint-1/pre-phase-5-fixes/exp-logos-patch.md`
 - `src/data/experience.ts`
 - `src/pages/experience.astro`
 - `src/components/sections/Timeline.astro`
@@ -649,7 +649,7 @@
 
 - `docs/delivery/deployment.md`
 - `docs/governance/template-audit.md`
-- `docs/plans/phase-0b.md`
+- `docs/plans/sprint-1/phase-0b.md`
 
 ---
 
@@ -700,7 +700,7 @@
 
 - `docs/strategy/portfolio-strategy.md`
 - `docs/content/source-data-map.md`
-- `docs/plans/phase-1.md`
+- `docs/plans/sprint-1/phase-1.md`
 
 ---
 
@@ -729,7 +729,7 @@
 ### Documentos afectados
 
 - `docs/strategy/portfolio-strategy.md`
-- `docs/plans/phase-1.md`
+- `docs/plans/sprint-1/phase-1.md`
 
 ---
 
@@ -764,7 +764,7 @@
 
 - `docs/content/source-data-map.md`
 - `docs/strategy/portfolio-strategy.md`
-- `docs/plans/phase-1.md`
+- `docs/plans/sprint-1/phase-1.md`
 
 ---
 
@@ -797,7 +797,7 @@
 - `docs/architecture/site-architecture.md`
 - `docs/content/content-system.md`
 - `docs/content/source-data-map.md`
-- `docs/plans/phase-2.md`
+- `docs/plans/sprint-1/phase-2.md`
 
 ---
 
@@ -828,7 +828,7 @@
 - `docs/content/source-data-map.md`
 - `docs/content/content-system.md`
 - `docs/architecture/site-architecture.md`
-- `docs/plans/phase-2.md`
+- `docs/plans/sprint-1/phase-2.md`
 
 ---
 
@@ -863,7 +863,7 @@
 
 - `docs/content/content-master.md`
 - `docs/content/source-data-map.md`
-- `docs/plans/phase-4.md`
+- `docs/plans/sprint-1/phase-4.md`
 
 ### Implementacion afectada
 
@@ -921,7 +921,7 @@
 
 ### Documentos afectados
 
-- `docs/plans/pre-phase-5-fixes/darkmode-fix.md`
+- `docs/plans/sprint-1/pre-phase-5-fixes/darkmode-fix.md`
 
 ---
 
@@ -960,7 +960,7 @@
 
 - `docs/architecture/i18n-spec.md`
 - `docs/delivery/deployment.md`
-- `docs/plans/phase-5.md`
+- `docs/plans/sprint-1/phase-5.md`
 
 ### Implementacion afectada
 
@@ -1005,7 +1005,7 @@
 
 ### Documentos afectados
 
-- `docs/plans/phase-5.md`
+- `docs/plans/sprint-1/phase-5.md`
 
 ### Desbloquea
 
@@ -1046,7 +1046,7 @@
 - `docs/delivery/deployment.md`
 - `docs/delivery/seo-spec.md`
 - `docs/delivery/release-checklist.md`
-- `docs/plans/phase-6.md`
+- `docs/plans/sprint-1/phase-6.md`
 
 ### Implementacion afectada
 
@@ -1093,7 +1093,7 @@
 - `docs/delivery/deployment.md`
 - `docs/delivery/seo-spec.md`
 - `docs/delivery/release-checklist.md`
-- `docs/plans/phase-6.md`
+- `docs/plans/sprint-1/phase-6.md`
 
 ### Desbloquea
 
@@ -1128,7 +1128,7 @@
 
 ### Documentos afectados
 
-- `docs/plans/phase-7.md`
+- `docs/plans/sprint-1/phase-7.md`
 - `docs/visual/interaction-spec.md`
 
 ### Implementacion afectada

@@ -8,7 +8,7 @@
 - Owner: `Codex + user`
 - Depende de:
   - `docs/README.md`
-  - `docs/plans/roadmap.md`
+  - `docs/plans/sprint-1/roadmap.md`
   - `docs/strategy/portfolio-strategy.md`
   - `docs/architecture/site-architecture.md`
   - `docs/content/content-system.md`
@@ -34,7 +34,7 @@ La fase existe para pasar del sitio monoidioma actual a una base multiidioma man
 ## 2. Fuente de verdad aplicable
 
 - `docs/README.md`
-- `docs/plans/roadmap.md`
+- `docs/plans/sprint-1/roadmap.md`
 - documentos contractuales aplicables:
   - `docs/strategy/portfolio-strategy.md`
   - `docs/architecture/site-architecture.md`
@@ -44,7 +44,7 @@ La fase existe para pasar del sitio monoidioma actual a una base multiidioma man
 - documentos auxiliares aplicables:
   - `docs/content/content-master.md`
   - `docs/governance/decision-log.md`
-  - `docs/plans/pre-phase-5-fixes/pre-phase-5-work.md`
+  - `docs/plans/sprint-1/pre-phase-5-fixes/pre-phase-5-work.md`
 
 Nota:
 
@@ -63,7 +63,7 @@ Nota:
 - [x] `docs/content/content-system.md` en estado `done`
 - [x] `docs/content/content-master.md` en estado `done`
 - [x] `docs/delivery/deployment.md` en estado `v2`
-- [x] `docs/plans/phase-4.md` formalmente cerrado o actualizado para no bloquear `Fase 5`
+- [x] `docs/plans/sprint-1/phase-4.md` formalmente cerrado o actualizado para no bloquear `Fase 5`
 
 ### Decisiones previas
 
@@ -94,7 +94,7 @@ Nota:
 
 - [x] `docs/delivery/deployment.md`
 - [x] `docs/governance/decision-log.md`
-- [x] `docs/plans/phase-5.md`
+- [x] `docs/plans/sprint-1/phase-5.md`
 
 ### No tocar
 
@@ -175,7 +175,7 @@ Nota:
 
 - [x] limpiar residuos heredados del template aleman en UI, metadata y helpers
 - [x] verificar que no queden strings del template original visibles en `src/i18n/de.json` o wiring residual activo
-- [x] actualizar el checklist y estado de `docs/plans/phase-5.md`
+- [x] actualizar el checklist y estado de `docs/plans/sprint-1/phase-5.md`
 - [x] registrar decisiones de cierre en `docs/governance/decision-log.md`
 
 ### Checkpoints interactivos previstos
@@ -194,7 +194,7 @@ Nota:
 - `docs/architecture/i18n-spec.md`
 - `docs/delivery/deployment.md`
 - `docs/governance/decision-log.md`
-- `docs/plans/phase-5.md`
+- `docs/plans/sprint-1/phase-5.md`
 - `docs/architecture/site-architecture.md` si aparece contradiccion real de rutas
 
 ### Codigo
@@ -241,7 +241,7 @@ Nota:
 ### Documentales
 
 - [x] verificar alineacion con `docs/README.md`
-- [x] verificar alineacion con `docs/plans/roadmap.md`
+- [x] verificar alineacion con `docs/plans/sprint-1/roadmap.md`
 - [x] verificar que `docs/architecture/i18n-spec.md` no contradiga estrategia, arquitectura ni deployment
 
 ### Tecnicas
@@ -293,7 +293,7 @@ La fase solo se considera cerrada si:
 ## 12. Registro de cambios del plan
 
 - Fecha: `2026-03-15`
-  - cambio: creacion inicial de `docs/plans/phase-5.md`
+  - cambio: creacion inicial de `docs/plans/sprint-1/phase-5.md`
   - razon: preparar la ejecucion de `Fase 5` a partir del roadmap y de las decisiones cerradas sobre locales, prefijos, localizacion y switcher
 - Fecha: `2026-03-15`
   - cambio: activacion del plan y cierre del bloque documental inicial

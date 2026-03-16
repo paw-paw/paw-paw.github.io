@@ -8,7 +8,7 @@
 - Owner: `Codex + user`
 - Depende de:
   - `docs/README.md`
-  - `docs/plans/roadmap.md`
+  - `docs/plans/sprint-1/roadmap.md`
   - `docs/strategy/portfolio-strategy.md`
   - `docs/architecture/site-architecture.md`
   - `docs/content/content-system.md`
@@ -32,7 +32,7 @@ La fase existe para reemplazar placeholders estructurales por contenido aprobado
 ## 2. Fuente de verdad aplicable
 
 - [`docs/README.md`](/home/pawpaw/paw-paw.github.io/docs/README.md)
-- [`docs/plans/roadmap.md`](/home/pawpaw/paw-paw.github.io/docs/plans/roadmap.md)
+- [`docs/plans/sprint-1/roadmap.md`](/home/pawpaw/paw-paw.github.io/docs/plans/sprint-1/roadmap.md)
 - documentos contractuales aplicables:
   - [`docs/strategy/portfolio-strategy.md`](/home/pawpaw/paw-paw.github.io/docs/strategy/portfolio-strategy.md)
   - [`docs/architecture/site-architecture.md`](/home/pawpaw/paw-paw.github.io/docs/architecture/site-architecture.md)
@@ -92,7 +92,7 @@ Lista de condiciones previas para ejecutar la fase.
 
 - [x] [`docs/content/source-data-map.md`](/home/pawpaw/paw-paw.github.io/docs/content/source-data-map.md)
 - [x] [`docs/governance/decision-log.md`](/home/pawpaw/paw-paw.github.io/docs/governance/decision-log.md)
-- [x] [`docs/plans/phase-4.md`](/home/pawpaw/paw-paw.github.io/docs/plans/phase-4.md)
+- [x] [`docs/plans/sprint-1/phase-4.md`](/home/pawpaw/paw-paw.github.io/docs/plans/sprint-1/phase-4.md)
 
 ### No tocar
 
@@ -177,7 +177,7 @@ Lista de condiciones previas para ejecutar la fase.
 ### Bloque E — Cierre y consistencia
 
 - [x] registrar decisiones en [`docs/governance/decision-log.md`](/home/pawpaw/paw-paw.github.io/docs/governance/decision-log.md)
-- [x] actualizar estado y checklist de [`docs/plans/phase-4.md`](/home/pawpaw/paw-paw.github.io/docs/plans/phase-4.md)
+- [x] actualizar estado y checklist de [`docs/plans/sprint-1/phase-4.md`](/home/pawpaw/paw-paw.github.io/docs/plans/sprint-1/phase-4.md)
 - [x] verificar consistencia entre home, `/work`, `/experience`, navbar, CTA y canales de contacto
 
 ### Checkpoints interactivos previstos
@@ -198,7 +198,7 @@ Lista preventiva, no exhaustiva.
 - [`docs/content/content-master.md`](/home/pawpaw/paw-paw.github.io/docs/content/content-master.md)
 - [`docs/content/source-data-map.md`](/home/pawpaw/paw-paw.github.io/docs/content/source-data-map.md)
 - [`docs/governance/decision-log.md`](/home/pawpaw/paw-paw.github.io/docs/governance/decision-log.md)
-- [`docs/plans/phase-4.md`](/home/pawpaw/paw-paw.github.io/docs/plans/phase-4.md)
+- [`docs/plans/sprint-1/phase-4.md`](/home/pawpaw/paw-paw.github.io/docs/plans/sprint-1/phase-4.md)
 
 ### Codigo y contenido
 
@@ -258,7 +258,7 @@ Lista preventiva, no exhaustiva.
 ### Documentales
 
 - [x] verificar alineacion con [`docs/README.md`](/home/pawpaw/paw-paw.github.io/docs/README.md)
-- [x] verificar alineacion con [`docs/plans/roadmap.md`](/home/pawpaw/paw-paw.github.io/docs/plans/roadmap.md)
+- [x] verificar alineacion con [`docs/plans/sprint-1/roadmap.md`](/home/pawpaw/paw-paw.github.io/docs/plans/sprint-1/roadmap.md)
 - [x] verificar que `content-master.md` no contradiga estrategia, arquitectura ni sistema de contenido
 - [x] verificar que la capa `src/data/` no replique el schema bruto de `truth`
 

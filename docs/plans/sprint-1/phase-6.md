@@ -8,7 +8,7 @@
 - Owner: `Codex + user`
 - Depende de:
   - `docs/README.md`
-  - `docs/plans/roadmap.md`
+  - `docs/plans/sprint-1/roadmap.md`
   - `docs/strategy/portfolio-strategy.md`
   - `docs/architecture/site-architecture.md`
   - `docs/content/content-system.md`
@@ -33,7 +33,7 @@ La fase existe para pasar de una implementacion multiidioma funcional a una publ
 ## 2. Fuente de verdad aplicable
 
 - `docs/README.md`
-- `docs/plans/roadmap.md`
+- `docs/plans/sprint-1/roadmap.md`
 - documentos contractuales aplicables:
   - `docs/strategy/portfolio-strategy.md`
   - `docs/architecture/site-architecture.md`
@@ -44,7 +44,7 @@ La fase existe para pasar de una implementacion multiidioma funcional a una publ
 - documentos auxiliares aplicables:
   - `docs/content/content-master.md`
   - `docs/governance/decision-log.md`
-  - `docs/plans/phase-5.md`
+  - `docs/plans/sprint-1/phase-5.md`
 
 Nota:
 
@@ -61,7 +61,7 @@ Nota:
 
 - [x] `docs/architecture/i18n-spec.md` en estado `v1`
 - [x] `docs/delivery/deployment.md` en estado `v2`
-- [x] `docs/plans/phase-5.md` formalmente cerrada
+- [x] `docs/plans/sprint-1/phase-5.md` formalmente cerrada
 - [x] `docs/strategy/portfolio-strategy.md` en estado `done`
 - [x] `docs/architecture/site-architecture.md` en estado `done`
 
@@ -96,7 +96,7 @@ Nota:
 
 - [x] `docs/delivery/deployment.md`
 - [x] `docs/governance/decision-log.md`
-- [x] `docs/plans/phase-6.md`
+- [x] `docs/plans/sprint-1/phase-6.md`
 
 ### No tocar
 
@@ -207,7 +207,7 @@ Nota:
 - [x] revisar manualmente canonicals y alternates
 - [x] revisar manualmente bridges y rutas indexables/no indexables
 - [x] registrar decisiones de cierre en `docs/governance/decision-log.md`
-- [x] actualizar checklist y estado de `docs/plans/phase-6.md`
+- [x] actualizar checklist y estado de `docs/plans/sprint-1/phase-6.md`
 
 ### Checkpoints interactivos previstos
 
@@ -226,7 +226,7 @@ Nota:
 - `docs/delivery/seo-spec.md`
 - `docs/delivery/release-checklist.md`
 - `docs/governance/decision-log.md`
-- `docs/plans/phase-6.md`
+- `docs/plans/sprint-1/phase-6.md`
 
 ### Codigo
 
@@ -273,7 +273,7 @@ Nota:
 ### Documentales
 
 - [x] verificar alineacion con `docs/README.md`
-- [x] verificar alineacion con `docs/plans/roadmap.md`
+- [x] verificar alineacion con `docs/plans/sprint-1/roadmap.md`
 - [x] verificar que `docs/delivery/seo-spec.md` no contradiga `deployment.md` ni `i18n-spec.md`
 
 ### Tecnicas
@@ -327,7 +327,7 @@ La fase solo se considera cerrada si:
 ## 12. Registro de cambios del plan
 
 - Fecha: `2026-03-15`
-  - cambio: creacion inicial de `docs/plans/phase-6.md`
+  - cambio: creacion inicial de `docs/plans/sprint-1/phase-6.md`
   - razon: preparar la ejecucion de `Fase 6` con `GitHub Pages` como deploy real, SEO completo para `en/es`, OG base compartida y rutas puente fuera de la estrategia SEO primaria
 - Fecha: `2026-03-15`
   - cambio: activacion del plan y cierre del bloque tecnico-estructural inicial

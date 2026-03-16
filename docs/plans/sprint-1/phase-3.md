@@ -8,11 +8,11 @@
 - Owner: `Codex + user`
 - Depende de:
   - `docs/README.md`
-  - `docs/plans/roadmap.md`
+  - `docs/plans/sprint-1/roadmap.md`
   - `docs/strategy/portfolio-strategy.md`
   - `docs/architecture/site-architecture.md`
   - `docs/content/content-system.md`
-  - `docs/plans/phase-2.md`
+  - `docs/plans/sprint-1/phase-2.md`
 - Desbloquea:
   - `docs/content/content-master.md`
   - implementacion visual base coherente para `/`, `/work` y `/experience`
@@ -40,7 +40,7 @@ Esta fase existe para separar:
 ## 2. Fuente de verdad aplicable
 
 - `docs/README.md`
-- `docs/plans/roadmap.md`
+- `docs/plans/sprint-1/roadmap.md`
 - documentos contractuales aplicables:
   - `docs/strategy/portfolio-strategy.md`
   - `docs/architecture/site-architecture.md`
@@ -48,7 +48,7 @@ Esta fase existe para separar:
 - documentos auxiliares aplicables:
   - `docs/governance/decision-log.md`
   - `docs/governance/template-audit.md`
-  - `docs/plans/phase-2.md`
+  - `docs/plans/sprint-1/phase-2.md`
 
 Notas:
 
@@ -64,7 +64,7 @@ Notas:
 - [x] `docs/strategy/portfolio-strategy.md`
 - [x] `docs/architecture/site-architecture.md`
 - [x] `docs/content/content-system.md`
-- [x] `docs/plans/phase-2.md`
+- [x] `docs/plans/sprint-1/phase-2.md`
 
 ### Decisiones previas
 
@@ -98,7 +98,7 @@ Notas:
 ### Actualizar
 
 - [x] `docs/governance/decision-log.md`
-- [x] `docs/plans/phase-3.md`
+- [x] `docs/plans/sprint-1/phase-3.md`
 
 ### No tocar
 
@@ -191,7 +191,7 @@ Notas:
 - `docs/visual/visual-system.md`
 - `docs/visual/asset-plan.md`
 - `docs/governance/decision-log.md`
-- `docs/plans/phase-3.md`
+- `docs/plans/sprint-1/phase-3.md`
 
 ### Codigo
 
@@ -245,7 +245,7 @@ Notas:
 ### Documentales
 
 - [x] verificar alineacion con `docs/README.md`
-- [x] verificar alineacion con `docs/plans/roadmap.md`
+- [x] verificar alineacion con `docs/plans/sprint-1/roadmap.md`
 - [x] verificar que no se introdujeron decisiones fuera de contrato
 - [x] verificar que `visual-system.md` y `asset-plan.md` no contradicen estrategia, arquitectura o content-system
 

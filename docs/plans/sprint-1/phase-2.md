@@ -7,7 +7,7 @@ Es un documento auxiliar. No redefine precedencia, no sustituye contratos y no i
 Referencias base:
 
 - `docs/README.md`
-- `docs/plans/roadmap.md`
+- `docs/plans/sprint-1/roadmap.md`
 - `docs/plans/phase-template.md`
 - `docs/strategy/portfolio-strategy.md`
 - `docs/content/source-data-map.md`
@@ -49,7 +49,7 @@ Esta fase existe para evitar que `Fase 3` y `Fase 4` rediseñen o escriban sobre
 ## 2. Fuente de verdad aplicable
 
 - `docs/README.md`
-- `docs/plans/roadmap.md`
+- `docs/plans/sprint-1/roadmap.md`
 - documentos contractuales aplicables:
   - `docs/strategy/portfolio-strategy.md`
   - `docs/architecture/site-architecture.md` cuando se cree en esta fase
@@ -58,7 +58,7 @@ Esta fase existe para evitar que `Fase 3` y `Fase 4` rediseñen o escriban sobre
   - `docs/content/source-data-map.md`
   - `docs/governance/decision-log.md`
   - `docs/delivery/deployment.md` como restriccion tecnica ya definida
-  - `docs/plans/phase-1.md`
+  - `docs/plans/sprint-1/phase-1.md`
 
 Notas:
 
@@ -74,9 +74,9 @@ Notas:
 ### Documentos
 
 - [x] `docs/README.md`
-- [x] `docs/plans/roadmap.md`
+- [x] `docs/plans/sprint-1/roadmap.md`
 - [x] `docs/plans/phase-template.md`
-- [x] `docs/plans/phase-1.md`
+- [x] `docs/plans/sprint-1/phase-1.md`
 - [x] `docs/strategy/portfolio-strategy.md`
 - [x] `docs/content/source-data-map.md`
 - [x] `docs/governance/decision-log.md`
@@ -113,7 +113,7 @@ Notas:
 
 - [x] `docs/architecture/site-architecture.md`
 - [x] `docs/content/content-system.md`
-- [x] `docs/plans/phase-2.md`
+- [x] `docs/plans/sprint-1/phase-2.md`
 
 ### Actualizar
 
@@ -235,7 +235,7 @@ Recomendacion operativa:
 - `docs/content/content-system.md`
 - `docs/content/source-data-map.md`
 - `docs/governance/decision-log.md`
-- `docs/plans/phase-2.md`
+- `docs/plans/sprint-1/phase-2.md`
 
 ### Fuentes a inspeccionar
 
@@ -292,7 +292,7 @@ Recomendacion operativa:
 ### Documentales
 
 - [x] verificar alineacion con `docs/README.md`
-- [x] verificar alineacion con `docs/plans/roadmap.md`
+- [x] verificar alineacion con `docs/plans/sprint-1/roadmap.md`
 - [x] verificar que `site-architecture.md` cubre el contenido minimo contractual definido en `README.md`
 - [x] verificar que `content-system.md` cubre el contenido minimo contractual definido en `README.md`
 - [x] verificar que `source-data-map.md` ya define el mapping estructural sin invadir copy final

@@ -8,7 +8,7 @@
 - Owner: `Codex + user`
 - Depende de:
   - `docs/README.md`
-  - `docs/plans/roadmap.md`
+  - `docs/plans/sprint-1/roadmap.md`
   - `docs/strategy/portfolio-strategy.md`
   - `docs/architecture/site-architecture.md`
   - `docs/content/content-system.md`
@@ -16,7 +16,7 @@
   - `docs/architecture/i18n-spec.md`
   - `docs/delivery/deployment.md`
   - `docs/delivery/seo-spec.md`
-  - `docs/plans/phase-6.md`
+  - `docs/plans/sprint-1/phase-6.md`
   - cierre efectivo de `Fase 6.5`
 - Desbloquea:
   - cierre premium y estable del sitio publico
@@ -35,7 +35,7 @@ La fase existe para cerrar polish, legibilidad, CTA hierarchy, responsive y micr
 ## 2. Fuente de verdad aplicable
 
 - `docs/README.md`
-- `docs/plans/roadmap.md`
+- `docs/plans/sprint-1/roadmap.md`
 - documentos contractuales aplicables:
   - `docs/strategy/portfolio-strategy.md`
   - `docs/architecture/site-architecture.md`
@@ -48,8 +48,8 @@ La fase existe para cerrar polish, legibilidad, CTA hierarchy, responsive y micr
   - `docs/governance/template-audit.md`
   - `docs/governance/decision-log.md`
   - `docs/delivery/seo-spec.md`
-  - `docs/plans/phase-6.md`
-  - `docs/plans/security-remediation-roadmap.md`
+  - `docs/plans/sprint-1/phase-6.md`
+  - `docs/plans/sprint-1/security-remediation-roadmap.md`
 
 Nota:
 
@@ -70,8 +70,8 @@ Nota:
 - [x] `docs/visual/visual-system.md` en estado `done`
 - [x] `docs/architecture/i18n-spec.md` en estado `done`
 - [x] `docs/delivery/deployment.md` en estado `v3`
-- [x] `docs/plans/phase-6.md` formalmente cerrada
-- [x] `docs/plans/security-remediation-roadmap.md` formalmente cerrado
+- [x] `docs/plans/sprint-1/phase-6.md` formalmente cerrada
+- [x] `docs/plans/sprint-1/security-remediation-roadmap.md` formalmente cerrado
 - [x] backtrack completo de la primera tentativa fallida de `Fase 7`
 
 ### Decisiones previas
@@ -112,7 +112,7 @@ Nota:
 ### Actualizar
 
 - [x] `docs/governance/decision-log.md`
-- [x] `docs/plans/phase-7.md`
+- [x] `docs/plans/sprint-1/phase-7.md`
 
 ### Actualizar solo si aparece cambio contractual real
 
@@ -241,7 +241,7 @@ Nota:
 - [x] revisar comportamiento responsive en paginas activas
 - [x] revisar motion real y estabilidad visual en scroll/capturas si aplica
 - [x] registrar decisiones finales en `docs/governance/decision-log.md`
-- [x] actualizar checklist y estado de `docs/plans/phase-7.md`
+- [x] actualizar checklist y estado de `docs/plans/sprint-1/phase-7.md`
 
 ### Checkpoints interactivos previstos
 
@@ -258,7 +258,7 @@ Nota:
 
 - `docs/visual/interaction-spec.md`
 - `docs/governance/decision-log.md`
-- `docs/plans/phase-7.md`
+- `docs/plans/sprint-1/phase-7.md`
 - `docs/visual/visual-system.md` solo si aparece una regla visual contractual nueva
 - `docs/content/content-system.md` solo si cambia una regla visible de CTA o evidencia
 
@@ -314,7 +314,7 @@ Nota:
 ### Documentales
 
 - [x] verificar alineacion con `docs/README.md`
-- [x] verificar alineacion con `docs/plans/roadmap.md`
+- [x] verificar alineacion con `docs/plans/sprint-1/roadmap.md`
 - [x] verificar que no se introdujeron decisiones fuera de contrato
 - [x] verificar que `interaction-spec.md` no contradice `visual-system.md`
 

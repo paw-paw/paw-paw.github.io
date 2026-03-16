@@ -7,9 +7,9 @@ Es un documento auxiliar. No redefine precedencia, no sustituye contratos y no i
 Referencias base:
 
 - `docs/README.md`
-- `docs/plans/roadmap.md`
+- `docs/plans/sprint-1/roadmap.md`
 - `docs/plans/phase-template.md`
-- `docs/plans/phase-0a.md`
+- `docs/plans/sprint-1/phase-0a.md`
 - `docs/governance/template-audit.md`
 - `docs/governance/decision-log.md`
 
@@ -47,12 +47,12 @@ Esta fase existe para evitar que `Fase 1` y las siguientes construyan sobre una 
 ## 2. Fuente de verdad aplicable
 
 - `docs/README.md`
-- `docs/plans/roadmap.md`
+- `docs/plans/sprint-1/roadmap.md`
 - documentos contractuales aplicables:
   - ninguno de estrategia, arquitectura, contenido o visual todavia
   - `docs/delivery/deployment.md` cuando se cree en esta fase
 - documentos auxiliares aplicables:
-  - `docs/plans/phase-0a.md`
+  - `docs/plans/sprint-1/phase-0a.md`
   - `docs/governance/template-audit.md`
   - `docs/governance/decision-log.md`
 
@@ -70,9 +70,9 @@ Notas:
 ### Documentos
 
 - [x] `docs/README.md`
-- [x] `docs/plans/roadmap.md`
+- [x] `docs/plans/sprint-1/roadmap.md`
 - [x] `docs/plans/phase-template.md`
-- [x] `docs/plans/phase-0a.md`
+- [x] `docs/plans/sprint-1/phase-0a.md`
 - [x] `docs/governance/template-audit.md`
 - [x] `docs/governance/decision-log.md`
 
@@ -102,7 +102,7 @@ Notas:
 ### Crear
 
 - [x] `docs/delivery/deployment.md`
-- [x] `docs/plans/phase-0b.md`
+- [x] `docs/plans/sprint-1/phase-0b.md`
 
 ### Actualizar
 
@@ -112,7 +112,7 @@ Notas:
 ### No tocar
 
 - [ ] documentos contractuales de `strategy/`, `architecture/`, `content/` o `visual/`
-- [ ] `docs/plans/roadmap.md`, salvo que aparezca una contradiccion nueva que obligue a refinar alcance
+- [ ] `docs/plans/sprint-1/roadmap.md`, salvo que aparezca una contradiccion nueva que obligue a refinar alcance
 
 ---
 
@@ -206,7 +206,7 @@ Recomendacion operativa:
 - `docs/delivery/deployment.md`
 - `docs/governance/template-audit.md`
 - `docs/governance/decision-log.md`
-- `docs/plans/phase-0b.md`
+- `docs/plans/sprint-1/phase-0b.md`
 
 ### Codigo y config
 
@@ -263,7 +263,7 @@ Recomendacion operativa:
 ### Documentales
 
 - [x] verificar alineacion con `docs/README.md`
-- [x] verificar alineacion con `docs/plans/roadmap.md`
+- [x] verificar alineacion con `docs/plans/sprint-1/roadmap.md`
 - [x] verificar que no se introdujeron decisiones fuera de contrato
 - [x] verificar que `docs/delivery/deployment.md` distingue entre placeholder temporal y decisiones finales pendientes
 

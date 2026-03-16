@@ -8,9 +8,9 @@
 - Owner: `Codex + user`
 - Depende de:
   - `docs/README.md`
-  - `docs/plans/roadmap.md`
-  - `docs/plans/security-remediation-roadmap.md`
-  - `docs/plans/SR/SR1.md`
+  - `docs/plans/sprint-1/roadmap.md`
+  - `docs/plans/sprint-1/security-remediation-roadmap.md`
+  - `docs/plans/sprint-1/SR/SR1.md`
   - cierre efectivo de `SR-1`
 - Desbloquea:
   - `SR-3`
@@ -29,16 +29,16 @@ Al cerrarla, el sitio debe seguir buildando, el baseline residual debe quedar ma
 ## 2. Fuente de verdad aplicable
 
 - `docs/README.md`
-- `docs/plans/roadmap.md`
+- `docs/plans/sprint-1/roadmap.md`
 - documentos contractuales aplicables:
   - `docs/delivery/deployment.md`
   - `docs/architecture/i18n-spec.md`
   - `docs/architecture/site-architecture.md`
   - `docs/visual/visual-system.md`
 - documentos auxiliares aplicables:
-  - `docs/plans/security-remediation-roadmap.md`
-  - `docs/plans/SR/SR1.md`
-  - `docs/plans/phase-6.md`
+  - `docs/plans/sprint-1/security-remediation-roadmap.md`
+  - `docs/plans/sprint-1/SR/SR1.md`
+  - `docs/plans/sprint-1/phase-6.md`
   - `docs/delivery/release-checklist.md`
   - `docs/governance/decision-log.md`
 
@@ -55,8 +55,8 @@ Nota:
 
 ### Documentos
 
-- [x] `docs/plans/security-remediation-roadmap.md` en estado `active`
-- [x] `docs/plans/SR/SR1.md` en estado `done`
+- [x] `docs/plans/sprint-1/security-remediation-roadmap.md` en estado `active`
+- [x] `docs/plans/sprint-1/SR/SR1.md` en estado `done`
 - [x] `docs/delivery/deployment.md` vigente
 
 ### Decisiones previas
@@ -91,11 +91,11 @@ Nota:
 
 ### Crear
 
-- [x] `docs/plans/SR/SR2.md`
+- [x] `docs/plans/sprint-1/SR/SR2.md`
 
 ### Actualizar
 
-- [x] `docs/plans/security-remediation-roadmap.md`
+- [x] `docs/plans/sprint-1/security-remediation-roadmap.md`
 - [x] `docs/governance/decision-log.md`
 
 ### No tocar
@@ -179,7 +179,7 @@ Nota:
 - [x] separar explicitamente:
   - [x] riesgo resuelto en `SR-2`
   - [x] riesgo que pasa a `SR-3`
-- [x] actualizar `docs/plans/security-remediation-roadmap.md`
+- [x] actualizar `docs/plans/sprint-1/security-remediation-roadmap.md`
 - [x] registrar decisiones y residual en `docs/governance/decision-log.md`
 
 ### Checkpoints interactivos previstos
@@ -195,8 +195,8 @@ Nota:
 
 ### Docs
 
-- `docs/plans/SR/SR2.md`
-- `docs/plans/security-remediation-roadmap.md`
+- `docs/plans/sprint-1/SR/SR2.md`
+- `docs/plans/sprint-1/security-remediation-roadmap.md`
 - `docs/governance/decision-log.md`
 
 ### Codigo y config
@@ -241,8 +241,8 @@ Nota:
 ### Documentales
 
 - [ ] verificar alineacion con `docs/README.md`
-- [ ] verificar alineacion con `docs/plans/roadmap.md`
-- [ ] verificar alineacion con `docs/plans/security-remediation-roadmap.md`
+- [ ] verificar alineacion con `docs/plans/sprint-1/roadmap.md`
+- [ ] verificar alineacion con `docs/plans/sprint-1/security-remediation-roadmap.md`
 - [ ] verificar que `SR-2` no invada el scope final de `SR-3`
 
 ### Tecnicas

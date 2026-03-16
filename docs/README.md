@@ -10,7 +10,7 @@ Si hay conflicto entre documentos de esta carpeta, usa esta precedencia:
 
 1. `README.md`
 2. documentos contractuales
-3. `plans/roadmap.md` para secuencia, dependencias y momento de creación
+3. roadmap activo o historico aplicable en `plans/`
 4. documentos auxiliares, siempre que no contradigan niveles superiores
 
 Entre documentos contractuales, usa esta precedencia:
@@ -52,7 +52,7 @@ La documentación se organiza por dominio de trabajo, no por fase.
 - `content/`: sistema de contenido y contenido maestro
 - `visual/`: sistema visual, assets e interacción
 - `delivery/`: deployment, SEO y release
-- `plans/`: roadmap y planes operativos por fase
+- `plans/`: templates, roadmaps archivados y planes operativos por sprint o fase
 
 ---
 
@@ -61,7 +61,8 @@ La documentación se organiza por dominio de trabajo, no por fase.
 | Documento | Tipo final | Fase inicial | Estado | Notas de alcance |
 |-----------|------------|--------------|--------|------------------|
 | `README.md` | Gobierno | Pre-Fase 0 | Preservar y expandir | Define precedencia, taxonomía documental, fases iniciales y reglas de mantenimiento. No contiene decisiones de producto, diseño o implementación. |
-| `plans/roadmap.md` | Gobierno | Pre-Fase 0 | Preservar y actualizar | Define secuencia de trabajo, dependencias, checklist y criterio de cierre por fase. No redefine la precedencia ni sustituye contratos. |
+| `plans/sprint-1/roadmap.md` | Gobierno | Pre-Fase 0 | Preservar y archivar | Define la secuencia ejecutada, dependencias, checklist y criterio de cierre del Sprint 1. No redefine la precedencia ni sustituye contratos. |
+| `plans/roadmap-template.md` | Gobierno | Post-Sprint 1 | Crear y preservar | Template para futuros roadmaps o etapas amplias. No sustituye un roadmap ejecutado ni define decisiones por sí solo. |
 | `governance/decision-log.md` | Auxiliar | Fase 0 | Crear y preservar | Registra decisiones tomadas, cambios de criterio y documentos afectados. No introduce verdad contractual nueva por sí solo. |
 | `governance/template-audit.md` | Auxiliar | Fase 0 | Preservar | Documenta inventario del template, incoherencias, riesgos y decisiones de conservación o reescritura. No define el estado final del sitio. |
 | `delivery/deployment.md` | Contractual | Fase 0 | Preservar | Define dominio, hosting, build/deploy, base path y restricciones estructurales de routing, SEO y assets. No lista copy SEO por página. |
@@ -88,13 +89,19 @@ Debe responder:
 - ¿En qué fase inicial debe aparecer cada documento?
 - ¿Qué reglas de mantenimiento y alineación deben cumplirse?
 
-### `plans/roadmap.md`
+### `plans/sprint-1/roadmap.md`
 Debe responder:
 - ¿Qué fases existen y en qué orden se ejecutan?
 - ¿Qué documentos deben nacer o cerrarse en cada fase?
 - ¿Qué dependencias existen entre fases?
 - ¿Qué cambios de implementación desbloquea cada fase?
 - ¿Cuál es el criterio de cierre de cada fase?
+
+### `plans/roadmap-template.md`
+Debe responder:
+- ¿Qué estructura debe seguir un roadmap nuevo?
+- ¿Qué bloques mínimos de alcance, dependencias, validaciones y cierre deben declararse?
+- ¿Cómo separar trabajo ejecutado de trabajo futuro sin convertir el template en una verdad de producto?
 
 ### `governance/decision-log.md`
 Debe responder:
@@ -214,7 +221,7 @@ Debe responder:
 - No tratar el código como sustituto de una spec faltante.
 - No crear documentos nuevos sin una necesidad clara.
 - Si hace falta un documento adicional, primero justificar por qué no cabe en uno existente.
-- `plans/roadmap.md` debe mantenerse alineado con el mapa documental de este `README.md`.
+- el roadmap activo o historico aplicable en `plans/` debe mantenerse alineado con el mapa documental de este `README.md`.
 
 ---
 

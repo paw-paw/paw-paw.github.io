@@ -8,7 +8,7 @@ Antes de usarlo:
 
 - confirma que la fase ya es la activa o la siguiente en cola
 - revisa `docs/README.md`
-- revisa `docs/plans/roadmap.md`
+- revisa el roadmap activo o historico aplicable en `docs/plans/`
 - revisa los documentos contractuales ya existentes que apliquen
 
 ---
@@ -41,7 +41,7 @@ Incluye:
 Lista aquí qué documentos mandan para esta fase.
 
 - `docs/README.md`
-- `docs/plans/roadmap.md`
+- roadmap activo o historico aplicable en `docs/plans/`
 - documentos contractuales aplicables:
 - documentos auxiliares aplicables:
 
@@ -170,7 +170,7 @@ Define qué validaciones deben ejecutarse al cierre de la fase.
 ### Documentales
 
 - [ ] verificar alineación con `docs/README.md`
-- [ ] verificar alineación con `docs/plans/roadmap.md`
+- [ ] verificar alineación con el roadmap aplicable en `docs/plans/`
 - [ ] verificar que no se introdujeron decisiones fuera de contrato
 
 ### Técnicas
@@ -214,4 +214,3 @@ La fase solo se considera cerrada si:
 - Fecha:
   - cambio:
   - razón:
-
