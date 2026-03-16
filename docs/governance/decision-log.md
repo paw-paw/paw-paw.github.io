@@ -247,6 +247,98 @@
 
 ---
 
+## 2026-03-15 — Inicio formal de la remediacion de seguridad post-Fase 6
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `6.5`
+
+### Decision / registro
+
+- se aprueba y ejecuta `SR-0` del roadmap auxiliar de remediacion de seguridad
+- la remediacion queda formalmente ubicada entre `Fase 6` y `Fase 7`
+- el baseline tecnico de seguridad queda confirmado antes de cualquier upgrade
+
+### Evidencia
+
+- `npm audit` confirma:
+  - `9 high`
+  - `3 moderate`
+  - `2 low`
+  - `14` paquetes afectados
+- `npm run build` completa correctamente
+- el origen confirmado del riesgo hoy se concentra en:
+  - directos:
+    - `astro`
+    - `preact`
+    - `astro-compress`
+  - transitivos:
+    - `devalue`
+    - `h3`
+    - `rollup`
+    - `vite`
+    - `glob`
+    - `minimatch`
+    - `js-yaml`
+    - `mdast-util-to-hast`
+    - `svgo`
+
+### Impacto
+
+- `SR-1` queda desbloqueada
+- la remediacion deja de ser una idea general y pasa a un frente tecnico activo
+- `Fase 7` no deberia ejecutarse sobre el stack actual sin resolver antes este frente o aceptarlo explicitamente
+
+### Documentos afectados
+
+- `docs/plans/security-remediation-roadmap.md`
+
+---
+
+## 2026-03-15 — Cierre de SR-1 sobre la ruta segura de Astro 5
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `6.5 / SR-1`
+
+### Decision / registro
+
+- `SR-1` queda cerrada sin saltar a `Astro 6`
+- el intento de salto mayor se descarta en esta subfase por conflicto formal de peer dependency con `@astrojs/tailwind`
+- el upgrade directo efectivo se cierra sobre:
+  - `astro@5.18.1`
+  - `@astrojs/preact@4.1.3`
+  - `preact@10.29.0`
+  - `@astrojs/sitemap@3.7.1`
+
+### Evidencia
+
+- `npm install` completa correctamente
+- `npm run build` completa correctamente
+- `npm audit` baja de:
+  - `9 high / 3 moderate / 2 low / 14 paquetes`
+  - a `5 high / 1 moderate / 1 low / 7 paquetes`
+- checks automatizados sobre `dist/` confirman:
+  - paginas localizadas generadas
+  - sitemap presente
+  - metadata base presente en locales
+  - rutas puente siguen no indexables
+
+### Impacto
+
+- el bloque directo mas riesgoso queda saneado
+- `SR-2` queda desbloqueada
+- el riesgo residual se concentra ahora en transitivas y en `astro-compress`
+
+### Documentos afectados
+
+- `docs/plans/SR/SR1.md`
+- `docs/plans/security-remediation-roadmap.md`
+
+---
+
 ## 2026-03-12 — Direccion visual base de Fase 3
 
 ### Estado
