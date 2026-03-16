@@ -1145,3 +1145,33 @@
 - `src/components/sections/Contact.astro`
 - `src/pages/en/**`
 - `src/pages/es/**`
+
+---
+
+## 2026-03-16 — Root bridge con metadata social en ingles
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `post-7`
+
+### Decision / registro
+
+- `/` sigue siendo un bridge inteligente de locale
+- `/` no entra en la estrategia SEO primaria
+- aun asi `/` ahora emite metadata social en ingles para previews de sharing
+
+### Razon
+
+- plataformas como WhatsApp leen el HTML del root bridge pero no ejecutan su redirect JS
+- sin esa metadata, el preview de la URL principal muestra solo `Redirecting…`
+- la solucion aprobada fue hacer `/` share-safe sin convertirlo en ruta canonica
+
+### Documentos afectados
+
+- `docs/architecture/i18n-spec.md`
+- `docs/delivery/seo-spec.md`
+
+### Implementacion afectada
+
+- `src/pages/index.astro`

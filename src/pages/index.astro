@@ -1,6 +1,10 @@
 ---
-const segment = '';
-const suffix = '/';
+import profileImg from '../assets/paulo-hero.png';
+import { getSeoEntry } from '../utils/seo';
+
+const seo = getSeoEntry('en', 'home');
+const canonicalUrl = new URL('/', Astro.site!).href;
+const previewImage = new URL(profileImg.src, Astro.site!).href;
 ---
 
 <!doctype html>
@@ -8,8 +12,20 @@ const suffix = '/';
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Redirecting…</title>
+    <title>{seo.title}</title>
+    <meta name="description" content={seo.description} />
     <meta name="robots" content="noindex" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={seo.title} />
+    <meta property="og:description" content={seo.description} />
+    <meta property="og:image" content={previewImage} />
+    <meta property="og:site_name" content="Paulo Tuya" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalUrl} />
+    <meta property="twitter:title" content={seo.title} />
+    <meta property="twitter:description" content={seo.description} />
+    <meta property="twitter:image" content={previewImage} />
   </head>
   <body>
     <noscript>

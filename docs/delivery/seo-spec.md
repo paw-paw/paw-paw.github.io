@@ -66,6 +66,16 @@ Tratamiento requerido:
 - fuera de `alternates`
 - fuera del sitemap
 
+### Excepcion de share metadata para `/`
+
+- `/` puede emitir `title`, `description`, OG y Twitter metadata para social sharing
+- esa metadata debe estar en ingles y alineada con la home `en`
+- esto no cambia su tratamiento SEO:
+  - sigue siendo `noindex`
+  - sigue fuera del sitemap
+  - sigue fuera de `alternates`
+  - no pasa a ser home canonica
+
 ### Politica OG
 
 - se usa una imagen base compartida en esta fase

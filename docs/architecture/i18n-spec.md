@@ -62,6 +62,19 @@ Debe actuar como entrada inteligente de locale con esta prioridad:
 2. idioma del navegador, si coincide con un locale soportado
 3. fallback a `/en/`
 
+### Metadata del root bridge
+
+- `/` sigue sin ser home canonica de contenido ni URL SEO primaria
+- aun asi puede emitir metadata social utilizable para previews al compartirse
+- esa metadata debe:
+  - estar en ingles
+  - ser coherente con la home `en`
+  - no convertir `/` en ruta indexable ni en canonical primaria
+
+### Razon
+
+Algunas plataformas de sharing como WhatsApp no ejecutan el redirect JS del bridge y solo leen el HTML crudo. Por eso `/` necesita metadata de share aunque siga fuera de la estrategia SEO primaria.
+
 ### Persistencia
 
 La preferencia manual de idioma debe persistirse para visitas futuras.
