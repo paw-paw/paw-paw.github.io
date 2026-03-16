@@ -2,14 +2,16 @@
 import Layout from '../../layouts/Layout.astro';
 import { t } from '../../utils/i18n';
 import { getSelectedWork } from '../../data/selected-work';
+import { getSeoEntry } from '../../utils/seo';
 
 const lang = 'en';
 const selectedWork = getSelectedWork(lang);
+const seo = getSeoEntry(lang, 'work');
 ---
 
 <Layout
-  title={`${t('nav.work', lang)} | ${t('site.title', lang)}`}
-  description={t('projects.pageDescription', lang)}
+  title={seo.title}
+  description={seo.description}
   lang={lang}
 >
   <section class="section-padding pt-28 md:pt-36">

@@ -2,13 +2,15 @@
 import Layout from '../../layouts/Layout.astro';
 import Contact from '../../components/sections/Contact.astro';
 import { t } from '../../utils/i18n';
+import { getSeoEntry } from '../../utils/seo';
 
 const lang = 'en';
+const seo = getSeoEntry(lang, 'contact');
 ---
 
 <Layout
-  title={`${t('nav.contact', lang)} | ${t('site.title', lang)}`}
-  description={t('contactPage.subtitle', lang)}
+  title={seo.title}
+  description={seo.description}
   lang={lang}
 >
   <section class="section-padding contact-page-intro-compact pt-28 md:pt-36">

@@ -2,14 +2,16 @@
 import Layout from '../../layouts/Layout.astro';
 import { t } from '../../utils/i18n';
 import { getExperienceItems } from '../../data/experience';
+import { getSeoEntry } from '../../utils/seo';
 
 const lang = 'en';
 const experienceItems = getExperienceItems(lang);
+const seo = getSeoEntry(lang, 'experience');
 ---
 
 <Layout
-  title={`${t('nav.experience', lang)} | ${t('site.title', lang)}`}
-  description={t('experiencePage.description', lang)}
+  title={seo.title}
+  description={seo.description}
   lang={lang}
 >
   <section class="section-padding pt-28 md:pt-36">

@@ -788,3 +788,90 @@
 - `docs/delivery/seo-spec.md`
 - `docs/delivery/release-checklist.md`
 - trabajo de `Fase 6`
+
+---
+
+## 2026-03-15 — Politica SEO estructural de Fase 6
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `6`
+
+### Decision / registro
+
+- `GitHub Pages` en `https://paw-paw.github.io/` se trata como publicacion real de `Fase 6`
+- cada pagina localizada usa `self-canonical`
+- cada pagina localizada emite:
+  - alternate `en`
+  - alternate `es`
+  - `x-default`
+- `x-default` apunta a la version `en` equivalente
+- `/`, `/work/`, `/experience/` y `/contact/` quedan fuera de la estrategia SEO primaria
+- las rutas puente quedan fuera del sitemap
+- la estrategia OG de esta fase usa una imagen base compartida, sin producir una bateria nueva de assets OG por pagina
+
+### Razon
+
+- `Fase 5` ya cerro la estructura i18n y dejo claro que las rutas puente no son home canonica ni contenido primario
+- `Fase 6` necesita una politica SEO consistente con esa arquitectura, no una capa mezclada entre rutas localizadas y puentes inteligentes
+- usar una OG base compartida permite cerrar metadata y deploy sin abrir produccion visual propia de `Fase 7`
+
+### Documentos afectados
+
+- `docs/delivery/deployment.md`
+- `docs/delivery/seo-spec.md`
+- `docs/delivery/release-checklist.md`
+- `docs/plans/phase-6.md`
+
+### Implementacion afectada
+
+- `astro.config.mjs`
+- `src/layouts/Layout.astro`
+- `src/utils/seo.ts`
+- `src/pages/en/**`
+- `src/pages/es/**`
+
+---
+
+## 2026-03-15 — Cierre aprobado de Fase 6
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `6`
+
+### Decision / registro
+
+- `Fase 6` queda formalmente cerrada
+- el criterio de cierre aprobado para esta fase fue:
+  - verificacion local completa
+  - sin exigir deploy publico inmediato
+- la capa SEO y metadata queda aprobada con:
+  - `canonical` por locale
+  - `hreflang` recíproco
+  - `x-default` a `en`
+  - rutas puente fuera del sitemap
+  - rutas puente no indexables
+
+### Razon
+
+- el usuario aprobo que la fase no dependiera de una verificacion publica inmediata en `GitHub Pages`
+- la verificacion local ya confirmo consistencia entre:
+  - metadata por pagina
+  - sitemap
+  - `robots.txt`
+  - rutas puente
+  - build final
+
+### Documentos afectados
+
+- `docs/delivery/deployment.md`
+- `docs/delivery/seo-spec.md`
+- `docs/delivery/release-checklist.md`
+- `docs/plans/phase-6.md`
+
+### Desbloquea
+
+- `docs/visual/interaction-spec.md`
+- trabajo de `Fase 7`

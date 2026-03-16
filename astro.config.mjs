@@ -4,6 +4,13 @@ import sitemap from '@astrojs/sitemap';
 import compress from 'astro-compress';
 import preact from '@astrojs/preact';
 
+const bridgeUrls = [
+  'https://paw-paw.github.io/',
+  'https://paw-paw.github.io/work/',
+  'https://paw-paw.github.io/experience/',
+  'https://paw-paw.github.io/contact/',
+];
+
 export default defineConfig({
   site: 'https://paw-paw.github.io/',
   output: 'static',
@@ -18,7 +25,11 @@ export default defineConfig({
   },
 
   // Integrations
-  integrations: [tailwind(), sitemap(), compress({
+  integrations: [tailwind(), sitemap({
+    filter(page) {
+      return !bridgeUrls.includes(page);
+    },
+  }), compress({
     css: true,
     html: true,
     js: true,

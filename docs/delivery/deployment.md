@@ -4,24 +4,24 @@
 
 - Tipo: `contractual`
 - Fase inicial: `0B`
-- Estado: `v2`
+- Estado: `v3`
 - Ultima actualizacion: `2026-03-15`
 
 ---
 
 ## Objetivo
 
-Definir la verdad tecnica de publicacion del sitio durante las fases previas al deployment final y su transicion desde monoidioma a multiidioma controlado.
+Definir la verdad tecnica de publicacion del sitio durante la transicion desde base neutralizada a publicacion real multiidioma en `GitHub Pages`.
 
-Esta version sigue sin fijar dominio custom final, pero ya incorpora la politica estructural de i18n nacida en `Fase 5`.
+Esta version sigue sin fijar dominio custom final, pero ya trata `paw-paw.github.io` como publicacion real de `Fase 6`.
 
 ---
 
-## Publicacion temporal acordada
+## Publicacion real vigente
 
-- Hosting temporal: `GitHub Pages`
-- Modelo temporal: `user site`
-- URL temporal canonica: `https://paw-paw.github.io/`
+- Hosting vigente: `GitHub Pages`
+- Modelo vigente: `user site`
+- URL canonica vigente: `https://paw-paw.github.io/`
 - Dominio custom final: `pendiente`
 - Base path: `no`
 
@@ -43,11 +43,11 @@ Esta version sigue sin fijar dominio custom final, pero ya incorpora la politica
 - generar salida estatica con `npm run build`
 - publicar la carpeta `dist/`
 
-### Deploy temporal esperado
+### Deploy esperado
 
-- el deployment temporal debe quedar preparado para GitHub Pages
-- `Netlify` deja de ser la verdad tecnica activa del proyecto
-- si persisten artefactos de Netlify durante `0B`, deben tratarse como residuo temporal o eliminarse en esta misma fase
+- el deployment vigente debe cerrar sobre `GitHub Pages`
+- `Netlify` no forma parte de la verdad tecnica activa del proyecto
+- cualquier artefacto heredado de Netlify sigue siendo residuo tecnico y no debe condicionar el release actual
 
 ---
 
@@ -77,8 +77,11 @@ Esta version sigue sin fijar dominio custom final, pero ya incorpora la politica
 ### SEO y metadata
 
 - sitemap y canonicals deben alinearse con `https://paw-paw.github.io/`
-- mientras no cierre `Fase 6`, esta spec solo obliga a que la estructura multiidioma no rompa canonicals ni metadata base
-- los detalles finales de alternates, `hreflang` y estrategia SEO por locale pertenecen a `Fase 6`
+- desde `Fase 6`, alternates, `hreflang`, `x-default` y metadata por pagina deben alinearse con la estrategia SEO aprobada
+- cada pagina localizada debe usar `self-canonical`
+- `x-default` debe apuntar a la version `en` equivalente
+- las rutas puente no forman parte de la estrategia SEO primaria
+- las rutas puente deben quedar fuera del sitemap
 - cualquier JSON-LD o metadata que use dominio o identidad heredados debe seguir neutralizado
 
 ### Assets
@@ -92,5 +95,4 @@ Esta version sigue sin fijar dominio custom final, pero ya incorpora la politica
 
 - definir dominio custom final
 - definir workflow final de deploy si deja de usarse GitHub Pages
-- definir estrategia SEO final de `Fase 6`
-- ajustar publish/release final multiidioma de `Fase 6`
+- producir imagenes OG dedicadas si luego se consideran necesarias

@@ -2,10 +2,11 @@
 import Navbar from '../components/layout/Navbar.astro';
 import Footer from '../components/sections/Footer.astro';
 import '../styles/global.css';
-import { t } from '../utils/i18n';
+import { normalizeLocale, t } from '../utils/i18n';
 import faviconAsset from '../assets/favicon.svg';
 import profileImg from '../assets/paulo-hero.png';
 import { name, linkedin_url, instagram_url } from '../utils/me';
+import { defaultIndexedUrl } from '../utils/seo';
 
 export interface Props {
   title?: string;
@@ -13,7 +14,7 @@ export interface Props {
   lang?: string;
 }
 
-const lang = Astro.props.lang || 'en';
+const lang = normalizeLocale(Astro.props.lang || 'en');
 
 const {
   title = t('site.title', lang),
@@ -21,6 +22,12 @@ const {
 } = Astro.props;
 
 const sameAs = [linkedin_url, instagram_url].filter(Boolean);
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site!).href;
+const pathWithoutLocale = Astro.url.pathname.replace(/^\/(en|es)(?=\/|$)/, '') || '/';
+const normalizedPath = pathWithoutLocale.startsWith('/') ? pathWithoutLocale : `/${pathWithoutLocale}`;
+const alternateEn = new URL(`/en${normalizedPath === '/' ? '/' : normalizedPath}`, Astro.site!).href;
+const alternateEs = new URL(`/es${normalizedPath === '/' ? '/' : normalizedPath}`, Astro.site!).href;
+const websiteUrl = defaultIndexedUrl;
 ---
 
 <!DOCTYPE html>
@@ -32,17 +39,20 @@ const sameAs = [linkedin_url, instagram_url].filter(Boolean);
     <title>{title}</title>
 
     <link rel="icon" type="image/svg+xml" href={faviconAsset.src} />
-    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site!).href} />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="alternate" hreflang="en" href={alternateEn} />
+    <link rel="alternate" hreflang="es" href={alternateEs} />
+    <link rel="alternate" hreflang="x-default" href={alternateEn} />
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content={new URL(Astro.url.pathname, Astro.site!).href} />
+    <meta property="og:url" content={canonicalUrl} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={new URL(profileImg.src, Astro.site!).href} />
-    <meta property="og:site_name" content={t('site.title', lang)} />
+    <meta property="og:site_name" content="Paulo Tuya" />
 
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content={new URL(Astro.url.pathname, Astro.site!).href} />
+    <meta property="twitter:url" content={canonicalUrl} />
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={new URL(profileImg.src, Astro.site!).href} />
@@ -55,14 +65,14 @@ const sameAs = [linkedin_url, instagram_url].filter(Boolean);
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "url": Astro.site!.href,
-      "name": t('site.title', lang)
+      "url": websiteUrl,
+      "name": "Paulo Tuya"
     })} />
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Person",
       "name": name,
-      "url": Astro.site!.href,
+      "url": websiteUrl,
       "image": new URL(profileImg.src, Astro.site!).href,
       "jobTitle": t('hero.role', lang),
       "description": description,
