@@ -258,6 +258,35 @@
 
 - se aprueba y ejecuta `SR-0` del roadmap auxiliar de remediacion de seguridad
 - la remediacion queda formalmente ubicada entre `Fase 6` y `Fase 7`
+
+---
+
+## 2026-03-16 — Segunda tentativa de Fase 7 con motion conservadora
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `7`
+
+### Decision / registro
+
+- la segunda tentativa de `Fase 7` queda activada tras el backtrack completo del intento anterior
+- `AOS` se mantiene como motor principal de reveals simples
+- `GSAP` queda acotado a microinteraccion y refuerzos puntuales
+- la regla de visibilidad no vuelve al modelo totalmente conservador:
+  - ciertos bloques pueden iniciar ocultos
+  - pero solo con fallback explicito por eventos de viewport y refresh
+
+### Razon
+
+- el intento anterior demostro que una capa nueva de reveals dependientes de scroll podia dejar huecos persistentes en capturas y estados de refresh
+- la ruta mas segura para esta fase es pulir el sistema heredado, no reemplazarlo otra vez
+- se preserva margen para ciertos reveals visibles, pero con restricciones tecnicas mas claras
+
+### Documentos afectados
+
+- `docs/plans/phase-7.md`
+- `docs/visual/interaction-spec.md`
 - el baseline tecnico de seguridad queda confirmado antes de cualquier upgrade
 
 ### Evidencia
@@ -1070,3 +1099,49 @@
 
 - `docs/visual/interaction-spec.md`
 - trabajo de `Fase 7`
+
+---
+
+## 2026-03-16 — Cierre aprobado de Fase 7
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `7`
+
+### Decision / registro
+
+- `Fase 7` queda formalmente cerrada y aprobada
+- la segunda tentativa de la fase se resuelve con una direccion deliberadamente conservadora
+- `AOS` queda como motor principal de reveals simples
+- `GSAP` queda acotado a microinteraccion y refuerzos puntuales
+- la fase cierra con:
+  - polish de CTA hierarchy
+  - responsive polish en paginas activas
+  - microinteraccion mas sobria en controles globales
+  - ritmo de entrada afinado arriba del fold en `home`, `/work/` y `/experience/`
+
+### Razon
+
+- la primera tentativa de `Fase 7` demostro que una capa nueva de reveals mas agresiva introducia fragilidad en visibilidad y capturas
+- el cierre aprobado de esta segunda tentativa confirma que el sitio ya gano craft y polish sin reabrir arquitectura ni depender de un sistema nuevo de motion
+
+### Documentos afectados
+
+- `docs/plans/phase-7.md`
+- `docs/visual/interaction-spec.md`
+
+### Implementacion afectada
+
+- `src/scripts/animations.js`
+- `src/styles/global.css`
+- `src/components/layout/Navbar.astro`
+- `src/components/ui/LanguageSwitcher.astro`
+- `src/components/ui/ThemeToggle.astro`
+- `src/components/sections/Hero.astro`
+- `src/components/sections/Projects.astro`
+- `src/components/sections/Timeline.astro`
+- `src/components/sections/FooterCTA.astro`
+- `src/components/sections/Contact.astro`
+- `src/pages/en/**`
+- `src/pages/es/**`

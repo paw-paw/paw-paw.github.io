@@ -1,4 +1,4 @@
-// Global animations using GSAP and AOS
+// Global animations using GSAP with AOS still handling basic reveals
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -8,21 +8,12 @@ if (typeof window !== 'undefined') {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  // ScrollTrigger is registered globally via gsap.registerPlugin(ScrollTrigger)
-  // Initialize AOS with custom settings
-  AOS.init({
-    duration: 800,
-    easing: 'ease-out',
-    once: false,
-    offset: 50,
-    delay: 50,
-    disableMutationObserver: false,
-  });
-
   // Refresh AOS when window resizes
-  window.addEventListener('resize', () => {
-    AOS.refresh();
-  });
+  if (typeof window.AOS !== 'undefined') {
+    window.addEventListener('resize', () => {
+      window.AOS.refresh();
+    });
+  }
 
   // Custom animations for specific elements using GSAP
 
@@ -63,33 +54,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Scroll-triggered animations for sections
-
-  // Timeline section animation
-  const timelineItems = document.querySelectorAll('#timeline .timeline-item');
-
-  if (timelineItems.length > 0) {
-    gsap.from(timelineItems, {
-      scrollTrigger: {
-        trigger: '#timeline',
-        start: 'top 70%',
-      },
-      y: 50,
-      opacity: 0,
-      duration: 0.8,
-      stagger: 0.2,
-      ease: 'power3.out'
-    });
-  }
-
-  // Skills section animations - combines AOS for scroll and GSAP for hover effects
+  // Skills section animations - keep scroll reveals in AOS and use GSAP only for hover refinement
   const skillClusters = document.querySelectorAll('.skill-cluster');
 
   if (skillClusters.length > 0) {
-    // We'll let AOS handle the scroll animations, and use GSAP for hover effects
-
     skillClusters.forEach(cluster => {
-      const toolItems = cluster.querySelectorAll('.tool-item');
       const clusterHeader = cluster.querySelector('.cluster-header');
       const clusterDescription = cluster.querySelector('.cluster-description');
       const clusterIcon = cluster.querySelector('.icon-container svg');
@@ -112,35 +81,29 @@ document.addEventListener('DOMContentLoaded', () => {
         // Add various animations to the timeline
         hoverTimeline
           .to(cluster, {
-            borderColor: `rgba(${primaryColorRGB}, 1)`,
-            boxShadow: `0 8px 16px -3px rgba(${primaryColorRGB}, 0.25), 0 5px 10px -4px rgba(${primaryColorRGB}, 0.15)`,
-            y: -5,
-            duration: 0.3,
+            borderColor: `rgba(${primaryColorRGB}, 0.55)`,
+            boxShadow: `0 6px 14px -5px rgba(${primaryColorRGB}, 0.18), 0 4px 8px -6px rgba(${primaryColorRGB}, 0.12)`,
+            y: -2,
+            duration: 0.24,
             ease: 'power2.out'
           }, 0)
           .to(clusterIcon, {
-            scale: 1.15,
-            rotate: 5,
-            duration: 0.4,
-            ease: 'back.out(1.7)'
+            scale: 1.05,
+            rotate: 2,
+            duration: 0.24,
+            ease: 'power2.out'
           }, 0)
           .to(clusterHeader, {
-            x: 3,
-            duration: 0.3,
+            x: 2,
+            duration: 0.24,
             ease: 'power1.out'
           }, 0)
           .to(clusterDescription, {
-            opacity: 0.9,
-            x: 2,
-            duration: 0.3,
+            opacity: 1,
+            x: 1,
+            duration: 0.24,
             ease: 'power1.out'
-          }, 0)
-          .to(toolItems, {
-            y: -3,
-            stagger: 0.03,
-            duration: 0.4,
-            ease: 'power1.out'
-          }, 0.1);
+          }, 0);
       });
 
       cluster.addEventListener('mouseleave', () => {
@@ -156,90 +119,26 @@ document.addEventListener('DOMContentLoaded', () => {
             borderColor: initialBorderColor,
             boxShadow: initialBoxShadow,
             y: 0,
-            duration: 0.3,
+            duration: 0.22,
             ease: 'power2.out'
           }, 0)
           .to(clusterIcon, {
             scale: 1,
             rotate: 0,
-            duration: 0.3,
+            duration: 0.22,
             ease: 'power2.out'
           }, 0)
           .to(clusterHeader, {
             x: 0,
-            duration: 0.3,
+            duration: 0.22,
             ease: 'power1.out'
           }, 0)
           .to(clusterDescription, {
             opacity: 1,
             x: 0,
-            duration: 0.3,
-            ease: 'power1.out'
-          }, 0)
-          .to(toolItems, {
-            y: 0,
-            stagger: 0.02,
-            duration: 0.3,
+            duration: 0.22,
             ease: 'power1.out'
           }, 0);
-      });
-
-      // Enhanced tool item hover animations
-      toolItems.forEach(item => {
-        const icon = item.querySelector('.tool-icon svg');
-        const label = item.querySelector('p');
-
-        if (icon && label) {
-          let itemHoverTimeline;
-
-          item.addEventListener('mouseenter', () => {
-            // Kill any existing animations
-            if (itemHoverTimeline) itemHoverTimeline.kill();
-
-            // Create new timeline for item hover
-            itemHoverTimeline = gsap.timeline();
-
-            // Add coordinated animations for the tool item
-            itemHoverTimeline
-              .to(icon, {
-                scale: 1.3,
-                rotate: 10,
-                duration: 0.25,
-                ease: 'back.out(1.7)'
-              }, 0)
-              .to(label, {
-                scale: 1.05,
-                y: -2,
-                color: `rgba(${primaryColorRGB}, 1)`,
-                duration: 0.2,
-                ease: 'power1.out'
-              }, 0);
-          });
-
-          item.addEventListener('mouseleave', () => {
-            // Kill any existing animations
-            if (itemHoverTimeline) itemHoverTimeline.kill();
-
-            // Create new timeline for item hover-out
-            itemHoverTimeline = gsap.timeline();
-
-            // Reset all animations
-            itemHoverTimeline
-              .to(icon, {
-                scale: 1,
-                rotate: 0,
-                duration: 0.25,
-                ease: 'power1.out'
-              }, 0)
-              .to(label, {
-                scale: 1,
-                y: 0,
-                color: '',
-                duration: 0.2,
-                ease: 'power1.out'
-              }, 0);
-          });
-        }
       });
     });
   }
@@ -253,8 +152,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (image) {
       card.addEventListener('mouseenter', () => {
         gsap.to(image, {
-          scale: 1.05,
-          duration: 0.5,
+          scale: 1.02,
+          duration: 0.35,
           ease: 'power2.out'
         });
       });
@@ -262,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
       card.addEventListener('mouseleave', () => {
         gsap.to(image, {
           scale: 1,
-          duration: 0.5,
+          duration: 0.3,
           ease: 'power2.out'
         });
       });

@@ -332,11 +332,13 @@ html, body {
     border: 1px solid rgba(var(--color-primary-rgb), 0.96);
     background: rgba(var(--color-primary-rgb), 0.96);
     color: rgb(var(--color-canvas-rgb));
+    box-shadow: 0 12px 28px -20px rgba(var(--color-primary-rgb), 0.42);
   }
 
   .button-primary:hover {
-    border-color: rgba(var(--color-primary-rgb), 0.88);
-    background: rgba(var(--color-primary-rgb), 0.88);
+    border-color: rgba(var(--color-primary-rgb), 0.9);
+    background: rgba(var(--color-primary-rgb), 0.9);
+    box-shadow: 0 16px 34px -22px rgba(var(--color-primary-rgb), 0.5);
   }
 
   .button-secondary {
@@ -352,12 +354,13 @@ html, body {
 
   .button-outline {
     border: 1px solid rgba(var(--color-border-rgb), 0.18);
-    background: transparent;
+    background: rgba(var(--color-surface-muted-rgb), 0.42);
     color: rgba(var(--color-text-rgb), 0.96);
   }
 
   .button-outline:hover {
     border-color: rgba(var(--color-primary-rgb), 0.34);
+    background: rgba(var(--color-accent-surface-rgb), 0.38);
     color: rgba(var(--color-primary-rgb), 1);
   }
 
@@ -373,6 +376,39 @@ html, body {
 
     .experience-card-top {
       @apply flex-col gap-4;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .nested-panel-card {
+      padding: 0.9rem;
+    }
+
+    .experience-card-grid {
+      gap: 1rem;
+    }
+
+    .experience-card-top {
+      gap: 0.9rem;
+    }
+
+    .experience-logo-badge {
+      min-width: 112px;
+      padding: 0.7rem;
+    }
+
+    .experience-logo-image {
+      height: 92px;
+      max-height: 92px;
+    }
+
+    .experience-meta-stack {
+      gap: 0.45rem;
+    }
+
+    .work-panel,
+    .experience-panel {
+      border-radius: 1.25rem;
     }
   }
 

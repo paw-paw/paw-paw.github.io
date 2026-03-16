@@ -12,12 +12,12 @@ const locale = normalizeLocale(Astro.props.lang);
 
 <section class="section-padding bg-section-wash text-center">
   <div class="max-w-container mx-auto px-6">
-    <div class="surface-muted px-8 py-10 md:px-12 md:py-14" data-aos="fade-up">
+    <div class="surface-muted mx-auto max-w-4xl px-8 py-10 md:px-12 md:py-14" data-aos="fade-up">
       <span class="section-eyebrow">{t('footerCTA.eyebrow', locale)}</span>
       <h2 class="font-heading text-h2 text-secondary dark:text-fog mb-6">
         {t('footerCTA.title', locale)}
       </h2>
-      <p class="text-tone-soft max-w-2xl mx-auto mb-8">
+      <p class="text-tone-soft max-w-2xl mx-auto mb-7 md:mb-8">
         {t('footerCTA.subtitle', locale)}
       </p>
 
@@ -26,6 +26,7 @@ const locale = normalizeLocale(Astro.props.lang);
         href={getRelativeLocaleUrl(locale, 'contact')}
         variant="primary"
         size="lg"
+        class="shadow-[0_18px_36px_-24px_rgba(var(--color-primary-rgb),0.55)]"
       />
     </div>
   </div>
