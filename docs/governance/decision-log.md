@@ -1175,3 +1175,41 @@
 ### Implementacion afectada
 
 - `src/pages/index.astro`
+
+---
+
+## 2026-03-16 — Cierre estrategico de Sprint 2 Bloque 0 para blog profesional
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `Sprint 2 / Bloque 0`
+
+### Decision / registro
+
+- se aprueba usar el blog profesional como palanca de posicionamiento experto dentro del portfolio
+- la tesis superior del portfolio se rebalancea para presentar un puente visible entre `business development`, `partnerships` y `project delivery`
+- `operations` deja de leerse como eje principal y pasa a funcionar como capacidad de soporte y credibilidad operativa
+- el blog queda orientado principalmente a hiring managers y founders que evalan capacidad de ejecucion con criterio comercial
+- el blog adopta politica de idioma flexible por post con fallback editorial al blog index del locale destino y, si no existe, a su home
+- la cadence objetivo aprobada es quincenal mientras se sostengan calidad y relevancia estrategica; si no, puede pasar a temporadas
+
+### Razon
+
+- el posicionamiento vigente reconocia `partnerships` y `business development`, pero los seguia presentando como puente subordinado a `delivery / operations`
+- el nuevo objetivo del blog requiere una capa editorial que haga mas visible la conversion de oportunidades comerciales en ejecucion real
+- cerrar estas decisiones antes de tocar arquitectura, i18n, SEO o runtime reduce retrabajo y evita convertir supuestos en verdad tecnica
+
+### Documentos afectados
+
+- `docs/plans/sprint-2/block-0.md`
+- `docs/strategy/portfolio-strategy.md`
+- `docs/content/content-system.md`
+
+### Pendientes relacionados
+
+- materializar el rebalanceo aprobado dentro de `docs/strategy/portfolio-strategy.md`
+- materializar el rebalanceo aprobado dentro de `docs/content/content-system.md`
+- resolver en `Bloque 1` el impacto en arquitectura, i18n y SEO del blog
+
+---
