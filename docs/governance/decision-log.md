@@ -1248,3 +1248,34 @@
 - resolver entidad editorial `blog_post`, arquitectura, rutas e impacto i18n/SEO del blog en `Bloque 3`
 
 ---
+
+## 2026-03-16 — Materializacion contractual de Sprint 2 Bloque 3
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `Sprint 2 / Bloque 3`
+
+### Decision / registro
+
+- `Blog` queda incorporado como superficie principal del sitio dentro de la arquitectura contractual
+- el sistema de contenido pasa a definir `blog_post` como entidad editorial aprobada
+- `category` queda aprobada como taxonomia minima controlada del blog
+- las rutas localizadas del blog quedan reconocidas en la politica de i18n
+- el `LanguageSwitcher` incorpora una excepcion explicita para `blog post detail` con fallback al `blog index` del locale destino cuando no exista equivalente exacto
+
+### Impacto
+
+- `Bloque 4` puede implementar el blog sin inventar arquitectura, entidad editorial ni comportamiento base de locales
+- el blog queda alineado con la tesis realineada del portfolio sin competir con `Work` ni `Experience`
+- la capa SEO auxiliar ya reconoce la nueva superficie del blog con alcance minimo suficiente para continuar
+
+### Documentos afectados
+
+- `docs/architecture/site-architecture.md`
+- `docs/content/content-system.md`
+- `docs/architecture/i18n-spec.md`
+- `docs/delivery/seo-spec.md`
+- `docs/plans/sprint-2/block-3.md`
+
+---

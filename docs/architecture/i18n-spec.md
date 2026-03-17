@@ -5,7 +5,7 @@
 - Tipo: `contractual`
 - Fase inicial: `5`
 - Estado: `v1`
-- Ultima actualizacion: `2026-03-15`
+- Ultima actualizacion: `2026-03-16`
 
 ---
 
@@ -47,10 +47,16 @@ Rutas principales:
 - `/en/work/`
 - `/en/experience/`
 - `/en/contact/`
+- `/en/blog/`
+- `/en/blog/[slug]/`
+- `/en/blog/category/[category]/`
 - `/es/`
 - `/es/work/`
 - `/es/experience/`
 - `/es/contact/`
+- `/es/blog/`
+- `/es/blog/[slug]/`
+- `/es/blog/category/[category]/`
 
 ### Root `/`
 
@@ -223,6 +229,11 @@ Debe existir un `LanguageSwitcher` minimo y multipagina.
 - debe intentar preservar la pagina equivalente entre idiomas
 - si una equivalencia exacta no existiera, debe caer a la home del locale destino
 
+### Excepcion para blog
+
+- en `blog post detail`, si no existe una equivalencia exacta del post en el locale destino, el `LanguageSwitcher` debe caer al `blog index` de ese locale
+- esta excepcion no cambia la regla general para otras superficies del sitio
+
 ### No requiere en esta fase
 
 - selector complejo por bandera
@@ -241,6 +252,7 @@ No deben existir gaps de traduccion importantes en:
 - `/work`
 - `/experience`
 - `/contact`
+- `/blog`
 - navbar
 - footer
 

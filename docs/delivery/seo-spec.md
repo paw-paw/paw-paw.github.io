@@ -5,7 +5,7 @@
 - Tipo: `auxiliar`
 - Fase inicial: `6`
 - Estado: `v1`
-- Ultima actualizacion: `2026-03-15`
+- Ultima actualizacion: `2026-03-16`
 
 ---
 
@@ -22,11 +22,11 @@ Este documento no redefine deployment ni routing estructural. Su funcion es deta
 ### Estructura de `title`
 
 - Home:
-  - `Paulo Tuya | Project Delivery, Partnerships, Operations`
-  - `Paulo Tuya | Delivery de proyectos, alianzas y operaciones`
+  - `Paulo Tuya | Business Development, Partnerships, Project Delivery`
+  - `Paulo Tuya | Business Development, Alianzas y Delivery de Proyectos`
 - Paginas internas:
-  - `Page | Paulo Tuya | Project Delivery, Partnerships, Operations`
-  - `Pagina | Paulo Tuya | Delivery de proyectos, alianzas y operaciones`
+  - `Page | Paulo Tuya | Business Development, Partnerships, Project Delivery`
+  - `Pagina | Paulo Tuya | Business Development, Alianzas y Delivery de Proyectos`
 
 ### Tono de `description`
 
@@ -66,6 +66,13 @@ Tratamiento requerido:
 - fuera de `alternates`
 - fuera del sitemap
 
+Las rutas localizadas del blog si forman parte de la estrategia SEO primaria:
+
+- `/en/blog/`
+- `/es/blog/`
+- `/en/blog/[slug]/`
+- `/es/blog/[slug]/`
+
 ### Excepcion de share metadata para `/`
 
 - `/` puede emitir `title`, `description`, OG y Twitter metadata para social sharing
@@ -89,43 +96,63 @@ Tratamiento requerido:
 
 ### `/en/`
 
-- title: `Paulo Tuya | Project Delivery, Partnerships, Operations`
-- description: `Paulo Tuya is a project delivery and partnerships operator across gaming, esports, and remote programs, with experience in activations, live operations, and partner-facing execution.`
+- title: `Paulo Tuya | Business Development, Partnerships, Project Delivery`
+- description: `Paulo Tuya is a commercially fluent operator connecting business development, partnerships, and project delivery across gaming, esports, and remote programs.`
 
 ### `/es/`
 
-- title: `Paulo Tuya | Delivery de proyectos, alianzas y operaciones`
-- description: `Paulo Tuya es un operador de delivery de proyectos y alianzas en gaming, esports y programas remotos, con experiencia en activaciones, operaciones en vivo y ejecucion con partners.`
+- title: `Paulo Tuya | Business Development, Alianzas y Delivery de Proyectos`
+- description: `Paulo Tuya conecta business development, alianzas y delivery de proyectos en gaming, esports y programas remotos, con un enfoque claro de ejecucion cross-functional.`
 
 ### `/en/work/`
 
-- title: `Work | Paulo Tuya | Project Delivery, Partnerships, Operations`
-- description: `Selected work by Paulo Tuya across gaming, esports, retail activations, live operations, and partner-facing project delivery.`
+- title: `Work | Paulo Tuya | Business Development, Partnerships, Project Delivery`
+- description: `Selected work by Paulo Tuya across gaming, esports, partnerships, commercial execution, and project delivery under real operating constraints.`
 
 ### `/es/work/`
 
-- title: `Trabajo | Paulo Tuya | Delivery de proyectos, alianzas y operaciones`
-- description: `Trabajo seleccionado de Paulo Tuya en gaming, esports, activaciones retail, operaciones en vivo y delivery de proyectos de cara a partners.`
+- title: `Trabajo | Paulo Tuya | Business Development, Alianzas y Delivery de Proyectos`
+- description: `Trabajo seleccionado de Paulo Tuya en gaming, esports, alianzas, ejecucion comercial y delivery de proyectos bajo condiciones reales de operacion.`
 
 ### `/en/experience/`
 
-- title: `Experience | Paulo Tuya | Project Delivery, Partnerships, Operations`
-- description: `Experience of Paulo Tuya across tournament operations, partnerships, account-facing delivery, and founder-led execution in gaming and esports.`
+- title: `Experience | Paulo Tuya | Business Development, Partnerships, Project Delivery`
+- description: `Experience of Paulo Tuya across operations, partnerships, business development, account-facing delivery, and founder-led execution in gaming and esports.`
 
 ### `/es/experience/`
 
-- title: `Experiencia | Paulo Tuya | Delivery de proyectos, alianzas y operaciones`
-- description: `Experiencia de Paulo Tuya en operaciones de torneos, alianzas, delivery de cara a cuentas y ejecucion founder-led en gaming y esports.`
+- title: `Experiencia | Paulo Tuya | Business Development, Alianzas y Delivery de Proyectos`
+- description: `Experiencia de Paulo Tuya en operaciones, alianzas, business development, delivery de cara a cuentas y ejecucion founder-led en gaming y esports.`
 
 ### `/en/contact/`
 
-- title: `Contact | Paulo Tuya | Project Delivery, Partnerships, Operations`
-- description: `Contact Paulo Tuya for project delivery, partnerships, operations, and partner-facing execution roles across gaming, esports, and remote programs.`
+- title: `Contact | Paulo Tuya | Business Development, Partnerships, Project Delivery`
+- description: `Contact Paulo Tuya for business development, partnerships, project delivery, and partner-facing execution roles across gaming, esports, and remote programs.`
 
 ### `/es/contact/`
 
-- title: `Contacto | Paulo Tuya | Delivery de proyectos, alianzas y operaciones`
-- description: `Contacta a Paulo Tuya para roles de delivery de proyectos, alianzas, operaciones y ejecucion con partners en gaming, esports y programas remotos.`
+- title: `Contacto | Paulo Tuya | Business Development, Alianzas y Delivery de Proyectos`
+- description: `Contacta a Paulo Tuya para roles de business development, alianzas, delivery de proyectos y ejecucion con partners en gaming, esports y programas remotos.`
+
+### `/en/blog/`
+
+- title: `Blog | Paulo Tuya | Business Development, Partnerships, Project Delivery`
+- description: `Professional writing by Paulo Tuya on business development, partnerships, project delivery, operations, and cross-functional execution across gaming, esports, and remote programs.`
+
+### `/es/blog/`
+
+- title: `Blog | Paulo Tuya | Business Development, Alianzas y Delivery de Proyectos`
+- description: `Escritos profesionales de Paulo Tuya sobre business development, alianzas, delivery de proyectos, operaciones y ejecucion cross-functional en gaming, esports y programas remotos.`
+
+### `/en/blog/[slug]/`
+
+- title: `Post Title | Paulo Tuya | Business Development, Partnerships, Project Delivery`
+- description: `Post-specific description focused on the main idea, category, and professional relevance of the article.`
+
+### `/es/blog/[slug]/`
+
+- title: `Titulo del post | Paulo Tuya | Business Development, Alianzas y Delivery de Proyectos`
+- description: `Descripcion especifica del post enfocada en su idea principal, categoria y relevancia profesional.`
 
 ---
 
@@ -148,3 +175,4 @@ Tratamiento requerido:
 - estrategia SEO para un dominio custom final no decidido
 - optimizacion SEO avanzada por keyword research
 - schema markup especifico por tipo de pagina mas alla del baseline utilizable
+- matriz SEO completa para `/blog/category/[category]/`

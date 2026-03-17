@@ -5,7 +5,7 @@
 - Tipo: `contractual`
 - Fase inicial: `2`
 - Estado: `done`
-- Ultima actualizacion: `2026-03-14`
+- Ultima actualizacion: `2026-03-16`
 
 ---
 
@@ -15,23 +15,32 @@ Definir la estructura del sitio, sus superficies principales y el rol de cada pa
 
 Esta arquitectura debe reforzar la tesis:
 
-- delivery / operations first
+- business development, partnerships y project delivery como puente principal
 - evidencia repartida entre `Selected Work` y `Experience`
+- `Blog` como superficie editorial de autoridad y posicionamiento experto
 - home como overview estrategico + conversion
 
 ---
 
 ## Mapa de paginas
 
+Nota:
+
+- las rutas reales activas deben respetar la politica de prefijos definida en `docs/architecture/i18n-spec.md`
+- las rutas listadas aqui expresan la arquitectura conceptual minima del sitio
+
 ### Paginas principales
 
 - `/`
 - `/work`
 - `/experience`
+- `/blog`
 - `/contact`
 
 ### Paginas utilitarias o derivadas
 
+- `/blog/[slug]`
+- `/blog/category/[category]`
 - paginas futuras posibles, pero no comprometidas en esta fase:
   - `/about`
   - `/resume`
@@ -68,6 +77,46 @@ Debe responder:
 - que canales publicos estan habilitados
 - que expectativa de contacto o seguimiento tiene sentido
 
+### `/blog`
+
+Rol:
+
+- superficie editorial principal del sitio
+- capa de autoridad, criterio y posicionamiento experto
+- complemento de `Work` y `Experience`, no su reemplazo
+
+Debe responder:
+
+- que ideas o aprendizajes convierten tu experiencia en criterio profesional visible
+- como conectas business development, partnerships y project delivery en piezas editoriales defendibles
+- donde profundizar por post o por categoria
+
+### `/blog/[slug]`
+
+Rol:
+
+- superficie de detalle editorial del blog
+- unidad minima de publicacion profesional
+
+Debe responder:
+
+- cual es la idea principal del post
+- que evidencia, experiencia o criterio sostiene esa idea
+- como se conecta esa pieza con la tesis general del portfolio
+
+### `/blog/category/[category]`
+
+Rol:
+
+- superficie secundaria de agrupacion editorial
+- punto de entrada por tema dentro del blog
+
+Debe responder:
+
+- que posts pertenecen a una misma categoria
+- que patron editorial o profesional conecta esas piezas
+- como descubrir contenido relacionado sin reemplazar al `blog index`
+
 ### `/work`
 
 Rol:
@@ -79,7 +128,7 @@ Debe responder:
 
 - que casos o proyectos seleccionados prueban mejor el perfil
 - que tipo de trabajo has liderado o entregado
-- como se expresa la ejecucion en casos concretos
+- como se expresa la ejecucion en casos concretos con contexto comercial o partner-facing cuando aplique
 
 ### `/experience`
 
@@ -90,7 +139,7 @@ Rol:
 Debe responder:
 
 - que roles y contextos sostienen la tesis del portfolio
-- como evoluciona tu experiencia en delivery / operations
+- como evoluciona tu experiencia desde operations hacia partnerships, business development y project delivery
 - que evidencia de ownership y coordinacion aparece en la carrera
 
 ---
@@ -112,6 +161,7 @@ Principio:
 
 - la home presenta
 - las paginas internas profundizan
+- `Blog` vive como superficie principal independiente y no como bloque obligatorio dentro de la home
 
 ---
 
@@ -186,6 +236,18 @@ Funcion:
 - ofrecer superficie practica de contacto
 - respetar la politica de visibilidad publica vigente
 
+### `Blog`
+
+Estado:
+
+- nueva superficie principal del sitio
+
+Funcion:
+
+- ampliar el posicionamiento experto del portfolio con piezas editoriales defendibles
+- complementar `Work` y `Experience` con sintesis, criterio y aprendizaje aplicado
+- soportar discoverability editorial sin desplazar la evidencia principal del perfil
+
 ### `FooterCTA`
 
 Estado:
@@ -211,6 +273,7 @@ Items base:
 - `Home` -> `/`
 - `Work` -> `/work`
 - `Experience` -> `/experience`
+- `Blog` -> `/blog`
 - `Contact` -> `/contact`
 
 ### Anchors
@@ -227,6 +290,13 @@ Pueden existir anchors internos como detalle de implementacion, pero no forman p
 - `Timeline` no sobrevive con ese nombre ni con su funcion actual
 - `Projects` no sobrevive con ese nombre ni con su estructura heredada
 - la arquitectura puramente one-page deja de ser la verdad del sitio
+
+## Superficies editoriales comprometidas en esta fase
+
+- `Blog` entra como superficie principal de navegacion
+- `blog index` y `blog post detail` forman parte de la arquitectura minima comprometida
+- `category` existe como superficie secundaria del blog, no como item principal de navegacion
+- no se comprometen en esta fase archives adicionales, `series`, paginacion, breadcrumbs ni navegacion editorial secundaria
 
 ---
 

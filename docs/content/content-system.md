@@ -5,7 +5,7 @@
 - Tipo: `contractual`
 - Fase inicial: `2`
 - Estado: `done`
-- Ultima actualizacion: `2026-03-14`
+- Ultima actualizacion: `2026-03-16`
 
 ---
 
@@ -15,12 +15,15 @@ Definir las entidades de contenido del portfolio, sus reglas de uso y la fronter
 
 Este documento no contiene el copy final aprobado.
 
+Este documento define desde `Bloque 3` la entidad editorial `blog_post` como parte del sistema contractual del sitio.
+
 ---
 
 ## Principios del sistema
 
 - la tesis principal conecta `business development`, `partnerships` y `project delivery`
 - `Selected Work` y `Experience` son pilares equivalentes de evidencia
+- `Blog` amplifica autoridad y posicionamiento experto sin reemplazar la evidencia principal
 - `operations` aporta soporte y credibilidad operativa, no liderazgo narrativo
 - `Skills` apoya, pero no lidera el relato
 - `Education` aporta credibilidad y contexto, no define la tesis
@@ -224,6 +227,59 @@ No debe competir con:
 - `selected_work_preview`
 
 ### `blog_post`
+
+Proposito:
+
+- ser la unidad minima de publicacion editorial del blog
+- traducir experiencia, criterio y aprendizaje profesional en piezas defendibles
+- complementar `Selected Work` y `Experience` sin reemplazarlos
+
+Metadata contractual obligatoria:
+
+- `title`
+- `slug`
+- `excerpt`
+- `publish_date`
+- `category`
+- `locale`
+- `status`
+- `reading_time`
+- `featured`
+- `header_image`
+
+Contenido contractual minimo:
+
+- `header_image` obligatoria
+- `body` como contenido principal compuesto del post
+
+Reglas de estructura:
+
+- cada post debe pertenecer a una sola `category` primaria
+- `category` debe tomarse de una lista controlada aprobada por el sistema
+- la lista controlada inicial es:
+  - `project-delivery`
+  - `bd-and-partnerships`
+  - `operations`
+  - `career-and-industry-lessons`
+- el cuerpo del post no exige todavia sub-bloques internos obligatorios
+- el sistema debe permitir posts sin equivalente exacto en el otro locale
+
+Reglas editoriales:
+
+- el post debe responder a la tesis aprobada del portfolio
+- debe sostener claims con experiencia, observacion o criterio defendible
+- no debe convertirse en opinionismo amplio, diario personal ni contenido motivacional generico
+- debe poder convivir con fallback de locale hacia el `blog index` del locale destino cuando no exista equivalente
+
+No debe incluir:
+
+- taxonomias adicionales no aprobadas
+- `series`
+- metadata pensada solo para automatizaciones externas
+- estructura interna excesivamente rigida antes de validarla en implementacion
+
+---
+
 ## Reglas de copy
 
 - el copy debe sonar claro, sobrio y evidence-led
@@ -240,6 +296,7 @@ Se permiten claims que:
 
 - puedan defenderse con experiencia o proyectos reales
 - expresen ownership, coordinacion, delivery o resultados con contexto
+- traduzcan criterio editorial en aprendizaje profesional util
 - traduzcan evidencia de `truth` a lenguaje claro
 
 Se restringen claims que:
@@ -272,6 +329,12 @@ Se restringen claims que:
 - la navegacion debe reflejar superficies reales del sitio
 - no debe anunciar una arquitectura que no exista
 
+### `blog_post` <-> `Selected Work` / `Experience`
+
+- `blog_post` amplifica criterio, aprendizaje y posicionamiento experto
+- `Selected Work` y `Experience` siguen sosteniendo la evidencia principal del perfil
+- el blog no debe reemplazar casos ni trayectoria cuando la evidencia operativa sea la superficie correcta
+
 ### `contact page` <-> politica de visibilidad
 
 - la pagina de contacto debe concentrar los canales publicos habilitados
@@ -290,6 +353,8 @@ Se restringen claims que:
 - education items si se usan
 - identity/contact channels publicables
 - idiomas
+- blog posts
+- categorias editoriales del blog
 
 ### Puede vivir como copy compuesto
 
