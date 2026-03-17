@@ -22,20 +22,21 @@ Este documento no redefine el sistema visual. Lo operacionaliza.
 ### Branding visible
 
 - branding tipografico con monograma `P`
-- wordmark `Pawpaw`
+- wordmark `Paulo Cesar Tuya`
 
 Estado:
 
 - aprobado para navbar y footer
+- aprobadas variantes `light` y `dark` de monograma y wordmark para lockup visible
 - no requiere logo ilustrado final en esta fase
 
 ### Hero visual principal
 
-- `src/assets/pawpaw-portrait.png`
+- `src/assets/paulo-hero.png`
 
 Origen:
 
-- promovido desde `temp/bauhaus-paw.png`
+- promovido desde trabajo de branding aprobado para la fase actual
 
 Estado:
 
@@ -44,11 +45,11 @@ Estado:
 
 ### Favicon provisional
 
-- `src/assets/favicon.svg`
+- `src/assets/brand/monogram-light.png`
 
 Estado:
 
-- aprobado como favicon tipografico provisional
+- aprobado como favicon provisional basado en el monograma lightmode
 - reemplaza la dependencia del favicon heredado del template
 
 ### Logos de experiencia
@@ -91,18 +92,6 @@ Estado:
 - aprobados para `selected_work_case_study` en `/work/`
 - aprobados para version reducida en `selected_work_preview`
 - el tratamiento visual puede usar overlay/tinte reversible desde CSS o UI
-
----
-
-## Assets temporales que pueden sobrevivir tecnicamente
-
-- `src/assets/background.svg`
-- `src/assets/portfolio-preview.png`
-
-Estado:
-
-- no forman parte del lenguaje visible principal aprobado
-- pueden sobrevivir mientras no vuelvan al flujo activo sin decision posterior
 
 ---
 

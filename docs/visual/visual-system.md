@@ -97,13 +97,14 @@ La referencia de tono visual debe sentirse:
 La identidad base aprobada para esta fase es:
 
 - monograma tipografico: `P`
-- wordmark corto: `Pawpaw`
+- wordmark visible: `Paulo Cesar Tuya`
 
 ### Reglas
 
 - el branding visible debe seguir siendo simple y tipografico en su tono general
 - no depende todavia de un logo ilustrado final
 - el navbar y footer deben expresar la marca con un lockup simple y consistente
+- el lockup visible puede combinar monograma y wordmark exportado, con version compacta en superficies estrechas
 - el favicon puede ser provisional, pero ya no debe reutilizar el icono heredado del template
 
 ---

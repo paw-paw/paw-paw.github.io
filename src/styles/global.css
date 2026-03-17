@@ -176,18 +176,47 @@ html, body {
     color: rgb(var(--color-text-rgb));
   }
 
-  .brand-badge {
-    @apply inline-flex h-11 w-11 items-center justify-center rounded-2xl text-sm font-bold;
-    background: rgba(var(--color-badge-surface-rgb), 0.96);
-    border: 1px solid rgba(var(--color-badge-border-rgb), 0.24);
-    color: rgba(var(--color-badge-text-rgb), 1);
-    box-shadow: 0 16px 40px -24px rgba(31, 37, 45, 0.38);
+  .brand-lockup-compact {
+    gap: 0.8rem;
   }
 
-  .brand-wordmark {
-    font-family: 'Manrope', sans-serif;
-    letter-spacing: -0.03em;
-    @apply text-xl font-semibold leading-none;
+  .brand-mark {
+    display: inline-flex;
+    width: 2.75rem;
+    height: 2.75rem;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+  }
+
+  .brand-mark-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+  .brand-wordmark-image-wrap {
+    display: inline-flex;
+    align-items: center;
+    min-width: 0;
+  }
+
+  .brand-wordmark-image-wrap-compact {
+    max-width: min(44vw, 11.5rem);
+  }
+
+  .brand-wordmark-image {
+    display: block;
+    height: auto;
+    width: min(100%, 15.5rem);
+    object-fit: contain;
+  }
+
+  @media (max-width: 480px) {
+    .brand-wordmark-image-wrap-compact {
+      display: none;
+    }
   }
 
   .work-panel,

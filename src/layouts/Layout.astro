@@ -3,7 +3,7 @@ import Navbar from '../components/layout/Navbar.astro';
 import Footer from '../components/sections/Footer.astro';
 import '../styles/global.css';
 import { normalizeLocale, t } from '../utils/i18n';
-import faviconAsset from '../assets/favicon.svg';
+import faviconAsset from '../assets/brand/monogram-light.png';
 import profileImg from '../assets/paulo-hero.png';
 import { name, linkedin_url, instagram_url } from '../utils/me';
 import { defaultIndexedUrl } from '../utils/seo';
@@ -38,7 +38,7 @@ const websiteUrl = defaultIndexedUrl;
     <meta name="description" content={description} />
     <title>{title}</title>
 
-    <link rel="icon" type="image/svg+xml" href={faviconAsset.src} />
+    <link rel="icon" type="image/png" href={faviconAsset.src} />
     <link rel="canonical" href={canonicalUrl} />
     <link rel="alternate" hreflang="en" href={alternateEn} />
     <link rel="alternate" hreflang="es" href={alternateEs} />
