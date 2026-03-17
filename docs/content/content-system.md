@@ -19,8 +19,9 @@ Este documento no contiene el copy final aprobado.
 
 ## Principios del sistema
 
-- la tesis principal es `delivery / operations first`
+- la tesis principal conecta `business development`, `partnerships` y `project delivery`
 - `Selected Work` y `Experience` son pilares equivalentes de evidencia
+- `operations` aporta soporte y credibilidad operativa, no liderazgo narrativo
 - `Skills` apoya, pero no lidera el relato
 - `Education` aporta credibilidad y contexto, no define la tesis
 - el sitio prioriza evidencia defendible sobre exhaustividad
@@ -42,6 +43,7 @@ Debe incluir:
 
 - headline o thesis line
 - subheadline o supporting statement
+- lenguaje capaz de expresar el puente entre business development, partnerships y project delivery
 - CTA principal
 - CTA secundaria si aporta claridad
 
@@ -81,7 +83,7 @@ Debe incluir:
 - imagen o header visual cuando exista asset aprobado
 - nombre
 - contexto corto
-- rol o angle operativo
+- rol o angle de ejecucion comercial / operativa
 - CTA a pagina profunda
 
 No debe incluir:
@@ -100,11 +102,11 @@ Estructura contractual minima:
 - imagen o header visual cuando exista asset aprobado
 - nombre del caso
 - contexto breve
-- rol
+- rol, incluyendo cuando aplique su dimension partner-facing o comercial
 - objetivo o challenge
 - scope y responsabilidades
-- execution o approach
-- resultado o evidencia
+- execution o approach, incluyendo cuando aplique restricciones comerciales o de partnerships
+- resultado o evidencia, incluyendo cuando aplique traduccion de oportunidad comercial a delivery ejecutable
 - herramientas, colaboradores o stakeholders si aportan contexto
 
 No debe incluir:
@@ -136,7 +138,7 @@ Debe incluir:
 - location
 - work mode
 - contexto corto
-- angle de ownership o delivery
+- angle de ownership, delivery o partner-facing execution
 
 ### `experience_item`
 
@@ -152,8 +154,8 @@ Debe incluir:
 - periodo
 - location
 - work mode
-- contexto
-- highlights o pruebas de ownership / delivery
+- contexto, incluyendo cuando aplique business development, partnerships o handoff comercial
+- highlights o pruebas de ownership, delivery o ejecucion con partners
 
 No debe incluir:
 
@@ -221,8 +223,7 @@ No debe competir con:
 - `hero`
 - `selected_work_preview`
 
----
-
+### `blog_post`
 ## Reglas de copy
 
 - el copy debe sonar claro, sobrio y evidence-led

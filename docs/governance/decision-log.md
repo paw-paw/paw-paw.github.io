@@ -1213,3 +1213,38 @@
 - resolver en `Bloque 1` el impacto en arquitectura, i18n y SEO del blog
 
 ---
+
+## 2026-03-16 — Materializacion contractual de Sprint 2 Bloque 1
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `Sprint 2 / Bloque 1`
+
+### Decision / registro
+
+- `Bloque 1` materializa contractualmente el rebalanceo aprobado en `Bloque 0`
+- `docs/strategy/portfolio-strategy.md` deja de presentar `partnerships / business development` como capa subordinada a una tesis `delivery / operations first`
+- `docs/content/content-system.md` se alinea con la nueva tesis y actualiza sus principios y entidades clave para soportar el puente entre oportunidad comercial y ejecucion
+- `operations` queda explicitamente preservada como capacidad de soporte y credibilidad operativa, no como eje principal del positioning
+- la CTA principal contractual `View selected work` se mantiene en esta fase
+- `content-master`, arquitectura del blog, i18n y SEO se difieren a bloques posteriores
+
+### Razon
+
+- el cierre de `Bloque 0` ya habia cambiado la direccion estrategica del portfolio
+- sin esta materializacion contractual, el roadmap habria dejado una contradiccion entre decisiones aprobadas y documentos contractuales vigentes
+- cerrar primero strategy y content system reduce retrabajo antes de propagar copy y construir el blog
+
+### Documentos afectados
+
+- `docs/strategy/portfolio-strategy.md`
+- `docs/content/content-system.md`
+- `docs/plans/sprint-2/block-1.md`
+
+### Pendientes relacionados
+
+- propagar la nueva tesis a `docs/content/content-master.md` y al copy downstream del portfolio en `Bloque 2`
+- resolver entidad editorial `blog_post`, arquitectura, rutas e impacto i18n/SEO del blog en `Bloque 3`
+
+---

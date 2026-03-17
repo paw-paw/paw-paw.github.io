@@ -5,20 +5,20 @@
 - Tipo: `contractual`
 - Fase inicial: `1`
 - Estado: `done`
-- Ultima actualizacion: `2026-03-11`
+- Ultima actualizacion: `2026-03-16`
 
 ---
 
 ## Objetivo del sitio
 
-El portfolio existe para convertir experiencia real de delivery, operations y partnerships en una presentacion clara y confiable que abra conversaciones profesionales de alto valor.
+El portfolio existe para convertir experiencia real en project delivery, business development y partnerships en una presentacion clara y confiable que abra conversaciones profesionales de alto valor.
 
 El sesgo principal del sitio es:
 
 - oportunidades de empleo remoto
-- roles de operations
 - roles de program / project management
-- roles de partnerships con fuerte componente de ejecucion
+- roles de business development y partnerships con fuerte componente de ejecucion
+- roles donde operations refuerza credibilidad operativa, sin liderar el positioning
 
 El sitio tambien debe seguir siendo util para:
 
@@ -35,7 +35,7 @@ El sitio tambien debe seguir siendo util para:
 
 - hiring managers
 - founders
-- leaders de operations o partnerships
+- leaders de partnerships o business development con necesidad de ejecucion cross-functional
 
 Contexto prioritario:
 
@@ -48,25 +48,28 @@ Contexto prioritario:
 - recruiters generalistas
 - managers de tech no especializados
 - decisores que no conocen en detalle el ecosistema de esports/gaming pero si entienden ejecucion, ownership y delivery confiable
+- pares de industria relevantes
 
 ---
 
 ## Tesis central del portfolio
 
-Este portfolio debe posicionarte como un operador de delivery capaz de convertir objetivos ambiguos en programas ejecutables y confiables.
+Este portfolio debe posicionarte como un profesional que conecta business development, partnerships y project delivery para convertir oportunidades comerciales en programas ejecutables y cross-functional.
 
 La narrativa central del perfil es:
 
+- business development
+- partnerships
 - project / program delivery
-- operations
 - coordinacion cross-functional
 - ejecucion confiable bajo presion
 
-El puente permitido hacia partnerships y business development existe, pero subordinado a la tesis principal:
+Dentro de esa narrativa:
 
 - no eres un perfil de ventas puro
 - no eres un perfil de brand/marketing puro
-- el valor diferencial esta en traducir compromisos comerciales o necesidades de negocio a sistemas de ejecucion reales
+- el valor diferencial esta en traducir oportunidades comerciales, compromisos con partners o necesidades de negocio a sistemas de ejecucion reales
+- operations funciona como capacidad de soporte y como credibilidad operativa, no como eje principal del positioning
 
 ---
 
@@ -74,17 +77,18 @@ El puente permitido hacia partnerships y business development existe, pero subor
 
 El sitio debe comunicar que aportas una combinacion poco comun de:
 
-- claridad operativa
+- fluidez comercial
+- criterio para partnerships
 - ownership end-to-end
 - coordinacion cross-functional
 - delivery confiable en contextos complejos
-- capacidad de conectar objetivos comerciales con ejecucion real
+- operations como soporte y credibilidad operativa cuando la ejecucion lo exige
 
 En lenguaje breve:
 
-- conviertes objetivos ambiguos en programas ejecutables y confiables
-- mantienes alineados scope, owners, timelines, vendors, stakeholders y reporting
-- sostienes delivery en gaming, esports y proyectos remotos con criterio operacional y evidencia real
+- conviertes oportunidades comerciales en programas ejecutables y confiables
+- alineas partners, scope, owners, timelines, stakeholders y reporting
+- sostienes delivery cross-functional con criterio comercial y evidencia real en gaming, esports y entornos remotos
 
 ---
 
@@ -92,13 +96,13 @@ En lenguaje breve:
 
 Una persona que entre al sitio debe entender rapidamente que:
 
-- operas programas y proyectos complejos con criterio y estructura
-- puedes coordinar equipos y stakeholders diversos sin perder claridad
+- conectas business development, partnerships y project delivery sin perder estructura
+- conviertes oportunidades comerciales en ejecucion cross-functional confiable
 - tu experiencia fuerte vive en gaming y esports, pero tu valor es transferible a sectores adyacentes
 
 Formula de referencia:
 
-`I turn ambiguous goals into executable, reliable programs across gaming, esports, and remote cross-functional delivery.`
+`I bridge business development, partnerships, and project delivery to turn commercial opportunities into executable, cross-functional programs.`
 
 ---
 
@@ -112,8 +116,9 @@ El posicionamiento principal debe ser:
 Esto implica:
 
 - usar gaming/esports como prueba principal de experiencia y credibilidad
-- traducir el valor del perfil a terminos comprensibles para contextos mas generales
+- traducir el valor del perfil a terminos comprensibles para hiring, founders y leaders con sensibilidad comercial
 - evitar un discurso tan vertical que cierre innecesariamente oportunidades remotas fuera del nicho
+- evitar tambien un discurso tan comercial que opaque la evidencia de ejecucion
 
 ---
 
@@ -195,25 +200,25 @@ Estos atributos deben orientar:
 
 Mensaje central:
 
-- can own delivery-heavy programs from ambiguous goals to structured execution
+- can connect business development, partnerships, and project delivery to turn commercial opportunities into structured execution
 
 Mensajes de soporte:
 
-- translates business intent into scope, owners, milestones, and reporting
-- coordinates cross-functional teams, vendors, talent, and stakeholders without losing operational control
+- translates commercial intent into scope, owners, milestones, and reporting
+- coordinates partners, stakeholders, vendors, and cross-functional teams without losing execution control
 - brings real execution evidence from gaming and esports environments with meaningful complexity
 
 ### Audiencia secundaria
 
 Mensaje central:
 
-- experienced operator who makes complex remote workstreams clearer, more accountable, and more executable
+- commercially fluent operator who makes partnerships and delivery work together in complex remote environments
 
 Mensajes de soporte:
 
 - the niche is gaming/esports, but the operating pattern is transferable
-- works well in distributed, multi-stakeholder, deadline-sensitive environments
-- combines delivery discipline with enough commercial fluency to protect execution quality
+- combines delivery discipline with commercial judgment and partner-facing execution
+- can move from opportunity framing to structured follow-through without inflating claims
 
 ---
 
@@ -234,18 +239,19 @@ El sitio no debe comunicar que:
 
 Se prioriza contenido que demuestre:
 
+- capacidad de convertir oportunidades comerciales en ejecucion estructurada
 - ownership de delivery
 - capacidad de estructurar ejecucion
 - coordinacion cross-functional
 - trabajo con stakeholders, vendors, partners o equipos distribuidos
 - resultados o indicadores que den credibilidad sin inflar claims
-- transferibilidad hacia oportunidades remotas en operations / program-project / partnerships
+- transferibilidad hacia oportunidades remotas en project delivery / partnerships / business development
 
 Se admite evidencia de partnerships y business development cuando:
 
 - refuerza el puente entre compromiso comercial y ejecucion
 - ayuda a explicar launch, handoff, packaging o partner management
-- no compite con la tesis principal de delivery
+- mantiene profundidad operativa y evidencia defendible, sin deslizar el portfolio hacia un perfil comercial puro
 
 ---
 
@@ -295,4 +301,3 @@ Se debe excluir o relegar contenido que:
 
 - el contenido final debe sonar preciso y sobrio
 - la evidencia seleccionada debe ser fuerte, pero no exhaustiva
-
