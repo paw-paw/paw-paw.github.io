@@ -2,14 +2,20 @@
 import ThemeToggle from '../ui/ThemeToggle.astro';
 import LanguageSwitcher from '../ui/LanguageSwitcher.astro';
 import { getRelativeLocaleUrl } from 'astro:i18n';
-import { t } from '../../utils/i18n';
+import { t, type SupportedLocale } from '../../utils/i18n';
 import { normalizeLocale } from '../../utils/i18n';
 
+interface Props {
+  localeUrls?: Partial<Record<SupportedLocale, string>>;
+}
+
+const { localeUrls } = Astro.props;
 const lang = normalizeLocale(Astro.currentLocale);
 const pathname = Astro.url.pathname;
 const homeHref = getRelativeLocaleUrl(lang);
 const workHref = getRelativeLocaleUrl(lang, 'work');
 const experienceHref = getRelativeLocaleUrl(lang, 'experience');
+const blogHref = getRelativeLocaleUrl(lang, 'blog');
 const contactHref = getRelativeLocaleUrl(lang, 'contact');
 
 const isActive = (href: string) => {
@@ -40,10 +46,13 @@ const isActive = (href: string) => {
             <a href={experienceHref} class:list={['nav-link', isActive(experienceHref) && 'nav-link-active']}>{t('nav.experience', lang)}</a>
           </li>
           <li>
+            <a href={blogHref} class:list={['nav-link', isActive(blogHref) && 'nav-link-active']}>{t('nav.blog', lang)}</a>
+          </li>
+          <li>
             <a href={contactHref} class:list={['contact-nav-button', isActive(contactHref) && 'contact-nav-button-active']}>{t('nav.contactButton', lang)}</a>
           </li>
         </ul>
-        <LanguageSwitcher />
+        <LanguageSwitcher localeUrls={localeUrls} />
         <ThemeToggle />
       </nav>
 
@@ -76,11 +85,14 @@ const isActive = (href: string) => {
             <a href={experienceHref} class:list={['mobile-nav-link', isActive(experienceHref) && 'mobile-nav-link-active']}>{t('nav.experience', lang)}</a>
           </li>
           <li>
+            <a href={blogHref} class:list={['mobile-nav-link', isActive(blogHref) && 'mobile-nav-link-active']}>{t('nav.blog', lang)}</a>
+          </li>
+          <li>
             <a href={contactHref} class:list={['mobile-nav-link', 'mobile-nav-button', isActive(contactHref) && 'mobile-nav-link-active']}>{t('nav.contactButton', lang)}</a>
           </li>
         </ul>
         <div class="mt-5 border-t border-secondary/8 pt-4 dark:border-[rgba(var(--color-border-rgb),0.18)]">
-          <LanguageSwitcher mobile={true} />
+          <LanguageSwitcher mobile={true} localeUrls={localeUrls} />
         </div>
       </div>
     </div>

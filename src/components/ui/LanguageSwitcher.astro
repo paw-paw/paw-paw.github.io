@@ -1,12 +1,13 @@
 ---
 import { getRelativeLocaleUrl } from 'astro:i18n';
-import { normalizeLocale, supportedLocales, t } from '../../utils/i18n';
+import { normalizeLocale, supportedLocales, t, type SupportedLocale } from '../../utils/i18n';
 
 interface Props {
   mobile?: boolean;
+  localeUrls?: Partial<Record<SupportedLocale, string>>;
 }
 
-const { mobile = false } = Astro.props;
+const { mobile = false, localeUrls } = Astro.props;
 const currentLocale = normalizeLocale(Astro.currentLocale);
 const pathname = Astro.url.pathname;
 const withoutLocale = pathname.replace(/^\/(en|es)(?=\/|$)/, '');
@@ -23,7 +24,7 @@ const localeLabels = {
 >
   {supportedLocales.map((locale) => (
     <a
-      href={getRelativeLocaleUrl(locale, currentPath || undefined)}
+      href={localeUrls?.[locale] ?? getRelativeLocaleUrl(locale, currentPath || undefined)}
       class:list={['language-switcher-link', currentLocale === locale && 'language-switcher-link-active']}
       hreflang={locale}
       lang={locale}

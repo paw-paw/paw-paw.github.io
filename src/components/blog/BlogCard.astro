@@ -1,0 +1,56 @@
+---
+import Button from '../ui/Buttons.astro';
+import { Image } from 'astro:assets';
+import { t, type SupportedLocale } from '../../utils/i18n';
+import {
+  blogCategoryLabelKey,
+  formatBlogDate,
+  getBlogPostPath,
+  type BlogPostEntry,
+} from '../../utils/blog';
+
+interface Props {
+  post: BlogPostEntry;
+  lang: SupportedLocale;
+}
+
+const { post, lang } = Astro.props;
+---
+
+<article class="surface-card blog-card overflow-hidden">
+  <div class="blog-card-image-shell">
+    <Image
+      src={post.data.header_image}
+      alt={post.data.title}
+      class="blog-card-image"
+      widths={[720, 1080]}
+      sizes="(min-width: 1024px) 32rem, 100vw"
+    />
+    <div class="blog-card-image-overlay" aria-hidden="true"></div>
+  </div>
+
+  <div class="border-b border-secondary/8 px-5 py-4 dark:border-[rgba(var(--color-border-rgb),0.18)]">
+    <div class="flex flex-wrap items-center gap-2">
+      <span class="tag-chip">{t(blogCategoryLabelKey[post.data.category], lang)}</span>
+    </div>
+  </div>
+
+  <div class="p-5 md:p-6">
+    <p class="meta-kicker mb-3 text-xs font-mono uppercase tracking-[0.16em]">
+      {formatBlogDate(post.data.publish_date, lang)} · {post.data.reading_time}
+    </p>
+    <h2 class="mb-3 font-heading text-2xl text-secondary dark:text-fog">
+      {post.data.title}
+    </h2>
+    <p class="text-tone-soft mb-6">
+      {post.data.excerpt}
+    </p>
+
+    <Button
+      text={t('blog.readPost', lang)}
+      href={getBlogPostPath(lang, post.slug)}
+      variant="outline"
+      size="sm"
+    />
+  </div>
+</article>

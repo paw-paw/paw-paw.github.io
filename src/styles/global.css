@@ -252,6 +252,66 @@ html, body {
     gap: 0.45rem;
   }
 
+  .blog-card-image-shell {
+    position: relative;
+    overflow: hidden;
+    min-height: 16rem;
+  }
+
+  .blog-card-image,
+  .blog-post-header-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .blog-card-image {
+    min-height: 16rem;
+    transition: transform 0.45s ease;
+  }
+
+  .blog-card:hover .blog-card-image {
+    transform: scale(1.03);
+  }
+
+  .blog-card-image-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(180deg, rgba(var(--color-overlay-top-rgb), 0.12), transparent 38%),
+      linear-gradient(180deg, transparent 45%, rgba(var(--color-overlay-bottom-rgb), 0.28));
+    pointer-events: none;
+  }
+
+  .blog-post-header-image {
+    max-height: 34rem;
+  }
+
+  .blog-prose {
+    color: rgb(var(--color-text-soft-rgb));
+  }
+
+  .blog-prose > * + * {
+    margin-top: 1.25rem;
+  }
+
+  .blog-prose h2,
+  .blog-prose h3 {
+    color: rgb(var(--color-text-rgb));
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .blog-prose ul {
+    padding-left: 1.2rem;
+    list-style: disc;
+  }
+
+  .blog-prose li + li {
+    margin-top: 0.55rem;
+  }
+
   .experience-period-pill {
     @apply rounded-full px-3 py-1 text-xs font-mono;
     background: rgba(var(--color-accent-surface-rgb), 0.82);

@@ -1,0 +1,19 @@
+---
+import { t, type SupportedLocale } from '../../utils/i18n';
+import { blogCategoryLabelKey, formatBlogDate, type BlogCategory } from '../../utils/blog';
+
+interface Props {
+  locale: SupportedLocale;
+  publishDate: Date;
+  readingTime: string;
+  category: BlogCategory;
+}
+
+const { locale, publishDate, readingTime, category } = Astro.props;
+---
+
+<div class="flex flex-wrap gap-3 text-sm text-tone-muted">
+  <span>{t('blog.publishedLabel', locale)}: {formatBlogDate(publishDate, locale)}</span>
+  <span>{t('blog.readingTimeLabel', locale)}: {readingTime}</span>
+  <span>{t('blog.categoryLabel', locale)}: {t(blogCategoryLabelKey[category], locale)}</span>
+</div>

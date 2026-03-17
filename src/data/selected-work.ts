@@ -53,7 +53,7 @@ const localizedSelectedWork: Record<Locale, SelectedWorkItem[]> = {
       period: 'Aug 2024',
       location: 'Lima, Peru',
       summary:
-        'A retail-facing Dota 2 activation that connected online qualifiers, an in-store finals day, sponsor alignment, and a broadcast layer in one compact program.',
+        'A retail-facing Dota 2 activation that connected online qualifiers, an in-store finals day, sponsor alignment, and a broadcast layer in one compact partner-facing program.',
       highlights: [
         'Owned the client relationship and full delivery flow from qualifier design through finals-day execution and closeout.',
         'Coordinated venue readiness, broadcast production, talent, vendors, and prize payout as one integrated delivery scope.',
@@ -75,7 +75,7 @@ const localizedSelectedWork: Record<Locale, SelectedWorkItem[]> = {
         'A four-day retail activation built around daily tournament programming, creator coordination, and sponsor-aligned execution under a fixed infrastructure constraint.',
       highlights: [
         'Designed the event format, delivery rhythm, staffing plan, and operating artifacts needed to keep four consecutive in-store days running cleanly.',
-        'Aligned brand, venue, vendors, talent, and tournament operations into a single delivery cadence with no reported incidents.',
+        'Aligned brand, venue, vendors, talent, and tournament operations into a single sponsor-facing delivery cadence with no reported incidents.',
       ],
       metrics: ['~200 registrations', '~PEN 10K prize pool', '6 talents + 6 creators'],
       tags: ['Retail activation', 'Partner execution', 'Multi-day program'],
@@ -91,7 +91,7 @@ const localizedSelectedWork: Record<Locale, SelectedWorkItem[]> = {
       period: 'Oct 2025–present',
       location: 'Remote (Europe)',
       summary:
-        'An ongoing remote operations engagement supporting season delivery, match readiness, team communications, and rule enforcement for a Europe-aligned competition environment.',
+        'An ongoing remote operations engagement supporting season delivery, match readiness, team communications, and rule enforcement for a Europe-aligned competition environment with stakeholder-facing accountability.',
       highlights: [
         'Owned scheduling, lobby setup, readiness checks, and incident closure across recurring seasons with Europe-based operational timing.',
         'Used shared trackers and real-time comms to keep team-facing operations predictable and responsive through active competition windows.',
@@ -110,7 +110,7 @@ const localizedSelectedWork: Record<Locale, SelectedWorkItem[]> = {
       period: 'Jul–Aug 2025',
       location: 'Riyadh, Saudi Arabia',
       summary:
-        'A multi-title global event where player-facing logistics, escalation handling, and operational continuity had to work at international scale over seven weeks.',
+        'A multi-title global event where player-facing logistics, escalation handling, and operational continuity had to work at international scale over seven weeks with service-partner coordination throughout.',
       highlights: [
         'Supported player operations across rotating game titles by coordinating schedules, credentials, transport, rooming, and issue follow-up.',
         'Maintained reliable execution through shared trackers, incident triage, and coordination with vendors and on-site service partners.',
@@ -169,7 +169,7 @@ const localizedSelectedWork: Record<Locale, SelectedWorkItem[]> = {
       period: 'Aug 2024',
       location: 'Lima, Peru',
       summary:
-        'Una activación de retail de Dota 2 que conectó clasificatorias online, una final presencial en tienda, alineamiento con sponsor y una capa de broadcast en un programa compacto.',
+        'Una activación de retail de Dota 2 que conectó clasificatorias online, una final presencial en tienda, alineamiento con sponsor y una capa de broadcast en un programa compacto y de cara a partners.',
       highlights: [
         'Lideré la relación con el cliente y el flujo completo de delivery desde el diseño de clasificatorias hasta la ejecución del día final y el cierre.',
         'Coordiné readiness del venue, producción de broadcast, talento, vendors y pagos de premios como un solo alcance integrado de delivery.',
@@ -191,7 +191,7 @@ const localizedSelectedWork: Record<Locale, SelectedWorkItem[]> = {
         'Una activación de retail de cuatro días construida alrededor de programación competitiva diaria, coordinación con creadores y ejecución alineada con sponsor bajo una restricción fija de infraestructura.',
       highlights: [
         'Diseñé el formato del evento, el ritmo de delivery, el plan de staffing y los artefactos operativos necesarios para sostener cuatro días consecutivos en tienda.',
-        'Alineé marca, venue, vendors, talento y operaciones del torneo dentro de una sola cadencia de delivery sin incidentes reportados.',
+        'Alineé marca, venue, vendors, talento y operaciones del torneo dentro de una sola cadencia sponsor-facing de delivery sin incidentes reportados.',
       ],
       metrics: ['~200 registros', '~PEN 10K en prize pool', '6 talents + 6 creators'],
       tags: ['Activación retail', 'Ejecución con partners', 'Programa de varios días'],
@@ -207,7 +207,7 @@ const localizedSelectedWork: Record<Locale, SelectedWorkItem[]> = {
       period: 'Oct 2025–present',
       location: 'Remoto (Europa)',
       summary:
-        'Un engagement remoto de operaciones que sostiene la entrega de temporadas, readiness de partidas, comunicación con equipos y cumplimiento de reglas dentro de un entorno competitivo alineado a Europa.',
+        'Un engagement remoto de operaciones que sostiene la entrega de temporadas, readiness de partidas, comunicación con equipos y cumplimiento de reglas dentro de un entorno competitivo alineado a Europa y con accountability frente a stakeholders.',
       highlights: [
         'Lideré scheduling, setup de lobbies, readiness checks y cierre de incidentes a lo largo de temporadas recurrentes con timing operativo basado en Europa.',
         'Usé trackers compartidos y comunicación en tiempo real para mantener las operaciones con equipos previsibles y responsivas durante ventanas activas de competencia.',
@@ -226,7 +226,7 @@ const localizedSelectedWork: Record<Locale, SelectedWorkItem[]> = {
       period: 'Jul–Aug 2025',
       location: 'Riad, Arabia Saudita',
       summary:
-        'Un evento global multijuego donde la logística de cara a jugadores, el manejo de escalaciones y la continuidad operativa debían funcionar a escala internacional durante siete semanas.',
+        'Un evento global multijuego donde la logística de cara a jugadores, el manejo de escalaciones y la continuidad operativa debían funcionar a escala internacional durante siete semanas con coordinación constante con partners de servicio.',
       highlights: [
         'Apoyé operaciones de jugadores a través de títulos rotativos coordinando horarios, credenciales, transporte, hospedaje y seguimiento de issues.',
         'Sostuve una ejecución confiable mediante trackers compartidos, triage de incidentes y coordinación con vendors y partners de servicio on-site.',

@@ -1,0 +1,69 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import BlogPostMeta from '../../../components/blog/BlogPostMeta.astro';
+import Button from '../../../components/ui/Buttons.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import { getBlogIndexPath, getBlogPostPath } from '../../../utils/blog';
+import { t } from '../../../utils/i18n';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data }) => data.locale === 'en' && data.status === 'published');
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+const lang = 'en';
+---
+
+<Layout
+  title={`${post.data.title} | Paulo Tuya | Business Development, Partnerships, Project Delivery`}
+  description={post.data.excerpt}
+  lang={lang}
+  ogType="article"
+  seoImage={post.data.header_image.src}
+  localeUrls={{
+    en: getBlogPostPath('en', post.slug),
+    es: getBlogIndexPath('es'),
+  }}
+>
+  <section class="section-padding pt-28 md:pt-36">
+    <article class="max-w-container mx-auto px-6">
+      <div class="surface-muted px-6 py-8 md:px-10 md:py-12" data-aos="fade-up">
+        <span class="section-eyebrow">{t('blog.eyebrow', lang)}</span>
+        <h1 class="font-heading text-h1 text-secondary dark:text-fog mb-4">{post.data.title}</h1>
+        <p class="text-tone-soft max-w-3xl text-lg md:text-xl mb-6">{post.data.excerpt}</p>
+        <BlogPostMeta
+          locale={lang}
+          publishDate={post.data.publish_date}
+          readingTime={post.data.reading_time}
+          category={post.data.category}
+        />
+      </div>
+
+      <div class="mt-8 overflow-hidden rounded-3xl border border-secondary/10 dark:border-[rgba(var(--color-border-rgb),0.18)]">
+        <Image
+          src={post.data.header_image}
+          alt={post.data.title}
+          class="blog-post-header-image"
+          widths={[1200, 1800]}
+          sizes="(min-width: 1024px) 75rem, 100vw"
+        />
+      </div>
+
+      <div class="mt-10 surface-card px-6 py-8 md:px-10 md:py-12">
+        <div class="blog-prose mx-auto max-w-3xl">
+          <Content />
+        </div>
+      </div>
+
+      <div class="mt-8">
+        <Button text={t('blog.backToBlog', lang)} href={getBlogIndexPath('en')} variant="outline" size="md" />
+      </div>
+    </article>
+  </section>
+</Layout>

@@ -1279,3 +1279,45 @@
 - `docs/plans/sprint-2/block-3.md`
 
 ---
+
+## 2026-03-16 — Materializacion implementada de Sprint 2 Bloque 4
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `Sprint 2 / Bloque 4`
+
+### Decision / registro
+
+- el blog queda implementado en runtime con fuente local editable basada en `astro:content`
+- el sitio genera `blog index`, `blog post detail` y `category` para los locales activos
+- la primera tanda de contenido real del blog queda publicada en `en` con 2 posts
+- el `LanguageSwitcher` incorpora el fallback implementado hacia `blog index` cuando un post no tiene equivalente exacto en el locale destino
+- el portfolio principal queda realineado en runtime con la nueva tesis aprobada en los bloques previos
+
+### Impacto
+
+- el runtime deja de depender solo de contratos futuros para exponer el blog
+- `Bloque 5` puede concentrarse en cierre fino de SEO, i18n, discoverability interna y publicacion
+- el portfolio principal y el blog ya conviven desde una misma direccion narrativa en el codigo publicado
+
+### Documentos afectados
+
+- `docs/plans/sprint-2/block-4.md`
+- `docs/governance/decision-log.md`
+
+### Implementacion afectada
+
+- `src/content.config.ts`
+- `src/content/blog/`
+- `src/pages/en/blog/`
+- `src/pages/es/blog/`
+- `src/components/blog/`
+- `src/components/layout/Navbar.astro`
+- `src/components/ui/LanguageSwitcher.astro`
+- `src/layouts/Layout.astro`
+- `src/utils/seo.ts`
+- `src/i18n/en.json`
+- `src/i18n/es.json`
+
+---

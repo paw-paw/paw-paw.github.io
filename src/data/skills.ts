@@ -12,7 +12,7 @@ const localizedSkillClusters: Record<Locale, SkillCluster[]> = {
   en: [
     {
       id: 'program-delivery-operations',
-      title: 'Program & Delivery Operations',
+      title: 'Project Delivery & Execution',
       description:
         'I build structure around execution: planning, readiness, escalation handling, and the operating cadence that keeps delivery reliable.',
       capabilities: [
@@ -53,7 +53,7 @@ const localizedSkillClusters: Record<Locale, SkillCluster[]> = {
   es: [
     {
       id: 'program-delivery-operations',
-      title: 'Operaciones de programa y delivery',
+      title: 'Project Delivery & Execution',
       description:
         'Construyo estructura alrededor de la ejecución: planificación, readiness, manejo de incidentes y la cadencia operativa que mantiene el delivery confiable.',
       capabilities: [

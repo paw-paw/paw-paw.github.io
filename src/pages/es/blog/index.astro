@@ -1,0 +1,23 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import BlogEmptyState from '../../../components/blog/BlogEmptyState.astro';
+import { getSeoEntry } from '../../../utils/seo';
+import { t } from '../../../utils/i18n';
+
+const lang = 'es';
+const seo = getSeoEntry(lang, 'blog');
+---
+
+<Layout title={seo.title} description={seo.description} lang={lang}>
+  <section class="section-padding pt-28 md:pt-36">
+    <div class="max-w-container mx-auto px-6">
+      <div class="surface-muted px-6 py-8 md:px-10 md:py-12 mb-10 md:mb-12" data-aos="fade-up">
+        <span class="section-eyebrow">{t('blog.eyebrow', lang)}</span>
+        <h1 class="font-heading text-h1 text-secondary dark:text-fog mb-4">{t('blog.title', lang)}</h1>
+        <p class="text-tone-soft max-w-3xl text-lg md:text-xl">{t('blog.subtitle', lang)}</p>
+      </div>
+
+      <BlogEmptyState lang={lang} />
+    </div>
+  </section>
+</Layout>

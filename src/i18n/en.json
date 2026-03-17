@@ -1,19 +1,20 @@
 {
   "site": {
-    "title": "Paulo Tuya | Delivery, Partnerships & Operations",
-    "description": "Portfolio of Paulo Tuya, a delivery and partnerships operator across gaming, esports, and remote programs."
+    "title": "Paulo Tuya | Business Development, Partnerships, Project Delivery",
+    "description": "Portfolio of Paulo Tuya, a commercially fluent operator connecting business development, partnerships, and project delivery across gaming, esports, and remote programs."
   },
   "nav": {
     "home": "Home",
     "work": "Work",
     "experience": "Experience",
+    "blog": "Blog",
     "contact": "Contact",
     "contactButton": "Contact"
   },
   "hero": {
     "greeting": "Paulo Cesar Tuya",
-    "name": "I turn partner and project goals into clear execution",
-    "pitch": "Delivery, partnerships, and operations across gaming, esports, and remote programs.",
+    "name": "I connect business development, partnerships, and project delivery into clear execution",
+    "pitch": "Commercially fluent, cross-functional execution across gaming, esports, and remote programs.",
     "role": "",
     "ctaProjects": "View selected work",
     "ctaAbout": "See experience",
@@ -22,7 +23,7 @@
   "values": {
     "eyebrow": "Method",
     "title": "How I Work",
-    "subtitle": "Clear scope, aligned stakeholders, and steady operational control.",
+    "subtitle": "Commercial context, aligned stakeholders, and structured execution.",
     "card1Title": "Structure before noise",
     "card1Text": "I turn loose goals into scopes, owners, timelines, and operating artifacts that make execution easier to trust.",
     "card2Title": "Coordination without drift",
@@ -33,29 +34,29 @@
   "skills": {
     "eyebrow": "Capability",
     "title": "Capability Clusters",
-    "subtitle": "Planning, partner-facing work, and execution systems that keep delivery clear and reliable."
+    "subtitle": "Commercial fluency, partner-facing work, and execution systems that keep delivery structured and credible."
   },
   "projects": {
     "eyebrow": "Evidence",
     "pageTitle": "Selected Work",
-    "pageDescription": "Selected work across activations, partnerships, and delivery-heavy programs.",
-    "heroTitle": "Selected work across activations, partnerships, and delivery-heavy programs.",
-    "heroSubtitle": "These case summaries show how I move between partner-facing scope, operational planning, and execution on the ground.",
+    "pageDescription": "Selected work across partnerships, business development, and delivery-heavy programs.",
+    "heroTitle": "Selected projects across partnerships, business development, and delivery",
+    "heroSubtitle": "These case summaries show how I connect business development, partnerships, and project delivery under real execution constraints.",
     "buttonText": "See selected work",
     "title": "Selected Work",
-    "subtitle": "Projects where partner-facing work, live operations, and execution had clear stakes and visible outcomes.",
+    "subtitle": "Projects where commercial context, partner-facing execution, and delivery had clear stakes and visible outcomes.",
     "allProjectsButtonText": "See all selected work"
   },
   "timeline": {
     "eyebrow": "Trajectory",
     "title": "Experience",
-    "subtitle": "From production and league operations to partnerships, account-facing delivery, and founder-led execution.",
+    "subtitle": "From operations and league work to partnerships, account-facing delivery, and business development.",
     "buttonText": "View full experience"
   },
   "workPage": {
     "eyebrow": "Selected Work",
-    "title": "Selected projects across delivery and partnerships",
-    "subtitle": "These case summaries show how I move between partner-facing scope, operational planning, and execution on the ground.",
+    "title": "Selected projects across partnerships, business development, and delivery",
+    "subtitle": "These case summaries show how I connect business development, partnerships, and project delivery under real execution constraints.",
     "description": "These projects show where partnerships, planning, and execution had to hold together under real constraints.",
     "panelTitle": "Snapshot",
     "panelDealsClosedLabel": "Deals closed",
@@ -69,10 +70,10 @@
   },
   "experiencePage": {
     "eyebrow": "Experience",
-    "title": "From operations to partnerships and project ownership",
-    "subtitle": "These roles show how I grew from tournament and production operations into partnerships, account-facing delivery, and founder-led execution.",
-    "description": "These roles show how I grew from tournament and production operations into partnerships, account-facing delivery, and founder-led execution.",
-    "locationAndLanguages": "Based in Lima, Peru. Native Spanish, professional English, and working Portuguese.",
+    "title": "From operations to partnerships, business development, and project ownership",
+    "subtitle": "These roles show how I moved from operations into partnerships, business development, account-facing delivery, and founder-led execution.",
+    "description": "These roles show how I moved from operations into partnerships, business development, account-facing delivery, and founder-led execution.",
+    "locationAndLanguages": "Based in Lima, Peru. Spanish (Native), English (C1), and Portuguese (B1).",
     "panelTitle": "Profile snapshot",
     "panelLocationLabel": "Location",
     "panelLocation": "Lima, Peru",
@@ -86,7 +87,7 @@
   "footerCTA": {
     "eyebrow": "Next step",
     "title": "Start a conversation",
-    "subtitle": "Open to remote roles across delivery, partnerships, operations, and partner-facing execution.",
+    "subtitle": "Open to remote roles across business development, partnerships, project delivery, and partner-facing execution.",
     "buttonText": "Start the conversation"
   },
   "contact": {
@@ -102,8 +103,32 @@
   },
   "contactPage": {
     "eyebrow": "Contact",
-    "title": "Let’s talk",
-    "subtitle": "Hiring for delivery, partnerships, operations, or partner-facing execution? Email is the fastest way to reach me. LinkedIn and Instagram add context."
+    "title": "Let's talk",
+    "subtitle": "Hiring for business development, partnerships, project delivery, or partner-facing execution? Email is the fastest way to reach me. LinkedIn and Instagram add context."
+  },
+  "blog": {
+    "eyebrow": "Professional Blog",
+    "title": "Blog",
+    "subtitle": "Writing on business development, partnerships, project delivery, operations, and the operating patterns behind reliable execution.",
+    "featuredTitle": "Featured posts",
+    "allPostsTitle": "All posts",
+    "readPost": "Read post",
+    "backToBlog": "Back to blog",
+    "emptyTitle": "No posts published in this locale yet",
+    "emptyText": "This locale already has an active blog surface, but posts will appear here as they are localized or written directly for it. For now, the English blog is the active editorial source.",
+    "emptyCategoryTitle": "No posts in this category yet",
+    "emptyCategoryText": "This category exists in the editorial system, but it does not have published posts in this locale yet.",
+    "emptyCta": "See selected work",
+    "categoryLabel": "Category",
+    "publishedLabel": "Published",
+    "readingTimeLabel": "Reading time",
+    "readingTimeSuffix": "read",
+    "categories": {
+      "projectDelivery": "Project delivery",
+      "bdAndPartnerships": "BD and partnerships",
+      "operations": "Operations",
+      "careerAndIndustryLessons": "Career and industry lessons"
+    }
   },
   "ui": {
     "languageSwitcherAria": "Language switcher",
@@ -114,7 +139,7 @@
     "arrowSuffix": "arrow"
   },
   "footer": {
-    "copyright": "Delivery, partnerships, and execution across gaming, esports, and remote programs.",
+    "copyright": "Business development, partnerships, and project delivery across gaming, esports, and remote programs.",
     "imprint": "Imprint",
     "privacyPolicy": "Privacy Policy"
   }
