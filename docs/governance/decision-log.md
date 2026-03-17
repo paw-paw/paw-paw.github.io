@@ -1321,3 +1321,38 @@
 - `src/i18n/es.json`
 
 ---
+
+## 2026-03-17 — Cierre operativo de Sprint 2 Bloque 5 y superficie lista para release controlada
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `Sprint 2 / Bloque 5`
+
+### Decision / registro
+
+- `Bloque 5` cierra SEO, i18n, discoverability interna y release readiness del portfolio realineado y del blog
+- se mantiene la estrategia `en-first` para esta primera release del blog, con `es` operativo en `blog index` y `category` mediante empty states claros
+- la home incorpora linking contextual minimo hacia el blog desde `How I Work`, sin competir con la CTA principal `View selected work`
+- `npm run build` y `npm run preview` quedaron validados sobre las rutas principales del portfolio, rutas del blog, rutas puente, `robots.txt` y sitemap
+- el `LanguageSwitcher` en `blog post detail` queda verificado con fallback al `blog index` del locale destino cuando no existe post equivalente
+- la superficie queda marcada como `lista para release controlada`, sin asumir deploy automatico ni release publica ya ejecutada
+
+### Razon
+
+- el blog y la realineacion del portfolio ya estaban implementados, pero faltaba cerrar la capa fina de release para evitar desalineaciones entre contratos, runtime y checklist operativo
+- registrar este punto de cierre deja trazabilidad clara entre implementacion, QA local y estado real de publicacion
+
+### Documentos afectados
+
+- `docs/plans/sprint-2/block-5.md`
+- `docs/delivery/release-checklist.md`
+- `docs/governance/decision-log.md`
+
+### Implementacion afectada
+
+- `src/components/sections/Values.astro`
+- `src/i18n/en.json`
+- `src/i18n/es.json`
+
+---
