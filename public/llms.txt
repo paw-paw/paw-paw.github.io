@@ -1,0 +1,18 @@
+# Paulo Tuya
+
+> Bilingual portfolio site for Paulo Tuya covering project delivery, partnerships, operations, selected work, experience, and contact information.
+
+This site publishes the same core portfolio content in English and Spanish.
+
+The unprefixed root URLs are bridge pages for locale routing. The canonical public pages live under `/en/` and `/es/`.
+
+## Canonical Pages
+
+- [Home (English)](https://paw-paw.github.io/en/): Main portfolio overview with positioning, selected work, experience highlights, skills, and contact path.
+- [Inicio (Español)](https://paw-paw.github.io/es/): Versión principal del portfolio con resumen, trabajo destacado, experiencia, habilidades y contacto.
+- [Work (English)](https://paw-paw.github.io/en/work/): Selected projects, delivery scope, metrics, and partner-facing execution examples.
+- [Trabajo (Español)](https://paw-paw.github.io/es/work/): Proyectos seleccionados, alcance de delivery, métricas y ejemplos de ejecución con partners.
+- [Experience (English)](https://paw-paw.github.io/en/experience/): Professional timeline across operations, partnerships, and delivery roles.
+- [Experiencia (Español)](https://paw-paw.github.io/es/experience/): Recorrido profesional en operaciones, alianzas y roles de delivery.
+- [Contact (English)](https://paw-paw.github.io/en/contact/): Direct contact page for project delivery, partnerships, and operations opportunities.
+- [Contacto (Español)](https://paw-paw.github.io/es/contact/): Página directa de contacto para oportunidades de delivery, alianzas y operaciones.
