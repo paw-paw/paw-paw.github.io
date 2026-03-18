@@ -1322,6 +1322,56 @@
 
 ---
 
+## 2026-03-18 — Compresion editorial top-level priorizada por cadencia visual
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `Sprint 2 / Ajuste editorial`
+
+### Decision / registro
+
+- se aprueba una compresion editorial ad hoc en superficies top-level de `hero`, `Work`, `Experience` y `Contact`
+- la decision prioriza cadencia visual, longitud de linea y encaje en layout por encima de repetir la tesis completa en cada headline
+- la tesis del perfil pasa a distribuirse entre varias superficies top-level en lugar de concentrarse en una sola formula expandida
+- se aprueban como copy de implementacion:
+  - `en hero headline`: `I turn partner and project goals into clear execution`
+  - `es hero headline`: `convierto objetivos de proyectos en ejecución clara`
+  - `es hero supporting line`: `Liderazgo de ejecución con criterio comercial en gaming, esports y programas remotos.`
+  - `es timeline subtitle`: `De operaciones y trabajo en torneos a gestionar alianzas, dirigir proyectos y negociar acuerdos`
+  - `en work title`: `Selected projects across delivery and partnerships`
+  - `es work title`: `Proyectos clave negociados y ejecutados`
+  - `es experience title`: `De operaciones a negocios y liderazgo de proyectos`
+  - `en experience title`: `From operations to partnerships and project ownership`
+  - `en contact subtitle`: `Hiring for business development, partnerships, project delivery, or partner-facing execution? Let's connect!`
+  - `es contact subtitle`: `¿Buscas un profesional con experiencia en business development, partnerships o gestión de proyectos? ¡Conectemos!`
+
+### Razon
+
+- las variantes mas expansivas ya no estaban entrando con buena cadencia visual en las superficies activas
+- se probaron alternativas mas largas sin lograr una combinacion satisfactoria entre sentido, ritmo visual y claridad inmediata
+- el owner editorial decide aceptar una compresion controlada del framing top-level para preservar lectura, jerarquia y balance visual
+
+### Impacto
+
+- `strategy` y `content-system` deben permitir que la tesis se distribuya entre varias superficies top-level cuando el layout lo exija
+- `content-master` conserva el ingles como idioma maestro, pero la implementacion en `es` queda aprobada como adaptacion controlada por fit visual
+- esta decision no cambia la audiencia principal ni el foco en gaming, esports y programas remotos
+
+### Documentos afectados
+
+- `docs/strategy/portfolio-strategy.md`
+- `docs/content/content-system.md`
+- `docs/content/content-master.md`
+- `docs/governance/decision-log.md`
+
+### Implementacion afectada
+
+- `src/i18n/en.json`
+- `src/i18n/es.json`
+
+---
+
 ## 2026-03-17 — Cierre operativo de Sprint 2 Bloque 5 y superficie lista para release controlada
 
 ### Estado

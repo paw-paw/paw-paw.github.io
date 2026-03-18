@@ -5,7 +5,7 @@
 - Tipo: `contractual`
 - Fase inicial: `1`
 - Estado: `done`
-- Ultima actualizacion: `2026-03-16`
+- Ultima actualizacion: `2026-03-18`
 
 ---
 
@@ -100,9 +100,18 @@ Una persona que entre al sitio debe entender rapidamente que:
 - conviertes oportunidades comerciales en ejecucion cross-functional confiable
 - tu experiencia fuerte vive en gaming y esports, pero tu valor es transferible a sectores adyacentes
 
-Formula de referencia:
+Regla de compresion editorial aprobada:
+
+- la tesis no tiene que vivir completa dentro de una sola linea
+- por cadencia visual, el `hero headline` puede comprimirse si el conjunto `hero` + supporting line + titulos de `Work`, `Experience` y `Contact` sigue dejando claro el puente entre contexto comercial, partnerships y ejecucion
+
+Formula de referencia expandida:
 
 `I bridge business development, partnerships, and project delivery to turn commercial opportunities into executable, cross-functional programs.`
+
+Formula comprimida aceptable por cadencia visual:
+
+`I turn partner and project goals into clear execution.`
 
 ---
 

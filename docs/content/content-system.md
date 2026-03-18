@@ -5,7 +5,7 @@
 - Tipo: `contractual`
 - Fase inicial: `2`
 - Estado: `done`
-- Ultima actualizacion: `2026-03-16`
+- Ultima actualizacion: `2026-03-18`
 
 ---
 
@@ -22,6 +22,7 @@ Este documento define desde `Bloque 3` la entidad editorial `blog_post` como par
 ## Principios del sistema
 
 - la tesis principal conecta `business development`, `partnerships` y `project delivery`
+- la tesis puede distribuirse entre `hero`, `Work`, `Experience` y `Contact` cuando la cadencia visual obligue a comprimir una superficie puntual
 - `Selected Work` y `Experience` son pilares equivalentes de evidencia
 - `Blog` amplifica autoridad y posicionamiento experto sin reemplazar la evidencia principal
 - `operations` aporta soporte y credibilidad operativa, no liderazgo narrativo
@@ -46,7 +47,7 @@ Debe incluir:
 
 - headline o thesis line
 - subheadline o supporting statement
-- lenguaje capaz de expresar el puente entre business development, partnerships y project delivery
+- lenguaje capaz de expresar el puente entre business development, partnerships y project delivery, ya sea dentro del headline o distribuido entre headline, supporting statement y jerarquia top-level adyacente
 - CTA principal
 - CTA secundaria si aporta claridad
 
@@ -55,6 +56,7 @@ No debe incluir:
 - bio exhaustiva
 - listas largas de herramientas
 - claims grandilocuentes no defendibles
+- una compresion tan agresiva que convierta el perfil en puro `project delivery` sin señales visibles de contexto comercial o de partnerships en el mismo recorrido top-level
 
 ### `how_i_work`
 

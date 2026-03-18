@@ -5,7 +5,7 @@
 - Tipo: `auxiliar`
 - Fase inicial: `4`
 - Estado: `done`
-- Ultima actualizacion: `2026-03-16`
+- Ultima actualizacion: `2026-03-18`
 
 ---
 
@@ -71,7 +71,7 @@ Eyebrow:
 
 Headline:
 
-`I connect business development, partnerships, and project delivery into clear execution`
+`I turn partner and project goals into clear execution`
 
 Supporting line:
 
@@ -188,7 +188,7 @@ Titulo:
 
 Subtitulo:
 
-`Hiring for business development, partnerships, project delivery, or partner-facing execution? Email is the fastest way to reach me. LinkedIn and Instagram add context.`
+`Hiring for business development, partnerships, project delivery, or partner-facing execution? Let's connect!`
 
 Labels:
 
@@ -218,7 +218,7 @@ Eyebrow:
 
 Titulo:
 
-`Selected projects across partnerships, business development, and delivery`
+`Selected projects across delivery and partnerships`
 
 Subtitulo:
 
@@ -241,7 +241,7 @@ Eyebrow:
 
 Titulo:
 
-`From operations to partnerships, business development, and project ownership`
+`From operations to partnerships and project ownership`
 
 Subtitulo:
 

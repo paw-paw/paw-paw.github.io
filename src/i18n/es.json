@@ -13,8 +13,8 @@
   },
   "hero": {
     "greeting": "Paulo Cesar Tuya",
-    "name": "Conecto business development, alianzas y delivery de proyectos en ejecucion clara",
-    "pitch": "Ejecucion cross-functional con criterio comercial en gaming, esports y programas remotos.",
+    "name": "convierto objetivos de proyectos en ejecución clara",
+    "pitch": "Liderazgo de ejecución con criterio comercial en gaming, esports y programas remotos.",
     "role": "",
     "ctaProjects": "Ver trabajo seleccionado",
     "ctaAbout": "Ver experiencia",
@@ -42,7 +42,7 @@
     "eyebrow": "Evidencia",
     "pageTitle": "Trabajo seleccionado",
     "pageDescription": "Trabajo seleccionado entre alianzas, business development y programas intensivos en delivery.",
-    "heroTitle": "Proyectos seleccionados entre alianzas, business development y delivery",
+    "heroTitle": "Proyectos clave negociados y ejecutados",
     "heroSubtitle": "Estos casos muestran como conecto business development, alianzas y delivery de proyectos bajo restricciones reales de ejecucion.",
     "buttonText": "Ver trabajo seleccionado",
     "title": "Trabajo seleccionado",
@@ -52,12 +52,12 @@
   "timeline": {
     "eyebrow": "Trayectoria",
     "title": "Experiencia",
-    "subtitle": "De operaciones y trabajo de liga hacia alianzas, delivery de cara a cuentas y business development.",
+    "subtitle": "De operaciones y trabajo en torneos a gestionar alianzas, dirigir proyectos y negociar acuerdos",
     "buttonText": "Ver experiencia completa"
   },
   "workPage": {
     "eyebrow": "Trabajo seleccionado",
-    "title": "Proyectos seleccionados entre alianzas, business development y delivery",
+    "title": "Proyectos clave negociados y ejecutados",
     "subtitle": "Estos casos muestran como conecto business development, alianzas y delivery de proyectos bajo restricciones reales de ejecucion.",
     "description": "Estos proyectos muestran donde alianzas, planificacion y ejecucion tuvieron que sostenerse bajo restricciones reales.",
     "panelTitle": "Resumen",
@@ -72,7 +72,7 @@
   },
   "experiencePage": {
     "eyebrow": "Experiencia",
-    "title": "De operaciones a alianzas, business development y ownership de proyectos",
+    "title": "De operaciones a negocios y liderazgo de proyectos",
     "subtitle": "Estos roles muestran como pase de operaciones a alianzas, business development, delivery de cara a cuentas y ejecucion founder-led.",
     "description": "Estos roles muestran como pase de operaciones a alianzas, business development, delivery de cara a cuentas y ejecucion founder-led.",
     "locationAndLanguages": "Con base en Lima, Peru. Espanol (nativo), ingles (C1) y portugues (B1).",
@@ -106,7 +106,7 @@
   "contactPage": {
     "eyebrow": "Contacto",
     "title": "Conversemos",
-    "subtitle": "Contratas para business development, alianzas, delivery de proyectos o ejecucion de cara a partners? El email es la via mas rapida. LinkedIn e Instagram agregan contexto."
+    "subtitle": "¿Buscas un profesional con experiencia en business development, partnerships o gestión de proyectos? ¡Conectemos!"
   },
   "blog": {
     "eyebrow": "Blog profesional",
