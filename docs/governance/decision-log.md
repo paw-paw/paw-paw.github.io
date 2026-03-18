@@ -1372,6 +1372,50 @@
 
 ---
 
+## 2026-03-18 — Panel lateral editorial para `Blog` y retrato square para `Contact`
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `Sprint 2 / Ajuste visual-estructural`
+
+### Decision / registro
+
+- `/blog` adopta un intro de dos columnas con bloque editorial principal a la izquierda y teaser lateral a la derecha
+- el panel lateral de `/blog` usa un unico post `featured` y reemplaza por completo la seccion separada de `Featured posts`
+- la regla editorial pasa a ser estricta: por locale solo puede existir un `featured` publicado; si hay mas de uno, la build falla
+- `/es/blog` puede conservar temporalmente el panel lateral con placeholder minimo no interactivo mientras el locale siga sin posts
+- `/contact` adopta un intro de dos columnas dentro de un mismo bloque editorial, con copy a la izquierda y retrato square a la derecha
+- el retrato de `/contact` debe mantener el lenguaje del `hero` de home: asset contenido, panel controlado y peso secundario frente al copy y los canales
+- el `featured` de `/blog` pasa a un tratamiento visual dominante y compacto, sin excerpt ni metadata larga
+
+### Razon
+
+- `Blog` y `Contact` estaban quedando visualmente menos resueltos que `Hero`, `/work` y `/experience`
+- el panel lateral permite cerrar mejor la columna vacia sin introducir ruido ni nuevas superficies ajenas a la estrategia
+- en `Blog`, concentrar el `featured` en el intro reduce duplicacion y mejora jerarquia editorial
+- en `Contact`, el retrato square aporta continuidad visual sin desviar la funcion de conversion
+
+### Documentos afectados
+
+- `docs/architecture/site-architecture.md`
+- `docs/content/content-system.md`
+- `docs/content/content-master.md`
+- `docs/visual/asset-plan.md`
+- `docs/governance/decision-log.md`
+
+### Implementacion afectada
+
+- `src/pages/en/blog/index.astro`
+- `src/pages/es/blog/index.astro`
+- `src/pages/en/contact.astro`
+- `src/pages/es/contact.astro`
+- `src/utils/blog.ts`
+- `src/i18n/en.json`
+- `src/i18n/es.json`
+
+---
+
 ## 2026-03-17 — Cierre operativo de Sprint 2 Bloque 5 y superficie lista para release controlada
 
 ### Estado

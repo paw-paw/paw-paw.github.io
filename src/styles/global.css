@@ -284,6 +284,22 @@ html, body {
     pointer-events: none;
   }
 
+  .blog-featured-shell {
+    position: relative;
+    overflow: hidden;
+    min-height: 19rem;
+    border-radius: 0 0 1.5rem 1.5rem;
+  }
+
+  .blog-featured-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(180deg, rgba(var(--color-overlay-top-rgb), 0.08), transparent 34%),
+      linear-gradient(180deg, transparent 28%, rgba(var(--color-overlay-bottom-rgb), 0.82));
+    pointer-events: none;
+  }
+
   .blog-post-header-image {
     max-height: 34rem;
   }
@@ -440,6 +456,10 @@ html, body {
   }
 
   @media (max-width: 767px) {
+    .blog-featured-shell {
+      min-height: 16rem;
+    }
+
     .nested-panel-card {
       padding: 0.9rem;
     }

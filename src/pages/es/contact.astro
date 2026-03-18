@@ -1,8 +1,10 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Contact from '../../components/sections/Contact.astro';
+import { Image } from 'astro:assets';
 import { t } from '../../utils/i18n';
 import { getSeoEntry } from '../../utils/seo';
+import contactPortrait from '../../assets/paw-square-contact.png';
 
 const lang = 'es';
 const seo = getSeoEntry(lang, 'contact');
@@ -15,14 +17,34 @@ const seo = getSeoEntry(lang, 'contact');
 >
   <section class="section-padding contact-page-intro-compact pt-28 md:pt-36">
     <div class="max-w-container mx-auto px-6">
-      <div class="surface-muted px-6 py-8 md:px-10 md:py-12">
-        <span class="section-eyebrow">{t('contactPage.eyebrow', lang)}</span>
-        <h1 class="font-heading text-h1 text-secondary dark:text-fog mb-4">
-          {t('contactPage.title', lang)}
-        </h1>
-        <p class="max-w-3xl text-lg md:text-xl text-secondary/78 dark:text-fog/88">
-          {t('contactPage.subtitle', lang)}
-        </p>
+      <div class="soft-grid surface-muted overflow-hidden px-6 py-9 md:px-10 md:py-11">
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-12 md:items-start md:gap-10">
+          <div class="md:col-span-7">
+            <span class="section-eyebrow">{t('contactPage.eyebrow', lang)}</span>
+            <h1 class="font-heading text-h1 text-secondary dark:text-fog mb-4">
+              {t('contactPage.title', lang)}
+            </h1>
+            <p class="max-w-3xl text-lg md:text-xl text-secondary/78 dark:text-fog/88">
+              {t('contactPage.subtitle', lang)}
+            </p>
+          </div>
+
+          <div class="md:col-span-5">
+            <div class="surface-card relative ml-auto max-w-[18.25rem] overflow-hidden p-[0.45rem] md:max-w-[20rem] md:p-2">
+              <div class="absolute inset-0 bg-hero-glow opacity-70"></div>
+              <div class="absolute inset-x-3 top-3 h-px bg-secondary/10 dark:bg-[rgba(var(--color-border-rgb),0.18)] md:inset-x-4 md:top-4"></div>
+              <div class="relative rounded-[1.75rem] bg-neutral-bg/70 dark:bg-[rgba(var(--color-surface-nested-rgb),0.78)]">
+                <Image
+                  src={contactPortrait}
+                  alt="Retrato square de Paulo Cesar Tuya para la pagina de contacto"
+                  class="mx-auto aspect-square w-full rounded-[1.75rem] object-cover"
+                  widths={[720, 960]}
+                  sizes="(min-width: 1024px) 20rem, 100vw"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>

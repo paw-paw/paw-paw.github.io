@@ -190,6 +190,12 @@ Subtitulo:
 
 `Hiring for business development, partnerships, project delivery, or partner-facing execution? Let's connect!`
 
+Panel derecho:
+
+- retrato square aprobado, contenido y subordinado al copy principal
+- embebido dentro del mismo bloque intro, con la misma logica estructural del `hero`
+- mismo tono editorial del `hero`, sin convertir `/contact` en una pagina autobiografica
+
 Labels:
 
 - `Email`
@@ -207,6 +213,35 @@ Buttons:
 Copy:
 
 `Business development, partnerships, and project delivery across gaming, esports, and remote programs.`
+
+---
+
+## `/blog`
+
+Eyebrow:
+
+`Professional Blog`
+
+Titulo:
+
+`Blog`
+
+Subtitulo:
+
+`Writing on business development, partnerships, project delivery, operations, and the operating patterns behind reliable execution.`
+
+Panel derecho cuando exista `featured`:
+
+- un solo post `featured` por locale
+- funciona como teaser editorial destacado dentro del intro
+- reemplaza una seccion separada de `Featured posts` en el index
+- prioriza imagen, categoria, titulo y CTA breve
+- no necesita repetir excerpt ni metadata larga
+
+Panel derecho temporal cuando no existan posts en el locale:
+
+- placeholder minimo no interactivo
+- mantiene el layout sin presentar una falsa promesa de contenido publicado
 
 ---
 

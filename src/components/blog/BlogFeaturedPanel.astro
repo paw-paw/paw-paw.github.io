@@ -1,0 +1,50 @@
+---
+import { Image } from 'astro:assets';
+import { t, type SupportedLocale } from '../../utils/i18n';
+import {
+  blogCategoryLabelKey,
+  getBlogPostPath,
+  type BlogPostEntry,
+} from '../../utils/blog';
+
+interface Props {
+  post: BlogPostEntry;
+  lang: SupportedLocale;
+}
+
+const { post, lang } = Astro.props;
+---
+
+<aside class="surface-card overflow-hidden" data-aos="fade-up" data-aos-delay="120">
+  <a href={getBlogPostPath(lang, post.slug)} class="group block">
+    <div class="px-5 pt-4 pb-2">
+      <span class="section-eyebrow mb-0">{t('blog.featuredTitle', lang)}</span>
+    </div>
+
+    <div class="blog-featured-shell">
+      <Image
+        src={post.data.header_image}
+        alt={post.data.title}
+        class="blog-card-image"
+        widths={[720, 1080]}
+        sizes="(min-width: 1024px) 24rem, 100vw"
+      />
+      <div class="blog-featured-overlay" aria-hidden="true"></div>
+
+      <div class="absolute inset-x-5 bottom-5 z-[1]">
+        <div class="mb-3 flex flex-wrap items-center gap-2">
+          <span class="tag-chip">{t(blogCategoryLabelKey[post.data.category], lang)}</span>
+        </div>
+
+        <h2 class="mb-3 font-heading text-2xl text-fog">
+          {post.data.title}
+        </h2>
+
+        <span class="inline-flex items-center gap-2 text-sm font-medium text-fog/92 transition-colors duration-300 group-hover:text-white">
+          <span>{t('blog.readPost', lang)}</span>
+          <span aria-hidden="true">→</span>
+        </span>
+      </div>
+    </div>
+  </a>
+</aside>

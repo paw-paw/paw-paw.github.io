@@ -211,6 +211,25 @@ Canales no permitidos por defecto:
 - direccion exacta
 - datos sensibles
 
+### `contact_page`
+
+Proposito:
+
+- concentrar la conversion profesional final
+- introducir los canales publicos aprobados sin ruido adicional
+
+Puede incluir:
+
+- headline y subheadline breves
+- retrato o asset square aprobado embebido dentro del mismo bloque intro
+- refuerzo visual consistente con el `hero`, siempre que el bloque no se convierta en una pseudo pagina `about`
+
+No debe incluir:
+
+- storytelling autobiografico largo
+- un asset heroico que opaque el canal principal de contacto
+- datos o claims no relacionados con conversion
+
 ### `footer_cta`
 
 Proposito:
@@ -263,6 +282,12 @@ Reglas de estructura:
   - `bd-and-partnerships`
   - `operations`
   - `career-and-industry-lessons`
+- por locale puede existir como maximo un solo post `featured` publicado
+- si un locale supera un `featured`, la build debe fallar
+- el `blog index` puede usar ese `featured` singular como teaser lateral editorial en el intro
+- el teaser del `featured` debe ser visualmente dominante y mas compacto que una `blog card` completa
+- el teaser puede omitir excerpt y metadata larga si el post completo ya aparece mas abajo en la grilla general
+- si un locale aun no tiene posts publicados, el intro puede conservar la columna lateral con placeholder minimo no interactivo
 - el cuerpo del post no exige todavia sub-bloques internos obligatorios
 - el sistema debe permitir posts sin equivalente exacto en el otro locale
 

@@ -42,6 +42,20 @@ Estado:
 - aprobado para uso visible en hero durante Fase 3
 - tratado como asset valido del sistema actual
 
+### Contact visual square
+
+- `src/assets/paw-square-contact.png`
+
+Origen:
+
+- promovido desde `temp/paw-square-contact.png`
+
+Estado:
+
+- aprobado para uso visible en el intro de `/contact`
+- debe vivir contenido dentro de un panel lateral sobrio
+- no reemplaza el protagonismo funcional de los canales publicos
+
 ### Favicon provisional
 
 - `src/assets/favicon.svg`

@@ -35,6 +35,17 @@ export const formatBlogDate = (date: Date, locale: SupportedLocale) =>
 const sortByPublishDate = (posts: BlogPostEntry[]) =>
   posts.sort((a, b) => b.data.publish_date.getTime() - a.data.publish_date.getTime());
 
+const ensureSingleFeaturedPost = (posts: BlogPostEntry[], locale: SupportedLocale): BlogPostEntry[] => {
+  const featuredPosts = posts.filter((post) => post.data.featured);
+
+  if (featuredPosts.length > 1) {
+    const featuredSlugs = featuredPosts.map((post) => post.slug).join(', ');
+    throw new Error(`Only one featured blog post is allowed for locale "${locale}". Found: ${featuredSlugs}`);
+  }
+
+  return posts;
+};
+
 export async function getPublishedBlogPosts(): Promise<BlogPostEntry[]> {
   const posts = await getCollection('blog', ({ data }) => data.status === 'published');
   return sortByPublishDate(posts);
@@ -42,15 +53,12 @@ export async function getPublishedBlogPosts(): Promise<BlogPostEntry[]> {
 
 export async function getBlogPostsByLocale(locale: SupportedLocale): Promise<BlogPostEntry[]> {
   const posts = await getCollection('blog', ({ data }) => data.status === 'published' && data.locale === locale);
-  return sortByPublishDate(posts);
+  return sortByPublishDate(ensureSingleFeaturedPost(posts, locale));
 }
 
-export async function getFeaturedBlogPostsByLocale(locale: SupportedLocale): Promise<BlogPostEntry[]> {
-  const posts = await getCollection(
-    'blog',
-    ({ data }) => data.status === 'published' && data.locale === locale && data.featured,
-  );
-  return sortByPublishDate(posts);
+export async function getFeaturedBlogPostByLocale(locale: SupportedLocale): Promise<BlogPostEntry | undefined> {
+  const posts = await getBlogPostsByLocale(locale);
+  return posts.find((post) => post.data.featured);
 }
 
 export async function getBlogPostsByLocaleAndCategory(

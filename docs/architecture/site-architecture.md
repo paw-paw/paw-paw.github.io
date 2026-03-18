@@ -76,6 +76,7 @@ Debe responder:
 - como iniciar una conversacion profesional
 - que canales publicos estan habilitados
 - que expectativa de contacto o seguimiento tiene sentido
+- debe poder usar un asset visual contenido dentro del mismo bloque intro si refuerza conversion y mantiene a los canales publicos como accion principal
 
 ### `/blog`
 
@@ -90,6 +91,7 @@ Debe responder:
 - que ideas o aprendizajes convierten tu experiencia en criterio profesional visible
 - como conectas business development, partnerships y project delivery en piezas editoriales defendibles
 - donde profundizar por post o por categoria
+- cual es la pieza editorial destacada del momento cuando exista `featured`
 
 ### `/blog/[slug]`
 
@@ -235,6 +237,7 @@ Funcion:
 - concentrar la conversion final del sitio
 - ofrecer superficie practica de contacto
 - respetar la politica de visibilidad publica vigente
+- puede usar un retrato o asset visual square embebido dentro del mismo intro editorial, siempre que no compita con el copy principal ni con la grilla de canales
 
 ### `Blog`
 
@@ -247,6 +250,7 @@ Funcion:
 - ampliar el posicionamiento experto del portfolio con piezas editoriales defendibles
 - complementar `Work` y `Experience` con sintesis, criterio y aprendizaje aplicado
 - soportar discoverability editorial sin desplazar la evidencia principal del perfil
+- usar el intro con teaser editorial lateral cuando exista un `featured` singular aprobado
 
 ### `FooterCTA`
 
