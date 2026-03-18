@@ -29,6 +29,13 @@ export default defineConfig({
     filter(page) {
       return !bridgeUrls.includes(page);
     },
+    i18n: {
+      defaultLocale: 'en',
+      locales: {
+        en: 'en',
+        es: 'es',
+      },
+    },
   }), compress({
     css: true,
     html: true,

@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import { t } from '../../utils/i18n';
 import { getExperienceItems } from '../../data/experience';
+import experienceSocialImage from '../../assets/social/experience-social.jpg';
 import { getSeoEntry } from '../../utils/seo';
 
 const lang = 'en';
@@ -13,6 +14,8 @@ const seo = getSeoEntry(lang, 'experience');
   title={seo.title}
   description={seo.description}
   lang={lang}
+  socialImage={experienceSocialImage}
+  schemaMode="experience"
 >
   <section class="section-padding pt-28 md:pt-36">
     <div class="max-w-container mx-auto px-6">

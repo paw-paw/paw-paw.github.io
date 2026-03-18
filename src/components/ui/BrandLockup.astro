@@ -1,0 +1,23 @@
+---
+import monogramLight from '../../assets/brand/monogram-light.png';
+import monogramDark from '../../assets/brand/monogram-dark.png';
+import wordmarkLight from '../../assets/brand/wordmark-light.png';
+import wordmarkDark from '../../assets/brand/wordmark-dark.png';
+
+interface Props {
+  compact?: boolean;
+}
+
+const { compact = false } = Astro.props;
+---
+
+<span class:list={['brand-lockup', compact && 'brand-lockup-compact']}>
+  <span class="brand-mark" aria-hidden="true">
+    <img src={monogramLight.src} alt="" class="brand-mark-image dark:hidden" loading="eager" decoding="async" />
+    <img src={monogramDark.src} alt="" class="brand-mark-image hidden dark:block" loading="eager" decoding="async" />
+  </span>
+  <span class:list={['brand-wordmark-image-wrap', compact && 'brand-wordmark-image-wrap-compact']}>
+    <img src={wordmarkLight.src} alt="Paulo Cesar Tuya" class="brand-wordmark-image dark:hidden" loading="eager" decoding="async" />
+    <img src={wordmarkDark.src} alt="Paulo Cesar Tuya" class="brand-wordmark-image hidden dark:block" loading="eager" decoding="async" />
+  </span>
+</span>

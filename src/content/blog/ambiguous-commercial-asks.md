@@ -7,7 +7,7 @@ locale: en
 status: published
 reading_time: 6 min
 featured: true
-header_image: ../../assets/portfolio-preview.png
+header_image: ../../assets/social/home-social.png
 ---
 
 Ambiguous commercial asks are not rare. A sponsor wants "something visible." A partner wants a tournament, a launch, a content burst, or an activation without a stable brief. Teams hear the opportunity and start moving, but the real work has not started until someone turns that ask into an executable scope.

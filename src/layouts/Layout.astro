@@ -1,9 +1,10 @@
 ---
+import type { ImageMetadata } from 'astro';
 import Navbar from '../components/layout/Navbar.astro';
 import Footer from '../components/sections/Footer.astro';
 import '../styles/global.css';
 import { normalizeLocale, t, type SupportedLocale } from '../utils/i18n';
-import faviconAsset from '../assets/favicon.svg';
+import faviconAsset from '../assets/brand/monogram-light.png';
 import profileImg from '../assets/paulo-hero.png';
 import { name, linkedin_url, instagram_url } from '../utils/me';
 import { defaultIndexedUrl } from '../utils/seo';
@@ -15,6 +16,8 @@ export interface Props {
   localeUrls?: Partial<Record<SupportedLocale, string>>;
   seoImage?: string;
   ogType?: 'website' | 'article';
+  socialImage?: ImageMetadata;
+  schemaMode?: 'default' | 'home' | 'experience';
 }
 
 const lang = normalizeLocale(Astro.props.lang || 'en');
@@ -25,6 +28,8 @@ const {
   localeUrls,
   seoImage,
   ogType = 'website',
+  socialImage = profileImg,
+  schemaMode = 'default',
 } = Astro.props;
 
 const sameAs = [linkedin_url, instagram_url].filter(Boolean);
@@ -39,9 +44,53 @@ const resolvedLocaleUrls = { ...defaultLocaleUrls, ...localeUrls };
 const alternateEn = resolvedLocaleUrls.en ? new URL(resolvedLocaleUrls.en, Astro.site!).href : undefined;
 const alternateEs = resolvedLocaleUrls.es ? new URL(resolvedLocaleUrls.es, Astro.site!).href : undefined;
 const websiteUrl = defaultIndexedUrl;
-const resolvedSeoImage = seoImage
+const socialImageUrl = seoImage
   ? new URL(seoImage, Astro.site!).href
-  : new URL(profileImg.src, Astro.site!).href;
+  : new URL(socialImage.src, Astro.site!).href;
+const logoUrl = new URL(faviconAsset.src, Astro.site!).href;
+const localizedJobTitle = t('hero.role', lang).trim();
+
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name,
+  url: websiteUrl,
+  image: socialImageUrl,
+  description,
+  sameAs,
+  ...(localizedJobTitle ? { jobTitle: localizedJobTitle } : {}),
+};
+
+const organizationSchema = schemaMode === 'home'
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      name,
+      url: canonicalUrl,
+      description,
+      image: socialImageUrl,
+      logo: logoUrl,
+      sameAs,
+    }
+  : null;
+
+const profilePageSchema = schemaMode === 'experience'
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'ProfilePage',
+      url: canonicalUrl,
+      name: title,
+      description,
+      mainEntity: {
+        '@type': 'Person',
+        name,
+        url: websiteUrl,
+        image: socialImageUrl,
+        description,
+        sameAs,
+      },
+    }
+  : null;
 ---
 
 <!DOCTYPE html>
@@ -52,7 +101,7 @@ const resolvedSeoImage = seoImage
     <meta name="description" content={description} />
     <title>{title}</title>
 
-    <link rel="icon" type="image/svg+xml" href={faviconAsset.src} />
+    <link rel="icon" type="image/png" href={faviconAsset.src} />
     <link rel="canonical" href={canonicalUrl} />
     {alternateEn && <link rel="alternate" hreflang="en" href={alternateEn} />}
     {alternateEs && <link rel="alternate" hreflang="es" href={alternateEs} />}
@@ -62,14 +111,14 @@ const resolvedSeoImage = seoImage
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={resolvedSeoImage} />
+    <meta property="og:image" content={socialImageUrl} />
     <meta property="og:site_name" content="Paulo Tuya" />
 
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content={canonicalUrl} />
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content={resolvedSeoImage} />
+    <meta property="twitter:image" content={socialImageUrl} />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
@@ -82,16 +131,13 @@ const resolvedSeoImage = seoImage
       "url": websiteUrl,
       "name": "Paulo Tuya"
     })} />
-    <script type="application/ld+json" set:html={JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": name,
-      "url": websiteUrl,
-      "image": new URL(profileImg.src, Astro.site!).href,
-      "jobTitle": t('hero.role', lang),
-      "description": description,
-      "sameAs": sameAs
-    })} />
+    <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
+    {organizationSchema && (
+      <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+    )}
+    {profilePageSchema && (
+      <script type="application/ld+json" set:html={JSON.stringify(profilePageSchema)} />
+    )}
   </head>
   <body class="transition-colors duration-300">
     <div class="flex flex-col min-h-screen">

@@ -7,7 +7,7 @@ locale: en
 status: published
 reading_time: 5 min
 featured: false
-header_image: ../../assets/portfolio-preview.png
+header_image: ../../assets/social/home-social.png
 ---
 
 Closing a partnership often gets treated like the finish line. In practice, it is the start of the part that is easiest to underestimate.

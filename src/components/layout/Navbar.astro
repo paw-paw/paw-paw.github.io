@@ -1,6 +1,7 @@
 ---
 import ThemeToggle from '../ui/ThemeToggle.astro';
 import LanguageSwitcher from '../ui/LanguageSwitcher.astro';
+import BrandLockup from '../ui/BrandLockup.astro';
 import { getRelativeLocaleUrl } from 'astro:i18n';
 import { t, type SupportedLocale } from '../../utils/i18n';
 import { normalizeLocale } from '../../utils/i18n';
@@ -30,8 +31,7 @@ const isActive = (href: string) => {
   <div class="max-w-container mx-auto px-6 pt-4">
     <div class="surface-muted flex items-center justify-between px-4 py-3.5 shadow-button md:px-5 md:py-4">
       <a href={homeHref} class="brand-lockup" aria-label={t('nav.home', lang)}>
-        <span class="brand-badge" aria-hidden="true">P</span>
-        <span class="brand-wordmark text-[1.05rem] md:text-xl">Paulo Cesar Tuya</span>
+        <BrandLockup compact={true} />
       </a>
 
       <nav class="hidden md:flex items-center gap-5">

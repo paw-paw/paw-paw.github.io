@@ -6,13 +6,14 @@ import Projects from '../../components/sections/Projects.astro';
 import Timeline from '../../components/sections/Timeline.astro';
 import Skills from '../../components/sections/Skills.astro';
 import FooterCTA from '../../components/sections/FooterCTA.astro';
+import homeSocialImage from '../../assets/social/home-social.png';
 import { getSeoEntry } from '../../utils/seo';
 
 const lang = 'es';
 const seo = getSeoEntry(lang, 'home');
 ---
 
-<Layout title={seo.title} description={seo.description} lang={lang}>
+<Layout title={seo.title} description={seo.description} lang={lang} socialImage={homeSocialImage} schemaMode="home">
   <Hero lang={lang} />
   <Projects lang={lang} />
   <Timeline lang={lang} />

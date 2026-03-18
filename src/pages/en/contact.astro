@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Contact from '../../components/sections/Contact.astro';
 import { Image } from 'astro:assets';
 import { t } from '../../utils/i18n';
+import contactSocialImage from '../../assets/social/contact-social.png';
 import { getSeoEntry } from '../../utils/seo';
 import contactPortrait from '../../assets/paw-square-contact.png';
 
@@ -14,6 +15,7 @@ const seo = getSeoEntry(lang, 'contact');
   title={seo.title}
   description={seo.description}
   lang={lang}
+  socialImage={contactSocialImage}
 >
   <section class="section-padding contact-page-intro-compact pt-28 md:pt-36">
     <div class="max-w-container mx-auto px-6">
