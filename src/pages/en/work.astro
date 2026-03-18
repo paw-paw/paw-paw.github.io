@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import { t } from '../../utils/i18n';
 import { getSelectedWork } from '../../data/selected-work';
+import workSocialImage from '../../assets/social/work-social.jpg';
 import { getSeoEntry } from '../../utils/seo';
 
 const lang = 'en';
@@ -13,6 +14,7 @@ const seo = getSeoEntry(lang, 'work');
   title={seo.title}
   description={seo.description}
   lang={lang}
+  socialImage={workSocialImage}
 >
   <section class="section-padding pt-28 md:pt-36">
     <div class="max-w-container mx-auto px-6">

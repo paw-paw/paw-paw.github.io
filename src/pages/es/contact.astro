@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import Contact from '../../components/sections/Contact.astro';
 import { t } from '../../utils/i18n';
+import contactSocialImage from '../../assets/social/contact-social.png';
 import { getSeoEntry } from '../../utils/seo';
 
 const lang = 'es';
@@ -12,6 +13,7 @@ const seo = getSeoEntry(lang, 'contact');
   title={seo.title}
   description={seo.description}
   lang={lang}
+  socialImage={contactSocialImage}
 >
   <section class="section-padding contact-page-intro-compact pt-28 md:pt-36">
     <div class="max-w-container mx-auto px-6">

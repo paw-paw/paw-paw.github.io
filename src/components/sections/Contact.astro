@@ -28,6 +28,7 @@ const { compactHeader = false } = Astro.props;
           </p>
         </div>
       )}
+      {compactHeader && <h2 class="sr-only">{t('contact.title', locale)}</h2>}
 
       <div class="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8">
       <Obfuscate

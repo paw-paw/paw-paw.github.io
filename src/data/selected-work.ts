@@ -1,9 +1,9 @@
 import type { ImageMetadata } from 'astro';
 import interuHeader from '../assets/work-headers/interu.jpg';
-import pcftcHeader from '../assets/work-headers/pcftc.jpg';
+import pcFactoryThroneClashHeader from '../assets/work-headers/pc-factory-throne-clash.jpg';
 import amdgwHeader from '../assets/work-headers/amdgw.jpg';
-import dld2Header from '../assets/work-headers/dld2.jpg';
-import ewcHeader from '../assets/work-headers/ewc.jpg';
+import dreamLeagueDivision2Header from '../assets/work-headers/dreamleague-division-2.jpg';
+import esportsWorldCupHeader from '../assets/work-headers/esports-world-cup.jpg';
 import limamajorHeader from '../assets/work-headers/limamajor.jpg';
 
 export interface SelectedWorkItem {
@@ -60,7 +60,7 @@ const localizedSelectedWork: Record<Locale, SelectedWorkItem[]> = {
       ],
       metrics: ['411 registrations', '300+ in-store attendees', '8 vendors coordinated'],
       tags: ['Activation', 'Account-facing', 'End-to-end delivery'],
-      headerImage: pcftcHeader,
+      headerImage: pcFactoryThroneClashHeader,
       headerAlt: 'Header visual for PC Factory Throne Clash',
       headerOverlay: 'soft-teal',
     },
@@ -98,7 +98,7 @@ const localizedSelectedWork: Record<Locale, SelectedWorkItem[]> = {
       ],
       metrics: ['8–16 teams per season', '~36–74 Bo3s per season', 'Remote CET-aligned delivery'],
       tags: ['Remote delivery', 'League ops', 'Sustained operations'],
-      headerImage: dld2Header,
+      headerImage: dreamLeagueDivision2Header,
       headerAlt: 'Header visual for DreamLeague Division 2',
       headerOverlay: 'soft-teal',
     },
@@ -117,7 +117,7 @@ const localizedSelectedWork: Record<Locale, SelectedWorkItem[]> = {
       ],
       metrics: ['~450 players', '~7 weeks on-site', '~20 teams supported'],
       tags: ['Global event', 'Player ops', 'Logistics'],
-      headerImage: ewcHeader,
+      headerImage: esportsWorldCupHeader,
       headerAlt: 'Header visual for Esports World Cup',
       headerOverlay: 'soft-teal',
     },
@@ -176,7 +176,7 @@ const localizedSelectedWork: Record<Locale, SelectedWorkItem[]> = {
       ],
       metrics: ['411 registros', '300+ asistentes en tienda', '8 vendors coordinados'],
       tags: ['Activación', 'Cara al cliente', 'Delivery end-to-end'],
-      headerImage: pcftcHeader,
+      headerImage: pcFactoryThroneClashHeader,
       headerAlt: 'Visual de cabecera para PC Factory Throne Clash',
       headerOverlay: 'soft-teal',
     },
@@ -214,7 +214,7 @@ const localizedSelectedWork: Record<Locale, SelectedWorkItem[]> = {
       ],
       metrics: ['8–16 equipos por temporada', '~36–74 Bo3 por temporada', 'Delivery remoto alineado a CET'],
       tags: ['Delivery remoto', 'League ops', 'Operación sostenida'],
-      headerImage: dld2Header,
+      headerImage: dreamLeagueDivision2Header,
       headerAlt: 'Visual de cabecera para DreamLeague Division 2',
       headerOverlay: 'soft-teal',
     },
@@ -233,7 +233,7 @@ const localizedSelectedWork: Record<Locale, SelectedWorkItem[]> = {
       ],
       metrics: ['~450 jugadores', '~7 semanas on-site', '~20 equipos atendidos'],
       tags: ['Evento global', 'Player ops', 'Logística'],
-      headerImage: ewcHeader,
+      headerImage: esportsWorldCupHeader,
       headerAlt: 'Visual de cabecera para Esports World Cup',
       headerOverlay: 'soft-teal',
     },
