@@ -324,8 +324,8 @@
 
 ### Deployment y verdad tecnica activa
 
-- `astro.config.mjs` ya apunta a `https://paw-paw.github.io/`
-- `public/robots.txt` ya apunta al sitemap de `https://paw-paw.github.io/`
+- `astro.config.mjs` ya apunta al dominio canonico vigente del sitio
+- `public/robots.txt` ya apunta al sitemap del dominio canonico vigente
 - `docs/delivery/deployment.md` existe como primera version contractual
 - `netlify.toml` fue eliminado
 

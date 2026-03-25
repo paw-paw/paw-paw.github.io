@@ -5,14 +5,14 @@ import compress from 'astro-compress';
 import preact from '@astrojs/preact';
 
 const bridgeUrls = [
-  'https://paw-paw.github.io/',
-  'https://paw-paw.github.io/work/',
-  'https://paw-paw.github.io/experience/',
-  'https://paw-paw.github.io/contact/',
+  'https://pauloctuya.com/',
+  'https://pauloctuya.com/work/',
+  'https://pauloctuya.com/experience/',
+  'https://pauloctuya.com/contact/',
 ];
 
 export default defineConfig({
-  site: 'https://paw-paw.github.io/',
+  site: 'https://pauloctuya.com/',
   output: 'static',
   trailingSlash: 'always',
   i18n: {

@@ -5,7 +5,7 @@ This repository contains an Astro-based portfolio site in active customization.
 Current status:
 
 - temporary deployment target: `GitHub Pages` user site
-- temporary canonical URL: `https://paw-paw.github.io/`
+- canonical URL: `https://pauloctuya.com/`
 - current documentation system lives in `docs/`
 - the site is intentionally mono-language until `Fase 5`
 

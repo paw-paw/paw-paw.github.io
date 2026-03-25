@@ -4,16 +4,16 @@
 
 - Tipo: `contractual`
 - Fase inicial: `0B`
-- Estado: `v3`
-- Ultima actualizacion: `2026-03-15`
+- Estado: `v4`
+- Ultima actualizacion: `2026-03-24`
 
 ---
 
 ## Objetivo
 
-Definir la verdad tecnica de publicacion del sitio durante la transicion desde base neutralizada a publicacion real multiidioma en `GitHub Pages`.
+Definir la verdad tecnica de publicacion del sitio en `GitHub Pages` con dominio custom real y surface publica multiidioma.
 
-Esta version sigue sin fijar dominio custom final, pero ya trata `paw-paw.github.io` como publicacion real de `Fase 6`.
+Esta version fija `pauloctuya.com` como dominio canonico vigente del portfolio.
 
 ---
 
@@ -21,16 +21,17 @@ Esta version sigue sin fijar dominio custom final, pero ya trata `paw-paw.github
 
 - Hosting vigente: `GitHub Pages`
 - Modelo vigente: `user site`
-- URL canonica vigente: `https://paw-paw.github.io/`
-- Dominio custom final: `pendiente`
+- URL canonica vigente: `https://pauloctuya.com/`
+- Dominio custom final: `pauloctuya.com`
 - Base path: `no`
 
 ### Implicacion tecnica
 
-- `astro.config.mjs -> site` debe apuntar a `https://paw-paw.github.io/`
+- `astro.config.mjs -> site` debe apuntar a `https://pauloctuya.com/`
 - no debe definirse `base`
-- `public/robots.txt` debe apuntar al sitemap de `https://paw-paw.github.io/`
-- canonicals y metadata derivadas del `site` deben construirse sobre esta URL temporal
+- `public/robots.txt` debe apuntar al sitemap de `https://pauloctuya.com/`
+- `public/CNAME` debe declarar `pauloctuya.com`
+- canonicals y metadata derivadas del `site` deben construirse sobre esta URL canonica
 - cualquier referencia heredada a `garrettheath4.com` debe eliminarse en `0B`
 
 ---
@@ -80,7 +81,7 @@ Esta version sigue sin fijar dominio custom final, pero ya trata `paw-paw.github
 
 ### SEO y metadata
 
-- sitemap y canonicals deben alinearse con `https://paw-paw.github.io/`
+- sitemap y canonicals deben alinearse con `https://pauloctuya.com/`
 - desde `Fase 6`, alternates, `hreflang`, `x-default` y metadata por pagina deben alinearse con la estrategia SEO aprobada
 - cada pagina localizada debe usar `self-canonical`
 - `x-default` debe apuntar a la version `en` equivalente
@@ -90,13 +91,12 @@ Esta version sigue sin fijar dominio custom final, pero ya trata `paw-paw.github
 
 ### Assets
 
-- assets y referencias publicas no deben asumir dominio custom ni base path
+- assets y referencias publicas no deben asumir un dominio distinto del canonico vigente ni base path
 - nombres o referencias heredadas que generen confusion operativa deben neutralizarse en `0B`
 
 ---
 
 ## Pendientes deliberados para fases posteriores
 
-- definir dominio custom final
 - definir workflow final de deploy si deja de usarse GitHub Pages
 - producir imagenes OG dedicadas si luego se consideran necesarias

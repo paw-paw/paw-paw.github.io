@@ -5,7 +5,7 @@
 - Tipo: `auxiliar`
 - Fase inicial: `6`
 - Estado: `v1`
-- Ultima actualizacion: `2026-03-15`
+- Ultima actualizacion: `2026-03-24`
 
 ---
 
@@ -145,6 +145,6 @@ Tratamiento requerido:
 ## Fuera de alcance en esta fase
 
 - crear imagenes OG dedicadas por pagina
-- estrategia SEO para un dominio custom final no decidido
+- migraciones SEO futuras si el dominio canonico volviera a cambiar
 - optimizacion SEO avanzada por keyword research
 - schema markup especifico por tipo de pagina mas alla del baseline utilizable

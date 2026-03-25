@@ -179,13 +179,13 @@
 ### Decision / registro
 
 - la publicacion temporal del sitio se tratara como `GitHub Pages` en modo `user site`
-- la URL temporal canonica sera `https://paw-paw.github.io/`
+- la URL temporal canonica sera el `user site` de `GitHub Pages` vigente en ese momento
 - no se definira `base`
 - `Netlify` deja de ser la verdad tecnica activa del proyecto
 
 ### Razon
 
-- el repo remoto actual ya coincide con el patron `paw-paw.github.io`
+- el repo remoto actual ya coincide con el patron de `user site` de `GitHub Pages`
 - el modelo `user site` reduce complejidad tecnica frente a un `project site`
 - esta decision permite unificar `site`, sitemap, canonicals y ownership tecnico sin esperar al dominio final
 
@@ -635,7 +635,7 @@
 
 - ya no existen rutas activas `/en/` ni `/de/`
 - ya no existe `LanguageSwitcher`
-- `astro.config.mjs` y `public/robots.txt` apuntan a `https://paw-paw.github.io/`
+- `astro.config.mjs` y `public/robots.txt` apuntan al dominio temporal aprobado para `0B`
 - el sitio generado vuelve a producir una sola ruta estatica
 - `README.md` raiz ya no vende el template original
 
@@ -1024,7 +1024,7 @@
 
 ### Decision / registro
 
-- `GitHub Pages` en `https://paw-paw.github.io/` se trata como publicacion real de `Fase 6`
+- `GitHub Pages` sobre el dominio publico vigente en `Fase 6` se trata como publicacion real
 - cada pagina localizada usa `self-canonical`
 - cada pagina localizada emite:
   - alternate `en`
@@ -1055,6 +1055,42 @@
 - `src/utils/seo.ts`
 - `src/pages/en/**`
 - `src/pages/es/**`
+
+---
+
+## 2026-03-24 — Dominio custom canonico `pauloctuya.com`
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `post-7`
+
+### Decision / registro
+
+- `https://pauloctuya.com/` pasa a ser la URL canonica vigente del portfolio
+- `GitHub Pages` se mantiene como hosting real
+- `astro.config.mjs`, `robots.txt`, canonicals, sitemap, metadata derivada y referencias publicas deben alinearse con `https://pauloctuya.com/`
+- `public/CNAME` debe declarar `pauloctuya.com`
+
+### Razon
+
+- el dominio custom ya fue adquirido
+- la URL publica del portfolio debe dejar de depender del `user site` de GitHub Pages
+- mantener referencias mixtas entre dominio viejo y nuevo romperia consistencia SEO y de sharing
+
+### Documentos afectados
+
+- `docs/delivery/deployment.md`
+- `docs/delivery/seo-spec.md`
+- `README.md`
+
+### Implementacion afectada
+
+- `astro.config.mjs`
+- `public/robots.txt`
+- `public/llms.txt`
+- `public/CNAME`
+- `src/utils/me.ts`
 
 ---
 

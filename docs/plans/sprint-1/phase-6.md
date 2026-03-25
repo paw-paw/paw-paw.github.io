@@ -24,7 +24,7 @@
 
 ## 1. Objetivo de la fase
 
-Cerrar la capa real de SEO, metadata y deploy sobre la base multiidioma ya aprobada en `Fase 5`. Al terminar, el sitio debe tener politica SEO utilizable para `en` y `es`, metadata consistente por pagina, `canonical` y `alternates` bien resueltos, y publicacion real coherente con `GitHub Pages` en `https://paw-paw.github.io/`.
+Cerrar la capa real de SEO, metadata y deploy sobre la base multiidioma ya aprobada en `Fase 5`. Al terminar, el sitio debe tener politica SEO utilizable para `en` y `es`, metadata consistente por pagina, `canonical` y `alternates` bien resueltos, y publicacion real coherente con `GitHub Pages` sobre el dominio publico vigente en esa fase.
 
 La fase existe para pasar de una implementacion multiidioma funcional a una publicacion tecnicamente presentable y revisable. Al cerrarla, el sitio debe quedar listo para publicacion sin deuda basica de routing, metadata ni release operacional.
 
@@ -68,7 +68,7 @@ Nota:
 ### Decisiones previas
 
 - [x] hosting real de esta fase: `GitHub Pages`
-- [x] dominio real de esta fase: `https://paw-paw.github.io/`
+- [x] dominio real de esta fase: el dominio publico vigente de `GitHub Pages` en ese momento
 - [x] todos los locales activos llevan prefijo
 - [x] `en` y `es` son los unicos locales activos
 - [x] `/` no es home canonica de contenido
@@ -79,7 +79,7 @@ Nota:
 
 - [x] las rutas localizadas `en/es` ya compilan
 - [x] existen bridges inteligentes en `/`, `/work/`, `/experience/` y `/contact/`
-- [x] `astro.config.mjs -> site` ya apunta a `https://paw-paw.github.io/`
+- [x] `astro.config.mjs -> site` ya apunta al dominio aprobado para la fase
 - [x] existe sitemap generado por Astro
 - [x] el sitio ya tiene metadata base funcional, pero no una spec SEO final por pagina
 
@@ -146,7 +146,7 @@ Nota:
 
 - [x] revisar `docs/delivery/deployment.md` contra el estado real post-`Fase 5`
 - [x] cerrar `GitHub Pages` como hosting real de `Fase 6`
-- [x] confirmar `paw-paw.github.io` como dominio real vigente de la fase
+- [x] confirmar el dominio real vigente de la fase
 - [x] documentar implicaciones reales entre:
   - [x] deploy
   - [x] routing multiidioma
@@ -249,7 +249,7 @@ Nota:
 
 - [x] `Fase 5` formalmente cerrada
 - [x] estructura i18n activa estable
-- [x] dominio y hosting reales de esta fase definidos como `paw-paw.github.io` sobre `GitHub Pages`
+- [x] dominio y hosting reales de esta fase definidos sobre `GitHub Pages`
 
 ### Bloqueos posibles
 

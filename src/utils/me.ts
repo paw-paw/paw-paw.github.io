@@ -1,5 +1,5 @@
 export const name = "Paulo Cesar Tuya";
-export const homepage_url = "https://paw-paw.github.io/";
+export const homepage_url = "https://pauloctuya.com/";
 export const linkedin_username = "pawpawesports";
 export const github_username = "paw-paw";
 export const instagram_username = "pawpawesports";
