@@ -1,11 +1,13 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 import BlogEmptyState from '../../../components/blog/BlogEmptyState.astro';
+import { getRelativeLocaleUrl } from 'astro:i18n';
 import { getSeoEntry } from '../../../utils/seo';
 import { t } from '../../../utils/i18n';
 
 const lang = 'es';
 const seo = getSeoEntry(lang, 'blog');
+const englishBlogHref = getRelativeLocaleUrl('en', 'blog');
 ---
 
 <Layout title={seo.title} description={seo.description} lang={lang}>
@@ -30,7 +32,7 @@ const seo = getSeoEntry(lang, 'blog');
       </div>
 
       <div class="mt-10 md:mt-12">
-        <BlogEmptyState lang={lang} />
+        <BlogEmptyState lang={lang} ctaHref={englishBlogHref} ctaText={t('blog.emptyLaunchCta', lang)} />
       </div>
     </div>
   </section>
