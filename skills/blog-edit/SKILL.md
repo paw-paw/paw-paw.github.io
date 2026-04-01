@@ -5,7 +5,7 @@ description: >
   Trigger: When the user wants to edit blog post body or metadata without breaking schema validity.
 license: Apache-2.0
 metadata:
-  author: gentleman-programming
+  author: paw-paw
   version: "1.0"
 ---
 

@@ -5,7 +5,7 @@ description: >
   Trigger: When the user wants to create a new blog post draft for the portfolio blog.
 license: Apache-2.0
 metadata:
-  author: gentleman-programming
+  author: paw-paw
   version: "1.0"
 ---
 

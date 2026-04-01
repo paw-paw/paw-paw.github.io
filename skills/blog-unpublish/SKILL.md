@@ -5,7 +5,7 @@ description: >
   Trigger: When the user wants to unpublish a blog post but keep it in the repo.
 license: Apache-2.0
 metadata:
-  author: gentleman-programming
+  author: paw-paw
   version: "1.0"
 ---
 

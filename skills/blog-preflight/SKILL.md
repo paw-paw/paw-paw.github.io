@@ -5,7 +5,7 @@ description: >
   Trigger: When the user wants a publish-readiness check for one blog post in this repo.
 license: Apache-2.0
 metadata:
-  author: gentleman-programming
+  author: paw-paw
   version: "1.0"
 ---
 
