@@ -9,8 +9,8 @@ Este documento es auxiliar. No redefine precedencia, no sustituye contratos y no
 ## Metadatos
 
 - Nombre: `Sprint 2 - Portfolio Narrative Realignment + Professional Blog`
-- Estado: `draft`
-- Ultima actualizacion: `2026-03-16`
+- Estado: `done`
+- Ultima actualizacion: `2026-04-01`
 - Owner: `pawpaw + Codex`
 - Depende de:
   - `docs/README.md`
@@ -32,7 +32,7 @@ Este documento es auxiliar. No redefine precedencia, no sustituye contratos y no
 
 ## 1. Objetivo general
 
-El objetivo de esta etapa es realinear la narrativa del portfolio con la tesis aprobada en `Bloque 0` y, sobre esa base, incorporar un blog profesional coherente con el sitio. Al cerrar este roadmap deben existir contratos actualizados de estrategia y contenido, una propagacion downstream de esa nueva direccion hacia las superficies narrativas clave del portfolio, una arquitectura contractual aprobada para el blog, una implementacion Astro mantenible y una primera tanda de contenido lista para publicacion controlada.
+El objetivo de esta etapa es realinear la narrativa del portfolio con la tesis aprobada en `Bloque 0` y, sobre esa base, incorporar un blog profesional coherente con el sitio. Al cerrar este roadmap deben existir contratos actualizados de estrategia y contenido, una propagacion downstream de esa nueva direccion hacia las superficies narrativas clave del portfolio, una arquitectura contractual aprobada para el blog, una implementacion Astro mantenible y una primera tanda de contenido lista para una salida `public release ready` desde el repo. La publicacion efectiva sigue dependiendo de promover a `main` y validar `GitHub Pages`.
 
 ---
 
@@ -180,7 +180,7 @@ Nota:
 - Criterio de cierre:
   - blog y portfolio principal heredan reglas SEO e i18n coherentes con el sitio
   - las nuevas rutas y los cambios downstream quedan cubiertos por metadata y navegacion
-  - la superficie completa esta lista para publicacion controlada en GitHub Pages
+  - la superficie completa queda `public release ready` a nivel repo, sin asumir todavia merge a `main` ni verificacion publica final de `GitHub Pages`
 
 ---
 
@@ -278,13 +278,14 @@ Nota:
 
 Este roadmap solo se considera cerrado si:
 
-- [ ] el rebalanceo aprobado en `Bloque 0` ya esta reflejado en la documentacion contractual necesaria
-- [ ] el portfolio principal ya refleja esa direccion en sus superficies narrativas clave
-- [ ] el blog ya esta reflejado en la documentacion contractual necesaria
-- [ ] existe una implementacion Astro mantenible y consistente con el sistema actualizado
-- [ ] hay al menos una primera tanda de posts alineada con el posicionamiento experto aprobado
-- [ ] las nuevas rutas y los cambios downstream respetan i18n, SEO, deployment y navegacion del sitio
-- [ ] no quedan decisiones grandes de narrativa o blog viviendo solo en codigo
+- [x] el rebalanceo aprobado en `Bloque 0` ya esta reflejado en la documentacion contractual necesaria
+- [x] el portfolio principal ya refleja esa direccion en sus superficies narrativas clave
+- [x] el blog ya esta reflejado en la documentacion contractual necesaria
+- [x] existe una implementacion Astro mantenible y consistente con el sistema actualizado
+- [x] hay al menos una primera tanda de posts alineada con el posicionamiento experto aprobado
+- [x] las nuevas rutas y los cambios downstream respetan i18n, SEO, deployment y navegacion del sitio
+- [x] no quedan decisiones grandes de narrativa o blog viviendo solo en codigo
+- [x] el estado final del sprint se interpreta como `public release ready` en el repo, con deploy publico y verificacion externa todavia fuera de este roadmap
 
 ---
 
@@ -296,3 +297,6 @@ Este roadmap solo se considera cerrado si:
 - Fecha: `2026-03-16`
   - cambio: se readapta el roadmap para cubrir realineacion narrativa del portfolio mas implementacion del blog profesional
   - razon: evitar que el blog nazca con una tesis nueva mientras el portfolio principal sigue hablando desde una tesis anterior
+- Fecha: `2026-04-01`
+  - cambio: el roadmap deja de estar en `draft` y se cierra como ejecutado en estado `public release ready`
+  - razon: alinear el estado del plan con el runtime real, el checklist de release y la decision de que la publicacion efectiva sigue siendo un paso externo sobre `main`

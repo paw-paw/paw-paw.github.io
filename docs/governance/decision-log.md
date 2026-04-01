@@ -1450,3 +1450,39 @@
 - `src/i18n/es.json`
 
 ---
+
+## 2026-04-01 — Sprint 2 pasa a estado `public release ready` a nivel repo
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `Sprint 2 / Public release closure`
+
+### Decision / registro
+
+- el cierre de Sprint 2 deja de describirse como solo `lista para release controlada` y pasa a describirse como `public release ready` a nivel repo
+- esta decision significa que runtime, roadmap y checklist ya cuentan una misma historia de release
+- esta decision NO significa que la release publica ya fue ejecutada
+- la publicacion efectiva sigue dependiendo de promover la branch a `main`, dejar pasar el workflow de `GitHub Pages` y verificar las URLs publicas resultantes
+- el blog mantiene alcance `en-first` en esta salida y esta decision no reabre paridad editorial post-a-post en `es`
+- `/es/blog/` se mantiene indexable y pasa a comunicarse con un tono mas editorial: la edicion en español queda en preparacion, mientras la edicion activa del blog sigue en ingles y la CTA principal apunta a `/en/blog/`
+
+### Razon
+
+- el repo ya habia superado el estado de simple preparacion controlada y necesitaba un cierre semantico mas preciso
+- seguir llamandolo solo `release controlada` mantenia drift entre el estado del plan, el checklist operativo y la lectura real del branch
+- llamar a la release `publica ejecutada` habria sido incorrecto mientras el deploy siga fuera de la branch
+
+### Documentos afectados
+
+- `docs/plans/sprint-2/roadmap.md`
+- `docs/delivery/release-checklist.md`
+- `docs/governance/decision-log.md`
+
+### Implementacion afectada
+
+- `src/i18n/es.json`
+- `src/components/blog/BlogEmptyState.astro`
+- `src/pages/es/blog/index.astro`
+
+---

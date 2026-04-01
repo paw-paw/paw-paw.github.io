@@ -4,8 +4,8 @@
 
 - Tipo: `auxiliar`
 - Fase inicial: `6`
-- Estado: `v1`
-- Ultima actualizacion: `2026-03-17`
+- Estado: `v2`
+- Ultima actualizacion: `2026-04-01`
 
 ---
 
@@ -15,11 +15,18 @@ Listar las verificaciones operativas minimas antes de considerar una release pub
 
 Este checklist debe seguir siendo reusable despues de `Fase 6`.
 
+Nota:
+
+- este checklist separa verificaciones resolubles desde el repo de pasos externos necesarios para considerar la publicacion efectiva
+- `public release ready` no equivale a `release publica ejecutada`
+- mientras el deploy siga dependiendo de `main`, la publicacion efectiva requiere merge/promocion, workflow exitoso y verificacion publica posterior
+
 ---
 
 ## Build
 
 - [ ] `npm install` no deja errores
+- [ ] `npm test` no deja errores
 - [x] `npm run build` completa sin errores bloqueantes
 - [x] `dist/` se genera correctamente
 
@@ -64,11 +71,12 @@ Este checklist debe seguir siendo reusable despues de `Fase 6`.
 - [x] confirmar que los posts sin equivalente exacto mantienen `self-canonical`
 - [x] confirmar que `alternate` de posts sin equivalente exacto cae al `blog index` del locale destino
 
-## Deploy y verificacion publica
+## Pasos externos para publicacion efectiva
 
+- [ ] promover la release branch a `main`
 - [ ] confirmar que `Settings > Pages` usa `GitHub Actions`
-- [ ] confirmar que `.github/workflows/deploy.yml` existe y apunta a `main`
-- [ ] dejar pasar el workflow de deploy de `GitHub Pages`
+- [x] confirmar que `.github/workflows/deploy.yml` existe y apunta a `main`
+- [ ] dejar pasar el workflow de deploy de `GitHub Pages` sobre `main`
 - [ ] verificar URLs publicas principales
 - [ ] verificar que el sitemap publicado responda
 - [ ] verificar que `robots.txt` publicado responda
@@ -78,3 +86,4 @@ Este checklist debe seguir siendo reusable despues de `Fase 6`.
 - [x] confirmar release `en-first` para posts del blog en esta salida
 - [x] registrar decisiones finales en `docs/governance/decision-log.md`
 - [x] actualizar el plan de fase correspondiente
+- [x] distinguir estado `public release ready` de publicacion publica efectivamente ejecutada
