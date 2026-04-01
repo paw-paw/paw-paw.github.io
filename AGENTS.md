@@ -161,6 +161,7 @@ Ajustar esta sección cuando la estructura real quede definida.
 - `src/utils/`: utilidades
 - `public/`: archivos públicos estáticos
 - `docs/`: especificaciones contractuales
+- `skills/`: skills locales del repo para workflows editoriales y operativos
 - `temp/`: fuentes externas crudas y staging no contractual
 
 ---
@@ -195,3 +196,17 @@ No usar el código como único lugar donde vive una decisión de producto.
 Si existe un `AGENTS.md` más cercano, sus instrucciones refinan este archivo para ese contexto.
 
 Este archivo raíz define gobierno general del repo.
+
+---
+
+## 11) Skills locales del repo
+
+Estas skills viven en `skills/{skill-name}/SKILL.md` y deben seguir la convención de `skill-creator`.
+
+| Skill | Propósito | Ruta |
+| --- | --- | --- |
+| `blog-new` | Crear drafts de `blog_post` con frontmatter válido en `src/content/blog/`. | `skills/blog-new/SKILL.md` |
+| `blog-edit` | Editar `blog_post` existente dentro del alcance explícitamente pedido. | `skills/blog-edit/SKILL.md` |
+| `blog-feature` | Marcar como featured un `blog_post` publicado, manteniendo unicidad por locale. | `skills/blog-feature/SKILL.md` |
+| `blog-unpublish` | Retirar de publicación un `blog_post` cambiándolo a draft y limpiando `featured`. | `skills/blog-unpublish/SKILL.md` |
+| `blog-preflight` | Verificar si un `blog_post` está listo para publicación con checks editoriales y del repo. | `skills/blog-preflight/SKILL.md` |
