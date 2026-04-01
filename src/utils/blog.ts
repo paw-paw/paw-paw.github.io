@@ -32,6 +32,13 @@ export const formatBlogDate = (date: Date, locale: SupportedLocale) =>
     day: 'numeric',
   }).format(date);
 
+const getExactLocaleEquivalentPost = (
+  posts: BlogPostEntry[],
+  locale: SupportedLocale,
+  slug: string,
+): BlogPostEntry | undefined =>
+  posts.find((post) => post.data.locale === locale && post.slug === slug);
+
 const sortByPublishDate = (posts: BlogPostEntry[]) =>
   posts.sort((a, b) => b.data.publish_date.getTime() - a.data.publish_date.getTime());
 
@@ -59,6 +66,20 @@ export async function getBlogPostsByLocale(locale: SupportedLocale): Promise<Blo
 export async function getFeaturedBlogPostByLocale(locale: SupportedLocale): Promise<BlogPostEntry | undefined> {
   const posts = await getBlogPostsByLocale(locale);
   return posts.find((post) => post.data.featured);
+}
+
+export async function getBlogPostLocaleUrls(post: BlogPostEntry): Promise<Record<SupportedLocale, string>> {
+  const posts = await getPublishedBlogPosts();
+  const locales: SupportedLocale[] = ['en', 'es'];
+
+  return locales.reduce(
+    (acc, locale) => {
+      const equivalentPost = getExactLocaleEquivalentPost(posts, locale, post.slug);
+      acc[locale] = equivalentPost ? getBlogPostPath(locale, equivalentPost.slug) : getBlogIndexPath(locale);
+      return acc;
+    },
+    {} as Record<SupportedLocale, string>,
+  );
 }
 
 export async function getBlogPostsByLocaleAndCategory(

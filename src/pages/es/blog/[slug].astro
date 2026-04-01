@@ -9,7 +9,7 @@ import { t } from '../../../utils/i18n';
 import { getSeoEntry } from '../../../utils/seo';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog', ({ data }) => data.locale === 'en' && data.status === 'published');
+  const posts = await getCollection('blog', ({ data }) => data.locale === 'es' && data.status === 'published');
   return posts.map((post) => ({
     params: { slug: post.slug },
     props: { post },
@@ -18,7 +18,7 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await post.render();
-const lang = 'en';
+const lang = 'es';
 const seo = getSeoEntry(lang, 'blog');
 const localeUrls = await getBlogPostLocaleUrls(post);
 const siteSuffix = seo.title.replace(/^Blog \| /, '');
@@ -63,7 +63,7 @@ const siteSuffix = seo.title.replace(/^Blog \| /, '');
       </div>
 
       <div class="mt-8">
-        <Button text={t('blog.backToBlog', lang)} href={getBlogIndexPath('en')} variant="outline" size="md" />
+        <Button text={t('blog.backToBlog', lang)} href={getBlogIndexPath('es')} variant="outline" size="md" />
       </div>
     </article>
   </section>

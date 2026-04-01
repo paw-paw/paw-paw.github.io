@@ -258,7 +258,6 @@ Proposito:
 Metadata contractual obligatoria:
 
 - `title`
-- `slug`
 - `excerpt`
 - `publish_date`
 - `category`
@@ -272,6 +271,12 @@ Contenido contractual minimo:
 
 - `header_image` obligatoria
 - `body` como contenido principal compuesto del post
+
+Identidad de ruta obligatoria:
+
+- cada post debe resolver a un `slug` canonico utilizable en `/blog/[slug]`
+- ese `slug` puede venir de metadata explicita o derivarse del entry path definido por la fuente local del blog
+- la implementacion no debe requerir duplicar un `slug` en frontmatter si la fuente ya lo resuelve de forma estable
 
 Reglas de estructura:
 
