@@ -29,8 +29,7 @@ export function initializeTheme() {
     }
   });
 
-  // Listen for system theme changes (if no user preference is set)
-  // This part is from the global theme.js, good to have it consolidated.
+  // Listen for system theme changes if no user preference is set.
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
     if (!localStorage.getItem('theme')) { // Only if no explicit user choice
       if (e.matches) {

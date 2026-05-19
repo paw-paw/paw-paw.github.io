@@ -43,6 +43,20 @@ Estado:
 - aprobado para uso visible en hero durante Fase 3
 - tratado como asset valido del sistema actual
 
+### Contact visual square
+
+- `src/assets/paw-square-contact.png`
+
+Origen:
+
+- promovido desde `temp/paw-square-contact.png`
+
+Estado:
+
+- aprobado para uso visible en el intro de `/contact`
+- debe vivir contenido dentro de un panel lateral sobrio
+- no reemplaza el protagonismo funcional de los canales publicos
+
 ### Favicon provisional
 
 - `src/assets/brand/monogram-light.png`
@@ -77,10 +91,10 @@ Estado:
 ### Headers de `Selected Work`
 
 - `src/assets/work-headers/interu.jpg`
-- `src/assets/work-headers/pcftc.jpg`
+- `src/assets/work-headers/pc-factory-throne-clash.jpg`
 - `src/assets/work-headers/amdgw.jpg`
-- `src/assets/work-headers/dld2.jpg`
-- `src/assets/work-headers/ewc.jpg`
+- `src/assets/work-headers/dreamleague-division-2.jpg`
+- `src/assets/work-headers/esports-world-cup.jpg`
 - `src/assets/work-headers/limamajor.jpg`
 
 Origen:
@@ -92,6 +106,26 @@ Estado:
 - aprobados para `selected_work_case_study` en `/work/`
 - aprobados para version reducida en `selected_work_preview`
 - el tratamiento visual puede usar overlay/tinte reversible desde CSS o UI
+
+### Logos editoriales del blog
+
+- `src/assets/editorial-logos/zonadota_all.png`
+- `src/assets/editorial-logos/navi_all.png`
+- `src/assets/editorial-logos/gamerstudio_all.png`
+- `src/assets/editorial-logos/movistarlpg_all.png`
+- `src/assets/editorial-logos/firstbloodio_all.png`
+- `src/assets/editorial-logos/bitelgaming_all.png`
+
+Origen:
+
+- promovidos desde `_inbox/blog_improvements/`
+
+Estado:
+
+- aprobados para el bloque `Editorial Background` de `/blog`
+- funcionan como identificadores editoriales contextuales, no como elemento protagonista
+- usan variante `allmode` aprobada para esta entrega
+- deben conservar peso visual contenido y legibilidad suficiente en light/dark mode mediante tratamiento de UI cuando haga falta
 
 ---
 

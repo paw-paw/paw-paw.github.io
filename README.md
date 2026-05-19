@@ -29,12 +29,6 @@ npm run build
 Start here:
 
 - `docs/README.md`
-- `docs/plans/roadmap.md`
-
-Active phase plans:
-
-- `docs/plans/phase-0a.md`
-- `docs/plans/phase-0b.md`
 
 Governance and audit:
 
@@ -48,4 +42,4 @@ Deployment contract:
 ## Notes
 
 - This repository is still under structural cleanup and documentation-first customization.
-- Final strategy, visual system, content system, and i18n rules are defined in later phases of the roadmap.
+- Historical phase plans were removed from `main` and preserved outside this branch.

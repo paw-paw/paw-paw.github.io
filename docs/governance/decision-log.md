@@ -1,5 +1,146 @@
 # Decision Log
 
+## Nota sobre planes históricos retirados de `main`
+
+Las referencias históricas a `docs/plans/` dentro de entradas previas corresponden a artefactos de trabajo retirados de `main` y preservados fuera de esta branch. No deben interpretarse como rutas vigentes dentro de la rama principal.
+
+---
+
+## 2026-04-26 — Blog index parity for `es`
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `blog / i18n`
+
+### Decision / registro
+
+- `/es/blog/` y `/es/blog/category/[category]/` dejan de tratarse como superficies en preparacion cuando ya existen posts publicados en ese locale
+- el blog en español pasa a renderizar la misma estructura editorial que el blog en ingles: featured panel cuando exista y grilla de posts publicados
+- los empty states quedan reservados para ausencia real de contenido en un locale o categoria
+
+### Impacto
+
+- i18n, content-system y release checklist describen el blog en español como superficie activa
+- los tests del blog verifican posts publicados, metadata localizada y rutas `/es/blog/` y `/en/blog/`
+
+### Documentos afectados
+
+- `docs/architecture/i18n-spec.md`
+- `docs/content/content-system.md`
+- `docs/delivery/release-checklist.md`
+
+---
+
+## 2026-04-26 — Blog angle/domain stable keys with localized labels
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `blog / taxonomy`
+
+### Decision / registro
+
+- `angle` y `domain` del blog dejan de persistirse como labels visibles monolingues
+- ambos pasan a claves internas estables con labels visibles resueltos por locale
+- `category` se mantiene como la unica taxonomy navegable; `angle` y `domain` no abren rutas ni archives nuevos
+
+### Impacto
+
+- contratos de contenido e i18n describen `angle` y `domain` como dato estable mas representacion localizada
+- schema, frontmatter, utilidades y componentes del blog quedan alineados al mismo modelo
+
+### Documentos afectados
+
+- `docs/content/content-system.md`
+- `docs/content/content-master.md`
+- `docs/architecture/site-architecture.md`
+- `docs/architecture/i18n-spec.md`
+
+---
+
+## 2026-04-01 — Portfolio en estado `public release ready`
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `public release closure`
+
+### Decision / registro
+
+- el portfolio reconstruido queda en estado `public release ready` a nivel repo
+- esta decision significa que runtime, checklist y documentos de producto cuentan una misma historia de release
+- esta decision no significa que la release publica ya fue ejecutada
+- la publicacion efectiva depende de promover la release branch a `main`, dejar pasar GitHub Pages y verificar URLs publicas
+
+### Impacto
+
+- `docs/delivery/release-checklist.md` separa validaciones resolubles desde el repo de pasos externos de publicacion
+- los tests web cubren blog discoverability, rutas puente, sitemap, canonical y alternates
+
+### Documentos afectados
+
+- `docs/delivery/release-checklist.md`
+- `docs/governance/decision-log.md`
+
+---
+
+## 2026-03-18 — Panel lateral editorial para `Blog` y retrato square para `Contact`
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `ajuste visual-estructural`
+
+### Decision / registro
+
+- `/blog` adopta un intro de dos columnas con bloque editorial principal y teaser lateral de un unico post `featured`
+- `/contact` adopta un intro de dos columnas con retrato square contenido dentro del mismo bloque editorial
+- el retrato de `/contact` mantiene peso secundario frente al copy y los canales publicos
+
+### Impacto
+
+- el blog mejora jerarquia editorial sin crear una seccion separada de featured posts
+- contact gana continuidad visual sin desplazar su funcion de conversion
+
+### Documentos afectados
+
+- `docs/architecture/site-architecture.md`
+- `docs/content/content-system.md`
+- `docs/content/content-master.md`
+- `docs/visual/asset-plan.md`
+
+---
+
+## 2026-03-16 — Blog profesional como superficie principal
+
+### Estado
+
+- Tipo: `decision ejecutada`
+- Fase: `blog / arquitectura`
+
+### Decision / registro
+
+- `Blog` queda incorporado como superficie principal del sitio
+- el sistema de contenido define `blog_post` como entidad editorial aprobada
+- el sitio genera `blog index`, `blog post detail` y `category` para los locales activos
+- el `LanguageSwitcher` en blog detail usa equivalente localizado cuando existe y fallback al blog index del locale destino cuando no existe
+
+### Impacto
+
+- el portfolio realinea runtime, navegación, SEO e i18n alrededor de la tesis business development, partnerships y project delivery
+- el blog complementa `Work` y `Experience` sin reemplazar la evidencia principal del perfil
+
+### Documentos afectados
+
+- `docs/strategy/portfolio-strategy.md`
+- `docs/architecture/site-architecture.md`
+- `docs/content/content-system.md`
+- `docs/architecture/i18n-spec.md`
+- `docs/delivery/seo-spec.md`
+
+---
+
 ## 2026-03-11 — Baseline tecnico de Fase 0A
 
 ### Estado

@@ -1,0 +1,31 @@
+---
+import { Image } from 'astro:assets';
+import { getEditorialBackgroundItems } from '../../data/editorial-background';
+import { t, type SupportedLocale } from '../../utils/i18n';
+
+interface Props {
+  lang: SupportedLocale;
+}
+
+const { lang } = Astro.props;
+const items = getEditorialBackgroundItems(lang);
+---
+
+<section class="editorial-background" aria-label={t('blog.editorialBackground', lang)}>
+  <span class="section-eyebrow editorial-background-label">{t('blog.editorialBackground', lang)}</span>
+
+  <div class="editorial-background-list">
+    {items.map((item) => (
+      <div class="editorial-background-item">
+        <Image
+          src={item.logo.allmode}
+          alt={item.logo.alt}
+          class="editorial-background-logo"
+          widths={[120, 180]}
+          sizes="120px"
+        />
+        <span class="editorial-background-period">{item.period}</span>
+      </div>
+    ))}
+  </div>
+</section>

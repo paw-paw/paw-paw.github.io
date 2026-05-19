@@ -5,7 +5,7 @@
 - Tipo: `auxiliar`
 - Fase inicial: `4`
 - Estado: `done`
-- Ultima actualizacion: `2026-03-14`
+- Ultima actualizacion: `2026-03-18`
 
 ---
 
@@ -53,11 +53,11 @@ Canales no visibles en home:
 
 ### `site.title`
 
-`Paulo Tuya | Delivery, Partnerships & Operations`
+`Paulo Tuya | Business Development, Partnerships, Project Delivery`
 
 ### `site.description`
 
-`Portfolio of Paulo Tuya, a delivery and partnerships operator across gaming, esports, and remote programs.`
+`Portfolio of Paulo Tuya, a commercially fluent operator connecting business development, partnerships, and project delivery across gaming, esports, and remote programs.`
 
 ---
 
@@ -75,7 +75,7 @@ Headline:
 
 Supporting line:
 
-`Delivery, partnerships, and operations across gaming, esports, and remote programs.`
+`Commercially fluent, cross-functional execution across gaming, esports, and remote programs.`
 
 Role line:
 
@@ -97,7 +97,7 @@ Titulo:
 
 Subtitulo:
 
-`Clear scope, aligned stakeholders, and steady operational control.`
+`Commercial context, aligned stakeholders, and structured execution.`
 
 Card 1:
 
@@ -122,7 +122,7 @@ Titulo:
 
 Subtitulo:
 
-`Projects where partner-facing work, live operations, and execution had clear stakes and visible outcomes.`
+`Projects where commercial context, partner-facing execution, and delivery had clear stakes and visible outcomes.`
 
 CTA de card:
 
@@ -140,7 +140,7 @@ Titulo:
 
 Subtitulo:
 
-`From production and league operations to partnerships, account-facing delivery, and founder-led execution.`
+`From operations and league work to partnerships, account-facing delivery, and business development.`
 
 CTA:
 
@@ -154,11 +154,11 @@ Titulo:
 
 Subtitulo:
 
-`Planning, partner-facing work, and execution systems that keep delivery clear and reliable.`
+`Commercial fluency, partner-facing work, and execution systems that keep delivery structured and credible.`
 
 Clusters aprobados:
 
-- `Program & Delivery Operations`
+- `Project Delivery & Execution`
 - `Partnerships & Business Development`
 - `Systems, Workflows & Reporting`
 
@@ -170,7 +170,7 @@ Titulo:
 
 Subtitulo:
 
-`Open to remote roles across delivery, partnerships, operations, and partner-facing execution.`
+`Open to remote roles across business development, partnerships, project delivery, and partner-facing execution.`
 
 CTA:
 
@@ -188,7 +188,13 @@ Titulo:
 
 Subtitulo:
 
-`Hiring for delivery, partnerships, operations, or partner-facing execution? Email is the fastest way to reach me. LinkedIn and Instagram add context.`
+`Hiring for business development, partnerships, project delivery, or partner-facing execution? Let's connect!`
+
+Panel derecho:
+
+- retrato square aprobado, contenido y subordinado al copy principal
+- embebido dentro del mismo bloque intro, con la misma logica estructural del `hero`
+- mismo tono editorial del `hero`, sin convertir `/contact` en una pagina autobiografica
 
 Labels:
 
@@ -206,7 +212,61 @@ Buttons:
 
 Copy:
 
-`Delivery, partnerships, and execution across gaming, esports, and remote programs.`
+`Business development, partnerships, and project delivery across gaming, esports, and remote programs.`
+
+---
+
+## `/blog`
+
+Eyebrow:
+
+`Professional Blog`
+
+Titulo:
+
+`Blog`
+
+Subtitulo:
+
+`I write about how business development, partnerships, and project delivery turn into visible professional judgment: the ideas, handoffs, and operating patterns that make execution more reliable.`
+
+Segundo parrafo:
+
+`Expect field notes, industry analysis, and delivery frameworks for teams building clearer programs, stronger partnerships, and work that holds together under real constraints.`
+
+Bloque de soporte dentro del intro:
+
+- label: `Editorial Background`
+- funcion: apoyo compacto de credibilidad editorial; no reemplaza `/experience`
+- items:
+  - `ZonaDotA` — `2011 to 2014`
+  - `Natus Vincere` — `2016`
+  - `GamerStudio` — `2017 to 2018`
+  - `Liga Pro Gaming` — `2018 to 2019`
+  - `Firstblood.io` — `2021`
+  - `Bitel Gaming` — `2021 to 2025`
+- link integrado al cierre del panel: `Explore articles ↓`
+
+Panel derecho cuando exista `featured`:
+
+- un solo post `featured` por locale
+- funciona como teaser editorial destacado dentro del intro
+- reemplaza una seccion separada de `Featured posts` en el index
+- prioriza imagen, fecha breve inmediatamente despues de la imagen, titulo, `category`, `angle`, `domain`, `excerpt` y CTA breve
+- la jerarquia visible del teaser debe leerse como `category` principal con `angle` y `domain` subordinados por color o peso
+- la guia editorial recomendada para `excerpt` es de `24–32` palabras: suficiente para cerrar una idea sin volver el teaser una sinopsis larga
+- no repite metadata larga
+
+Seccion de posts:
+
+- label: `Latest Writing`
+- las cards regulares priorizan imagen, fecha, reading time, `category`, titulo, `excerpt` alineado con la misma guia editorial y señal ligera de clickabilidad
+- `angle` y `domain` siguen existiendo en el sistema editorial; las cards regulares no necesitan mostrarlos como chips equivalentes en el `blog index`, aunque el featured si puede hacerlos visibles como jerarquia secundaria
+
+Panel derecho temporal cuando no existan posts en el locale:
+
+- placeholder minimo no interactivo
+- mantiene el layout sin presentar una falsa promesa de contenido publicado
 
 ---
 
@@ -222,7 +282,7 @@ Titulo:
 
 Subtitulo:
 
-`These case summaries show how I move between partner-facing scope, operational planning, and execution on the ground.`
+`These case summaries show how I connect business development, partnerships, and project delivery under real execution constraints.`
 
 Panel derecho:
 
@@ -245,7 +305,7 @@ Titulo:
 
 Subtitulo:
 
-`These roles show how I grew from tournament and production operations into partnerships, account-facing delivery, and founder-led execution.`
+`These roles show how I moved from operations into partnerships, business development, account-facing delivery, and founder-led execution.`
 
 Panel derecho:
 
@@ -275,7 +335,7 @@ Panel derecho:
 
 - org: `XP Agencia`
 - rol visible: `Account & Delivery Lead`
-- resumen: `A retail-facing Dota 2 activation that connected online qualifiers, an in-store finals day, sponsor alignment, and a broadcast layer in one compact program.`
+- resumen: `A retail-facing Dota 2 activation that connected online qualifiers, an in-store finals day, sponsor alignment, and a broadcast layer in one compact partner-facing program.`
 - highlights aprobados:
   - `Owned the client relationship and full delivery flow from qualifier design through finals-day execution and closeout.`
   - `Coordinated venue readiness, broadcast production, talent, vendors, and prize payout as one integrated delivery scope.`
@@ -291,7 +351,7 @@ Panel derecho:
 - resumen: `A four-day retail activation built around daily tournament programming, creator coordination, and sponsor-aligned execution under a fixed infrastructure constraint.`
 - highlights aprobados:
   - `Designed the event format, delivery rhythm, staffing plan, and operating artifacts needed to keep four consecutive in-store days running cleanly.`
-  - `Aligned brand, venue, vendors, talent, and tournament operations into a single delivery cadence with no reported incidents.`
+  - `Aligned brand, venue, vendors, talent, and tournament operations into a single sponsor-facing delivery cadence with no reported incidents.`
 - métricas aprobadas:
   - `~200 registrations`
   - `~PEN 10K prize pool`
@@ -301,7 +361,7 @@ Panel derecho:
 
 - org: `ESL FACEIT Group via XP Agencia`
 - rol visible: `Head League Operator`
-- resumen: `An ongoing remote operations engagement supporting season delivery, match readiness, team communications, and rule enforcement for a Europe-aligned competition environment.`
+- resumen: `An ongoing remote operations engagement supporting season delivery, match readiness, team communications, and rule enforcement for a Europe-aligned competition environment with stakeholder-facing accountability.`
 - highlights aprobados:
   - `Owned scheduling, lobby setup, readiness checks, and incident closure across recurring seasons with Europe-based operational timing.`
   - `Used shared trackers and real-time comms to keep team-facing operations predictable and responsive through active competition windows.`
@@ -314,7 +374,7 @@ Panel derecho:
 
 - org: `ESL FACEIT Group`
 - rol visible: `Player Manager / Player Ops`
-- resumen: `A multi-title global event where player-facing logistics, escalation handling, and operational continuity had to work at international scale over seven weeks.`
+- resumen: `A multi-title global event where player-facing logistics, escalation handling, and operational continuity had to work at international scale over seven weeks with service-partner coordination throughout.`
 - highlights aprobados:
   - `Supported player operations across rotating game titles by coordinating schedules, credentials, transport, rooming, and issue follow-up.`
   - `Maintained reliable execution through shared trackers, incident triage, and coordination with vendors and on-site service partners.`
@@ -327,7 +387,7 @@ Panel derecho:
 
 - org: `Community Gaming`
 - rol visible: `Head of Live League Operations`
-- resumen: `A tier-one live competition environment that required structured incident handling, competitive integrity control, and stable match execution across hotel and arena stages.`
+- resumen: `A tier-one live competition environment that required structured incident handling, competitive integrity control, and stable match execution across hotel and arena stages with multiple stakeholder groups in play.`
 - highlights aprobados:
   - `Led live league operations across group stage and arena playoffs/finals, coordinating admins, IT, player managers, teams, and broadcast stakeholders.`
   - `Tightened readiness and incident-handling processes to improve match punctuality dramatically over the course of the event.`
@@ -344,7 +404,7 @@ Panel derecho:
 
 - rol visible: `Founder (Operations & Partnerships)`
 - periodo: `Aug 2024–present`
-- resumen: `I founded and run a boutique gaming and esports agency where I own commercial development, delivery design, staffing, partner coordination, and post-delivery control.`
+- resumen: `I founded and run a boutique gaming and esports agency where I own business development, delivery design, staffing, partner coordination, and post-delivery control.`
 - highlights aprobados:
   - `I lead the full commercial-to-delivery handoff, translating signed scopes into milestones, owners, staffing, and QA checkpoints.`
   - `I coordinate cross-functional execution across production, league ops, broadcast, creators, and vendors while keeping approvals and reporting moving.`
@@ -357,7 +417,7 @@ Panel derecho:
 
 - rol visible: `Partnership Fulfillment Associate`
 - periodo: `Apr 2022–Mar 2025`
-- resumen: `I worked in a hybrid partnerships and delivery role for LATAM, owning sponsor activation fulfillment while also driving new business and partner-facing execution.`
+- resumen: `I worked in a hybrid partnerships and delivery role for LATAM, owning sponsor activation fulfillment while also driving new business and partner-facing execution across multiple markets.`
 - highlights aprobados:
   - `I owned the sponsor commercial cycle from outreach and proposal work through contract handoff, activation planning, reporting, and closeout.`
   - `I translated partner goals into timelines, deliverables, vendor coordination, approval gates, and reporting requirements across multiple markets.`
@@ -370,7 +430,7 @@ Panel derecho:
 
 - rol visible: `Head of League Operations`
 - periodo: `Oct 2021–Apr 2022`
-- resumen: `I led league operations for the Dota Pro Circuit Regional League South America, handling execution, disputes, schedule control, and operating assets under official rulebook constraints.`
+- resumen: `I led league operations for the Dota Pro Circuit Regional League South America, handling execution, disputes, schedule control, and operating assets under official rulebook constraints in a stakeholder-facing competition environment.`
 - highlights aprobados:
   - `I acted as final operational decision-maker for incidents, rulings, and edge cases while keeping match operations predictable week over week.`
   - `I built the league’s core runbooks, readiness assets, incident logging, and reporting cadence to standardize delivery under pressure.`
@@ -383,7 +443,7 @@ Panel derecho:
 
 - rol visible: `Esports Team Manager (Dota 2)`
 - periodo: `Jan 2021–Sep 2021`
-- resumen: `I managed day-to-day team operations for Infinity’s main and academy rosters, balancing readiness, logistics, staffing, and early sponsor-support workflows.`
+- resumen: `I managed day-to-day team operations for Infinity’s main and academy rosters, balancing readiness, logistics, staffing, and early partner-support workflows.`
 - highlights aprobados:
   - `I owned scrim scheduling, tournament readiness, gaming house operations, support staff coordination, and player logistics.`
   - `I also supported sponsorship execution and media workflows, which added an early partner-facing layer to the operational role.`
@@ -396,7 +456,7 @@ Panel derecho:
 
 - rol visible: `Esports Producer (Dota 2)`
 - periodo: `May 2018–Aug 2020`
-- resumen: `I produced tournaments end-to-end for brand clients, translating event briefs into competitive formats, broadcast plans, sponsor integrations, and live execution.`
+- resumen: `I produced tournaments end-to-end for brand clients, translating commercial briefs into competitive formats, broadcast plans, sponsor integrations, and live execution.`
 - highlights aprobados:
   - `I owned scope, rules, scheduling, run of show, talent coordination, and delivery tracking across online and LAN events.`
   - `I supported sponsor-facing needs by coordinating branded assets, broadcast integrations, payout operations, and post-event reporting.`
@@ -409,7 +469,7 @@ Panel derecho:
 
 ## Skills aprobadas
 
-### `Program & Delivery Operations`
+### `Project Delivery & Execution`
 
 - descripcion: `I build structure around execution: planning, readiness, escalation handling, and the operating cadence that keeps delivery reliable.`
 - capacidades:
@@ -465,9 +525,10 @@ Panel derecho:
 ### Claims aprobados
 
 - `I turn partner and project goals into clear execution.`
-- `I bridge partner needs, scope, owners, timelines, and execution without losing operational control.`
+- `I connect business development, partnerships, and project delivery into clear execution.`
+- `I bridge commercial goals, partner needs, scope, owners, timelines, and execution without losing control.`
 - `I work across gaming, esports, and remote programs.`
-- `I combine partner-facing delivery with structured operational execution.`
+- `I combine partner-facing execution with structured project delivery and operational credibility.`
 
 ### Claims restringidos
 

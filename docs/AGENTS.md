@@ -41,7 +41,6 @@ Organización esperada de `/docs`:
 - `content/`: sistema de contenido y contenido maestro
 - `visual/`: sistema visual, assets e interacción
 - `delivery/`: deployment, SEO y release
-- `plans/`: roadmap y planes por fase
 
 ---
 

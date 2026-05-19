@@ -1,0 +1,37 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import BlogCard from '../../../components/blog/BlogCard.astro';
+import BlogFeaturedPanel from '../../../components/blog/BlogFeaturedPanel.astro';
+import BlogIntroPanel from '../../../components/blog/BlogIntroPanel.astro';
+import { getFeaturedBlogPostByLocale, getBlogPostsByLocale } from '../../../utils/blog';
+import { getSeoEntry } from '../../../utils/seo';
+import { t } from '../../../utils/i18n';
+
+const lang = 'es';
+const seo = getSeoEntry(lang, 'blog');
+const featuredPost = await getFeaturedBlogPostByLocale(lang);
+const allPosts = await getBlogPostsByLocale(lang);
+---
+
+<Layout title={seo.title} description={seo.description} lang={lang}>
+  <section class="section-padding pt-28 md:pt-36">
+    <div class="max-w-container mx-auto px-6">
+      <div class="blog-index-hero-grid grid gap-6 md:gap-8 lg:grid-cols-[minmax(0,2fr)_minmax(20rem,0.95fr)]">
+        <BlogIntroPanel lang={lang} />
+
+        {featuredPost && <BlogFeaturedPanel post={featuredPost} lang={lang} />}
+      </div>
+
+      <section id="latest-writing" class="mt-10 md:mt-12">
+        <div class="mb-6">
+          <span class="section-eyebrow">{t('blog.latestWritingTitle', lang)}</span>
+        </div>
+        <div class="grid gap-6 lg:grid-cols-2">
+          {allPosts.map((post) => (
+            <BlogCard post={post} lang={lang} />
+          ))}
+        </div>
+      </section>
+    </div>
+  </section>
+</Layout>

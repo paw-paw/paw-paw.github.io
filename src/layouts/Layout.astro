@@ -3,7 +3,7 @@ import type { ImageMetadata } from 'astro';
 import Navbar from '../components/layout/Navbar.astro';
 import Footer from '../components/sections/Footer.astro';
 import '../styles/global.css';
-import { normalizeLocale, t } from '../utils/i18n';
+import { normalizeLocale, t, type SupportedLocale } from '../utils/i18n';
 import faviconAsset from '../assets/brand/monogram-light.png';
 import profileImg from '../assets/paulo-hero.png';
 import { name, linkedin_url, instagram_url } from '../utils/me';
@@ -13,6 +13,9 @@ export interface Props {
   title?: string;
   description?: string;
   lang?: string;
+  localeUrls?: Partial<Record<SupportedLocale, string>>;
+  seoImage?: string;
+  ogType?: 'website' | 'article';
   socialImage?: ImageMetadata;
   schemaMode?: 'default' | 'home' | 'experience';
 }
@@ -22,6 +25,9 @@ const lang = normalizeLocale(Astro.props.lang || 'en');
 const {
   title = t('site.title', lang),
   description = t('site.description', lang),
+  localeUrls,
+  seoImage,
+  ogType = 'website',
   socialImage = profileImg,
   schemaMode = 'default',
 } = Astro.props;
@@ -30,10 +36,17 @@ const sameAs = [linkedin_url, instagram_url].filter(Boolean);
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site!).href;
 const pathWithoutLocale = Astro.url.pathname.replace(/^\/(en|es)(?=\/|$)/, '') || '/';
 const normalizedPath = pathWithoutLocale.startsWith('/') ? pathWithoutLocale : `/${pathWithoutLocale}`;
-const alternateEn = new URL(`/en${normalizedPath === '/' ? '/' : normalizedPath}`, Astro.site!).href;
-const alternateEs = new URL(`/es${normalizedPath === '/' ? '/' : normalizedPath}`, Astro.site!).href;
+const defaultLocaleUrls: Record<SupportedLocale, string> = {
+  en: `/en${normalizedPath === '/' ? '/' : normalizedPath}`,
+  es: `/es${normalizedPath === '/' ? '/' : normalizedPath}`,
+};
+const resolvedLocaleUrls = { ...defaultLocaleUrls, ...localeUrls };
+const alternateEn = resolvedLocaleUrls.en ? new URL(resolvedLocaleUrls.en, Astro.site!).href : undefined;
+const alternateEs = resolvedLocaleUrls.es ? new URL(resolvedLocaleUrls.es, Astro.site!).href : undefined;
 const websiteUrl = defaultIndexedUrl;
-const socialImageUrl = new URL(socialImage.src, Astro.site!).href;
+const socialImageUrl = seoImage
+  ? new URL(seoImage, Astro.site!).href
+  : new URL(socialImage.src, Astro.site!).href;
 const logoUrl = new URL(faviconAsset.src, Astro.site!).href;
 const localizedJobTitle = t('hero.role', lang).trim();
 
@@ -90,11 +103,11 @@ const profilePageSchema = schemaMode === 'experience'
 
     <link rel="icon" type="image/png" href={faviconAsset.src} />
     <link rel="canonical" href={canonicalUrl} />
-    <link rel="alternate" hreflang="en" href={alternateEn} />
-    <link rel="alternate" hreflang="es" href={alternateEs} />
-    <link rel="alternate" hreflang="x-default" href={alternateEn} />
+    {alternateEn && <link rel="alternate" hreflang="en" href={alternateEn} />}
+    {alternateEs && <link rel="alternate" hreflang="es" href={alternateEs} />}
+    {alternateEn && <link rel="alternate" hreflang="x-default" href={alternateEn} />}
 
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -128,7 +141,7 @@ const profilePageSchema = schemaMode === 'experience'
   </head>
   <body class="transition-colors duration-300">
     <div class="flex flex-col min-h-screen">
-      <Navbar />
+      <Navbar localeUrls={resolvedLocaleUrls} />
       <main class="flex-grow">
         <slot />
       </main>

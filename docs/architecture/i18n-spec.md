@@ -5,7 +5,7 @@
 - Tipo: `contractual`
 - Fase inicial: `5`
 - Estado: `v1`
-- Ultima actualizacion: `2026-03-15`
+- Ultima actualizacion: `2026-03-16`
 
 ---
 
@@ -22,16 +22,10 @@ Esta spec existe para reintroducir i18n de forma controlada despues del rollback
 - `en`
 - `es`
 
-No forman parte del runtime activo en esta fase:
-
-- `de`
-- `pt`
-
 ### Notas
 
 - `en` sigue siendo el idioma maestro del portfolio
 - `es` se introduce como locale activo real en esta fase
-- `pt` puede evaluarse en una fase posterior, pero no debe activarse ni condiciona la implementacion de `Fase 5`
 
 ---
 
@@ -47,10 +41,16 @@ Rutas principales:
 - `/en/work/`
 - `/en/experience/`
 - `/en/contact/`
+- `/en/blog/`
+- `/en/blog/[slug]/`
+- `/en/blog/category/[category]/`
 - `/es/`
 - `/es/work/`
 - `/es/experience/`
 - `/es/contact/`
+- `/es/blog/`
+- `/es/blog/[slug]/`
+- `/es/blog/category/[category]/`
 
 ### Root `/`
 
@@ -99,12 +99,15 @@ La implementacion concreta puede decidir una de las dos, pero debe producir el m
 - `docs/content/content-master.md` sigue siendo la fuente canonica aprobada del idioma maestro
 - `src/i18n/en.json` implementa ese idioma maestro
 - `src/i18n/es.json` nace como localizacion controlada a partir del contenido maestro en ingles
+- cuando un dato editorial use claves internas estables, como `angle` y `domain` del blog, los labels visibles deben resolverse desde `src/i18n/en.json` y `src/i18n/es.json`
+- las claves internas no deben filtrarse a UI ni sustituir la representacion visible localizada
 
 ### Regla de divergencia
 
 - `es` puede adaptar formulaciones para sonar natural a hiring y networking en español
 - `es` no debe introducir una estrategia, tesis o arquitectura narrativa distinta
 - diferencias mayores de posicionamiento entre idiomas quedan fuera de esta fase
+- `es/blog/` y `es/blog/category/[category]/` deben renderizar posts publicados igual que sus equivalentes en `en` cuando existan; los empty states solo aplican a ausencia real de contenido
 
 ---
 
@@ -223,6 +226,12 @@ Debe existir un `LanguageSwitcher` minimo y multipagina.
 - debe intentar preservar la pagina equivalente entre idiomas
 - si una equivalencia exacta no existiera, debe caer a la home del locale destino
 
+### Excepcion para blog
+
+- en `blog post detail`, una equivalencia exacta entre locales puede preservarse mediante la identidad editorial comun del post aunque sus `slug` localizados sean distintos
+- en `blog post detail`, si no existe una equivalencia exacta del post en el locale destino, el `LanguageSwitcher` debe caer al `blog index` de ese locale
+- esta excepcion no cambia la regla general para otras superficies del sitio
+
 ### No requiere en esta fase
 
 - selector complejo por bandera
@@ -241,6 +250,7 @@ No deben existir gaps de traduccion importantes en:
 - `/work`
 - `/experience`
 - `/contact`
+- `/blog`
 - navbar
 - footer
 
@@ -250,26 +260,10 @@ El sistema puede tener fallback tecnico a `en` durante desarrollo, pero la fase 
 
 ---
 
-## Aleman heredado
-
-`de` no forma parte del runtime activo del portfolio.
-
-Implicaciones:
-
-- `src/i18n/de.json` no debe seguir alimentando el sitio
-- no deben existir rutas `/de/`
-- no debe existir `LanguageSwitcher` que lo exponga
-- cualquier residuo del template original en aleman debe retirarse del wiring activo
-
-Su archivo puede eliminarse o quedar temporalmente fuera del runtime durante la implementacion, pero no debe seguir afectando el comportamiento visible del sitio.
-
----
-
 ## Restricciones de fase
 
 Esta fase no debe:
 
-- introducir `pt` como locale activo
 - reabrir estrategia o arquitectura del sitio
 - definir SEO final por locale
 - resolver deploy final o dominio custom definitivo

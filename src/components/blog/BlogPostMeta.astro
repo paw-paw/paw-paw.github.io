@@ -1,0 +1,36 @@
+---
+import { t, type SupportedLocale } from '../../utils/i18n';
+import {
+  blogAngleLabelKey,
+  blogCategoryLabelKey,
+  blogDomainLabelKey,
+  formatBlogDate,
+  type BlogAngle,
+  type BlogCategory,
+  type BlogDomain,
+} from '../../utils/blog';
+
+interface Props {
+  locale: SupportedLocale;
+  publishDate: Date;
+  readingTime: string;
+  category: BlogCategory;
+  angle: BlogAngle;
+  domain: BlogDomain;
+}
+
+const { locale, publishDate, readingTime, category, angle, domain } = Astro.props;
+---
+
+<div class="space-y-3">
+  <div class="flex flex-wrap items-center gap-2">
+    <span class="tag-chip">{t(blogCategoryLabelKey[category], locale)}</span>
+    <span class="tag-chip">{t(blogAngleLabelKey[angle], locale)}</span>
+    <span class="tag-chip">{t(blogDomainLabelKey[domain], locale)}</span>
+  </div>
+
+  <div class="flex flex-wrap gap-3 text-sm text-tone-muted">
+    <span>{t('blog.publishedLabel', locale)}: {formatBlogDate(publishDate, locale)}</span>
+    <span>{t('blog.readingTimeLabel', locale)}: {readingTime}</span>
+  </div>
+</div>

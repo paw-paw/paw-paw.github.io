@@ -1,0 +1,84 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import BlogPostMeta from '../../../components/blog/BlogPostMeta.astro';
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import { getBlogIndexPath, getBlogPostLocaleUrls } from '../../../utils/blog';
+import { t } from '../../../utils/i18n';
+import { getSeoEntry } from '../../../utils/seo';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data }) => data.locale === 'en' && data.status === 'published');
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content, headings } = await post.render();
+const tocHeadings = headings.filter((heading) => heading.depth === 2);
+const lang = 'en';
+const seo = getSeoEntry(lang, 'blog');
+const localeUrls = await getBlogPostLocaleUrls(post);
+const siteSuffix = seo.title.replace(/^Blog \| /, '');
+---
+
+<Layout
+  title={`${post.data.title} | ${siteSuffix}`}
+  description={post.data.excerpt}
+  lang={lang}
+  ogType="article"
+  seoImage={post.data.header_image.src}
+  localeUrls={localeUrls}
+>
+  <section class="section-padding pt-28 md:pt-36">
+    <article class="max-w-container mx-auto px-6">
+      <div class="blog-detail-hero" data-aos="fade-up">
+        <div class="blog-detail-hero-copy">
+          <a class="blog-detail-back-link" href={getBlogIndexPath('en')}>← {t('blog.backToBlog', lang)}</a>
+          <BlogPostMeta
+            locale={lang}
+            publishDate={post.data.publish_date}
+            readingTime={post.data.reading_time}
+            category={post.data.category}
+            angle={post.data.angle}
+            domain={post.data.domain}
+          />
+          <h1 class="blog-detail-title font-heading text-secondary dark:text-fog">{post.data.title}</h1>
+        </div>
+
+        <div class="blog-detail-image-shell">
+          <Image
+            src={post.data.header_image}
+            alt={post.data.title}
+            class="blog-post-header-image"
+            widths={[800, 1200]}
+            sizes="(min-width: 1024px) 32rem, 100vw"
+          />
+        </div>
+      </div>
+
+      <div class="blog-reading-layout">
+        <div class="blog-prose">
+          <div class="blog-key-idea">
+            <p class="blog-key-idea-label">{t('blog.keyIdea', lang)}</p>
+            <p>{post.data.excerpt}</p>
+          </div>
+          <Content />
+        </div>
+
+        <aside class="blog-toc" aria-label={t('blog.onThisPage', lang)}>
+          <p class="blog-toc-title">{t('blog.onThisPage', lang)}</p>
+          <nav>
+            <ul>
+              {tocHeadings.map((heading) => (
+                <li><a href={`#${heading.slug}`}>{heading.text}</a></li>
+              ))}
+            </ul>
+          </nav>
+        </aside>
+      </div>
+    </article>
+  </section>
+</Layout>
