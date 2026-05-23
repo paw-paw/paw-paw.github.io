@@ -32,5 +32,8 @@
     "react": "npm:@preact/compat@latest",
     "react-dom": "npm:@preact/compat@latest",
     "rollup": "^4.59.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.60.0"
   }
 }
