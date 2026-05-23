@@ -269,26 +269,26 @@ Los perfiles en `.codex/agents/*.toml` deben ser perfiles acotados. Por defecto 
 
 ## 13) Ramas y commits
 
-La política de ramas vive en `docs/governance/branching-workflow.md` y debe respetarse antes de cualquier integración.
+La política de ramas y la convención de commits viven en `docs/governance/branching-workflow.md` y deben respetarse antes de cualquier integración. Ese documento define la separación `main`/`dev`, el uso esperado de Conventional Commits, los `type(scope)` permitidos y qué superficies pueden promoverse a producción.
 
 ### Ramas vigentes
 
 - `main`: rama de producción. Debe conservar dominio, deployment, SEO estructural, contenido publicado y runtime público vigentes.
-- `dev`: rama de trabajo. Debe nacer desde `main` y, cuando no haya trabajo pendiente, diferir de `main` solo por el commit operativo SDD/Codex.
+- `dev`: rama de trabajo. Debe nacer desde `main` y conservar el commit operativo base SDD/Codex; cuando no haya trabajo de producto pendiente, solo debe diferir por commits operativos/locales claramente excluibles de `main`.
 
-El commit operativo esperado en `dev` es:
+El commit operativo base esperado en `dev` es:
 
 ```text
 chore(dev): add local SDD and Codex workflow
 ```
 
-Ese commit puede contener `.codex/**`, `sdd/**`, gobierno operativo, validaciones SDD y reglas de versionado de decision logs. No debe cambiar la superficie pública del portfolio.
+Ese commit puede contener `.codex/**`, `sdd/**`, gobierno operativo, validaciones SDD y reglas de versionado de decision logs. No debe cambiar la superficie pública del portfolio. Commits operativos posteriores pueden existir en `dev` si siguen la convención `type(scope)`, mantienen una sola superficie y son excluibles de producción.
 
 ### Integración
 
 - No mergear `dev` completo hacia `main`.
 - Para publicar, llevar a `main` solo commits de producto o documentación pública mediante cherry-pick, PR selectivo o rama de release limpia.
-- Excluir siempre el commit operativo SDD/Codex de integraciones hacia `main`, salvo decisión futura explícita y documentada.
+- Excluir siempre el commit operativo base SDD/Codex y los commits operativos locales de integraciones hacia `main`, salvo decisión futura explícita y documentada.
 
 ### Separación de commits
 
@@ -296,6 +296,7 @@ Ese commit puede contener `.codex/**`, `sdd/**`, gobierno operativo, validacione
 - Cambios de producto visible deben acompañarse de documentación contractual cuando aplique.
 - Cambios SDD/Codex deben mantenerse fuera de runtime público.
 - Tests y validaciones deben acompañar el tipo de cambio que verifican, sin colar cambios de otra superficie.
+- Usar Conventional Commits (`type(scope): resumen`) según la tabla vigente en `docs/governance/branching-workflow.md`.
 
 ### Ramas legacy
 
