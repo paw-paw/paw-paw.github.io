@@ -41,3 +41,21 @@ No redefine precedencia, no sustituye contratos y no introduce nuevas decisiones
   - Impacto: el patch incluira cards regulares dentro de la revision de densidad visible.
   - Areas afectadas: `BlogCard`, futura politica editorial de `excerpt`
   - Propagacion requerida: `docs/content/content-master.md`
+
+- Fecha: `2026-05-23`
+  - Tipo: `drift`
+  - Contexto: la validacion responsive diferida del cierre pudo ejecutarse parcialmente con Playwright CLI y Chromium sobre `/es/blog/`.
+  - Decision: tratar el overflow mobile confirmado como drift post-cierre del mismo patch `blog-index-proportion-refinement`, no como parche nuevo.
+  - Razon: el defecto nace del refinamiento proporcional previo y coincide con el riesgo residual documentado sobre validacion `375px`, `768px` y `1440px`.
+  - Impacto: la correccion debe limitarse al overflow responsive del `blog index`, conservando narrativa, taxonomy, routing, schema, featured de `6` lineas y escala editorial aprobada.
+  - Areas afectadas: `src/styles/global.css`, `/en/blog/`, `/es/blog/`, validacion visual responsive.
+  - Propagacion requerida: registrar drift en backlog/cierre y ejecutar una correccion minima con validacion `npm run build` y Playwright en `375px`, `768px` y `1440px`.
+
+- Fecha: `2026-05-23`
+  - Tipo: `implementacion`
+  - Contexto: la causa del overflow mobile estaba en el ancho minimo efectivo del grid/strip editorial y en el `min-width: 40rem` aplicado a `.editorial-background-list` bajo `767px`.
+  - Decision: resolver mobile con una grilla responsive `2x3` para `Editorial Background` y `min-width: 0` en los contenedores del hero grid, sin tocar componentes ni contenido.
+  - Razon: elimina el overflow confirmado en `375px` preservando la composicion desktop/tablet y manteniendo el bloque editorial como evidencia visual subordinada.
+  - Impacto: `src/styles/global.css` corrige el ancho real de intro, featured y strip editorial en mobile; no cambia schema, routing, taxonomy, copy ni docs contractuales.
+  - Areas afectadas: `src/styles/global.css`, `/en/blog/`, `/es/blog/`.
+  - Propagacion requerida: registrar validaciones post-fix en backlog/cierre.

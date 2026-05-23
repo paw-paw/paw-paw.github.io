@@ -115,6 +115,13 @@ Este documento es auxiliar. No redefine precedencia, no sustituye contratos y no
   - diferencia encontrada: la revision visual planeada no pudo ejecutarse por falta de navegador disponible.
   - accion: registrar la validacion como `deferred` y dejar riesgo residual visible.
   - estado: `documentado`
+- drift:
+  - categoria: `confirmed`
+  - fuente esperada: `backlog/fase2.md` y este cierre dejaron pendiente revisar `/en/blog/` y `/es/blog/` en `375px`, `768px` y `1440px`.
+  - diferencia encontrada: validacion post-cierre con Playwright CLI/Chromium sobre `/es/blog/` confirma overflow en `375x812`; `body.scrollWidth` mide `764` y el intro/featured se renderizan a aproximadamente `740px` dentro de un viewport de `375px`.
+  - accion: registrar el hallazgo como drift post-cierre del mismo patch y preparar correccion minima centrada en `src/styles/global.css`.
+  - estado: `resuelto`
+  - evidencia de resolucion: Playwright CLI/Chromium post-fix confirma `bodyScrollWidth` igual al viewport en `/en/blog/` y `/es/blog/` para `375x812`, `768x1024` y `1440x900`.
 
 ---
 
@@ -160,6 +167,34 @@ Este documento es auxiliar. No redefine precedencia, no sustituye contratos y no
   - estado: `skipped`
   - evidencia: error de Playwright indicando que no existe la distribucion `chrome` en el entorno.
 - validacion:
+  - tipo: `automated`
+  - comando o revision: Playwright CLI/Chromium post-cierre sobre `/es/blog/` en `375x812`, `768x1024` y `1440x900`
+  - resultado esperado: confirmar si el riesgo residual responsive seguia abierto o podia cerrarse
+  - resultado obtenido: `375x812` falla por overflow horizontal real (`body.scrollWidth: 764`); `768x1024` y `1440x900` no muestran overflow horizontal medido.
+  - estado: `fail`
+  - evidencia: medicion Playwright del `2026-05-23` y capturas locales en `/tmp/es-blog-375.png`, `/tmp/es-blog-768.png`, `/tmp/es-blog-1440.png`.
+- validacion:
+  - tipo: `automated`
+  - comando o revision: `npm run build`
+  - resultado esperado: build Astro exitoso despues del fix CSS
+  - resultado obtenido: build exitoso
+  - estado: `pass`
+  - evidencia: salida de terminal del `2026-05-23`.
+- validacion:
+  - tipo: `automated`
+  - comando o revision: `npm test`
+  - resultado esperado: suite existente en verde
+  - resultado obtenido: `3` tests passed
+  - estado: `pass`
+  - evidencia: salida de terminal del `2026-05-23`.
+- validacion:
+  - tipo: `automated`
+  - comando o revision: Playwright CLI/Chromium post-fix sobre `/en/blog/` y `/es/blog/` en `375x812`, `768x1024` y `1440x900`
+  - resultado esperado: sin overflow horizontal y paneles clave dentro del viewport
+  - resultado obtenido: pass; `bodyScrollWidth` coincide con el viewport en todos los casos medidos y en `375px` intro/featured quedan en `327px`.
+  - estado: `pass`
+  - evidencia: medicion Playwright del `2026-05-23` y capturas locales `/tmp/blog-fix-*.png`.
+- validacion:
   - tipo: `not applicable`
   - comando o revision: `npm run lint`
   - resultado esperado: ejecutar si existiera script
@@ -171,17 +206,23 @@ Este documento es auxiliar. No redefine precedencia, no sustituye contratos y no
 
 ## 9. Riesgos residuales
 
-- riesgo: la ausencia de revision visual real puede esconder ajustes finos pendientes en tablet o mobile.
-  - impacto: el cambio podria necesitar un ultimo pase de calibracion visual aun con build/tests en verde.
-  - mitigacion: revisar `/en/blog/` y `/es/blog/` en navegador real antes de publicar o mergear.
+- riesgo: Playwright MCP sigue sin Chrome del sistema y no puede usarse como herramienta primaria de revision visual.
+  - impacto: la validacion asistida depende por ahora de Playwright CLI/Chromium y de revision humana opcional en dispositivo real.
+  - mitigacion: conservar mediciones CLI como evidencia automatizada y revisar en dispositivo real antes de publicar si se quiere cerrar el riesgo visual al maximo.
+- riesgo: la correccion del overflow mobile podria reducir demasiado la presencia de `Editorial Background` si se resuelve solo achicando logos.
+  - impacto: degradaria uno de los objetivos visuales del patch original.
+  - mitigacion: preferir grilla responsive dentro del ancho disponible antes que volver a una presencia minima del bloque.
 
 ---
 
 ## 10. Pendientes
 
-- pendiente: ejecutar revision visual real de `/en/blog/` y `/es/blog/` en `375px`, `768px` y `1440px`.
-  - owner: `usuario` o proxima sesion con navegador disponible
-  - razon: el entorno actual no dispone de Chrome para la validacion MCP asistida.
+- pendiente: correccion minima del overflow responsive mobile.
+  - estado: `resuelto`
+  - evidencia: `src/styles/global.css` actualizado y validaciones post-fix en verde.
+- pendiente: revision visual humana en dispositivo real.
+  - estado: `opcional`
+  - razon: Playwright CLI/Chromium valido los breakpoints requeridos, pero MCP sigue bloqueado por Chrome del sistema.
 
 ---
 

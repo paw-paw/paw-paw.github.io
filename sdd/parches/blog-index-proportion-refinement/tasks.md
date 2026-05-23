@@ -114,6 +114,27 @@ Este documento es auxiliar. No redefine precedencia, no sustituye contratos y no
 
 ---
 
+## 7.1 Addendum post-cierre: overflow responsive mobile
+
+- Fecha: `2026-05-23`
+- Origen: drift post-cierre detectado al ejecutar la validacion responsive diferida de Fase 2 con Playwright CLI/Chromium.
+- Clasificacion: correccion minima dentro del alcance de Fase 2, no parche nuevo.
+- Objetivo: eliminar el overflow mobile del `blog index` sin cambiar narrativa, schema, routing, taxonomy, featured de `6` lineas ni arquitectura del index.
+- Tareas:
+  - actualizar `src/styles/global.css` para que `.blog-index-hero-grid`, `.blog-intro-panel` y `.blog-featured-card` puedan encogerse dentro del viewport mobile;
+  - reemplazar el comportamiento mobile de `Editorial Background` basado en `overflow-x: auto` y `min-width: 40rem` por una grilla responsive que quepa en el ancho disponible;
+  - conservar tablet y desktop sin regresiones visibles;
+  - validar `/es/blog/` y, por paridad, `/en/blog/` en `375px`, `768px` y `1440px`.
+- Validaciones:
+  - `npm run build`
+  - Playwright CLI/Chromium sobre `/en/blog/` y `/es/blog/` en `375px`, `768px` y `1440px`
+- Criterio de cierre:
+  - [x] `body.scrollWidth` no supera el ancho del viewport en `375px`;
+  - [x] intro, `Editorial Background` y featured quedan dentro del ancho visible;
+  - [x] no aparece regresion evidente en `768px` ni `1440px`.
+
+---
+
 ## 8. Criterio de cierre
 
 - [x] cada fase tiene objetivo, precondiciones, tareas, validaciones y criterio de cierre

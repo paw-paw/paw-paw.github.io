@@ -183,11 +183,11 @@ Este documento es auxiliar. No redefine precedencia, no sustituye contratos y no
 
 ## 9. Drift detectado
 
-* Fecha:
-  * fuente esperada:
-  * diferencia encontrada:
-  * impacto:
-  * accion:
+* Fecha: `2026-05-23`
+  * fuente esperada: `backlog/fase2.md` y `cierre.md` esperaban validar `/en/blog/` y `/es/blog/` en `375px`, `768px` y `1440px`.
+  * diferencia encontrada: la revision post-cierre con Playwright CLI/Chromium sobre `/es/blog/` confirma overflow mobile en `375x812`; `body.scrollWidth` mide `764` con viewport `375`, y `.blog-intro-panel` / `.blog-featured-card` miden aproximadamente `740px`.
+  * impacto: la validacion mobile diferida queda reclasificada de riesgo residual a regresion visual confirmada en mobile estrecho.
+  * accion: preparar correccion minima en `src/styles/global.css` para eliminar el ancho forzado del strip editorial en mobile y asegurar que intro/featured puedan encogerse dentro del viewport.
   * requiere decision: `no`
 
 ---
@@ -202,6 +202,14 @@ Este documento es auxiliar. No redefine precedencia, no sustituye contratos y no
   * hallazgo: la revision visual asistida por MCP no pudo ejecutarse porque el entorno no tiene una distribucion de Chrome instalada para Playwright/DevTools.
   * impacto: queda pendiente la comprobacion visual real de breakpoints.
   * accion: registrar la revision visual como diferida y mantener el riesgo residual visible.
+* Fecha: `2026-05-23`
+  * hallazgo: Playwright MCP sigue bloqueado por ausencia de Chrome del sistema, pero Playwright CLI con Chromium instalado permite medir y capturar la ruta local.
+  * impacto: la limitacion MCP ya no impide validar el bug responsive principal, aunque sigue siendo una limitacion de tooling para la ruta MCP.
+  * accion: usar Playwright CLI/Chromium como validacion aceptable para esta correccion y reportar MCP como no disponible si sigue buscando `/opt/google/chrome/chrome`.
+* Fecha: `2026-05-23`
+  * hallazgo: la correccion pudo limitarse a `src/styles/global.css`; no hizo falta modificar componentes Astro, rutas, contenido ni contratos.
+  * impacto: el drift se resuelve como ajuste responsive acotado dentro de Fase 2.
+  * accion: conservar la grilla desktop/tablet y usar grilla mobile `2x3` para `Editorial Background`, eliminando el ancho minimo de `40rem`.
 
 ---
 
@@ -255,6 +263,30 @@ Este documento es auxiliar. No redefine precedencia, no sustituye contratos y no
   * resultado obtenido: no ejecutada; Playwright/Chrome DevTools no encontraron una distribucion de Chrome disponible en el entorno
   * estado: `skipped`
   * notas: requiere revision manual real o provisionar navegador en el entorno.
+* Validacion:
+  * comando o revision: Playwright CLI/Chromium post-cierre sobre `/es/blog/` en `375x812`, `768x1024` y `1440x900`
+  * resultado esperado: confirmar o descartar el riesgo residual responsive
+  * resultado obtenido: `375x812` presenta overflow real (`body.scrollWidth: 764`) con intro y featured renderizados a aproximadamente `740px`; `768x1024` y `1440x900` no presentan overflow horizontal medido.
+  * estado: `fail`
+  * notas: el fallo confirma que la correccion debe enfocarse en mobile estrecho y mantener desktop/tablet estables.
+* Validacion:
+  * comando o revision: `npm run build`
+  * resultado esperado: build Astro exitoso despues del fix CSS
+  * resultado obtenido: build exitoso
+  * estado: `pass`
+  * notas: se mantiene el warning existente de Browserslist desactualizado.
+* Validacion:
+  * comando o revision: `npm test`
+  * resultado esperado: suite existente en verde
+  * resultado obtenido: `3` tests passed
+  * estado: `pass`
+  * notas: ejecutado de forma secuencial.
+* Validacion:
+  * comando o revision: Playwright CLI/Chromium post-fix sobre `/en/blog/` y `/es/blog/` en `375x812`, `768x1024` y `1440x900`
+  * resultado esperado: `body.scrollWidth` no supera el ancho del viewport y los paneles clave quedan dentro del ancho visible.
+  * resultado obtenido: pass; en ambos locales `bodyScrollWidth` coincide con el viewport en `375`, `768` y `1440`. En `375`, intro y featured miden `327px`, dentro del viewport.
+  * estado: `pass`
+  * notas: capturas locales generadas como `/tmp/blog-fix-es-375.png`, `/tmp/blog-fix-en-375.png` y variantes `768`/`1440`.
 
 ---
 
@@ -281,4 +313,5 @@ La fase solo se considera cerrada si:
 
 ### Pendientes
 
-* revision visual real de breakpoints en cuanto exista navegador disponible
+* Playwright MCP sigue sin funcionar porque busca Chrome del sistema en `/opt/google/chrome/chrome`; la validacion de esta correccion se hizo con Playwright CLI/Chromium.
+* revision manual humana opcional en dispositivo real antes de publicar, por tratarse de ajuste visual mobile.
