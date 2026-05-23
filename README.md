@@ -29,11 +29,15 @@ npm run build
 Start here:
 
 - `docs/README.md`
+- `docs/governance/branching-workflow.md`
+- `sdd/core/README.md`
+- `sdd/orchestration/skill-routing.md`
 
 Governance and audit:
 
 - `docs/governance/template-audit.md`
 - `docs/governance/decision-log.md`
+- `docs/governance/branching-workflow.md`
 
 Deployment contract:
 
@@ -42,4 +46,5 @@ Deployment contract:
 ## Notes
 
 - This repository is still under structural cleanup and documentation-first customization.
-- Historical phase plans were removed from `main` and preserved outside this branch.
+- `main` is the production branch.
+- `dev` is the working branch and should differ from `main` by one operational SDD/Codex commit when no product work is pending.

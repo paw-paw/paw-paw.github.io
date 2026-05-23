@@ -1,0 +1,43 @@
+# Decision Log: blog-index-proportion-refinement
+
+Este documento es auxiliar. Registra decisiones significativas del cambio `blog-index-proportion-refinement`.
+
+No redefine precedencia, no sustituye contratos y no introduce nuevas decisiones de producto por si solo.
+
+---
+
+- Fecha: `2026-05-18`
+  - Tipo: `alcance`
+  - Contexto: el usuario detecto que el featured actual corta excerpts que el sistema editorial vigente no declara excesivos.
+  - Decision: partir de expandir la UI como direccion base, no de recortar por defecto los excerpts existentes.
+  - Razon: ni docs, ni schema, ni skills editoriales fijan hoy una longitud maxima cuantitativa para `excerpt`.
+  - Impacto: la planificacion debe estudiar primero la capacidad visible del featured y luego decidir si hace falta formalizar una politica editorial.
+  - Areas afectadas: `blog index`, `docs/content/content-system.md`, skills editoriales del blog
+  - Propagacion requerida: pendiente de decision posterior sobre politica de excerpt
+
+- Fecha: `2026-05-18`
+  - Tipo: `alcance`
+  - Contexto: el featured actual clampa `excerpt` a `2` lineas y el usuario quiere que represente mejor los resúmenes reales del sistema.
+  - Decision: fijar como objetivo del patch que el featured muestre `6` lineas visibles de excerpt.
+  - Razon: da margen suficiente para representar excerpts actuales sin forzar recortes artificiales.
+  - Impacto: el plan debe ajustar la proporcion de la portada y la capacidad visible del featured en torno a ese objetivo.
+  - Areas afectadas: `blog index`, featured teaser
+  - Propagacion requerida: `docs/content/content-master.md`
+
+- Fecha: `2026-05-18`
+  - Tipo: `documental`
+  - Contexto: docs y skills editoriales solo describen `excerpt` como breve, sin rango recomendado.
+  - Decision: crear una guia editorial cuantitativa suave para `excerpt`.
+  - Razon: evita que la autoría futura vuelva a separarse de la capacidad prevista de la UI.
+  - Impacto: el patch debera actualizar contratos y skills editoriales aplicables.
+  - Areas afectadas: `docs/content/content-system.md`, `.codex/skills/blog-new/SKILL.md`, `.codex/skills/blog-edit/SKILL.md`, `.codex/skills/blog-preflight/SKILL.md`
+  - Propagacion requerida: `docs/content/content-system.md`, skills editoriales del blog
+
+- Fecha: `2026-05-18`
+  - Tipo: `alcance`
+  - Contexto: las cards regulares tambien muestran `excerpt` y hoy comparten el clamp visual de `2` lineas.
+  - Decision: alinear tambien las cards regulares con la nueva politica de `excerpt`.
+  - Razon: `excerpt` es parte del modelo general de `blog_post`, no una excepcion del featured.
+  - Impacto: el patch incluira cards regulares dentro de la revision de densidad visible.
+  - Areas afectadas: `BlogCard`, futura politica editorial de `excerpt`
+  - Propagacion requerida: `docs/content/content-master.md`

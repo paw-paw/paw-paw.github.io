@@ -1,0 +1,267 @@
+# Decision Log: SDD Portable Core Bootstrap
+
+Este documento registra decisiones significativas del cambio SDD `sdd-portable-core-bootstrap`.
+
+No redefine precedencia, no sustituye contratos y no introduce nuevas decisiones de producto por si solo.
+
+---
+
+## 2026-05-05 - Usar SDD formal para la rearquitectura portable
+
+### Contexto
+
+El handover consolidado describe una rearquitectura amplia del sistema SDD hacia un modelo portable, estricto y reusable, con impacto en rutas, doctrina operativa, skills, agents, templates, validacion y cierre.
+
+### Decision
+
+Tratar el cambio como SDD formal.
+
+### Razon
+
+El alcance excede un cambio local reversible y afecta contratos operativos, estructura documental y flujo de trabajo SDD.
+
+### Impacto
+
+- Se crea un workspace SDD bajo `docs/sdd/parches/sdd-portable-core-bootstrap/`.
+- La ejecucion futura debe pasar por `sdd-plan` antes de tareas o implementacion.
+
+---
+
+## 2026-05-05 - Abrir un patch inicial, no un paraguas del programa completo
+
+### Contexto
+
+El handover indica que la rearquitectura completa no debe ejecutarse como un unico patch ni como batch. Debe tratarse como un programa ligero de patches relacionados mediante `program_id`.
+
+### Decision
+
+Crear una definicion para el primer patch del programa, no una definicion paraguas que intente cubrir toda la rearquitectura como unidad ejecutable.
+
+### Razon
+
+Mantiene el alcance revisable, evita scope creep y respeta la direccion conceptual del handover.
+
+### Impacto
+
+- `definicion.md` describe el patch inicial.
+- Los trabajos posteriores deberan conectarse mediante `program_id: sdd-portable-core`.
+
+---
+
+## 2026-05-05 - Separar `change-id` y `program_id`
+
+### Contexto
+
+Durante intake se evaluo usar el mismo identificador para patch y programa, o separar ambos conceptos.
+
+### Decision
+
+Usar `change-id: sdd-portable-core-bootstrap` y `program_id: sdd-portable-core`.
+
+### Razon
+
+Separar los identificadores distingue el primer patch ejecutable del programa ligero que agrupara futuros patches relacionados.
+
+### Impacto
+
+- El workspace inicial vive en `docs/sdd/parches/sdd-portable-core-bootstrap/`.
+- Futuros patches relacionados deberian declarar o referenciar `program_id: sdd-portable-core`.
+
+---
+
+## 2026-05-05 - Priorizar migration-first para el primer patch
+
+### Contexto
+
+El handover sugiere una secuencia conceptual donde micro-core aparece antes de la migracion estructural, pero durante intake se eligio que el primer patch sea migration-first.
+
+### Decision
+
+Definir el primer patch como migration-first.
+
+### Razon
+
+La decision explicita del usuario prioriza resolver la ruta activa SDD y la separacion `docs/` versus `sdd/` como primer trabajo controlado.
+
+### Impacto
+
+- `sdd-plan` debe interpretar el handover desde una entrada migration-first.
+- Cualquier necesidad de micro-core minimo antes de mover legacy queda como decision abierta de planning.
+
+---
+
+## 2026-05-05 - Usar `docs/sdd/parches/` como workspace vigente durante intake
+
+### Contexto
+
+La raiz objetivo `sdd/` no existe todavia. El repo actual conserva artifacts SDD, templates y orquestacion bajo `docs/sdd/`, y las skills vigentes todavia esperan ese layout.
+
+### Decision
+
+Completar el intake bajo `docs/sdd/parches/sdd-portable-core-bootstrap/`.
+
+### Razon
+
+El intake no debe crear la estructura objetivo ni adelantar la migracion. Debe operar desde la ruta viva actual hasta que una fase posterior la cambie de forma trazable.
+
+### Impacto
+
+- `handover.md`, `definicion.md` y `decision.log` quedan bajo `docs/sdd/parches/sdd-portable-core-bootstrap/`.
+- La existencia del workspace en `docs/sdd/` no valida `docs/sdd/` como ruta final del sistema portable.
+
+---
+
+## 2026-05-05 - No crear `patch.yaml` durante intake
+
+### Contexto
+
+El handover define `patch.yaml` como requisito para patches formales nuevos dentro del modelo objetivo, pero el plan aprobado para este intake prohibe crearlo.
+
+### Decision
+
+No crear `patch.yaml` durante este intake.
+
+### Razon
+
+La regla de manifest pertenece al sistema objetivo y todavia no existe schema, tooling ni core que la gobierne en el repo actual.
+
+### Impacto
+
+- La falta de `patch.yaml` en este workspace no se trata como error de intake.
+- `sdd-plan` debe decidir cuando y como introducir el manifest sin romper el flujo actual.
+
+---
+
+## 2026-05-05 - Preservar el handover consolidado como fuente auxiliar
+
+### Contexto
+
+El handover consolidado contiene decisiones conceptuales, non-goals, riesgos, rutas objetivo y future patch candidates.
+
+### Decision
+
+Preservar el handover completo como `docs/sdd/parches/sdd-portable-core-bootstrap/handover.md`.
+
+### Razon
+
+La fuente es extensa y debe quedar trazable dentro del workspace sin convertir `_inbox/` en fuente activa ni runtime truth.
+
+### Impacto
+
+- `definicion.md` resume y normaliza el alcance del primer patch.
+- El handover queda disponible para `sdd-plan` como fuente auxiliar preservada.
+
+---
+
+## 2026-05-06 - Resolver migration-first con autoridad minima de ruta
+
+### Contexto
+
+La definicion dejo abierta la pregunta de si un patch migration-first necesita `sdd/README.md` minimo o un stub de `sdd/core/` antes de mover legacy.
+
+### Decision
+
+El primer patch debe crear autoridad minima de ruta mediante READMEs de `sdd/` y carpetas objetivo, pero no debe crear `sdd/core/` completo.
+
+### Razon
+
+El usuario priorizo migration-first. Crear un micro-core completo convertiria este patch en micro-core-first o ampliaria el alcance hacia doctrina reusable. La autoridad minima evita mover artifacts a una ruta sin semantica y mantiene `sdd/core/*` como future patch del programa.
+
+### Impacto
+
+- `plan.md` debe incluir un bloque de autoridad minima para `sdd/`.
+- `sdd/core/README.md`, `sdd/core/patch-model.md`, `sdd/core/artifact-lifecycle.md` y `sdd/core/decision-drift-policy.md` quedan diferidos salvo que `sdd-tasks` identifique un blocker real.
+
+---
+
+## 2026-05-06 - Migrar orquestacion y templates como transicionales
+
+### Contexto
+
+La definicion dejo abierta que documentos de `docs/sdd/orchestration/` migran y como tratar templates actuales.
+
+### Decision
+
+Migrar `docs/sdd/orchestration/` tal cual a `sdd/orchestration/` y `docs/sdd/templates/` a `sdd/templates/`, marcando ambas carpetas como transicionales.
+
+### Razon
+
+El handover define esas rutas como transicionales y el repo actual ya tiene orquestacion y templates operativos bajo `docs/sdd/`. Cambiarlos semanticamente durante la migracion mezclaria reubicacion con rediseño doctrinal.
+
+### Impacto
+
+- `plan.md` debe tratar esos documentos como move/update de ruta, no como rewrite de contenido.
+- La consolidacion final de templates hacia `.codex/skills/*/assets/` queda para future patch.
+
+---
+
+## 2026-05-06 - Tratar el bootstrap como excepcion transicional hasta cierre
+
+### Contexto
+
+Las skills SDD actuales siguen apuntando a `docs/sdd/parches/`, y este mismo patch ya esta activo bajo esa ruta. Mover el workspace antes de ejecutar tasks y backlog podria romper el flujo vivo.
+
+### Decision
+
+Permitir que `sdd-portable-core-bootstrap` siga siendo gestionado desde `docs/sdd/parches/` durante su ejecucion, como excepcion transicional de bootstrap.
+
+### Razon
+
+La migracion necesita ser ejecutada por el sistema actual antes de que el sistema nuevo quede disponible. Esta excepcion evita declarar `docs/sdd/` como ruta final y evita mover el artifact activo antes de tener cierre o reporte.
+
+### Impacto
+
+- `plan.md` debe advertir que el bootstrap es el ultimo patch esperado bajo `docs/sdd/parches/`.
+- Nuevos workspaces posteriores a la migracion deberian nacer bajo `sdd/parches/`.
+- Si se decide mover el propio workspace al final, debe registrarse en reporte/cierre.
+
+---
+
+## 2026-05-06 - Mantener el workspace bootstrap en la ruta transicional durante este cierre preparatorio
+
+### Contexto
+
+Durante Fase 4 se reviso si el workspace `sdd-portable-core-bootstrap` debia moverse desde `docs/sdd/parches/` a la nueva raiz `sdd/parches/` al final de la migracion inicial.
+
+### Decision
+
+No mover el workspace activo `docs/sdd/parches/sdd-portable-core-bootstrap/` en este patch. Mantenerlo como excepcion transicional documentada hasta un cierre o drift-sync posterior.
+
+### Razon
+
+Este workspace contiene el handover, definicion, plan, tasks, backlogs y decision log usados para ejecutar la migracion. Moverlo durante el cierre preparatorio mezclaria reconciliacion de rutas con reescritura de la propia evidencia de ejecucion.
+
+### Impacto
+
+- `docs/sdd/` no queda como ruta activa general.
+- La unica estructura conservada bajo `docs/sdd/` es el bootstrap transicional.
+- Nuevos workspaces SDD deben usar `sdd/parches/` salvo decision documentada en contrario.
+- El movimiento o cierre definitivo del bootstrap queda pendiente para el siguiente paso SDD correspondiente.
+
+---
+
+## 2026-05-09 - Sincronizar drift contractual minimo posterior a ejecucion
+
+### Contexto
+
+Despues de ejecutar las fases 1 a 4, una revision con `sdd-sync-drift` encontro drift entre el estado real migrado y algunos documentos que seguian describiendo rutas antiguas o pre-migracion.
+
+### Decision
+
+Actualizar solo los contratos y artefactos auxiliares necesarios para reflejar el estado real:
+
+- `docs/README.md` debe apuntar a `sdd/parches/legacy/sprint-1/roadmap.md` para Sprint 1 historico.
+- `docs/AGENTS.md` debe declarar que SDD operativo vive en root `sdd/`, no en `docs/sdd/`.
+- `docs/sdd/parches/sdd-portable-core-bootstrap/drift-sync.md` registra la clasificacion del drift.
+
+No mover el workspace bootstrap ni introducir `sdd/core`, `patch.yaml`, `sdd-close` o cambios de versionado durante este sync.
+
+### Razon
+
+El drift detectado era de reconciliacion documental y no justificaba reabrir el diseno del programa ni ejecutar future patches.
+
+### Impacto
+
+- La ruta activa futura queda reforzada como `sdd/parches/`.
+- `docs/sdd/parches/sdd-portable-core-bootstrap/` sigue como excepcion transicional.
+- El tratamiento de `decision.log` ignorado por `*.log` queda pendiente de decision posterior.

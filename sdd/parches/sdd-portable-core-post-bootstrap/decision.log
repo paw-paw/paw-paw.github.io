@@ -1,0 +1,307 @@
+# Decision Log: SDD Portable Core Post-Bootstrap
+
+Este documento registra decisiones significativas del cambio SDD `sdd-portable-core-post-bootstrap`.
+
+No redefine precedencia, no sustituye contratos y no introduce nuevas decisiones de producto por si solo.
+
+---
+
+## 2026-05-09 - Usar SDD formal para el trabajo post-bootstrap
+
+### Contexto
+
+El handover post-bootstrap conserva trabajo restante del programa `sdd-portable-core`: micro-core, manifest, cierre, type-awareness de skills, templates finales, validacion local y audit de writers.
+
+### Decision
+
+Tratar el trabajo post-bootstrap como SDD formal.
+
+### Razon
+
+El alcance afecta metodologia SDD, estructura operativa, skills, validacion y cierre. No es un cambio local reversible ni una edicion menor de contenido.
+
+### Impacto
+
+- Se crea `sdd/parches/sdd-portable-core-post-bootstrap/definicion.md`.
+- El siguiente paso debe pasar por decision de foco y `sdd-plan` antes de tasks, backlog o ejecucion.
+
+---
+
+## 2026-05-09 - Usar `sdd-portable-core-post-bootstrap` como change-id
+
+### Contexto
+
+El usuario pidio completar intake para el cambio que vive en `sdd/parches/sdd-portable-core-post-bootstrap`, y el handover preservado declara ese id como tentativo.
+
+### Decision
+
+Usar `sdd-portable-core-post-bootstrap` como `change-id`.
+
+### Razon
+
+La ruta ya existe, contiene el handover filtrado y coincide con la continuidad post-bootstrap del programa.
+
+### Impacto
+
+- Los artifacts de intake permanecen bajo `sdd/parches/sdd-portable-core-post-bootstrap/`.
+- El `program_id` asociado se mantiene como `sdd-portable-core`.
+
+---
+
+## 2026-05-09 - No crear `patch.yaml` durante intake
+
+### Contexto
+
+El handover define `patch.yaml` como parte del modelo formal pendiente, pero el bootstrap dejo manifest, schema, validation tooling y type-awareness como trabajo diferido.
+
+### Decision
+
+No crear `patch.yaml` durante este intake.
+
+### Razon
+
+Crear un manifest antes de definir su autoridad, schema y validacion convertiria una regla objetivo en una verdad parcial sin soporte operativo.
+
+### Impacto
+
+- La ausencia de `patch.yaml` en este workspace no se trata como fallo de intake.
+- `sdd-plan` debe decidir cuando y como introducir el modelo formal de manifest.
+
+---
+
+## 2026-05-09 - Ejecutar el handover restante como un unico patch con fases estrictas
+
+### Contexto
+
+Durante el intake post-bootstrap se evaluo dividir el trabajo restante del programa `sdd-portable-core` en varios patches o mantenerlo como un unico patch. El riesgo de un megapatch sin controles fue clasificado como alto, especialmente por scope creep, drift acumulado, decision gates comprimidos y validacion falsa.
+
+### Decision
+
+Ejecutar el contenido restante del handover como un unico patch SDD, pero con fases estrictas, secuenciales y revisables.
+
+### Razon
+
+La decision del usuario prioriza conservar la unidad conceptual del handover post-bootstrap y evitar fragmentacion excesiva del programa. Para que sea viable, el control debe pasar a fases internas con dependencias claras, backlogs separados, validaciones proporcionales y gates humanos cuando una fase afecte convenciones vivas.
+
+### Impacto
+
+- `sdd-plan` debe cubrir el patch completo sin convertirlo en checklist operativo.
+- `tasks.md` debera dividir el patch en fases macro secuenciales.
+- Cada fase ejecutable debera pasar por `sdd-phase-backlog` antes de implementacion.
+- No se debe iniciar una fase dependiente si la fase anterior deja decisiones abiertas que afecten su contrato.
+
+---
+
+## 2026-05-09 - Orden tecnico del patch unico post-bootstrap
+
+### Contexto
+
+El patch unico contiene streams dependientes: micro-core, manifest, cierre, validacion, type-awareness de skills, templates finales, writer audit y reconciliacion. Ejecutarlos sin orden estricto recrearia el riesgo de megapatch.
+
+### Decision
+
+Ordenar el plan en bloques secuenciales:
+
+1. micro-core SDD estricto;
+2. modelo formal de patch y manifest;
+3. lifecycle, cierre y `sdd-close`;
+4. validacion SDD local;
+5. type-awareness de skills y templates finales;
+6. writer audit y reglas de confianza;
+7. reconciliacion, self-validation y cierre del patch.
+
+### Razon
+
+El micro-core debe definir autoridad antes del manifest; el manifest debe existir antes de exigir type-awareness; cierre y validacion necesitan el modelo de patch; writer audit debe evaluarse contra reglas ya explicitadas; la reconciliacion debe ocurrir al final.
+
+### Impacto
+
+- `tasks.md` debe preservar este orden salvo decision registrada.
+- Cada fase debe tener precondiciones y stop conditions.
+- Una fase dependiente no debe ejecutarse si la fase previa deja decisiones abiertas que afecten su contrato.
+
+---
+
+## 2026-05-09 - Conservar bootstrap transicional hasta la reconciliacion final
+
+### Contexto
+
+El bootstrap portable permanece bajo `docs/sdd/parches/sdd-portable-core-bootstrap/**` como excepcion transicional documentada. Resolverlo antes de disenar manifest, cierre y validacion podria mezclar un caso historico con el diseno del nuevo flujo.
+
+### Decision
+
+Conservar el bootstrap transicional hasta el Bloque 7 de reconciliacion, self-validation y cierre del patch actual.
+
+### Opciones Consideradas
+
+- A: conservarlo hasta Bloque 7 y decidir con cierre/reconciliacion final.
+- B: usarlo como primer caso de prueba en la fase de `sdd-close`.
+- C: dejarlo fuera de este patch como pendiente historico.
+
+### Razon
+
+La opcion A evita usar un caso transicional para condicionar prematuramente el diseno de `sdd-close`, pero mantiene la decision dentro del patch unico.
+
+### Impacto
+
+- Bloques 1 a 6 no deben mover ni cerrar `docs/sdd/parches/sdd-portable-core-bootstrap/**`.
+- Bloque 7 debe clasificar y decidir el tratamiento final del bootstrap transicional.
+
+---
+
+## 2026-05-09 - Promover a core solo reglas SDD estables y compartidas
+
+### Contexto
+
+`sdd/orchestration/**` contiene reglas de distinto nivel: doctrina SDD reusable, coordinacion runtime del manager Codex, routing concreto de skills, subagent policy y model policy. Promover todo a `sdd/core/**` inflaria el core y reduciria portabilidad.
+
+### Decision
+
+Promover a `sdd/core/**` solo reglas estables compartidas por 3+ skills/artifacts. No copiar `sdd/orchestration/**` wholesale; destilar reglas core y dejar `sdd/orchestration/**` como adapter operativo que referencia el core.
+
+### Opciones Consideradas
+
+- A: promover solo reglas estables compartidas por 3+ skills/artifacts.
+- B: promover casi todo `sdd/orchestration/**` al core.
+- C: no promover nada inicialmente y crear core desde cero.
+
+### Razon
+
+La opcion A preserva un micro-core estricto: autoridad, capas, artifact lifecycle, decisiones, assumptions, blockers, findings y drift. Routing concreto, subagentes, modelos y output contracts quedan como coordinacion operativa.
+
+### Impacto
+
+- Bloque 1 debe crear un core destilado, no una mudanza masiva.
+- `sdd/orchestration/**` debe quedar como soporte transicional/operativo y referenciar el core cuando corresponda.
+- Cambios futuros al core deben justificarse como reglas compartidas, no como detalles de una sola skill.
+
+---
+
+## 2026-05-09 - Iniciar validacion SDD como comando directo
+
+### Contexto
+
+El patch debe crear validacion SDD local, pero todavia no existe `sdd/tools/validate-sdd.mjs` ni script npm dedicado. Exponer un script npm desde el primer corte puede fijar una interfaz antes de estabilizar fixtures y comportamiento.
+
+### Decision
+
+Iniciar la validacion SDD como comando directo bajo `sdd/tools/`, por ejemplo `node sdd/tools/validate-sdd.mjs`.
+
+### Opciones Consideradas
+
+- A: comando directo durante la primera version.
+- B: agregar script npm desde el inicio, por ejemplo `npm run validate:sdd`.
+
+### Razon
+
+La opcion A permite estabilizar schema, fixtures y salida del validador antes de convertirlo en contrato de comandos del repo.
+
+### Impacto
+
+- Bloque 4 no debe modificar `package.json` salvo nueva decision humana.
+- `npm run build` y `npm test` siguen aplicando solo si una fase toca runtime Astro o logica cubierta por tests.
+
+---
+
+## 2026-05-09 - Crear `sdd-close` mediante `skill-creator`
+
+### Contexto
+
+`sdd-close` no existe. Crear una skill nueva bajo `.codex/skills/` introduce una convencion operativa nueva y debe respetar el workflow de creacion de skills disponible en el repo.
+
+### Decision
+
+Crear `sdd-close` mediante `skill-creator` durante la fase correspondiente.
+
+### Opciones Consideradas
+
+- A: usar `skill-creator`.
+- B: crearla manualmente copiando patrones locales existentes.
+
+### Razon
+
+La opcion A reduce drift estructural y usa el flujo dedicado para skills nuevas.
+
+### Impacto
+
+- Bloque 3 debe invocar `skill-creator` cuando llegue la fase de `sdd-close`.
+- No se debe tratar `sdd-close` como skill activa antes de que exista.
+
+---
+
+## 2026-05-09 - Dividir Bloque 5 en type-awareness y templates
+
+### Contexto
+
+Durante `sdd-tasks`, la revision de riesgos detecto que el Bloque 5 del plan mezcla dos trabajos con riesgos distintos: actualizar skills para ser type-aware y resolver el destino final de templates. Mantenerlos en una sola fase podria producir un backlog demasiado amplio y una stop condition poco clara.
+
+### Decision
+
+Dividir el Bloque 5 en dos fases consecutivas:
+
+1. type-awareness de skills SDD;
+2. templates finales y superficie transicional.
+
+### Razon
+
+La type-awareness debe estabilizar primero el comportamiento de las skills frente a `patch.yaml`, lifecycle y cierre. Solo despues tiene sentido decidir que templates viven como assets de skills, cuales quedan transicionales y cuales se degradan.
+
+### Impacto
+
+- `tasks.md` tendra ocho fases en lugar de siete.
+- No se altera el orden conceptual del plan; se refina un bloque amplio en dos fases secuenciales.
+- El backlog de Fase 5 no debe mover templates.
+- El backlog de Fase 6 no debe redefinir comportamiento type-aware de skills salvo drift registrado.
+
+---
+
+## 2026-05-09 - Introducir manifest inicial del patch post-bootstrap
+
+### Contexto
+
+Fase 2 del patch requiere introducir el modelo formal de patch y crear `patch.yaml` para `sdd-portable-core-post-bootstrap` despues de que Fase 1 establecio `sdd/core/patch-model.md` y `sdd/core/artifact-lifecycle.md`.
+
+### Decision
+
+Crear `sdd/parches/sdd-portable-core-post-bootstrap/patch.yaml` con:
+
+- `schema_version: 1`
+- `change_id: sdd-portable-core-post-bootstrap`
+- `program_id: sdd-portable-core`
+- `patch_kind: spec`
+- `lifecycle: spec-first`
+- `status: active`
+- `related_docs: []`
+
+### Razon
+
+El patch es un cambio SDD formal con definicion propia, no un batch. Es `spec-first` porque crea metodologia SDD auxiliar antes de cerrar y reconciliar fuentes vivas finales. No requiere `related_docs` obligatorio porque no esta anclado a un contrato vivo especifico como `spec-anchored`.
+
+### Impacto
+
+- Fase 3 puede usar `patch.yaml` y `status` para definir cierre.
+- Legacy bajo `sdd/parches/legacy/**` no recibe manifest obligatorio.
+- La existencia de este manifest no vuelve automaticamente type-aware a las skills; eso queda para Fase 5.
+
+---
+
+## 2026-05-09 - Hacer type-aware las skills SDD
+
+### Contexto
+
+Despues de crear `patch.yaml` y el validador local, Fase 5 actualiza las skills SDD para leer el manifest cuando exista y tratar su ausencia como stop condition en patches formales nuevos, salvo intake, legacy o workspaces transicionales documentados.
+
+### Decision
+
+Agregar reglas de manifest awareness a las skills SDD existentes, incluyendo `sdd-close`.
+
+### Razon
+
+El manifest no debe ser solo un archivo pasivo. Las transiciones SDD necesitan respetar `change_id`, `program_id`, `patch_kind`, `lifecycle`, `status` y `related_docs` antes de planificar, crear tasks, generar backlogs, ejecutar fases, sincronizar drift o cerrar patches.
+
+### Impacto
+
+- `sdd-intake` sigue pudiendo operar antes de `patch.yaml`.
+- Legacy bajo `sdd/parches/legacy/**` sigue exento.
+- Planning skills siguen sin crear backlogs ni ejecutar cambios.
+- Templates finales no se mueven en esta fase; quedan para Fase 6.

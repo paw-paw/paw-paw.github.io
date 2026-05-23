@@ -1,0 +1,52 @@
+# Decision Log: blog-index-editorial-redesign
+
+Este documento es auxiliar. Registra decisiones significativas del cambio `blog-index-editorial-redesign`.
+
+No redefine precedencia, no sustituye contratos y no introduce nuevas decisiones de producto por si solo.
+
+---
+
+- Fecha: `2026-05-18`
+  - Tipo: `documental`
+  - Contexto: el handoff del rediseño contradice la descripcion vigente del `blog index` en contratos actuales.
+  - Decision: tratar la diferencia como cambio contractual intencional y no como error del handoff.
+  - Razon: la UI objetivo depende de una jerarquia mas ligera en el index y de un featured teaser con excerpt.
+  - Impacto: el patch debera reconciliar `content-system` y `content-master` antes de cerrar implementacion.
+  - Areas afectadas: `docs/content/content-system.md`, `docs/content/content-master.md`, `/blog`
+  - Propagacion requerida: `docs/content/content-system.md`, `docs/content/content-master.md`
+
+- Fecha: `2026-05-18`
+  - Tipo: `alcance`
+  - Contexto: el nuevo bloque `Editorial Background` podia interpretarse como patron global del portfolio.
+  - Decision: limitar `Editorial Background` a `/blog` dentro de este patch.
+  - Razon: su funcion es apoyar credibilidad editorial en una sola superficie y no hace falta ampliar el modelo global para resolver el objetivo actual.
+  - Impacto: el cambio conserva foco y evita expansion prematura de arquitectura de contenido.
+  - Areas afectadas: `/blog`, futuros docs del cambio
+  - Propagacion requerida: `docs/content/content-master.md`
+
+- Fecha: `2026-05-18`
+  - Tipo: `alcance`
+  - Contexto: el handoff contenia copy inglesa aprobada y copy espanola propuesta, mientras el sitio ya opera con `en` y `es`.
+  - Decision: exigir paridad real entre `en` y `es` dentro del alcance del cambio.
+  - Razon: las rutas localizadas del blog ya estan activas y la spec i18n impide cerrar con una experiencia editorial partida entre locales.
+  - Impacto: la futura implementacion debera contemplar ambos locales y sus strings visibles.
+  - Areas afectadas: `src/i18n/en.json`, `src/i18n/es.json`, `/en/blog/`, `/es/blog/`
+  - Propagacion requerida: `docs/content/content-master.md`
+
+- Fecha: `2026-05-18`
+  - Tipo: `alcance`
+  - Contexto: el bloque `Editorial Background` requiere decidir si trabajara con logos reales o con fallback textual en la primera entrega.
+  - Decision: aprobar los seis logos del inbox para uso runtime dentro del alcance del patch.
+  - Razon: el mockup objetivo ya depende de ellos como soporte de credibilidad y el usuario prefiere cerrar con la version visual completa.
+  - Impacto: el plan debe contemplar promocion controlada de assets y actualizacion de `asset-plan`.
+  - Areas afectadas: `_inbox/blog_improvements/*_all.png`, `docs/visual/asset-plan.md`, futura implementacion de `/blog`
+  - Propagacion requerida: `docs/visual/asset-plan.md`
+
+- Fecha: `2026-05-18`
+  - Tipo: `documental`
+  - Contexto: el handoff propone un intro nuevo para `/blog`, pero el problema real detectado no es solo intro vs. SEO sino speech visible vs. narrativa contractual vigente de la pagina.
+  - Decision: adaptar tanto el intro visible como la metadata SEO de `/blog` a la narrativa contractual documentada del blog, usando el handoff como guia estructural y no como copy final vinculante cuando diverja.
+  - Razon: `/blog` debe seguir expresando autoridad editorial sobre business development, partnerships y project delivery, en coherencia con `site-architecture`, `content-system`, `content-master` y `seo-spec`.
+  - Impacto: el patch debera actualizar copy visible y SEO de forma coordinada durante la sincronizacion documental y la futura implementacion.
+  - Areas afectadas: `docs/content/content-master.md`, `docs/delivery/seo-spec.md`, `src/i18n/en.json`, `src/i18n/es.json`, `/blog`
+  - Propagacion requerida: `docs/content/content-master.md`, `docs/delivery/seo-spec.md`

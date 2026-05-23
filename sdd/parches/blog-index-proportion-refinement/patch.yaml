@@ -1,0 +1,20 @@
+schema_version: 1
+change_id: blog-index-proportion-refinement
+program_id: null
+patch_kind: spec
+lifecycle: spec-first
+status: closed
+created_at: 2026-05-18
+closed_at: 2026-05-18
+related_docs:
+  - docs/README.md
+  - AGENTS.md
+  - docs/architecture/site-architecture.md
+  - docs/content/content-system.md
+  - docs/content/content-master.md
+  - docs/visual/visual-system.md
+  - docs/visual/asset-plan.md
+  - docs/architecture/i18n-spec.md
+  - .codex/skills/blog-new/SKILL.md
+  - .codex/skills/blog-edit/SKILL.md
+  - .codex/skills/blog-preflight/SKILL.md

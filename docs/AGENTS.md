@@ -42,6 +42,12 @@ Organización esperada de `/docs`:
 - `visual/`: sistema visual, assets e interacción
 - `delivery/`: deployment, SEO y release
 
+Relación con SDD:
+
+- El sistema SDD operativo vive en la raíz del repo bajo `sdd/`, no dentro de `/docs`.
+- La doctrina portable vive en `sdd/core/`.
+- El routing operativo vive en `sdd/orchestration/`.
+
 ---
 
 ## 4) Reglas de escritura

@@ -1,0 +1,81 @@
+# Decision Log: blog-post-detail-editorial-redesign
+
+Este documento es auxiliar. Registra decisiones significativas del cambio `blog-post-detail-editorial-redesign`.
+
+No redefine precedencia, no sustituye contratos y no introduce nuevas decisiones de producto por si solo.
+
+---
+
+- Fecha: `2026-05-18`
+  - Tipo: `alcance`
+  - Contexto: El handoff pide redisenar `/blog/[slug]` con cambios de composicion, lectura y navegacion interna.
+  - Decision: Clasificar el cambio como `spec` con lifecycle `spec-anchored`.
+  - Razon: El cambio se apoya en contratos ya existentes, pero los extiende y puede requerir reconciliacion documental antes de implementar.
+  - Impacto: El trabajo debe resolverse mediante flujo SDD formal, no como edicion local aislada.
+  - Areas afectadas: `sdd/parches/blog-post-detail-editorial-redesign/`, `docs/architecture/site-architecture.md`, `docs/content/content-system.md`
+  - Propagacion requerida: `sdd-plan`
+
+- Fecha: `2026-05-18`
+  - Tipo: `documental`
+  - Contexto: El handoff propone usar el resumen visible del hero sin ampliar metadata del post.
+  - Decision: Mantener `excerpt` como resumen editorial visible y no introducir `key_idea` en esta iteracion.
+  - Razon: La decision ya viene explicitada en el handoff y es consistente con el contrato vigente de `excerpt`.
+  - Impacto: El rediseño debe apoyarse en el modelo actual de `blog_post`.
+  - Areas afectadas: `docs/content/content-system.md`, futura implementacion de `blog post detail`
+  - Propagacion requerida: `sdd-plan`
+
+- Fecha: `2026-05-18`
+  - Tipo: `alcance`
+  - Contexto: El handoff excluye share, sources, taxonomias nuevas y rutas nuevas.
+  - Decision: Mantener fuera de alcance la expansion del modelo editorial y de la arquitectura publica del blog.
+  - Razon: La intencion del cambio es mejorar respiracion y escaneabilidad del detail sin convertirlo en un sistema editorial mas pesado.
+  - Impacto: El patch se concentra en contratos y superficie de detalle, evitando expansion lateral del producto.
+  - Areas afectadas: `docs/architecture/site-architecture.md`, `docs/content/content-system.md`, rutas del blog
+  - Propagacion requerida: `sdd-plan`
+
+
+- Fecha: `2026-05-18`
+  - Tipo: `documental`
+  - Contexto: El contrato vigente no exigia sub-bloques internos obligatorios, pero el usuario quiere elevar el estandar editorial del detail.
+  - Decision: Convertir en requisito contractual que los posts publicados usen `3-4` secciones principales y `1-2` `blockquote` por articulo.
+  - Razon: La estructura no se considera decorativa, sino parte de la experiencia editorial objetivo.
+  - Impacto: `content-system` debera actualizarse y los posts publicados existentes entran al alcance del cambio.
+  - Areas afectadas: `docs/content/content-system.md`, `src/content/blog/*.md`
+  - Propagacion requerida: `sdd-plan`
+
+- Fecha: `2026-05-18`
+  - Tipo: `documental`
+  - Contexto: El handoff proponia un rail derivado de headings y existia la opcion de hacerlo condicional.
+  - Decision: Hacer obligatorio el rail `On this page` en `blog post detail`.
+  - Razon: El usuario quiere que la navegacion interna forme parte estable de la nueva superficie editorial.
+  - Impacto: La nueva estructura minima del cuerpo deja de ser solo soporte visual y pasa a sostener navegacion obligatoria.
+  - Areas afectadas: `docs/architecture/site-architecture.md`, `docs/content/content-system.md`, `src/pages/en/blog/[slug].astro`, `src/pages/es/blog/[slug].astro`
+  - Propagacion requerida: `sdd-plan`
+
+- Fecha: `2026-05-18`
+  - Tipo: `alcance`
+  - Contexto: Habia que decidir si el patch solo redisenaba la superficie o tambien rehacia el contenido publicado existente.
+  - Decision: Incluir en el mismo cambio la reestructuracion de todos los posts ya publicados.
+  - Razon: El usuario quiere cerrar el rediseño como experiencia editorial completa, no como cascaron visual pendiente de contenido.
+  - Impacto: El patch gana alcance editorial y requerira validacion sobre todo el corpus publicado en `en` y `es`.
+  - Areas afectadas: `src/content/blog/*.md`
+  - Propagacion requerida: `sdd-plan`
+
+- Fecha: `2026-05-18`
+  - Tipo: `documental`
+  - Contexto: El handoff descartaba un campo `key_idea`, pero dejaba abierta la posibilidad de rotular visualmente el resumen.
+  - Decision: Usar el label visible `Key idea` reutilizando `excerpt`, sin crear metadata nueva.
+  - Razon: El usuario prefiere hacer explicita la funcion editorial del resumen en la interfaz.
+  - Impacto: La decision afecta copy visible e i18n, no el schema del post.
+  - Areas afectadas: `docs/content/content-system.md`, `src/i18n/en.json`, `src/i18n/es.json`
+  - Propagacion requerida: `sdd-plan`
+
+
+- Fecha: `2026-05-18`
+  - Tipo: `documental`
+  - Contexto: Faltaba definir como se mantendra el nuevo estandar editorial despues del retrofit inicial.
+  - Decision: Mantener un estandar firme con aplicacion editorial flexible, no una plantilla mecanica identica entre posts.
+  - Razon: El blog debe conservar voz y naturalidad sin volver negociable la calidad estructural comprometida.
+  - Impacto: La documentacion debera fijar criterios de calidad junto con los requisitos estructurales.
+  - Areas afectadas: `docs/content/content-system.md`, futura gobernanza editorial del blog
+  - Propagacion requerida: `sdd-plan`

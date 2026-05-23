@@ -1,0 +1,61 @@
+# Decision Log: sdd-portable-core-reconciliation
+
+Este documento es auxiliar. Registra decisiones significativas del cambio `sdd-portable-core-reconciliation`.
+
+No redefine precedencia, no sustituye contratos y no introduce nuevas decisiones de producto por si solo.
+
+---
+
+- Fecha: `2026-05-17`
+  - Tipo: `alcance`
+  - Contexto: el handover de reconciliacion describe un cambio transversal sobre gobierno, doctrina SDD, routing, skills, assets y tooling, y propone el id tentativo `sdd-portable-core-reconciliation`.
+  - Decision: formalizar el trabajo como un patch `spec` / `spec-anchored` con `change-id` `sdd-portable-core-reconciliation` bajo el programa `sdd-portable-core`.
+  - Razon: el cambio modifica fuentes vivas existentes, no encaja como batch de limpiezas locales reversibles y el id propuesto no colisiona con workspaces actuales.
+  - Impacto: el patch debera reconciliarse contra docs y superficies vivas existentes antes de cierre, manteniendo continuidad con el programa ya abierto.
+  - Areas afectadas: `sdd/parches/sdd-portable-core-reconciliation/**`, `README.md`, `AGENTS.md`, `docs/**`, `sdd/**`, `.codex/skills/**`
+  - Propagacion requerida: `plan.md`, futuro `patch.yaml`, cierre del patch
+
+- Fecha: `2026-05-17`
+  - Tipo: `documental`
+  - Contexto: el handover original consolidado y la implementacion posterior discrepan, y el nuevo handover ya clasifica algunos drifts como deseables.
+  - Decision: tratar el handover original como antecedente historico, no como contrato vivo; la verdad a promover sera la arquitectura reconciliada.
+  - Razon: restaurar literalmente la intencion inicial borraria decisiones posteriores que mejoraron el sistema.
+  - Impacto: el patch debe preservar drifts aprobados y corregir solo los que dejan contratos incompletos o documentacion viva desalineada.
+  - Areas afectadas: `sdd/core/**`, `sdd/orchestration/**`, `.codex/skills/**`, `README.md`, `AGENTS.md`
+  - Propagacion requerida: `definicion.md`, `plan.md`, cierre del patch
+
+- Fecha: `2026-05-17`
+  - Tipo: `ejecucion`
+  - Contexto: el handover objetivo pide que `patch.yaml` nazca al inicio de `sdd-intake`, pero la skill viva actual todavia dice que intake puede ocurrir antes del manifest y que no debe crearlo salvo fase aprobada o pedido explicito.
+  - Decision: ejecutar este intake bajo la regla viva actual y dejar la nueva semantica del manifest como alcance a reconciliar por el propio patch.
+  - Razon: durante intake manda el contrato vivo vigente; la arquitectura objetivo aun no fue promovida a fuente viva.
+  - Impacto: este workspace nace inicialmente sin `patch.yaml`, y la discrepancia queda visible para `sdd-plan` como drift intencional a resolver.
+  - Areas afectadas: `.codex/skills/sdd-intake/SKILL.md`, `sdd/core/patch-model.md`, `sdd/tools/schemas/patch.schema.json`, `sdd/tools/validate-sdd.mjs`
+  - Propagacion requerida: `definicion.md`, `plan.md`, futuro `patch.yaml`
+
+- Fecha: `2026-05-17`
+  - Tipo: `ejecucion`
+  - Contexto: `plan.md` aprobo una primera fase de formalizacion para resolver el manifest faltante del propio patch antes de modificar contratos vivos.
+  - Decision: crear primero un `patch.yaml` compatible con el contrato vigente y auto-upgradearlo despues de promover `created_at` y `closed_at` como campos vivos.
+  - Razon: mantener fidelidad al contrato actual desbloquea el flujo sin anticipar cambios aun no reconciliados en doctrine, schema y tooling.
+  - Impacto: el patch deja de fallar por manifest ausente y queda preparado para una migracion posterior controlada.
+  - Areas afectadas: `sdd/parches/sdd-portable-core-reconciliation/patch.yaml`, `sdd/tools/schemas/patch.schema.json`, `sdd/tools/validate-sdd.mjs`
+  - Propagacion requerida: `backlog/fase1.md`, Fase 4, cierre del patch
+
+- Fecha: `2026-05-17`
+  - Tipo: `documental`
+  - Contexto: la type-awareness aprobada requiere separar solo `definicion`, `plan` y `tasks` sin duplicar toda la familia de skills.
+  - Decision: usar subdirectorios `assets/spec/` y `assets/batch/` para los templates bifurcados, manteniendo `backlog`, `cierre` y `decision.log` como assets compartidos.
+  - Razon: la estructura hace visible la bifurcacion semantica sin multiplicar skills ni abrir duplicacion innecesaria.
+  - Impacto: `sdd-intake`, `sdd-plan` y `sdd-tasks` seleccionan assets por `patch_kind`; `backlog` y `cierre` conservan ramas obligatorias por tipo.
+  - Areas afectadas: `.codex/skills/sdd-intake/**`, `.codex/skills/sdd-plan/**`, `.codex/skills/sdd-tasks/**`, `.codex/skills/sdd-phase-backlog/**`, `.codex/skills/sdd-close/**`
+  - Propagacion requerida: Fase 3, Fase 4, cierre del patch
+
+- Fecha: `2026-05-17`
+  - Tipo: `tecnica`
+  - Contexto: la primera version del checker de markdown intento validar tambien paths textuales historicos y fixtures, activando deuda falsa fuera del alcance aprobado.
+  - Decision: limitar el checker a enlaces relativos markdown vivos y excluir `sdd/parches/legacy/**`, `sdd/tests/**` y artifacts cerrados que no sean fuente viva declarada.
+  - Razon: protege superficies vivas sin convertir memoria historica ni fixtures en deuda activa.
+  - Impacto: `validate-sdd` valida rutas internas utiles y evita falsos positivos sobre historia preservada.
+  - Areas afectadas: `sdd/tools/validate-sdd.mjs`, `sdd/tests/link-fixtures/**`
+  - Propagacion requerida: `backlog/fase4.md`, cierre del patch

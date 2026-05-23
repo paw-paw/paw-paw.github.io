@@ -10,7 +10,8 @@ Si hay conflicto entre documentos de esta carpeta, usa esta precedencia:
 
 1. `README.md`
 2. documentos contractuales
-3. documentos auxiliares, siempre que no contradigan niveles superiores
+3. artefactos de trabajo activos o en curso en `sdd/parches/`
+4. documentos auxiliares, siempre que no contradigan niveles superiores
 
 Entre documentos contractuales, usa esta precedencia:
 
@@ -24,6 +25,8 @@ Entre documentos contractuales, usa esta precedencia:
 Reglas adicionales:
 
 - Los documentos auxiliares no pueden contradecir a los contractuales.
+- Los artefactos en `sdd/parches/` son el workspace contractual de cambios SDD; no sustituyen documentos contractuales.
+- Los artefactos en `sdd/` son auxiliares operativos transversales y templates; no sustituyen documentos contractuales.
 - La fase listada para cada documento es su fase inicial de creación, no su cierre definitivo.
 - Hasta el inicio de la Fase 5, el sitio se considera explícitamente monoidioma.
 - Si un conflicto no puede resolverse con esta precedencia, debe señalarse explícitamente. No asumir silenciosamente una nueva verdad.
@@ -52,10 +55,10 @@ La documentación se organiza por dominio de trabajo, no por fase.
 - `visual/`: sistema visual, assets e interacción
 - `delivery/`: deployment, SEO y release
 
-Nota:
+Rutas SDD operativas fuera de `/docs`:
 
-- Los planes históricos fueron retirados de `main` y preservados fuera de esta branch.
-- `main` mantiene solo la documentación contractual y auxiliar vigente para la web pública.
+- `sdd/parches/`: espacio contractual de trabajo para cambios SDD en cualquier estado; agrupa handovers, definiciones, planes, tasks, backlogs y decisiones sin sustituir documentos contractuales
+- `sdd/`: artefactos auxiliares operativos transversales para cambios spec-driven; no sustituye documentos contractuales
 
 ---
 
@@ -64,6 +67,8 @@ Nota:
 | Documento | Tipo final | Fase inicial | Estado | Notas de alcance |
 |-----------|------------|--------------|--------|------------------|
 | `README.md` | Gobierno | Pre-Fase 0 | Preservar y expandir | Define precedencia, taxonomía documental, fases iniciales y reglas de mantenimiento. No contiene decisiones de producto, diseño o implementación. |
+| `sdd/parches/legacy/sprint-1/roadmap.md` | Gobierno | Pre-Fase 0 | Histórico / preservar | Define la secuencia ejecutada, dependencias, checklist y criterio de cierre del Sprint 1. Forma parte del legacy SDD visible, pero no es patrón vigente para nuevos patches ni sustituye contratos. |
+| `governance/branching-workflow.md` | Gobierno operativo | Post-release | Preservar | Define la separacion entre `main` y `dev`, el commit operativo SDD/Codex, reglas de integracion y ramas legacy. No redefine estrategia de producto ni deployment. |
 | `governance/decision-log.md` | Auxiliar | Fase 0 | Crear y preservar | Registra decisiones tomadas, cambios de criterio y documentos afectados. No introduce verdad contractual nueva por sí solo. |
 | `governance/template-audit.md` | Auxiliar | Fase 0 | Preservar | Documenta inventario del template, incoherencias, riesgos y decisiones de conservación o reescritura. No define el estado final del sitio. |
 | `delivery/deployment.md` | Contractual | Fase 0 | Preservar | Define dominio, hosting, build/deploy, base path y restricciones estructurales de routing, SEO y assets. No lista copy SEO por página. |
@@ -90,6 +95,14 @@ Debe responder:
 - ¿En qué fase inicial debe aparecer cada documento?
 - ¿Qué reglas de mantenimiento y alineación deben cumplirse?
 
+### `sdd/parches/legacy/sprint-1/roadmap.md`
+Debe responder:
+- ¿Qué fases existen y en qué orden se ejecutan?
+- ¿Qué documentos deben nacer o cerrarse en cada fase?
+- ¿Qué dependencias existen entre fases?
+- ¿Qué cambios de implementación desbloquea cada fase?
+- ¿Cuál es el criterio de cierre de cada fase?
+
 ### `governance/decision-log.md`
 Debe responder:
 - ¿Qué decisión se tomó?
@@ -97,6 +110,14 @@ Debe responder:
 - ¿Por qué se tomó?
 - ¿Qué documentos o áreas del proyecto afecta?
 - ¿Reemplaza o ajusta alguna decisión previa?
+
+### `governance/branching-workflow.md`
+Debe responder:
+- ¿Qué rol cumplen `main` y `dev`?
+- ¿Qué contiene el commit operativo extra de `dev`?
+- ¿Cómo se integran cambios hacia producción sin arrastrar SDD/Codex?
+- ¿Qué superficies no deben mezclarse en un mismo commit?
+- ¿Qué ramas legacy deben retirarse cuando `dev` quede validada?
 
 ### `governance/template-audit.md`
 Debe responder:
@@ -208,6 +229,7 @@ Debe responder:
 - No tratar el código como sustituto de una spec faltante.
 - No crear documentos nuevos sin una necesidad clara.
 - Si hace falta un documento adicional, primero justificar por qué no cabe en uno existente.
+- el workspace contractual aplicable en `sdd/parches/` debe mantenerse alineado con el mapa documental de este `README.md`.
 
 ---
 

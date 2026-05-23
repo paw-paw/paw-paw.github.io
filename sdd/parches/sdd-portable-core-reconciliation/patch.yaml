@@ -1,0 +1,32 @@
+schema_version: 1
+change_id: sdd-portable-core-reconciliation
+program_id: sdd-portable-core
+patch_kind: spec
+lifecycle: spec-anchored
+status: closed
+created_at: 2026-05-17
+closed_at: 2026-05-17
+related_docs:
+  - README.md
+  - AGENTS.md
+  - docs/README.md
+  - docs/AGENTS.md
+  - sdd/README.md
+  - sdd/parches/README.md
+  - sdd/core/README.md
+  - sdd/core/patch-model.md
+  - sdd/core/artifact-lifecycle.md
+  - sdd/core/decision-drift-policy.md
+  - sdd/orchestration/README.md
+  - sdd/orchestration/skill-routing.md
+  - sdd/orchestration/artifact-state-machine.md
+  - .codex/skills/sdd-intake/SKILL.md
+  - .codex/skills/sdd-router/SKILL.md
+  - .codex/skills/sdd-plan/SKILL.md
+  - .codex/skills/sdd-tasks/SKILL.md
+  - .codex/skills/sdd-phase-backlog/SKILL.md
+  - .codex/skills/sdd-execute-phase/SKILL.md
+  - .codex/skills/sdd-sync-drift/SKILL.md
+  - .codex/skills/sdd-close/SKILL.md
+  - sdd/tools/schemas/patch.schema.json
+  - sdd/tools/validate-sdd.mjs

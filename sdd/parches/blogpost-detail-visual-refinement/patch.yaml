@@ -1,0 +1,15 @@
+schema_version: 1
+change_id: blogpost-detail-visual-refinement
+program_id: null
+patch_kind: spec
+lifecycle: spec-anchored
+status: closed
+created_at: 2026-05-19
+closed_at: 2026-05-19
+related_docs:
+  - docs/README.md
+  - AGENTS.md
+  - docs/architecture/site-architecture.md
+  - docs/content/content-system.md
+  - docs/visual/visual-system.md
+  - docs/architecture/i18n-spec.md

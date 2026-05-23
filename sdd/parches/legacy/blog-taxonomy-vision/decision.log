@@ -1,0 +1,47 @@
+# Decision Log: Blog Taxonomy Vision
+
+## 2026-04-25
+
+- decision:
+  - tratar `angle` y `domain` como capas editoriales visibles del blog, no como archives navegables propios
+  - razon:
+    mantener el cambio compatible con la arquitectura vigente y evitar scope creep
+  - documentos o areas afectadas:
+    `docs/content/content-system.md`, `docs/content/content-master.md`, `src/components/blog/*.astro`
+
+- decision:
+  - implementar `angle` y `domain` como texto editorial por post en esta entrega
+  - razon:
+    reducir complejidad y permitir validar primero la vision editorial
+  - documentos o areas afectadas:
+    `src/content/blog/*.md`, `src/content.config.ts`, `src/components/blog/*.astro`
+
+## 2026-04-26
+
+- decision:
+  - reemplazar el enfoque de texto libre para `angle` y `domain` por vocabulario controlado
+  - razon:
+    el cambio pedido fija una taxonomia cerrada y hace insuficiente la decision previa de texto libre
+  - documentos o areas afectadas:
+    `docs/content/content-system.md`, `docs/sdd/parches/blog-taxonomy-vision/definicion.md`, `docs/sdd/parches/blog-taxonomy-vision/plan.md`, `docs/sdd/parches/blog-taxonomy-vision/tasks.md`, `src/content.config.ts`, `src/utils/blog.ts`, `src/content/blog/*.md`, `tests/*.mjs`
+
+- decision:
+  - aprobar `Field Notes`, `Delivery Framework`, `Industry Analysis` y `Career Reflection` como lista controlada inicial de `angle`
+  - razon:
+    dar una lectura editorial consistente y finita a cada blog post
+  - documentos o areas afectadas:
+    `docs/content/content-system.md`, `src/content.config.ts`, `src/content/blog/*.md`, `tests/*.mjs`
+
+- decision:
+  - aprobar `Gaming`, `Esports`, `AI & Tech` y `Remote Ops` como lista controlada inicial de `domain`
+  - razon:
+    fijar el contexto sectorial permitido sin abrir tags adicionales
+  - documentos o areas afectadas:
+    `docs/content/content-system.md`, `src/content.config.ts`, `src/content/blog/*.md`, `tests/*.mjs`
+
+- decision:
+  - mapear `Framework` a `Delivery Framework` y `Operating Lesson` a `Field Notes` en los posts publicados existentes
+  - razon:
+    preservar la intencion editorial del contenido heredado sin dejar valores fuera del vocabulario aprobado
+  - documentos o areas afectadas:
+    `src/content/blog/*.md`, `tests/public-release-closure.test.mjs`

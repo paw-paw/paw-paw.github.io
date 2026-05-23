@@ -1,0 +1,26 @@
+schema_version: 1
+change_id: cleanup-transitional-residue
+program_id: sdd-portable-core
+patch_kind: spec
+lifecycle: spec-anchored
+status: closed
+created_at: 2026-05-09
+closed_at: 2026-05-09
+related_docs:
+  - docs/README.md
+  - docs/AGENTS.md
+  - docs/architecture/i18n-spec.md
+  - docs/delivery/deployment.md
+  - docs/visual/asset-plan.md
+  - docs/governance/template-audit.md
+  - sdd/README.md
+  - sdd/core/README.md
+  - sdd/core/patch-model.md
+  - sdd/parches/README.md
+  - sdd/tools/validate-sdd.mjs
+  - .codex/skills/sdd-intake/SKILL.md
+  - .codex/skills/sdd-plan/SKILL.md
+  - .codex/skills/sdd-tasks/SKILL.md
+  - .codex/skills/sdd-phase-backlog/SKILL.md
+  - .codex/skills/sdd-execute-phase/SKILL.md
+  - .codex/skills/sdd-sync-drift/SKILL.md

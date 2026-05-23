@@ -1,0 +1,9 @@
+schema_version: 1
+change_id: sdd-portable-core-post-bootstrap
+program_id: sdd-portable-core
+patch_kind: spec
+lifecycle: spec-first
+status: closed
+created_at: 2026-05-09
+closed_at: 2026-05-09
+related_docs: []

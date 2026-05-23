@@ -1,0 +1,34 @@
+# Decision Log: blog-index-editorial-density-expansion
+
+Este documento es auxiliar. Registra decisiones significativas del cambio `blog-index-editorial-density-expansion`.
+
+No redefine precedencia, no sustituye contratos y no introduce nuevas decisiones de producto por si solo.
+
+---
+
+- Fecha: `2026-05-18`
+  - Tipo: `alcance`
+  - Contexto: el usuario reviso opciones para llenar mejor el primer viewport de `/blog`.
+  - Decision: reorganizar `Editorial Background` en dos filas de logos y aceptar que gane protagonismo relativo dentro del intro.
+  - Razon: la prioridad del usuario es una portada mas densa y equilibrada, no la maxima contencion visual.
+  - Impacto: la planificacion debe ajustar la grilla del bloque sin convertirlo en mini-CV.
+  - Areas afectadas: `Editorial Background`, `content-master`, estilos del intro.
+  - Propagacion requerida: `docs/content/content-master.md`
+
+- Fecha: `2026-05-18`
+  - Tipo: `documental`
+  - Contexto: la presentacion resumida vigente del `blog index` deja fuera `angle` y `domain`.
+  - Decision: mostrar `category`, `angle` y `domain` en el featured, con tags ubicados debajo del titulo y jerarquia visual diferenciada.
+  - Razon: el usuario prefiere una portada mas editorialmente explicita que la solucion compacta previa.
+  - Impacto: se reemplaza una decision vigente del `content-system` y debe reconciliarse antes de implementar.
+  - Areas afectadas: `docs/content/content-system.md`, `docs/content/content-master.md`, `BlogFeaturedPanel`.
+  - Propagacion requerida: docs contractuales y auxiliares del blog.
+
+- Fecha: `2026-05-18`
+  - Tipo: `alcance`
+  - Contexto: el panel featured conserva espacio libre debajo de la imagen y hoy omite metadata temporal.
+  - Decision: mostrar la fecha del featured inmediatamente despues de la imagen destacada.
+  - Razon: aporta señal editorial sin volver el teaser una ficha larga.
+  - Impacto: la composicion del featured cambia y la documentacion debe reflejar que la fecha breve si pertenece al panel.
+  - Areas afectadas: `docs/content/content-master.md`, `BlogFeaturedPanel`.
+  - Propagacion requerida: `docs/content/content-master.md`

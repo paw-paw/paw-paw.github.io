@@ -1,0 +1,38 @@
+# Decision Log: Blog Angle Domain I18n
+
+## 2026-04-26
+
+- decision:
+  - declarar `blog-angle-domain-i18n` como continuidad formal de `blog-taxonomy-vision`
+  - razon:
+    el modelo editorial `category -> angle -> domain` ya fue aprobado y este cambio solo corrige la representacion estable y localizada de `angle` y `domain`
+  - documentos o areas afectadas:
+    `docs/sdd/parches/blog-taxonomy-vision/definicion.md`, `docs/sdd/parches/blog-taxonomy-vision/tasks.md`, `docs/sdd/parches/blog-angle-domain-i18n/definicion.md`, `docs/content/content-system.md`, `docs/content/content-master.md`
+
+- decision:
+  - reemplazar `angle` y `domain` como labels visibles monolingues por claves internas estables con representacion localizada por locale
+  - razon:
+    el dato editorial debe desacoplarse del texto visible para soportar `en` y `es` sin depender de strings hardcodeados en ingles
+  - documentos o areas afectadas:
+    `docs/content/content-system.md`, `docs/content/content-master.md`, `src/content.config.ts`, `src/content/blog/*.md`, `src/utils/blog.ts`, `src/components/blog/*.astro`
+
+- decision:
+  - mantener `category` como la unica taxonomy navegable y no crear routes, archives ni indices nuevos para `angle` o `domain`
+  - razon:
+    el cambio es de representacion editorial e i18n, no de arquitectura de informacion ni de superficies navegables nuevas
+  - documentos o areas afectadas:
+    `docs/architecture/site-architecture.md`, `docs/architecture/i18n-spec.md`, `docs/content/content-system.md`, `src/pages/*/blog/*.astro`, `src/components/blog/*.astro`
+
+- decision:
+  - conservar el vocabulario controlado ya aprobado para `angle` y `domain` y no reabrir sus valores en este parche
+  - razon:
+    la etapa actual fija forma de representacion y trazabilidad documental, no redefine la semantica editorial aprobada en el handover
+  - documentos o areas afectadas:
+    `docs/sdd/parches/blog-angle-domain-i18n/handover.md`, `docs/sdd/parches/blog-angle-domain-i18n/definicion.md`, `docs/content/content-system.md`, `src/content/blog/*.md`
+
+- decision:
+  - resolver los labels visibles de `angle` y `domain` desde `src/i18n/en.json` y `src/i18n/es.json`, manteniendo las claves estables y el tipado en `src/utils/blog.ts`
+  - razon:
+    el repo ya tiene una capa i18n centralizada; reutilizarla evita duplicar labels en utilidades de dominio y mantiene separadas la forma estable del dato y su representacion visual
+  - documentos o areas afectadas:
+    `docs/sdd/parches/blog-angle-domain-i18n/plan.md`, `docs/content/content-system.md`, `src/utils/blog.ts`, `src/i18n/en.json`, `src/i18n/es.json`, `src/components/blog/*.astro`

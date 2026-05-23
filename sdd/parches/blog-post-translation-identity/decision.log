@@ -1,0 +1,24 @@
+# Decision Log: blog-post-translation-identity
+
+Este documento es auxiliar. Registra decisiones significativas del cambio `blog-post-translation-identity`.
+
+No redefine precedencia, no sustituye contratos y no introduce nuevas decisiones de producto por si solo.
+
+---
+
+- Fecha: `2026-05-18`
+  - Tipo: `alcance`
+  - Contexto: el sistema actual solo detecta equivalencia entre locales por igualdad de `slug`, pero las traducciones publicadas pueden requerir slugs localizados distintos.
+  - Decision: el cambio buscará una identidad editorial estable separada del `slug` para enlazar traducciones de `blog_post`.
+  - Razon: preserva URLs naturales por idioma y permite que el runtime reconozca traducciones reales sin depender del nombre de archivo.
+  - Impacto: el patch debe revisar contrato de contenido, reglas i18n, schema y lógica de equivalencia de posts.
+  - Areas afectadas: `docs/content/content-system.md`, `docs/architecture/i18n-spec.md`, `src/content.config.ts`, `src/utils/blog.ts`
+  - Propagacion requerida: `sdd-plan`, contratos aplicables, futura implementacion
+- Fecha: `2026-05-18`
+  - Tipo: `tecnica`
+  - Contexto: la identidad comun necesita un nombre estable antes de actualizar contrato, schema y contenido.
+  - Decision: el campo comun se llamara `i18n_key`.
+  - Razon: decision explicita del usuario para mantener una convencion breve y alineada con el dominio de localizacion.
+  - Impacto: toda la planificacion e implementacion posterior deben usar `i18n_key` como nombre contractual y tecnico.
+  - Areas afectadas: `docs/content/content-system.md`, `src/content.config.ts`, `src/content/blog/*.md`, `src/utils/blog.ts`
+  - Propagacion requerida: `plan.md`, `tasks.md`, docs contractuales, implementacion

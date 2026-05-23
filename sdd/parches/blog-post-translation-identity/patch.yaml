@@ -1,0 +1,15 @@
+schema_version: 1
+change_id: blog-post-translation-identity
+program_id: null
+patch_kind: spec
+lifecycle: spec-first
+status: closed
+created_at: 2026-05-18
+closed_at: 2026-05-18
+related_docs:
+  - docs/README.md
+  - AGENTS.md
+  - docs/content/content-system.md
+  - docs/architecture/i18n-spec.md
+  - docs/delivery/seo-spec.md
+  - docs/delivery/release-checklist.md

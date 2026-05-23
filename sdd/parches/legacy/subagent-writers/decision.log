@@ -1,0 +1,26 @@
+# Decision Log: Subagent Writers
+
+Este documento es auxiliar. Registra decisiones significativas del cambio `subagent-writers`.
+
+---
+
+- Fecha: `2026-04-26`
+  - Contexto: apertura del cambio SDD
+  - Decision: usar `subagent-writers` como `change-id`
+  - Razon: describe el objetivo sin colisionar con workspaces previos
+  - Impacto: crea el workspace `docs/sdd/parches/subagent-writers/`
+  - Areas afectadas: `docs/sdd/parches/subagent-writers/`
+
+- Fecha: `2026-04-26`
+  - Contexto: alcance inicial del cambio
+  - Decision: mantener `agents.max_depth = 1`
+  - Razon: el manager runtime debe conservar ownership centralizado y no se requiere delegacion recursiva
+  - Impacto: no hace falta cambiar `.codex/config.toml`
+  - Areas afectadas: `.codex/config.toml`, `AGENTS.md`, docs de orquestacion
+
+- Fecha: `2026-04-26`
+  - Contexto: limite entre ejecucion delegada y backlog vivo
+  - Decision: `sdd-phase-worker` puede actualizar el backlog de su misma fase solo cuando `sdd-execute-phase` delega esa responsabilidad de forma explicita
+  - Razon: la ejecucion de fase necesita mantener trazabilidad sin abrir permiso general sobre otros artefactos
+  - Impacto: la autorizacion queda localizada en `.codex/skills/sdd-execute-phase/SKILL.md` y en el perfil del worker
+  - Areas afectadas: `.codex/agents/sdd-phase-worker.toml`, `.codex/skills/sdd-execute-phase/SKILL.md`, `docs/sdd/orchestration/subagent-policy.md`

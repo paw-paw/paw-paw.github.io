@@ -1,0 +1,111 @@
+# Decision Log: Orchestration Docs
+
+Este documento registra decisiones significativas del cambio SDD `orchestration-docs`.
+
+---
+
+## 2026-04-25 - Crear workspace SDD `orchestration-docs`
+
+### Contexto
+
+El usuario pidio ejecutar `sdd-intake` sobre `_inbox/codex_sdd_orchestration_docs_prompt.md` con `change-id` `orchestration-docs`.
+
+### Decision
+
+Crear el workspace auxiliar en `docs/sdd/parches/orchestration-docs/`.
+
+### Razon
+
+El `change-id` fue indicado explicitamente y permite separar la planificacion del cambio de la carpeta documental futura solicitada por el handover.
+
+### Impacto
+
+- Crea `docs/sdd/parches/orchestration-docs/handover.md`.
+- Crea `docs/sdd/parches/orchestration-docs/definicion.md`.
+- Preserva como target futuro posible `docs/sdd/orchestration/`.
+
+---
+
+## 2026-04-25 - Preservar el handover completo
+
+### Contexto
+
+El handover contiene la lista exacta de documentos solicitados, reglas de contenido y limites de implementacion.
+
+### Decision
+
+Copiar el contenido fuente completo a `docs/sdd/parches/orchestration-docs/handover.md`.
+
+### Razon
+
+La fuente es extensa y debe quedar trazable sin convertir `_inbox/` en fuente publica activa.
+
+### Impacto
+
+- `handover.md` queda como fuente auxiliar preservada.
+- `definicion.md` resume y normaliza el pedido para planificacion posterior.
+
+---
+
+## 2026-04-25 - Usar `docs/sdd/orchestration/` como target documental futuro
+
+### Contexto
+
+La definicion separa el workspace SDD `docs/sdd/parches/orchestration-docs/` del target documental pedido por el handover.
+
+### Decision
+
+Mantener `docs/sdd/orchestration/` como carpeta futura para los documentos de soporte de orquestacion.
+
+### Razon
+
+El handover lo pide literalmente y no contradice `docs/README.md` si se conserva como documentacion auxiliar operativa bajo `docs/sdd/`.
+
+### Impacto
+
+- `plan.md` y futuras `tasks.md` deben apuntar a `docs/sdd/orchestration/*.md`.
+- No requiere modificar `docs/README.md` por defecto.
+
+---
+
+## 2026-04-25 - No presentar `sdd-router` como skill activa existente
+
+### Contexto
+
+El handover menciona `sdd-router`, pero el repo actual no contiene `.codex/skills/sdd-router/SKILL.md`.
+
+### Decision
+
+Documentar routing SDD sin afirmar que `sdd-router` existe como skill activa, salvo que un cambio futuro cree esa skill.
+
+### Razon
+
+El sistema actual tiene 7 skills SDD documentadas en `AGENTS.md`; introducir `sdd-router` como skill activa seria drift contra el repo.
+
+### Impacto
+
+- `skill-routing.md` puede hablar de diagnostico/routing.
+- Cualquier creacion real de `sdd-router` queda fuera de este cambio.
+
+---
+
+## 2026-04-25 - Tratar modelos concretos como defaults orientativos
+
+### Contexto
+
+El handover pide que `model-policy.md` documente modelos y esfuerzos concretos, pero el plan identifico riesgo de obsolescencia si se presentan como garantias permanentes.
+
+### Decision
+
+Redactar `model-policy.md` con nombres de modelos como defaults operativos dependientes del runtime disponible, no como contrato permanente.
+
+### Razon
+
+Permite conservar la utilidad practica del handover sin afirmar disponibilidad futura de modelos concretos.
+
+### Impacto
+
+- `docs/sdd/orchestration/model-policy.md` debe incluir defaults concretos con una advertencia de disponibilidad.
+- Si cambia el runtime, debe elegirse el modelo equivalente por capacidad, costo y riesgo.
+
+---

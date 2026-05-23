@@ -1,0 +1,11 @@
+2026-04-25
+- decision: crear un change-id propio para `sdd-router`
+- razon: el cambio afecta docs, skill local e indice operativo
+- impacto: requiere sincronizar `AGENTS.md`, `docs/sdd/orchestration/` y `.codex/skills/sdd-router/SKILL.md`
+- affected: docs/sdd/parches/sdd-router/*
+
+2026-04-25
+- decision: tratar `sdd-router` como skill ligera, diagnostica y read-only
+- razon: debe ayudar al manager, no reemplazarlo
+- impacto: el output debe ser routing advisory, no ejecucion
+- affected: `.codex/skills/sdd-router/SKILL.md`

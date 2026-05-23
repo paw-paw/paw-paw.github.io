@@ -1,0 +1,52 @@
+# Decision Log: cleanup-transitional-residue
+
+## 2026-05-09 - Crear patch SDD para limpieza de residuos transicionales
+
+### Decision
+
+Crear el patch SDD `cleanup-transitional-residue` para agrupar limpieza de bootstrap transicional, templates SDD transicionales, referencias i18n no activas, script de tema no usado y drift documental de assets.
+
+### Razon
+
+Aunque cada cambio es pequeno, el conjunto cruza contratos, estructura SDD, skills locales, runtime Astro y documentacion auxiliar. Ejecutarlo bajo SDD reduce el riesgo de borrar memoria historica o dejar referencias vivas rotas.
+
+### Alcance decidido
+
+- mover `docs/sdd/parches/sdd-portable-core-bootstrap/**` a `sdd/parches/legacy/`
+- eliminar `sdd/templates/**`
+- eliminar referencias vivas a idiomas distintos de `en` y `es`
+- limpiar `src/scripts/theme.js` si no tiene wiring activo
+- corregir drift de `docs/visual/asset-plan.md`
+- no tocar `sdd/tests/fixtures/**`
+- no deduplicar imagenes exactas aprobadas
+- no reescribir legacy existente
+
+### Documentos o areas afectadas
+
+- `docs/README.md`
+- `docs/AGENTS.md`
+- `docs/architecture/i18n-spec.md`
+- `docs/visual/asset-plan.md`
+- `sdd/README.md`
+- `sdd/core/README.md`
+- `sdd/parches/README.md`
+- `.codex/skills/sdd-*`
+- `src/i18n/**`
+- `src/scripts/theme.js`
+
+## 2026-05-09 - Limitar limpieza i18n a runtime y documentacion viva
+
+### Decision
+
+La instruccion de eliminar referencias i18n a idiomas distintos de `en` o `es` se interpreta sobre runtime activo, docs contractuales y docs auxiliares vigentes. No se reescribe `sdd/parches/legacy/**` ni decision logs historicos solo por contener referencias antiguas.
+
+### Razon
+
+El usuario tambien decidio que `sdd/parches/legacy/**` queda como esta. Reescribir memoria historica para limpiar menciones antiguas contradiria esa decision y podria destruir trazabilidad.
+
+### Documentos o areas afectadas
+
+- `docs/architecture/i18n-spec.md`
+- `src/i18n/**`
+- `sdd/parches/legacy/**`
+
