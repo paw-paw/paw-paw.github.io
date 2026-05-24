@@ -4,6 +4,7 @@ import { t } from '../../utils/i18n';
 import { getSelectedWork } from '../../data/selected-work';
 import workSocialImage from '../../assets/social/work-social.jpg';
 import { getSeoEntry } from '../../utils/seo';
+import { Image } from 'astro:assets';
 
 const lang = 'es';
 const selectedWork = getSelectedWork(lang);
@@ -60,11 +61,13 @@ const seo = getSeoEntry(lang, 'work');
             data-aos-delay={index * 80}
           >
             <div class="work-card-header">
-              <img
-                src={item.headerImage.src}
+              <Image
+                src={item.headerImage}
                 alt={item.headerAlt}
                 class="work-card-header-image"
                 loading="lazy"
+                widths={[640, 900, 1200]}
+                sizes="(min-width: 1024px) 50vw, 100vw"
               />
               <div class="work-card-header-overlay" aria-hidden="true"></div>
             </div>

@@ -4,6 +4,7 @@ import { getRelativeLocaleUrl } from 'astro:i18n';
 import { t } from '../../utils/i18n';
 import { normalizeLocale } from '../../utils/i18n';
 import { getSelectedWork } from '../../data/selected-work';
+import { Image } from 'astro:assets';
 
 interface Props {
   lang: string | undefined;
@@ -31,11 +32,13 @@ const previewItems = getSelectedWork(locale).slice(0, 3);
           data-aos-delay={index * 100}
         >
           <div class="work-card-header work-card-header-preview">
-            <img
-              src={project.headerImage.src}
+            <Image
+              src={project.headerImage}
               alt={project.headerAlt}
               class="work-card-header-image"
               loading="lazy"
+              widths={[360, 520, 750]}
+              sizes="(min-width: 768px) 33vw, 100vw"
             />
             <div class="work-card-header-overlay" aria-hidden="true"></div>
           </div>

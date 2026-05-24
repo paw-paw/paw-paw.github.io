@@ -64,14 +64,38 @@ const seo = getSeoEntry(lang, 'experience');
               <div class="experience-card-top">
                 <div class="experience-logo-badge">
                   {item.logo.allmode ? (
-                    <img src={item.logo.allmode.src} alt={item.logo.alt} class="experience-logo-image" />
+                    <img
+                      src={item.logo.allmode.src}
+                      alt={item.logo.alt}
+                      class="experience-logo-image"
+                      width={item.logo.allmode.width}
+                      height={item.logo.allmode.height}
+                      loading="lazy"
+                      decoding="async"
+                    />
                   ) : (
                     <>
                       {item.logo.light && (
-                        <img src={item.logo.light.src} alt={item.logo.alt} class="experience-logo-image dark:hidden" />
+                        <img
+                          src={item.logo.light.src}
+                          alt={item.logo.alt}
+                          class="experience-logo-image dark:hidden"
+                          width={item.logo.light.width}
+                          height={item.logo.light.height}
+                          loading="lazy"
+                          decoding="async"
+                        />
                       )}
                       {item.logo.dark && (
-                        <img src={item.logo.dark.src} alt={item.logo.alt} class="experience-logo-image hidden dark:block" />
+                        <img
+                          src={item.logo.dark.src}
+                          alt={item.logo.alt}
+                          class="experience-logo-image hidden dark:block"
+                          width={item.logo.dark.width}
+                          height={item.logo.dark.height}
+                          loading="lazy"
+                          decoding="async"
+                        />
                       )}
                     </>
                   )}
