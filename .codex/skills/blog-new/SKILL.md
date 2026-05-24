@@ -6,7 +6,7 @@ description: >
 license: Apache-2.0
 metadata:
   author: paw-paw
-  version: "1.2"
+  version: "1.3"
 ---
 
 ## When to Use
@@ -30,6 +30,7 @@ metadata:
 
 - `locale`
 - `publish_date`
+- `modified_date` only when the user is intentionally recording a substantive update date
 - explicit `slug` if the user wants to override the inferred one
 
 ## Critical Patterns
@@ -37,6 +38,7 @@ metadata:
 - Operate only on `blog_post`
 - Create files inside `src/content/blog/`
 - Preserve the current frontmatter order used by existing posts
+- When `modified_date` is provided, place it immediately after `publish_date`
 - Validate against the active schema in `src/content.config.ts`
 - Infer when omitted:
   - `slug` from `title`
@@ -47,8 +49,10 @@ metadata:
   - `featured: false`
   - `locale` from request context when possible, otherwise `en`
   - `publish_date` to the current date
+- Omit `modified_date` by default for new drafts; the schema fallback uses `publish_date` technically when no substantive update exists
 - Derive route identity from the file name unless the repo later adopts explicit slug metadata
 - Keep the body intentionally draft-grade, but not empty
+- Keep per-post SEO/AEO metadata truthful: `title`, `excerpt`, `header_image`, `category`, `angle`, `domain`, `locale`, and `publish_date` must be enough for later `BlogPosting` generation without hidden claims
 - Do not treat routine draft creation as a docs/governance change
 - Always report inferred values explicitly so the user can correct them
 
@@ -69,6 +73,7 @@ metadata:
 3. Resolve optional inputs:
    - `locale` from the user request when provided, otherwise infer from request context or default to `en`
    - `publish_date` from the user request when provided, otherwise use today's date
+   - `modified_date` only from explicit user input; do not infer it for a new draft
    - `slug` from explicit user input only if provided; otherwise infer it from `title`
 4. Validate the final metadata:
    - `category` must be one of:
@@ -88,8 +93,11 @@ metadata:
      - `remote-ops`
    - `locale` must be `en` or `es`
    - `publish_date` must be parseable as a date
+   - `modified_date`, when present, must be parseable as a date and must not precede `publish_date`
    - `header_image` must point to a valid repo asset path pattern
    - treat `angle` and `domain` as stable keys in frontmatter, not as visible localized labels
+   - `title` and `excerpt` must describe the article's actual main idea, not only generic portfolio keywords
+   - `header_image` must be suitable for social metadata and `BlogPosting.image`
 5. Infer the remaining fields:
    - `excerpt` from the draft content, aiming for the documented recommended range of `24–32` words when viable
    - `reading_time` from content length
@@ -103,6 +111,7 @@ metadata:
 title: <title>
 excerpt: <inferred excerpt>
 publish_date: <resolved date>
+modified_date: <resolved modified date, only if explicitly provided>
 category: <approved-category>
 angle: <approved-angle>
 domain: <approved-domain>
@@ -123,6 +132,7 @@ header_image: <repo-relative image path>
    - resolved `slug`
    - resolved `locale`
    - resolved `publish_date`
+   - resolved `modified_date`, if present, or that it was intentionally omitted
    - resolved `category`
    - resolved `angle`
    - resolved `domain`

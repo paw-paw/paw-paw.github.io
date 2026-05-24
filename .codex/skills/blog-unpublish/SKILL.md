@@ -6,7 +6,7 @@ description: >
 license: Apache-2.0
 metadata:
   author: paw-paw
-  version: "1.0"
+  version: "1.1"
 ---
 
 ## When to Use
@@ -21,6 +21,7 @@ metadata:
 - Also set `featured: false`
 - Never delete the markdown file as part of unpublish
 - Do not require choosing a replacement featured post
+- Published-state filtering must remove unpublished posts from public routes, sitemap, listing pages, and post-level schema generation
 - Treat unpublish as routine editorial workflow, not as a docs/governance change by default
 
 ## Workflow
@@ -34,8 +35,13 @@ metadata:
 5. If the post is already `draft`, keep the operation idempotent:
    - ensure `featured: false`
    - report that the post was already unpublished
-6. Report that no replacement featured post is required.
-7. Flag docs/governance sync only if the workflow or policy boundary changed, not for the unpublish action itself.
+6. After mutation, verify the post no longer qualifies as public content:
+   - it should not appear in localized blog listing data
+   - it should not generate a public detail route
+   - it should not appear in the sitemap
+   - it should not emit `BlogPosting` structured data
+7. Report that no replacement featured post is required.
+8. Flag docs/governance sync only if the workflow or policy boundary changed, not for the unpublish action itself.
 
 ## Blocking Conditions
 
