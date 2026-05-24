@@ -23,6 +23,7 @@ La meta no es introducir un sistema nuevo de animaciones. La meta es pulir el si
 - El motion debe sentirse intencional, sobrio y controlado.
 - La segunda tentativa de `Fase 7` no debe recentrar el sitio en una arquitectura nueva de scroll-reveals.
 - El sitio debe seguir siendo estable en scroll, resize, refresh y capturas.
+- El primer viewport debe renderizar su contenido critico sin depender de JavaScript, AOS, GSAP ni fuentes externas bloqueantes.
 
 ---
 
@@ -34,6 +35,7 @@ La meta no es introducir un sistema nuevo de animaciones. La meta es pulir el si
 - Se usa para entradas cortas y predecibles de secciones, cards y CTAs.
 - Su uso debe seguir siendo declarativo por atributo cuando no haga falta logica personalizada.
 - Los reveals de `AOS` deben seguir siendo de baja intensidad y compatibles con refresh.
+- `AOS` no debe gobernar la visibilidad inicial de headline, subheadline, CTAs criticos, navbar ni visual principal del primer viewport.
 
 ### GSAP
 
@@ -67,6 +69,7 @@ La regla de visibilidad de esta fase queda deliberadamente mas flexible que en l
 - si un reveal depende de scroll o refresco interno, la implementacion debe poder revalidar su estado al cambiar viewport o al refrescarse el sistema
 - no se debe aceptar una superficie que pueda quedarse en blanco por haber perdido el trigger correcto
 - si durante la fase se confirma que un bloque concreto sigue siendo fragil bajo esta regla, ese bloque debe migrar a una estrategia mas visible por defecto
+- el primer viewport queda fuera de la excepcion de bloques inicialmente ocultos: su contenido critico debe ser visible por defecto con HTML/CSS base
 
 ---
 
@@ -81,6 +84,8 @@ La regla de visibilidad de esta fase queda deliberadamente mas flexible que en l
 
 - intensidad media
 - puede sostener la entrada mas visible del sitio, pero sin teatralidad pesada
+- su headline, supporting text, CTAs y visual principal deben existir visualmente antes de inicializar AOS o cualquier script de motion
+- las mejoras de motion del hero deben ser progresivas: pueden refinar la presentacion, pero no habilitar la visibilidad base
 
 ### Secciones editoriales
 
@@ -116,12 +121,14 @@ La regla de visibilidad de esta fase queda deliberadamente mas flexible que en l
 - evitar transformaciones agresivas en elementos de lectura
 - evitar que hover states desplacen demasiado el layout percibido
 - evitar dependencia de un orden exacto de scroll para que el contenido exista visualmente
+- evitar que scripts globales de motion entren al critical path antes de que el primer viewport sea visible
 
 ---
 
 ## 7. Criterios de validacion
 
 - el sitio debe seguir renderizando contenido completo en navegacion normal
+- el primer viewport debe mostrar headline y CTAs con JavaScript deshabilitado
 - los reveals no deben dejar huecos persistentes tras scroll, refresh o resize
 - el build debe seguir en verde
 - la revision visual/manual debe confirmar que el sitio gana craft sin perder robustez

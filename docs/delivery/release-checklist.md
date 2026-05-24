@@ -69,9 +69,20 @@ Nota:
 - [x] verificar OG y Twitter cards
 - [x] verificar `robots.txt`
 - [x] verificar sitemap
+- [ ] verificar `Person` / `ProfilePage` con `@id` estable
+- [ ] verificar `BlogPosting` en un post EN y un post ES
+- [ ] verificar `datePublished` / `dateModified` en posts publicados
+- [ ] verificar que `robots.txt` distingue search, entrenamiento y fetch iniciado por usuario
 - [x] confirmar que los posts sin equivalente exacto mantienen `self-canonical`
 - [x] confirmar que los posts con equivalente exacto emiten alternates hacia el detail localizado correspondiente
 - [x] confirmar que `alternate` de posts sin equivalente exacto cae al `blog index` del locale destino
+
+## Performance y primer viewport
+
+- [ ] verificar que headline y CTAs del hero son visibles sin depender de AOS/JS
+- [ ] verificar que el visual principal del hero no bloquea la aparicion del CTA
+- [ ] revisar PageSpeed mobile para `/en/` cuando el cambio toque first viewport
+- [ ] revisar `/en/work/` cuando el cambio toque work cards o imagenes de casos
 
 ## Pasos externos para publicacion efectiva
 

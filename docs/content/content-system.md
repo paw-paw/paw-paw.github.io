@@ -272,6 +272,7 @@ Metadata contractual obligatoria:
 Metadata contractual condicional:
 
 - `i18n_key`
+- `modified_date`
 
 Contenido contractual minimo:
 
@@ -333,6 +334,11 @@ Reglas de estructura:
 - si un locale supera un `featured`, la build debe fallar
 - `excerpt` debe funcionar como resumen editorial compacto del post; el rango recomendado de autoria es `24–32` palabras
 - ese rango de `excerpt` es una guia editorial suave para mantener consistencia entre autoria e interfaz, no un limite duro de schema ni una condicion automatica de publicacion por si sola
+- `modified_date` solo debe completarse cuando hubo una edicion sustancial del post
+- si `modified_date` no existe, la capa SEO puede usar `publish_date` como fallback tecnico para `dateModified`
+- ese fallback tecnico no debe presentarse como afirmacion editorial visible de que el post fue editado
+- no se debe actualizar `modified_date` por typos, espacios, pequenos ajustes de formato o cambios internos sin alteracion del contenido
+- se debe actualizar `modified_date` cuando cambie la tesis, datos, ejemplos, claims, estructura sustantiva, fecha/contexto de analisis o metadata publica relevante
 - el `blog index` puede usar ese `featured` singular como teaser lateral editorial en el intro
 - el teaser del `featured` debe ser visualmente dominante y mas compacto que una `blog card` completa
 - el teaser del `featured` puede usar una presentacion resumida propia del `blog index`, con fecha breve visible, `category` como chip primario y `angle` / `domain` como tags secundarios subordinados cuando esa jerarquia aporte lectura editorial, ademas de `excerpt` dentro de la guia editorial vigente y metadata larga omitida si el post completo ya aparece mas abajo en la grilla general
@@ -352,6 +358,9 @@ Reglas editoriales:
 - el post debe responder a la tesis aprobada del portfolio
 - debe sostener claims con experiencia, observacion o criterio defendible
 - no debe convertirse en opinionismo amplio, diario personal ni contenido motivacional generico
+- debe tener metadata suficiente para que la capa SEO/AEO genere `BlogPosting` sin datos ocultos ni inventados
+- el `title` y `excerpt` deben ser especificos para el post y comprensibles como resultado de busqueda o respuesta resumida
+- el cuerpo debe responder con claridad cual es la idea principal, que experiencia o evidencia la sostiene y como conecta con la tesis del portfolio
 - debe poder convivir con fallback de locale hacia el `blog index` del locale destino cuando no exista equivalente
 - `angle` y `domain` deben mantenerse compactos, sobrios y coherentes con la lectura editorial del post
 - `category` sigue siendo el signal editorial principal; `angle` describe el tratamiento y `domain` el contexto
