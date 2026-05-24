@@ -35,14 +35,38 @@ const previewItems = getExperienceItems(locale).slice(0, 3);
               <div class="experience-card-top">
                 <div class="experience-logo-badge experience-logo-badge-preview">
                   {item.logo.allmode ? (
-                    <img src={item.logo.allmode.src} alt={item.logo.alt} class="experience-logo-image experience-logo-image-preview" />
+                    <img
+                      src={item.logo.allmode.src}
+                      alt={item.logo.alt}
+                      class="experience-logo-image experience-logo-image-preview"
+                      width={item.logo.allmode.width}
+                      height={item.logo.allmode.height}
+                      loading="lazy"
+                      decoding="async"
+                    />
                   ) : (
                     <>
                       {item.logo.light && (
-                        <img src={item.logo.light.src} alt={item.logo.alt} class="experience-logo-image experience-logo-image-preview dark:hidden" />
+                        <img
+                          src={item.logo.light.src}
+                          alt={item.logo.alt}
+                          class="experience-logo-image experience-logo-image-preview dark:hidden"
+                          width={item.logo.light.width}
+                          height={item.logo.light.height}
+                          loading="lazy"
+                          decoding="async"
+                        />
                       )}
                       {item.logo.dark && (
-                        <img src={item.logo.dark.src} alt={item.logo.alt} class="experience-logo-image experience-logo-image-preview hidden dark:block" />
+                        <img
+                          src={item.logo.dark.src}
+                          alt={item.logo.alt}
+                          class="experience-logo-image experience-logo-image-preview hidden dark:block"
+                          width={item.logo.dark.width}
+                          height={item.logo.dark.height}
+                          loading="lazy"
+                          decoding="async"
+                        />
                       )}
                     </>
                   )}

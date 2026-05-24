@@ -13,11 +13,43 @@ const { compact = false } = Astro.props;
 
 <span class:list={['brand-lockup', compact && 'brand-lockup-compact']}>
   <span class="brand-mark" aria-hidden="true">
-    <img src={monogramLight.src} alt="" class="brand-mark-image dark:hidden" loading="eager" decoding="async" />
-    <img src={monogramDark.src} alt="" class="brand-mark-image hidden dark:block" loading="eager" decoding="async" />
+    <img
+      src={monogramLight.src}
+      alt=""
+      class="brand-mark-image dark:hidden"
+      width={monogramLight.width}
+      height={monogramLight.height}
+      loading="eager"
+      decoding="async"
+    />
+    <img
+      src={monogramDark.src}
+      alt=""
+      class="brand-mark-image hidden dark:block"
+      width={monogramDark.width}
+      height={monogramDark.height}
+      loading="eager"
+      decoding="async"
+    />
   </span>
   <span class:list={['brand-wordmark-image-wrap', compact && 'brand-wordmark-image-wrap-compact']}>
-    <img src={wordmarkLight.src} alt="Paulo Cesar Tuya" class="brand-wordmark-image dark:hidden" loading="eager" decoding="async" />
-    <img src={wordmarkDark.src} alt="Paulo Cesar Tuya" class="brand-wordmark-image hidden dark:block" loading="eager" decoding="async" />
+    <img
+      src={wordmarkLight.src}
+      alt="Paulo Cesar Tuya"
+      class="brand-wordmark-image dark:hidden"
+      width={wordmarkLight.width}
+      height={wordmarkLight.height}
+      loading="eager"
+      decoding="async"
+    />
+    <img
+      src={wordmarkDark.src}
+      alt="Paulo Cesar Tuya"
+      class="brand-wordmark-image hidden dark:block"
+      width={wordmarkDark.width}
+      height={wordmarkDark.height}
+      loading="eager"
+      decoding="async"
+    />
   </span>
 </span>
