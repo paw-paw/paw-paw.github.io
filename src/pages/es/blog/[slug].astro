@@ -22,6 +22,29 @@ const lang = 'es';
 const seo = getSeoEntry(lang, 'blog');
 const localeUrls = await getBlogPostLocaleUrls(post);
 const siteSuffix = seo.title.replace(/^Blog \| /, '');
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site!).href;
+const headerImageUrl = new URL(post.data.header_image.src, Astro.site!).href;
+const datePublished = post.data.publish_date.toISOString().slice(0, 10);
+const dateModified = (post.data.modified_date ?? post.data.publish_date).toISOString().slice(0, 10);
+const blogPostingSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  '@id': `${canonicalUrl}#blogposting`,
+  headline: post.data.title,
+  description: post.data.excerpt,
+  image: headerImageUrl,
+  datePublished,
+  dateModified,
+  author: {
+    '@id': new URL('/#person', Astro.site!).href,
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': canonicalUrl,
+  },
+  inLanguage: lang,
+  url: canonicalUrl,
+};
 ---
 
 <Layout
@@ -31,6 +54,7 @@ const siteSuffix = seo.title.replace(/^Blog \| /, '');
   ogType="article"
   seoImage={post.data.header_image.src}
   localeUrls={localeUrls}
+  structuredData={[blogPostingSchema]}
 >
   <section class="section-padding pt-28 md:pt-36">
     <article class="max-w-container mx-auto px-6">

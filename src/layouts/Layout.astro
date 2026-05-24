@@ -3,10 +3,11 @@ import type { ImageMetadata } from 'astro';
 import Navbar from '../components/layout/Navbar.astro';
 import Footer from '../components/sections/Footer.astro';
 import '../styles/global.css';
+import 'aos/dist/aos.css';
 import { normalizeLocale, t, type SupportedLocale } from '../utils/i18n';
 import faviconAsset from '../assets/brand/monogram-light.png';
 import profileImg from '../assets/paulo-hero.png';
-import { name, linkedin_url, instagram_url } from '../utils/me';
+import { name, linkedin_url, instagram_url, github_url } from '../utils/me';
 import { defaultIndexedUrl } from '../utils/seo';
 
 export interface Props {
@@ -18,6 +19,7 @@ export interface Props {
   ogType?: 'website' | 'article';
   socialImage?: ImageMetadata;
   schemaMode?: 'default' | 'home' | 'experience';
+  structuredData?: unknown[];
 }
 
 const lang = normalizeLocale(Astro.props.lang || 'en');
@@ -30,9 +32,10 @@ const {
   ogType = 'website',
   socialImage = profileImg,
   schemaMode = 'default',
+  structuredData = [],
 } = Astro.props;
 
-const sameAs = [linkedin_url, instagram_url].filter(Boolean);
+const sameAs = [linkedin_url, instagram_url, github_url].filter(Boolean);
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site!).href;
 const pathWithoutLocale = Astro.url.pathname.replace(/^\/(en|es)(?=\/|$)/, '') || '/';
 const normalizedPath = pathWithoutLocale.startsWith('/') ? pathWithoutLocale : `/${pathWithoutLocale}`;
@@ -44,35 +47,37 @@ const resolvedLocaleUrls = { ...defaultLocaleUrls, ...localeUrls };
 const alternateEn = resolvedLocaleUrls.en ? new URL(resolvedLocaleUrls.en, Astro.site!).href : undefined;
 const alternateEs = resolvedLocaleUrls.es ? new URL(resolvedLocaleUrls.es, Astro.site!).href : undefined;
 const websiteUrl = defaultIndexedUrl;
+const personId = new URL('/#person', Astro.site!).href;
+const websiteId = new URL('/#website', Astro.site!).href;
 const socialImageUrl = seoImage
   ? new URL(seoImage, Astro.site!).href
   : new URL(socialImage.src, Astro.site!).href;
-const logoUrl = new URL(faviconAsset.src, Astro.site!).href;
+const personImageUrl = new URL(profileImg.src, Astro.site!).href;
+const personDescription = t('site.description', lang);
 const localizedJobTitle = t('hero.role', lang).trim();
+const fontStylesheetUrl = 'https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap';
 
 const personSchema = {
   '@context': 'https://schema.org',
   '@type': 'Person',
+  '@id': personId,
   name,
   url: websiteUrl,
-  image: socialImageUrl,
-  description,
+  image: personImageUrl,
+  description: personDescription,
   sameAs,
+  knowsAbout: [
+    'Business development',
+    'Partnerships',
+    'Project delivery',
+    'Program delivery',
+    'Gaming',
+    'Esports',
+    'Remote programs',
+    'Cross-functional execution',
+  ],
   ...(localizedJobTitle ? { jobTitle: localizedJobTitle } : {}),
 };
-
-const organizationSchema = schemaMode === 'home'
-  ? {
-      '@context': 'https://schema.org',
-      '@type': 'Organization',
-      name,
-      url: canonicalUrl,
-      description,
-      image: socialImageUrl,
-      logo: logoUrl,
-      sameAs,
-    }
-  : null;
 
 const profilePageSchema = schemaMode === 'experience'
   ? {
@@ -83,10 +88,11 @@ const profilePageSchema = schemaMode === 'experience'
       description,
       mainEntity: {
         '@type': 'Person',
+        '@id': personId,
         name,
         url: websiteUrl,
-        image: socialImageUrl,
-        description,
+        image: personImageUrl,
+        description: personDescription,
         sameAs,
       },
     }
@@ -121,23 +127,26 @@ const profilePageSchema = schemaMode === 'experience'
     <meta property="twitter:image" content={socialImageUrl} />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preload" as="style" href={fontStylesheetUrl}>
+    <link rel="stylesheet" href={fontStylesheetUrl} media="print" onload="this.media='all'">
+    <noscript>
+      <link rel="stylesheet" href={fontStylesheetUrl}>
+    </noscript>
 
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "WebSite",
+      "@id": websiteId,
       "url": websiteUrl,
       "name": "Paulo Tuya"
     })} />
     <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
-    {organizationSchema && (
-      <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
-    )}
     {profilePageSchema && (
       <script type="application/ld+json" set:html={JSON.stringify(profilePageSchema)} />
     )}
+    {structuredData.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))}
   </head>
   <body class="transition-colors duration-300">
     <div class="flex flex-col min-h-screen">
@@ -147,21 +156,6 @@ const profilePageSchema = schemaMode === 'experience'
       </main>
       <Footer lang={lang} />
     </div>
-
-    <script is:inline src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
-    <script is:inline>
-      document.addEventListener('DOMContentLoaded', () => {
-        AOS.init({
-          duration: 800,
-          easing: 'ease-out',
-          once: false,
-          offset: 50,
-        });
-      });
-    </script>
 
     <script src="../scripts/animations.js"></script>
   </body>
