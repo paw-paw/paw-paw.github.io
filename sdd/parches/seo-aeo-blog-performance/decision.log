@@ -1,0 +1,54 @@
+# Decision Log - seo-aeo-blog-performance
+
+## 2026-05-24 - Clasificar el cambio como batch spec-first
+
+- Decision: usar `patch_kind: batch` y `lifecycle: spec-first`.
+- Razon: el handoff agrupa items separables con riesgos y validaciones distintas: schema, robots IA, first viewport performance, imagenes y skills editoriales.
+- Afecta:
+  - `sdd/parches/seo-aeo-blog-performance/patch.yaml`
+  - `sdd/parches/seo-aeo-blog-performance/definicion.md`
+
+## 2026-05-24 - Mantener fuera de alcance nuevas rutas de arquitectura
+
+- Decision: no incorporar `/about`, `/resume`, `/cv` ni `/work/[case-study]`.
+- Razon: el usuario lo decidio explicitamente y la arquitectura contractual vigente no compromete esas rutas.
+- Afecta:
+  - `docs/architecture/site-architecture.md`
+  - `docs/delivery/seo-spec.md`
+  - futuras fases de implementacion del patch
+
+## 2026-05-24 - Separar robots IA por uso
+
+- Decision: modelar `robots.txt` por search, entrenamiento/model improvement y fetch iniciado por usuario.
+- Razon: mezclar todos los user-agents IA bajo una sola categoria produciria decisiones imprecisas.
+- Afecta:
+  - `public/robots.txt`
+  - `docs/delivery/seo-spec.md`
+  - `sdd/parches/seo-aeo-blog-performance/plan.md`
+
+## 2026-05-24 - GitHub entra solo en schema sameAs
+
+- Decision: incluir GitHub en `sameAs`, sin agregarlo a Contact en este patch.
+- Razon: `docs/content/content-system.md` limita los canales visibles de contacto a email, LinkedIn e Instagram; agregar GitHub a Contact requeriria cambio documental adicional que no es necesario para el objetivo SEO/AEO.
+- Afecta:
+  - `src/utils/me.ts`
+  - `src/layouts/Layout.astro` o helper SEO/schema equivalente
+  - `docs/delivery/seo-spec.md`
+
+## 2026-05-24 - Restringir bots de entrenamiento IA
+
+- Decision: permitir search/user-triggered fetchers y restringir entrenamiento/model improvement.
+- Razon: el objetivo del patch es visibilidad SEO/AEO y recuperacion bajo demanda, no habilitar entrenamiento de modelos.
+- Afecta:
+  - `public/robots.txt`
+  - `docs/delivery/seo-spec.md`
+
+## 2026-05-24 - Actualizar docs antes de cambiar first viewport motion
+
+- Decision: actualizar `docs/visual/interaction-spec.md` antes de quitar AOS del hero o CTAs criticos.
+- Razon: evitar drift documental cuando una decision visible ya esta cerrada.
+- Afecta:
+  - `docs/visual/interaction-spec.md`
+  - `src/components/sections/Hero.astro`
+  - `src/components/ui/Buttons.astro`, si aplica
+  - `src/layouts/Layout.astro`, si aplica
