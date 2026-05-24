@@ -4,6 +4,7 @@ export interface Props {
   href: string;
   variant?: 'primary' | 'secondary' | 'outline';
   size?: 'sm' | 'md' | 'lg';
+  animate?: boolean;
   class?: string;
 }
 
@@ -12,6 +13,7 @@ const {
   href,
   variant = 'primary',
   size = 'md',
+  animate = true,
   class: className = '',
 } = Astro.props;
 
@@ -36,7 +38,7 @@ const sizes = {
     sizes[size],
     className
   ]}
-  data-aos="fade-up"
+  data-aos={animate ? 'fade-up' : undefined}
 >
   {text}
   <slot />

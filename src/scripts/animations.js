@@ -1,4 +1,5 @@
 // Global animations using GSAP with AOS still handling basic reveals
+import AOS from 'aos';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -8,12 +9,18 @@ if (typeof window !== 'undefined') {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  AOS.init({
+    duration: 800,
+    easing: 'ease-out',
+    once: false,
+    offset: 50,
+  });
+  window.AOS = AOS;
+
   // Refresh AOS when window resizes
-  if (typeof window.AOS !== 'undefined') {
-    window.addEventListener('resize', () => {
-      window.AOS.refresh();
-    });
-  }
+  window.addEventListener('resize', () => {
+    AOS.refresh();
+  });
 
   // Custom animations for specific elements using GSAP
 
