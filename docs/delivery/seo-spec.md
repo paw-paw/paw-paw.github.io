@@ -169,6 +169,85 @@ Las rutas localizadas del blog si forman parte de la estrategia SEO primaria:
   - Twitter
 - el JSON-LD no debe apuntar a una ruta puente como URL principal indexable
 
+### Structured data
+
+La entidad personal debe representarse con un identificador estable para evitar entidades paralelas entre locales y posts:
+
+```txt
+Person.@id = https://pauloctuya.com/#person
+Person.url = https://pauloctuya.com/en/
+```
+
+Reglas:
+
+- `Person`, `ProfilePage`, `WebSite` y `BlogPosting.author` deben referenciar la misma entidad mediante `@id`.
+- `Person.url` debe apuntar a una ruta indexable localizada, no a `/`.
+- `sameAs` debe incluir solo perfiles publicos verificables que representen a la misma persona.
+- GitHub puede incluirse en `sameAs`, pero no se convierte por eso en canal visible de Contact.
+- `knowsAbout`, si se usa, debe reflejar temas visibles y aprobados por la estrategia del portfolio, sin keyword stuffing.
+- No emitir `Organization` para Paulo si representa de forma ambigua una entidad personal como organizacion.
+
+### `BlogPosting`
+
+Los posts publicados en `/en/blog/[slug]/` y `/es/blog/[slug]/` deben emitir structured data `BlogPosting`.
+
+Campos esperados:
+
+```txt
+@context
+@type
+@id
+headline
+description
+image
+datePublished
+dateModified
+author.@id
+mainEntityOfPage
+inLanguage
+url
+```
+
+Reglas:
+
+- `@id` del post debe derivarse de la URL canonica localizada del detail.
+- `mainEntityOfPage` y `url` deben apuntar a la URL canonica localizada.
+- `author` debe referenciar `https://pauloctuya.com/#person`.
+- `datePublished` debe usar `publish_date`.
+- `dateModified` debe usar `modified_date` cuando exista y caer tecnicamente a `publish_date` cuando no exista.
+- El fallback de `dateModified` a `publish_date` es tecnico para schema, no una afirmacion editorial visible de edicion.
+- El schema no debe contener datos ocultos, claims no visibles ni perfiles no verificables.
+
+### Robots IA y AI Search
+
+`robots.txt` debe separar tres usos:
+
+1. Search / indexacion para respuestas.
+2. Entrenamiento o mejora de modelos.
+3. Fetch iniciado por usuario.
+
+Decision vigente:
+
+- permitir search y fetch iniciado por usuario;
+- restringir entrenamiento o model improvement.
+
+Matriz vigente:
+
+| Proveedor | User-agent | Uso | Decision |
+| --- | --- | --- | --- |
+| OpenAI | `OAI-SearchBot` | Search en ChatGPT | Permitir |
+| OpenAI | `ChatGPT-User` | Fetch iniciado por usuario | Permitir |
+| OpenAI | `GPTBot` | Entrenamiento/model improvement | Restringir |
+| Perplexity | `PerplexityBot` | Search results en Perplexity | Permitir |
+| Perplexity | `Perplexity-User` | Fetch iniciado por usuario | Permitir/documentar como user-triggered |
+| Anthropic | `Claude-SearchBot` | Search/index quality para Claude | Permitir |
+| Anthropic | `Claude-User` | Fetch iniciado por usuario | Permitir |
+| Anthropic | `ClaudeBot` | Entrenamiento | Restringir |
+| Google | `Googlebot` | Google Search, AI Overviews y AI Mode | Permitir |
+| Google | `Google-Extended` | Uso en algunos sistemas generativos fuera del flujo normal de Search | Restringir |
+
+Google Search, AI Overviews y AI Mode se controlan mediante Googlebot, indexabilidad y controles de snippets como `nosnippet`, `data-nosnippet`, `max-snippet` o `noindex`. `Google-Extended` no debe tratarse como mecanismo principal para controlar aparicion en AI Overviews o AI Mode.
+
 ---
 
 ## Fuera de alcance en esta fase
