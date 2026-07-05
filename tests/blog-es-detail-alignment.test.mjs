@@ -5,9 +5,11 @@ import { existsSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { mkdirSync } from 'node:fs';
 
 const tempSpanishPostPath = 'src/content/blog/temp-es-detail-alignment.md';
+const npmCommand = process.platform === 'win32' ? 'npm.cmd' : 'npm';
 
 function runBuild() {
-  execFileSync('npm', ['run', 'build'], {
+  execFileSync(npmCommand, ['run', 'build'], {
+    env: { ...process.env, ASTRO_TELEMETRY_DISABLED: '1' },
     stdio: 'ignore',
   });
 }

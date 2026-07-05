@@ -3,8 +3,11 @@ import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
 import { existsSync, readFileSync } from 'node:fs';
 
+const npmCommand = process.platform === 'win32' ? 'npm.cmd' : 'npm';
+
 function runBuild() {
-  execFileSync('npm', ['run', 'build'], {
+  execFileSync(npmCommand, ['run', 'build'], {
+    env: { ...process.env, ASTRO_TELEMETRY_DISABLED: '1' },
     stdio: 'ignore',
   });
 }
