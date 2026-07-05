@@ -49,5 +49,6 @@
 - Expected source: `npm test` should run the repository validation scripts on the local Windows environment.
 - Observed difference: tests used `execFileSync('npm', ...)`, which failed with `spawnSync npm ENOENT`; Astro telemetry also attempted to write outside the workspace.
 - Decision: use `npm.cmd` on Windows and set `ASTRO_TELEMETRY_DISABLED=1` for build subprocesses.
+- Follow-up: set `shell: true` for Windows `.cmd` execution after `execFileSync` returned `EINVAL`.
 - Reason: this preserves the existing validation intent without changing product behavior.
 - Classification: local validation fix.
