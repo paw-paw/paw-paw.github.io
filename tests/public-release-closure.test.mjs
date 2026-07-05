@@ -8,6 +8,7 @@ const npmCommand = process.platform === 'win32' ? 'npm.cmd' : 'npm';
 function runBuild() {
   execFileSync(npmCommand, ['run', 'build'], {
     env: { ...process.env, ASTRO_TELEMETRY_DISABLED: '1' },
+    shell: process.platform === 'win32',
     stdio: 'ignore',
   });
 }
