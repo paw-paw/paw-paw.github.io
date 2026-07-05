@@ -1,0 +1,22 @@
+{
+  "assessment_id": "portfolio-brownfield-paw-v2-assessment",
+  "repository": "paw-paw.github.io",
+  "family": "content-knowledge",
+  "documentation_preset": "docs-content-knowledge",
+  "implementation_preset": "content-astro-static",
+  "profiles": ["content-delivery-surface"],
+  "concerns": ["public-exposure"],
+  "brownfield_reality": {
+    "framework": "Astro",
+    "styling": "Tailwind CSS plus global CSS",
+    "content": "repository-reviewable docs, i18n JSON, data files, and content collections",
+    "output": "static site for GitHub Pages",
+    "validation_commands": ["npm run build", "npm test"]
+  },
+  "fit": "compatible-with-local-exceptions",
+  "exceptions": [
+    "Astro in package.json is 5.x while the upstream PAW preset records Astro 6.x as its reviewed fixed line. This pilot must not upgrade Astro.",
+    "PAW v2 is candidate opt-in only and not a stable default workflow."
+  ],
+  "no_auto_selection_guard": "Catalogs inform the adoption; portfolio docs remain the governing authority for product and visual decisions."
+}

@@ -1,0 +1,26 @@
+# Decision Log
+
+## 2026-07-05 - Use PAW v2 candidate by explicit opt-in
+
+- Decision: this portfolio pilot uses PAW v2 candidate manually under `dev-paw`.
+- Reason: the user explicitly requires PAW v2 and forbids the SDD v1 surface in `origin/dev`.
+- Impact: upstream PAW candidate/inactive warnings are treated as local opt-in constraints, not blockers.
+- Boundary: do not claim stable release, default workflow, or portability.
+
+## 2026-07-05 - Keep SDD v1 out of scope
+
+- Decision: do not use `origin/dev`, `sdd/**`, `.codex/skills/sdd-*`, or `.codex/agents/sdd-*`.
+- Reason: user explicitly prohibited SDD v1 for this pilot.
+- Impact: the pilot starts from `origin/main` via `dev-paw`.
+
+## 2026-07-05 - Use content-knowledge and Astro static preset
+
+- Decision: classify the portfolio as `content-knowledge` with implementation preset `content-astro-static`.
+- Reason: the repo is a public Astro portfolio focused on maintained content and static output.
+- Exception: the repo uses Astro 5.x; the pilot must not upgrade Astro to match the PAW preset's reviewed Astro 6.x line.
+
+## 2026-07-05 - Limit image treatment to Work and Blog
+
+- Decision: the reversible tint rule applies only to Work and Blog image surfaces.
+- Reason: these are the surfaces with existing overlays/zoom and documented treatment.
+- Boundary: hero, contact, logos, and global image behavior remain unchanged.

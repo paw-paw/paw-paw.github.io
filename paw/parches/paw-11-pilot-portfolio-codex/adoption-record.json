@@ -1,0 +1,25 @@
+{
+  "record_id": "portfolio-paw-v2-codex-pilot",
+  "preset_ref": "content-astro-static",
+  "applicability": "applicable",
+  "binding_mode": "exception",
+  "approval_policy": "Explicit user approval in Codex thread; PAW v2 candidate is allowed only for this pilot branch.",
+  "resolution_status": "ready_with_exceptions",
+  "responsible_owner": "Portfolio owner",
+  "evidence": [
+    "docs/README.md",
+    "package.json",
+    "astro.config.mjs",
+    "paw/parches/paw-11-pilot-portfolio-codex/triage.md"
+  ],
+  "review_date": "2026-07-05",
+  "exceptions": [
+    {
+      "exception_id": "candidate-opt-in-before-upstream-cutover",
+      "reason": "The PAW source repo marks v2 runtime bindings as candidate/inactive, but the pilot handoff allows explicit consumer repo opt-in.",
+      "scope": "dev-paw and codex/paw-11-pilot-portfolio-codex only",
+      "approved_by": "Portfolio owner",
+      "conformance_impact": "Use PAW v2 artifacts manually; do not claim stable PAW release or default workflow."
+    }
+  ]
+}
