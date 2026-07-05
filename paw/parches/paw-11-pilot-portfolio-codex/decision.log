@@ -24,3 +24,12 @@
 - Decision: the reversible tint rule applies only to Work and Blog image surfaces.
 - Reason: these are the surfaces with existing overlays/zoom and documented treatment.
 - Boundary: hero, contact, logos, and global image behavior remain unchanged.
+
+## 2026-07-05 - Resolve stale project hover implementation drift
+
+- Drift category: implementation drift.
+- Expected source: `docs/visual/interaction-spec.md` and the approved Phase 2 backlog.
+- Observed difference: `src/scripts/animations.js` targeted `#projects .group`, but the live Selected Work section uses `#selected-work`.
+- Decision: remove the stale GSAP hover block and implement Work/Blog image hover states in CSS.
+- Reason: CSS keeps hover/focus behavior aligned with reduced-motion rules and avoids a stale selector.
+- Residual risk: manual visual review still required to confirm perceived tint intensity.

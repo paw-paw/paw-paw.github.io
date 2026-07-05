@@ -11,12 +11,12 @@
 
 ## Checklist
 
-- [ ] Update `docs/visual/interaction-spec.md` with the Work + Blog reversible tint rule.
-- [ ] Add CSS transitions so Work, Blog cards, and Blog featured overlays reduce or remove tint on hover/focus.
-- [ ] Add CSS zoom for Work header images.
-- [ ] Preserve reduced-motion behavior.
-- [ ] Remove or neutralize stale GSAP project-card hover code targeting `#projects .group`.
-- [ ] Record implementation drift and resolution in `decision.log`.
+- [x] Update `docs/visual/interaction-spec.md` with the Work + Blog reversible tint rule.
+- [x] Add CSS transitions so Work, Blog cards, and Blog featured overlays reduce or remove tint on hover/focus.
+- [x] Add CSS zoom for Work header images.
+- [x] Preserve reduced-motion behavior.
+- [x] Remove or neutralize stale GSAP project-card hover code targeting `#projects .group`.
+- [x] Record implementation drift and resolution in `decision.log`.
 - [ ] Run relevant validations after implementation.
 
 ## No-Touch Surfaces
@@ -31,3 +31,10 @@
 - Work and Blog behavior is implemented.
 - No unclassified drift remains.
 - Build/test results are recorded.
+
+## Execution Notes
+
+- Work image zoom and overlay removal now use CSS on hover/focus-within.
+- Blog card and featured image zoom and overlay removal now use CSS on hover/focus-within.
+- Reduced motion keeps transforms disabled.
+- Stale GSAP project-card hover logic was removed because it targeted `#projects`, while the live section is `#selected-work`.
