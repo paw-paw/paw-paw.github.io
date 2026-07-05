@@ -42,3 +42,12 @@
 - Decision: patch the local copied PAW candidate validator to inspect `paw/parches`.
 - Reason: the user explicitly prohibited SDD v1 and required PAW v2.
 - Classification: local fix with transversal finding for upstream PAW stabilization.
+
+## 2026-07-05 - Make portfolio test build helper portable on Windows
+
+- Drift category: validation drift.
+- Expected source: `npm test` should run the repository validation scripts on the local Windows environment.
+- Observed difference: tests used `execFileSync('npm', ...)`, which failed with `spawnSync npm ENOENT`; Astro telemetry also attempted to write outside the workspace.
+- Decision: use `npm.cmd` on Windows and set `ASTRO_TELEMETRY_DISABLED=1` for build subprocesses.
+- Reason: this preserves the existing validation intent without changing product behavior.
+- Classification: local validation fix.
