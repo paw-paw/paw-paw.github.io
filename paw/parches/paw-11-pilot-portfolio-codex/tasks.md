@@ -7,12 +7,12 @@
 
 ## Phase 2: Visual Contract And Implementation
 
-- Status: active
+- Status: done
 - Outcome: live docs and CSS/JS implement reversible image tint behavior in Work and Blog.
 
 ## Phase 3: Validation, Closure, And Report
 
-- Status: pending
+- Status: done
 - Outcome: validations executed, closure created, PAW effectiveness report delivered.
 
 ## Split Check

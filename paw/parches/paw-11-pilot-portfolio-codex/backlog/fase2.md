@@ -17,7 +17,7 @@
 - [x] Preserve reduced-motion behavior.
 - [x] Remove or neutralize stale GSAP project-card hover code targeting `#projects .group`.
 - [x] Record implementation drift and resolution in `decision.log`.
-- [ ] Run relevant validations after implementation.
+- [x] Run relevant validations after implementation.
 
 ## No-Touch Surfaces
 
@@ -38,3 +38,5 @@
 - Blog card and featured image zoom and overlay removal now use CSS on hover/focus-within.
 - Reduced motion keeps transforms disabled.
 - Stale GSAP project-card hover logic was removed because it targeted `#projects`, while the live section is `#selected-work`.
+- Validation passed for PAW patch, PAW adoption catalogs, Astro build, and repository tests.
+- Browser review loaded the requested routes in light/dark and confirmed Work/Blog image-overlay selectors render. The in-app browser session did not activate CSS `:hover` from pointer movement, so hover behavior was verified by CSS contract/source and not by live pointer state.

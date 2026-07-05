@@ -52,3 +52,21 @@
 - Follow-up: set `shell: true` for Windows `.cmd` execution after `execFileSync` returned `EINVAL`.
 - Reason: this preserves the existing validation intent without changing product behavior.
 - Classification: local validation fix.
+
+## 2026-07-05 - Run build and test validations serially
+
+- Drift category: validation execution drift.
+- Expected source: repository build and test commands both write to `dist`.
+- Observed difference: running `npm run build` and `npm test` in parallel caused `astro-compress` to report a missing generated image during one build.
+- Decision: treat portfolio build/test validations as serial commands for this repo.
+- Reason: the commands share generated output and should not compete over `dist`.
+- Classification: local workflow constraint.
+
+## 2026-07-05 - Record browser hover verification limit
+
+- Drift category: verification tooling gap.
+- Expected source: Phase 2 manual review requested hover/focus and reduced-motion checks.
+- Observed difference: the in-app browser loaded routes and inspected computed styles, but pointer movement did not activate CSS `:hover`; DOM snapshot also failed in this browser runtime.
+- Decision: record hover behavior as verified by CSS contract/source plus rendered selector presence, not by live pointer-state automation.
+- Reason: avoid overstating evidence while preserving the useful browser render checks.
+- Classification: local verification gap with possible browser-tool finding.
