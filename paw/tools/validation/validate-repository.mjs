@@ -28,13 +28,13 @@ export function validateRepository(rootPath) {
     });
   }
 
-  const patchesRoot = join(root, 'sdd', 'parches');
+  const patchesRoot = join(root, 'paw', 'parches');
   if (!existsSync(patchesRoot)) {
     return createValidationResult({
       diagnostics: [
         createDiagnostic({
           code: 'PATCH_ROOT_NOT_FOUND',
-          message: 'Validation root must contain sdd/parches.',
+          message: 'Validation root must contain paw/parches.',
           path: patchesRoot,
         }),
       ],

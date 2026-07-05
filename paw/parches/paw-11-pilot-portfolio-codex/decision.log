@@ -33,3 +33,12 @@
 - Decision: remove the stale GSAP hover block and implement Work/Blog image hover states in CSS.
 - Reason: CSS keeps hover/focus behavior aligned with reduced-motion rules and avoids a stale selector.
 - Residual risk: manual visual review still required to confirm perceived tint intensity.
+
+## 2026-07-05 - Patch validator root drift in PAW v2 candidate
+
+- Drift category: validation drift.
+- Expected source: PAW v2 patch workspaces live under `paw/parches/**` for this pilot.
+- Observed difference: copied `paw/tools/validation/validate-repository.mjs` still required `sdd/parches`.
+- Decision: patch the local copied PAW candidate validator to inspect `paw/parches`.
+- Reason: the user explicitly prohibited SDD v1 and required PAW v2.
+- Classification: local fix with transversal finding for upstream PAW stabilization.
