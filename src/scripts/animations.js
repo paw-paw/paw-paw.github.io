@@ -150,28 +150,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Project cards hover effect
-  const projectCards = document.querySelectorAll('#projects .group');
-
-  projectCards.forEach(card => {
-    const image = card.querySelector('img');
-
-    if (image) {
-      card.addEventListener('mouseenter', () => {
-        gsap.to(image, {
-          scale: 1.02,
-          duration: 0.35,
-          ease: 'power2.out'
-        });
-      });
-
-      card.addEventListener('mouseleave', () => {
-        gsap.to(image, {
-          scale: 1,
-          duration: 0.3,
-          ease: 'power2.out'
-        });
-      });
-    }
-  });
+  // Work and blog image hover states are handled in CSS so reduced-motion rules
+  // and keyboard focus remain consistent.
 });
