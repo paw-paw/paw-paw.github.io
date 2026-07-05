@@ -96,6 +96,13 @@ La regla de visibilidad de esta fase queda deliberadamente mas flexible que en l
 
 - intensidad baja a media
 - la animacion debe reforzar lectura, no esconder estructura
+- las imagenes de `Selected Work` y las superficies editoriales del `Blog`
+  pueden usar tinte u overlay sutil por defecto para integrarse al sistema
+  visual
+- cuando esas superficies tengan hover/focus con zoom suave, el tinte puede
+  retirarse o reducirse para revelar mejor la imagen original
+- esta regla no se extiende por defecto a hero, contacto, logos ni a todas las
+  imagenes publicas del sitio
 
 ### CTA y botones
 
