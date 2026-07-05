@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://paw.local/schemas/adoption/runtime-adapter.schema.json",
+  "title": "PAW Runtime Adapter",
+  "type": "object",
+  "required": [
+    "adapter_type",
+    "adapter_id",
+    "runtime",
+    "paths",
+    "packaging",
+    "triggers",
+    "assets",
+    "references",
+    "scripts",
+    "permissions",
+    "approvals",
+    "optional_capabilities",
+    "operation_mappings",
+    "capability_matrix",
+    "source_freshness",
+    "gap_disposition",
+    "activation"
+  ],
+  "properties": {
+    "adapter_type": { "const": "runtime" },
+    "adapter_id": { "type": "string" },
+    "runtime": { "type": "string" },
+    "paths": { "type": "object" },
+    "packaging": { "type": "object" },
+    "triggers": { "type": "array" },
+    "assets": { "type": "array" },
+    "references": { "type": "array" },
+    "scripts": { "type": "array" },
+    "permissions": { "type": "object" },
+    "approvals": { "type": "object" },
+    "optional_capabilities": { "type": "array" },
+    "operation_mappings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["operation_id", "portable_contract", "runtime_entrypoint", "mutation_level", "support"],
+        "properties": {
+          "operation_id": { "type": "string" },
+          "portable_contract": { "type": "string" },
+          "runtime_entrypoint": { "type": "string" },
+          "mutation_level": { "type": "string" },
+          "support": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    },
+    "capability_matrix": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["capability_id", "status"],
+        "properties": {
+          "capability_id": { "type": "string" },
+          "status": { "type": "string" },
+          "notes": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    },
+    "source_freshness": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source_id", "url", "checked_at", "status"],
+        "properties": {
+          "source_id": { "type": "string" },
+          "url": { "type": "string" },
+          "checked_at": { "type": "string" },
+          "status": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    },
+    "gap_disposition": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["gap_id", "status", "disposition"],
+        "properties": {
+          "gap_id": { "type": "string" },
+          "status": { "type": "string" },
+          "disposition": { "type": "string" },
+          "required_for_candidate": { "type": "boolean" }
+        },
+        "additionalProperties": true
+      }
+    },
+    "activation": {
+      "type": "object",
+      "required": ["state", "default_workflow", "requires_opt_in"],
+      "properties": {
+        "state": { "type": "string" },
+        "default_workflow": { "type": "boolean" },
+        "requires_opt_in": { "type": "boolean" }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

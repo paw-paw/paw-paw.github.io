@@ -1,0 +1,206 @@
+{
+  "adapter_type": "runtime",
+  "adapter_id": "runtime-antigravity-paw-candidate",
+  "runtime": "antigravity",
+  "paths": {
+    "local_skills": ".agents/skills/<skill-folder>/SKILL.md",
+    "rules": ".agents/rules/*.md",
+    "workflows": ".agents/workflows/*.md",
+    "artifact_review": "manual-runtime-pass"
+  },
+  "packaging": {
+    "mode": "repo-local-physical-files",
+    "installable_files": true,
+    "physical_adapter_status": "physical-adapter-candidate",
+    "plugin_mode": "distribution-design-candidate",
+    "distribution_status": "distribution-design-candidate",
+    "distribution_design": "paw/distribution/antigravity-design-candidate.md",
+    "distribution_files_materialized": false,
+    "distribution_package_format": "unconfirmed"
+  },
+  "triggers": [
+    "manual-agent-task",
+    "explicit-opt-in"
+  ],
+  "assets": [
+    "PAW artifacts supplied as prompt or repo context"
+  ],
+  "references": [
+    "paw/orchestration/workflow.md",
+    "paw/orchestration/bootstrap.md",
+    "paw/orchestration/conformance.md"
+  ],
+  "scripts": [
+    "repo-local validation commands only when invoked by the runtime"
+  ],
+  "permissions": {
+    "filesystem": "runtime-managed",
+    "terminal": "runtime-managed",
+    "browser": "runtime-managed",
+    "mutation_envelope": "manual-task-boundary"
+  },
+  "approvals": {
+    "writes": "runtime-managed",
+    "external_actions": "human-review"
+  },
+  "optional_capabilities": [
+    "multi-agent-manager",
+    "browser-artifacts",
+    "task-artifacts"
+  ],
+  "operation_mappings": [
+    {
+      "operation_id": "paw-triage",
+      "portable_contract": "paw/orchestration/workflow.md",
+      "runtime_entrypoint": ".agents/skills/paw-router/SKILL.md",
+      "mutation_level": "level-1",
+      "support": "physical-adapter-candidate"
+    },
+    {
+      "operation_id": "paw-intake",
+      "portable_contract": "paw/orchestration/workflow.md",
+      "runtime_entrypoint": ".agents/skills/paw-intake/SKILL.md",
+      "mutation_level": "level-1",
+      "support": "physical-adapter-candidate"
+    },
+    {
+      "operation_id": "paw-plan",
+      "portable_contract": "paw/orchestration/workflow.md",
+      "runtime_entrypoint": ".agents/skills/paw-plan/SKILL.md",
+      "mutation_level": "level-2",
+      "support": "physical-adapter-candidate"
+    },
+    {
+      "operation_id": "paw-tasks",
+      "portable_contract": "paw/orchestration/workflow.md",
+      "runtime_entrypoint": ".agents/skills/paw-tasks/SKILL.md",
+      "mutation_level": "level-1",
+      "support": "physical-adapter-candidate"
+    },
+    {
+      "operation_id": "paw-phase-backlog",
+      "portable_contract": "paw/orchestration/workflow.md",
+      "runtime_entrypoint": ".agents/skills/paw-phase-backlog/SKILL.md",
+      "mutation_level": "level-1",
+      "support": "physical-adapter-candidate"
+    },
+    {
+      "operation_id": "paw-execute-phase",
+      "portable_contract": "paw/orchestration/workflow.md",
+      "runtime_entrypoint": ".agents/skills/paw-execute-phase/SKILL.md",
+      "mutation_level": "level-2",
+      "support": "physical-adapter-candidate"
+    },
+    {
+      "operation_id": "paw-sync-drift",
+      "portable_contract": "paw/orchestration/workflow.md",
+      "runtime_entrypoint": ".agents/skills/paw-sync-drift/SKILL.md",
+      "mutation_level": "level-1",
+      "support": "physical-adapter-candidate"
+    },
+    {
+      "operation_id": "paw-conformance",
+      "portable_contract": "paw/orchestration/conformance.md",
+      "runtime_entrypoint": ".agents/skills/paw-conformance/SKILL.md",
+      "mutation_level": "level-1",
+      "support": "physical-adapter-candidate"
+    }
+  ],
+  "capability_matrix": [
+    {
+      "capability_id": "progressive-context-loading",
+      "status": "manual-runtime-validated",
+      "notes": "Antigravity discovered .agents/skills as runtime-accessible skills on 2026-06-24. A 2026-07-04 Antigravity validation on Windows with Gemini 3.1 Pro (High) reported .agents/ as Workspace Customizations Root, .agents/rules as runtime configuration, .agents/skills as native runtime skills, and .agents/workflows as slash-commands."
+    },
+    {
+      "capability_id": "subagents",
+      "status": "runtime-managed",
+      "notes": "Public Antigravity materials describe agent-oriented work, but not PAW-specific subagent files."
+    },
+    {
+      "capability_id": "hooks",
+      "status": "deferred",
+      "notes": "Hooks are not required for this physical-files candidate."
+    },
+    {
+      "capability_id": "rules",
+      "status": "manual-runtime-validated",
+      "notes": "The 2026-07-04 Antigravity validation reported .agents/rules/*.md recognized as runtime configuration, including 00-core-operating-rules.md and conditional validation/troubleshooting rules."
+    },
+    {
+      "capability_id": "workflows",
+      "status": "manual-runtime-validated",
+      "notes": "The 2026-07-04 Antigravity validation reported .agents/workflows/*.md registered as slash-commands, including /implement-feature and /validate-agent-config. paw-diagnose is absent and obsolete."
+    }
+  ],
+  "source_freshness": [
+    {
+      "source_id": "antigravity-public-site",
+      "url": "https://antigravity.google/",
+      "checked_at": "2026-06-21",
+      "status": "official-public-limited"
+    },
+    {
+      "source_id": "antigravity-runtime-validation-paw-10f",
+      "url": "sdd/parches/paw-10f-runtime-validation-reconciliation/handover.md",
+      "checked_at": "2026-06-24",
+      "status": "manual-runtime-partial"
+    },
+    {
+      "source_id": "antigravity-static-structure-paw-10c-fix",
+      "url": "sdd/parches/paw-10c-fix-antigravity-rules-workflows/cierre.md",
+      "checked_at": "2026-07-04",
+      "status": "static-structure-corrected"
+    },
+    {
+      "source_id": "antigravity-runtime-pass-2026-07-04",
+      "url": "sdd/parches/paw-10d-reopen-antigravity-runtime-evidence/handover.md",
+      "checked_at": "2026-07-04",
+      "status": "manual-runtime-pass"
+    },
+    {
+      "source_id": "antigravity-distribution-design-paw-10d",
+      "url": "paw/distribution/antigravity-design-candidate.md",
+      "checked_at": "2026-07-05",
+      "status": "distribution-design-candidate"
+    }
+  ],
+  "gap_disposition": [
+    {
+      "gap_id": "antigravity-local-skill-path",
+      "status": "resolved",
+      "disposition": "Manual Antigravity validation reported .agents/skills discovered and registered as runtime-accessible skills; the 2026-07-04 validation reconfirmed native skill registration.",
+      "required_for_candidate": false
+    },
+    {
+      "gap_id": "antigravity-rules-not-runtime-active",
+      "status": "resolved",
+      "disposition": "The 2026-07-04 Antigravity validation reported .agents/rules files recognized as runtime configuration.",
+      "required_for_candidate": false
+    },
+    {
+      "gap_id": "antigravity-workflows-not-runtime-executable",
+      "status": "resolved",
+      "disposition": "The 2026-07-04 Antigravity validation reported .agents/workflows registered as slash-commands and /implement-feature usable for SDD routing.",
+      "required_for_candidate": false
+    },
+    {
+      "gap_id": "antigravity-hook-contract",
+      "status": "blocked",
+      "disposition": "No hook binding is claimed for this adapter.",
+      "required_for_candidate": false
+    },
+    {
+      "gap_id": "antigravity-distribution-package-format",
+      "status": "blocked",
+      "disposition": "No authoritative Antigravity plugin/bundle package path, metadata schema, install target, or validation command is confirmed. paw-10d closes as distribution-design-candidate rather than materializing package files.",
+      "required_for_candidate": false,
+      "required_for_distribution_adapter_candidate": true
+    }
+  ],
+  "activation": {
+    "state": "candidate-opt-in",
+    "default_workflow": false,
+    "requires_opt_in": true
+  }
+}

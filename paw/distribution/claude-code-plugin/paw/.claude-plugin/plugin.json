@@ -1,0 +1,19 @@
+{
+  "name": "paw",
+  "displayName": "Paw's Agentic Workflow",
+  "version": "0.1.0-candidate.claude",
+  "description": "Claude Code plugin distribution adapter candidate for PAW.",
+  "author": {
+    "name": "paw-paw"
+  },
+  "homepage": "https://github.com/paw-paw/paw-agentic-workflow",
+  "repository": "https://github.com/paw-paw/paw-agentic-workflow",
+  "license": "MPL-2.0",
+  "keywords": [
+    "paw",
+    "agentic-workflow",
+    "sdd",
+    "claude-code",
+    "candidate"
+  ]
+}

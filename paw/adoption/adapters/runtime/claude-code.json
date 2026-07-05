@@ -1,0 +1,200 @@
+{
+  "adapter_type": "runtime",
+  "adapter_id": "runtime-claude-code-paw-candidate",
+  "runtime": "claude-code",
+  "paths": {
+    "project_skills": ".claude/skills/<skill-name>/SKILL.md",
+    "commands_compatibility": ".claude/commands/<command>.md",
+    "supporting_files": ".claude/skills/<skill-name>/**",
+    "project_subagents": ".claude/agents/<agent>.md",
+    "plugin_root": "paw/distribution/claude-code-plugin/paw",
+    "plugin_manifest": "paw/distribution/claude-code-plugin/paw/.claude-plugin/plugin.json",
+    "plugin_inventory": "paw/distribution/claude-code-plugin/paw/manifest.json"
+  },
+  "packaging": {
+    "mode": "project-skill-files",
+    "plugin_mode": "optional",
+    "physical_adapter_status": "physical-adapter-candidate",
+    "plugin_distribution_status": "distribution-files-candidate",
+    "plugin_distribution_derived_from": "paw-10b-claude-code-physical-adapter",
+    "plugin_distribution_validated_by": "paw-10e-claude-code-distribution-adapter",
+    "plugin_runtime_validation": "not-executed-current-session",
+    "plugin_marketplace": "out-of-scope"
+  },
+  "triggers": ["slash-skill", "model-invoked-skill", "plugin-namespaced-skill", "explicit-opt-in"],
+  "assets": ["SKILL.md", "supporting files", "scripts", "references", "Claude Code plugin manifest"],
+  "references": [
+    "paw/orchestration/workflow.md",
+    "paw/orchestration/bootstrap.md",
+    "paw/orchestration/conformance.md",
+    "paw/distribution/claude-code-plugin/paw/README.md",
+    "paw/distribution/claude-code-plugin/paw/manifest.json"
+  ],
+  "scripts": ["skill-local scripts when declared by the skill"],
+  "permissions": {
+    "allowed_tools": "skill-frontmatter",
+    "disallowed_tools": "skill-frontmatter",
+    "mutation_envelope": "skill-and-session-permissions"
+  },
+  "approvals": {
+    "writes": "Claude Code permission model",
+    "network": "Claude Code permission model"
+  },
+  "optional_capabilities": ["subagents", "hooks", "dynamic-context", "forked-skill-context"],
+  "operation_mappings": [
+    {
+      "operation_id": "paw-triage",
+      "portable_contract": "paw/orchestration/workflow.md",
+      "runtime_entrypoint": ".claude/skills/paw-router/SKILL.md",
+      "mutation_level": "level-1",
+      "support": "physical-adapter-candidate"
+    },
+    {
+      "operation_id": "paw-intake",
+      "portable_contract": "paw/orchestration/workflow.md",
+      "runtime_entrypoint": ".claude/skills/paw-intake/SKILL.md",
+      "mutation_level": "level-1",
+      "support": "physical-adapter-candidate"
+    },
+    {
+      "operation_id": "paw-plan",
+      "portable_contract": "paw/orchestration/workflow.md",
+      "runtime_entrypoint": ".claude/skills/paw-plan/SKILL.md",
+      "mutation_level": "level-1",
+      "support": "physical-adapter-candidate"
+    },
+    {
+      "operation_id": "paw-tasks",
+      "portable_contract": "paw/orchestration/workflow.md",
+      "runtime_entrypoint": ".claude/skills/paw-tasks/SKILL.md",
+      "mutation_level": "level-1",
+      "support": "physical-adapter-candidate"
+    },
+    {
+      "operation_id": "paw-phase-backlog",
+      "portable_contract": "paw/orchestration/workflow.md",
+      "runtime_entrypoint": ".claude/skills/paw-phase-backlog/SKILL.md",
+      "mutation_level": "level-1",
+      "support": "physical-adapter-candidate"
+    },
+    {
+      "operation_id": "paw-execute-phase",
+      "portable_contract": "paw/orchestration/workflow.md",
+      "runtime_entrypoint": ".claude/skills/paw-execute-phase/SKILL.md",
+      "mutation_level": "level-2",
+      "support": "physical-adapter-candidate"
+    },
+    {
+      "operation_id": "paw-sync-drift",
+      "portable_contract": "paw/orchestration/workflow.md",
+      "runtime_entrypoint": ".claude/skills/paw-sync-drift/SKILL.md",
+      "mutation_level": "level-1",
+      "support": "physical-adapter-candidate"
+    },
+    {
+      "operation_id": "paw-conformance",
+      "portable_contract": "paw/orchestration/conformance.md",
+      "runtime_entrypoint": ".claude/skills/paw-conformance/SKILL.md",
+      "mutation_level": "level-1",
+      "support": "physical-adapter-candidate"
+    }
+  ],
+  "capability_matrix": [
+    {
+      "capability_id": "progressive-context-loading",
+      "status": "runtime-validated",
+      "notes": "Claude Code 2.1.59 loaded PAW project skills and router references through native skill progressive disclosure on 2026-06-22."
+    },
+    {
+      "capability_id": "subagents",
+      "status": "runtime-validated",
+      "notes": "Claude Code 2.1.59 exposed .claude/agents PAW profiles as selectable agent types on 2026-06-22."
+    },
+    {
+      "capability_id": "hooks",
+      "status": "deferred",
+      "notes": "Hooks are documented, but this physical adapter omits executable hooks to avoid premature enforcement."
+    },
+    {
+      "capability_id": "plugin-distribution-files",
+      "status": "deterministic-file-validated",
+      "notes": "paw-10e stages a Claude Code plugin candidate under paw/distribution/claude-code-plugin/paw and validates candidate files, inventory, lifecycle docs, and boundary rules. Claude Code plugin runtime install/discovery validation was not executed in the current environment."
+    }
+  ],
+  "source_freshness": [
+    {
+      "source_id": "claude-code-skills",
+      "url": "https://code.claude.com/docs/en/skills",
+      "checked_at": "2026-06-21",
+      "status": "official-current"
+    },
+    {
+      "source_id": "claude-code-subagents",
+      "url": "https://code.claude.com/docs/en/sub-agents",
+      "checked_at": "2026-06-21",
+      "status": "official-current"
+    },
+    {
+      "source_id": "claude-code-hooks",
+      "url": "https://code.claude.com/docs/en/hooks",
+      "checked_at": "2026-06-21",
+      "status": "official-current"
+    },
+    {
+      "source_id": "claude-code-runtime-validation-paw-10f",
+      "url": "sdd/parches/paw-10f-runtime-validation-reconciliation/handover.md",
+      "checked_at": "2026-06-22",
+      "status": "manual-runtime-pass"
+    },
+    {
+      "source_id": "claude-code-plugins",
+      "url": "https://code.claude.com/docs/en/plugins",
+      "checked_at": "2026-06-24",
+      "status": "official-current"
+    },
+    {
+      "source_id": "claude-code-plugins-reference",
+      "url": "https://code.claude.com/docs/en/plugins-reference",
+      "checked_at": "2026-06-24",
+      "status": "official-current"
+    },
+    {
+      "source_id": "claude-code-plugin-marketplaces",
+      "url": "https://code.claude.com/docs/en/plugin-marketplaces",
+      "checked_at": "2026-06-24",
+      "status": "official-current"
+    }
+  ],
+  "gap_disposition": [
+    {
+      "gap_id": "physical-claude-files-not-materialized",
+      "status": "resolved-by-paw-10b",
+      "disposition": "paw-10b materialized repo-local .claude physical files as candidate evidence.",
+      "required_for_candidate": false
+    },
+    {
+      "gap_id": "claude-runtime-discovery-not-validated",
+      "status": "resolved-by-paw-10f",
+      "disposition": "Manual Claude Code 2.1.59 validation reported native discovery of .claude/skills and .claude/agents, paw-router invocation without manual paste, and progressive disclosure references working.",
+      "required_for_candidate": false
+    },
+    {
+      "gap_id": "claude-main-checkout-rerun-caveat",
+      "status": "caveat-recorded",
+      "disposition": "The validation ran in a Conductor harness branch with files reported identical to recent main; a direct checked-out main rerun would strengthen traceability but is not required for the candidate gate accepted by paw-10f.",
+      "required_for_candidate": false
+    },
+    {
+      "gap_id": "claude-plugin-runtime-validation-not-executed",
+      "status": "deferred-current-session",
+      "disposition": "paw-10e validates staged plugin files deterministically, but local Claude Code plugin validation was not executed because the claude command was unavailable in the current environment. Promotion beyond distribution-files-candidate requires official Claude Code plugin validation and runtime discovery evidence.",
+      "required_for_candidate": false
+    }
+  ],
+  "activation": {
+    "state": "candidate-opt-in",
+    "default_workflow": false,
+    "requires_opt_in": true,
+    "plugin_default_activation": false
+  }
+}

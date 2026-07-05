@@ -1,0 +1,165 @@
+{
+  "name": "paw-claude-code-plugin",
+  "version": "0.1.0-candidate.claude",
+  "status": "distribution-files-candidate",
+  "runtime": "claude-code",
+  "plugin_root": "paw/distribution/claude-code-plugin/paw",
+  "derived_from": "paw-10b-claude-code-physical-adapter",
+  "validated_physical_adapter": "paw-10f-runtime-validation-reconciliation",
+  "hooks_status": "deferred",
+  "hooks_reason": "not required for initial Claude Code distribution files candidate",
+  "mcp_status": "future-only",
+  "mcp_required": false,
+  "marketplace_status": "out-of-scope",
+  "default_activation": false,
+  "paw_v2_default": false,
+  "active_patch_workspace_note": "During paw-foundation, governed work remains under the active SDD v1 patch workspace until the approved cutover.",
+  "files": [
+    {
+      "path": ".claude-plugin/plugin.json",
+      "kind": "claude-plugin-manifest",
+      "source": ".claude-plugin/plugin.json",
+      "checksum_sha256": "6fa9b2dce760e102a855637654b865ef7c5245ad9cd7af08447c2caae9a079aa",
+      "license": "MPL-2.0"
+    },
+    {
+      "path": "README.md",
+      "kind": "documentation",
+      "source": "README.md",
+      "checksum_sha256": "2d54c4b9ce6f83365a9798b638b07d907d079b72e5b4ba2fc4ba8c1c3e0d033e",
+      "license": "MPL-2.0"
+    },
+    {
+      "path": "agents/paw-docs-checker.md",
+      "kind": "agent",
+      "source": ".claude/agents/paw-docs-checker.md",
+      "checksum_sha256": "faded9ab6b3fd8418e4847f1108145d22dc709b446f89ba824e4497bf2f07000",
+      "license": "MPL-2.0"
+    },
+    {
+      "path": "agents/paw-risk-reviewer.md",
+      "kind": "agent",
+      "source": ".claude/agents/paw-risk-reviewer.md",
+      "checksum_sha256": "c529e3d3c0f3f12c9ba8a65ba8075607832c4bfa1a22ebdb055e4abe25c32294",
+      "license": "MPL-2.0"
+    },
+    {
+      "path": "agents/paw-test-reviewer.md",
+      "kind": "agent",
+      "source": ".claude/agents/paw-test-reviewer.md",
+      "checksum_sha256": "7536b395f4168830d6b6eee598b9ae63581575a6244ab5d068d67a6a6f1bb380",
+      "license": "MPL-2.0"
+    },
+    {
+      "path": "mcp/README.md",
+      "kind": "future-extension-doc",
+      "source": "mcp/README.md",
+      "checksum_sha256": "04b29c291087bdf09946974da1f934aefb4c9a71f14c64c44616311483c8c918",
+      "license": "MPL-2.0"
+    },
+    {
+      "path": "skills/paw-conformance/SKILL.md",
+      "kind": "skill",
+      "source": ".claude/skills/paw-conformance/SKILL.md",
+      "checksum_sha256": "5cbde5a3d938569f3aa400da103ee8abca11577d2aa4679ff4d5dd156577c14c",
+      "license": "MPL-2.0"
+    },
+    {
+      "path": "skills/paw-execute-phase/SKILL.md",
+      "kind": "skill",
+      "source": ".claude/skills/paw-execute-phase/SKILL.md",
+      "checksum_sha256": "33ca9ed2cbd3284b8830dd2f475249ac04ccbc88e5f1dfc1354b28c77d7a2a8d",
+      "license": "MPL-2.0"
+    },
+    {
+      "path": "skills/paw-intake/SKILL.md",
+      "kind": "skill",
+      "source": ".claude/skills/paw-intake/SKILL.md",
+      "checksum_sha256": "b85cd69fe40e09adeb520af58292ab5718ea721ef80f55628f38c2560bb20e5b",
+      "license": "MPL-2.0"
+    },
+    {
+      "path": "skills/paw-phase-backlog/SKILL.md",
+      "kind": "skill",
+      "source": ".claude/skills/paw-phase-backlog/SKILL.md",
+      "checksum_sha256": "3250c33c2ddde9b8af3dcda6913978d2b9e3cc61c364fa2a5750a25f53a250de",
+      "license": "MPL-2.0"
+    },
+    {
+      "path": "skills/paw-plan/SKILL.md",
+      "kind": "skill",
+      "source": ".claude/skills/paw-plan/SKILL.md",
+      "checksum_sha256": "c7d844bbbd356a8fb6082f71e0b4c17a48ba174d85a9d209b55c8f1a47e10ad9",
+      "license": "MPL-2.0"
+    },
+    {
+      "path": "skills/paw-router/SKILL.md",
+      "kind": "skill",
+      "source": ".claude/skills/paw-router/SKILL.md",
+      "checksum_sha256": "95544db91d4e07840b07ea47cc2dcb13c4cfd7cf3199db4b96b16c858f901b18",
+      "license": "MPL-2.0"
+    },
+    {
+      "path": "skills/paw-router/references/activation-boundary.md",
+      "kind": "skill",
+      "source": ".claude/skills/paw-router/references/activation-boundary.md",
+      "checksum_sha256": "7833ee2de58da0da1282c27d1a412a665a39b0ffeac8e876755f1a80273ea380",
+      "license": "MPL-2.0"
+    },
+    {
+      "path": "skills/paw-router/references/validation.md",
+      "kind": "skill",
+      "source": ".claude/skills/paw-router/references/validation.md",
+      "checksum_sha256": "d770ad5107b00e8836c50efa49f0a8060762d534b2193446d525a9c80852291d",
+      "license": "MPL-2.0"
+    },
+    {
+      "path": "skills/paw-router/references/workflow-map.md",
+      "kind": "skill",
+      "source": ".claude/skills/paw-router/references/workflow-map.md",
+      "checksum_sha256": "829f203791583b7e4f4a610a75a8cd6260bf9ab1dc22301e07de6c093dcdfe0e",
+      "license": "MPL-2.0"
+    },
+    {
+      "path": "skills/paw-sync-drift/SKILL.md",
+      "kind": "skill",
+      "source": ".claude/skills/paw-sync-drift/SKILL.md",
+      "checksum_sha256": "1805b95dcaff41527eab2648388777d26c7528e822f89474f96c532343e27d94",
+      "license": "MPL-2.0"
+    },
+    {
+      "path": "skills/paw-tasks/SKILL.md",
+      "kind": "skill",
+      "source": ".claude/skills/paw-tasks/SKILL.md",
+      "checksum_sha256": "0dc83a9c69a6a89f021e1b0cfa1b0b9e43ecba3acd9f1a50c6af52a563b0cd1a",
+      "license": "MPL-2.0"
+    }
+  ],
+  "gaps": [
+    {
+      "id": "claude-plugin-runtime-validation",
+      "status": "not-executed-in-current-session",
+      "disposition": "Close as distribution-files-candidate unless local Claude Code plugin validation is executed."
+    },
+    {
+      "id": "hooks",
+      "status": "deferred",
+      "disposition": "No executable hooks are required for the initial candidate."
+    },
+    {
+      "id": "mcp",
+      "status": "future-only",
+      "disposition": "No .mcp.json or MCP server is shipped."
+    },
+    {
+      "id": "marketplace",
+      "status": "out-of-scope",
+      "disposition": "No public or local marketplace is shipped in this patch."
+    },
+    {
+      "id": "additional-agents-requested-by-handoff",
+      "status": "not-packaged",
+      "disposition": "Only agents validated in .claude/** are packaged."
+    }
+  ]
+}
