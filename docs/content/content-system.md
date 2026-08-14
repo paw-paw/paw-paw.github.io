@@ -279,6 +279,12 @@ Contenido contractual minimo:
 - `header_image` obligatoria
 - `body` como contenido principal compuesto del post
 
+Formato enriquecido del body:
+
+- el cuerpo puede usar expresiones matematicas inline con `$...$` y bloques display con `$$...$$`
+- esas expresiones se procesan como MathML/HTML matematico durante el build mediante la capa Markdown del sitio
+- las formulas display deben conservar legibilidad en pantallas estrechas mediante scroll horizontal contenido; no deben forzar overflow global de la pagina
+
 Identidad de ruta obligatoria:
 
 - cada post debe resolver a un `slug` canonico utilizable en `/blog/[slug]`

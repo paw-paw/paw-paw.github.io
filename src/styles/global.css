@@ -1,3 +1,5 @@
+@import 'katex/dist/katex.min.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -577,6 +579,18 @@ html, body {
 
   .blog-prose blockquote p {
     margin: 0;
+  }
+
+  .blog-prose .katex {
+    color: inherit;
+    font-size: 1.05em;
+  }
+
+  .blog-prose .katex-display {
+    margin: 1.75rem 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.25rem 0.15rem;
   }
 
   .blog-toc {

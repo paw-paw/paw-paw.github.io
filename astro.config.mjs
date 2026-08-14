@@ -3,6 +3,8 @@ import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 import compress from 'astro-compress';
 import preact from '@astrojs/preact';
+import rehypeKatex from 'rehype-katex';
+import remarkMath from 'remark-math';
 
 const bridgeUrls = [
   'https://pauloctuya.com/',
@@ -22,6 +24,10 @@ export default defineConfig({
       prefixDefaultLocale: true,
       redirectToDefaultLocale: false,
     },
+  },
+  markdown: {
+    remarkPlugins: [remarkMath],
+    rehypePlugins: [rehypeKatex],
   },
 
   // Integrations
