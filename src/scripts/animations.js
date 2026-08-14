@@ -8,7 +8,7 @@ if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+const initializeAnimations = () => {
   AOS.init({
     duration: 800,
     easing: 'ease-out',
@@ -174,4 +174,13 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   });
-});
+
+  // Work and blog image hover states are handled in CSS so reduced-motion rules
+  // and keyboard focus remain consistent.
+};
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initializeAnimations, { once: true });
+} else {
+  initializeAnimations();
+}

@@ -971,6 +971,12 @@ html, body {
   }
 
   /* AOS additional animations */
+  /* Content must remain visible if the optional reveal script is unavailable. */
+  body:not([data-aos-easing]) [data-aos] {
+    opacity: 1;
+    transform: none;
+  }
+
   [data-aos="zoom-in-slight"] {
     transform: scale(0.95);
     opacity: 0;
